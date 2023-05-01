@@ -7,8 +7,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-
   letter-spacing: 0.08em;
+  cursor: pointer;
 }
 
 .nav-btn {
@@ -22,8 +22,16 @@
   border-radius: 8px;
 }
 
-@media (min-width: 768px) {
+/*  */
+
+@media (min-width: 1024px) {
   .nav-height {
     height: 72px;
   }
+}
+
+.menu-icon {
+  width: 33px;
+  height: 22px;
+  cursor: pointer;
 }

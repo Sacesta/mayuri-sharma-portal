@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Main from "./components/MainComp/Main";
+import Home from "./components/Home/Main";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
-  return <Main />;
+export default function Main() {
+  return <Home />;
 }
