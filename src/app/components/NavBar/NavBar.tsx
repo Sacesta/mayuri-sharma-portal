@@ -8,10 +8,8 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <>
-      <nav
-        style={{ boxShadow: "0px 12px 24px rgba(0, 0, 0, 0.1)" }}
-        className="px-6 lg:px-auto py-6 flex justify-between items-center lg:px-16 nav-height"
-      >
+    <header className="" style={{ boxShadow: "0px 12px 24px rgba(0, 0, 0, 0.1)" }}>
+      <nav className="py-6 flex justify-between items-center container mx-auto nav-height">
         <div className="flex gap-20">
           <div className="cursor-pointer">
             <Link href="/">
@@ -47,6 +45,8 @@ const NavBar = () => {
           />
         </div>
       </nav>
+    </header>
+      
     </>
   );
 };
