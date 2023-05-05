@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-.container{max-width: 1312px;}
-.home-banner{height: calc(100vh - 72px);}
-.home_banner{
-  @apply w-full h-full rounded-[20px] bg-[#29214b] pb-20}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap');
 
-.intro_section{background: linear-gradient(0deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);
-padding-block-start: 260px; padding-block-end: 326px;position: relative;}
-
-.paragraph_one_style{
-  @apply text-xl leading-6 font-semibold text-[#29214B]
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body{font-family: 'Kumbh Sans', sans-serif;}
+.container{
+  @apply sm:max-w-[600px] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1200px] 2xl:max-w-[1312px] px-6 sm:px-0
 }
 
 .primary_button{font-family: "Montserrat";
@@ -19,26 +15,63 @@ padding-block-start: 260px; padding-block-end: 326px;position: relative;}
   @apply px-10 py-3 border border-white rounded-lg text-sm text-white
 }
 
+.paragraph_one_style{
+  @apply text-sm lg:text-xl leading-6 font-semibold 
+}
+
 .paragraph_two_style{font-family: "Montserrat";
   @apply font-normal text-[#090617] text-lg leading-7
 }
 
 .heading_three_style{font-family: "Montserrat";
   @apply flex items-center justify-between font-semibold text-[#29214B] text-[21px] mb-2
-
 }
 
 h2.heading_style_two{font-family: "Montserrat";
-@apply font-semibold text-[#29214B] text-[38px] leading-[46px]
+@apply font-semibold text-[28px] lg:text-[38px] leading-[34px] lg:leading-[46px]
+}
+h3.heading_style_three{font-family: "Montserrat";
+@apply font-semibold text-[28px] text-[#29214B]
 }
 
+header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.home-banner{height: calc(100vh - 72px);}
+.home_banner{
+  @apply w-full h-full lg:rounded-[20px] bg-[#29214b] pt-20 lg:pt-0 lg:pb-20 flex lg:items-end justify-center relative px-6 lg:px-0
+}
+
+.home_banner h3 {font-family: "Montserrat";
+  @apply py-8 font-semibold text-white text-[21px] lg:text-[28px] leading-8
+}
+
+.home_banner h1{font-family: "Montserrat";
+  @apply text-4xl lg:text-[50px] text-white leading-[46px] lg:leading-[60px] font-semibold
+}
+
+.intro_section{background: linear-gradient(0deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);
+@apply pt-[260px] pb-56 lg:pb-[326px] relative overflow-hidden
+}
 
 .intro_background_img{
   position: absolute; top: calc(50% - 243px);left: 50%; transform: translateX(-50%);
 }
+
 .transformation{
 @apply -mt-[106px] relative z-[2] flex flex-col items-center
 }
+
 .transformation_profile_img{
 @apply overflow-hidden mb-8 h-[212px] w-[212px] rounded-[20px]}
 
@@ -47,14 +80,14 @@ h2.heading_style_two{font-family: "Montserrat";
 }
 
 .upcoming_program{background: linear-gradient(180deg, #D8D5E3 0%, rgba(216, 213, 227, 0.4) 100%);
-@apply pt-40 pb-[409px]}
+@apply pt-24 pb-16 lg:pt-40 lg:pb-[409px]}
 
 .program_list .program_list_li{
-  @apply flex rounded-[20px] overflow-hidden bg-white mb-8
+  @apply lg:flex rounded-[20px] overflow-hidden bg-white mb-8
 }
 
 .program_img{
-  @apply w-[290px] h-auto
+  @apply w-full lg:w-[290px] h-[200px] lg:h-auto
 }
 
 .program_img img{
@@ -84,16 +117,23 @@ h2.heading_style_two{font-family: "Montserrat";
 }
 
 .news_letter_section{background: linear-gradient(180deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);padding-block-end: 160px;}
-.news_letter_section .news_letter{
-  @apply bg-[#29214B] rounded-[20px] px-24 py-28 -mt-72 mb-40
-}
+
 
 .news_letter{
-  @apply gap-32 lg:flex justify-between relative overflow-hidden 
+  @apply gap-32 lg:flex justify-between relative overflow-hidden bg-[#29214B] lg:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28 lg:-mt-72 mb-40 -mx-6 lg:mx-0 
 }
+.news_ellipse_one, .news_ellipse_two, .news_ellipse_three, .news_ellipse_four, .news_ellipse_five{
+  @apply absolute opacity-20
+}
+.news_ellipse_one{top: 0; left: 34%;}
+.news_ellipse_two{top: 0; left: 65%;}
+.news_ellipse_three{top: 8%; left: 59%;}
+.news_ellipse_four{bottom: 0; right: 0;}
+.news_ellipse_five{bottom: 0;left: 46%;}
 
-.news_letter_head{ont-family: "Montserrat";
-  @apply text-[28px] text-white font-semibold pb-9 leading-9
+
+.news_letter_head{font-family: "Montserrat";
+  @apply text-[28px] text-white font-semibold leading-9
 }
 
 .news_letter_h2{font-family: "Montserrat";
@@ -101,7 +141,7 @@ h2.heading_style_two{font-family: "Montserrat";
 }
 
 .news_letter_form{
-  @apply lg:w-1/2 rounded-[20px] bg-white p-8 lg:max-w-[440px] mt-20 lg:mt-0
+  @apply lg:w-1/2 rounded-[20px] bg-white p-8 lg:max-w-[440px] mt-20 lg:mt-0 z-[2] relative
 }
 
 .news_letter_form_head{font-family: "Montserrat";
@@ -137,33 +177,113 @@ h2.heading_style_two{font-family: "Montserrat";
 .testimonial_section{padding-block-end: 170px;}
 
 footer{
-  @apply bg-[#29214B] pt-20 pb-40
+  @apply bg-[#29214B] pt-20 pb-16 lg:pb-40 
 }
+
 .footer_links li{
   @apply mb-4 text-white font-normal text-base
 }
-.home_banner h3 {
-  padding-top: 30px;
-  padding-bottom: 24px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 34px;
-  color: #ffffff;
+.social_media_icon{
+@apply flex mb-10 lg:mb-0}
+.social_media_icon li{@apply mr-8}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.about_banner{background-repeat: no-repeat; background-size: cover;
+  @apply h-full rounded-[20px] flex items-end justify-center relative lg:bg-right
+  
+}
+.about_head{font-family: "Montserrat"; 
+  @apply pl-6 lg:pl-24 pb-8 lg:pb-16 text-4xl lg:text-[50px] text-white 
+}
+.about_funfacts{
+  @apply pt-24 lg:pt-52
+}
+.fun_fact_tab{
+  @apply mr-4
+}
+.fun_fact_tab li{
+  @apply w-[100px] h-[100px]  mb-10 rounded-[50%] hover:bg-[#EB334A] transition-all flex items-center justify-center
+}
+.fun_fact_tab li:first-child{@apply bg-[#EB334A]}
+.fun_fact_tab li:first-child svg{fill: #fff;}
+.fun_fact_tab li svg{fill: #29214B;}
+.fun_fact_tab li:hover svg{fill: #fff;}
+.fun_profile_img{
+  @apply w-full h-auto rounded-[20px] overflow-hidden relative
+}
+.fun_profile_img:after{content: ''; position: absolute; height: 100%; width: 100%;background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #29214B 100%);top: 0;left: 0;}
+.fun_profile_img img{
+  @apply h-full w-full object-cover
+}
+.fun_profile_name{font-family: "Montserrat";
+  @apply text-white text-[21px] font-semibold leading-6 px-6 pb-28 md:px-20 lg:pb-16 absolute bottom-0 z-10 text-center
+}
+.about_journey{
+  @apply pt-24 lg:pt-[200px]
+}
+.journey_points{@apply mr-11}
+
+.journey_details li{@apply mb-11}
+
+.journey_details li .journey_points{
+  @apply relative
+}
+.journey_details li:last-child .journey_points::after{display: none;}
+.journey_details li .journey_points::after{content: '';
+  @apply absolute h-[65%] w-[2px] bg-[#29214B] bottom-0 left-[50%] translate-x-[-50%]
 }
 
-.home_banner h1 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 61px;
-  color: #ffffff;
+.journey_time{
+  @apply text-sm font-normal leading-6 text-[#090617] mb-[10px]
 }
+.journey_time span{
+  @apply relative pr-3
+}
+.journey_time span::after{content: ''; height: 3px;width: 3px; border-radius: 50%; background-color: #090617;position: absolute; right: 0; top: 50%; transform: translateX(-50%);}
+.journey_time span:last-child::after{display: none;}
+
+.about_mission{
+  @apply lg:pt-24
+}
+
+.about_mission .container{ 
+  @apply bg-[#29214B] md:rounded-[20px] overflow-hidden relative
+  }
+.mission{
+  @apply flex justify-center items-center h-full px-6 md:px-10 lg:px-0 overflow-hidden py-40
+}
+.mission_ellipse{
+  @apply absolute h-full w-full top-0
+}
+
+.about_principles{
+  @apply pt-[100px] lg:pt-[200px] 
+}
+
+.socialMedia_moments{
+  @apply pt-[100px] lg:pt-[200px] pb-[100px] lg:pb-80
+} p
+.social_image{
+  @apply w-full h-full rounded-[20px] overflow-hidden
+}
+.social_image img{
+  @apply h-full w-full object-cover rounded-[20px]
+}
+
 
 .main-right-circle {
   position: absolute;
   top: 0;
   right: 0;
 }
+ 
