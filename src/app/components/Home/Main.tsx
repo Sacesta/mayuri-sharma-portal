@@ -7,12 +7,11 @@ import profileImage from "../../../Assets/Images/pageImages/transformation_profi
 import programeone from "../../../Assets/Images/pageImages/program_img_1.png";
 import masterclassimg from "../../../Assets/Images/pageImages/masterclass_one.png";
 import ellipseOne from "../../../Assets/Images/pageImages/Ellipse_one.png";
-import ellipseTwo from "../../../Assets/Images/pageImages/Ellipse_two.png";
-import ellipseThree from "../../../Assets/Images/pageImages/Ellipse_three.png";
-import ellipseFour from "../../../Assets/Images/pageImages/Ellipse_four.png";
-import ellipseFive from "../../../Assets/Images/pageImages/Ellipse_five.png";
+import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
 import footerLogo from "../../../Assets/Images/pageImages/footer_logo.png";
 import homeStoryImg from "../../../Assets/Images/pageImages/home_story_one.png";
+import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png";
+
 
 
 const Main = () => {
@@ -163,9 +162,9 @@ const Main = () => {
 
       <section className="upcoming_program">
         <div className="container mx-auto ">
-          <div className="lg:grid grid-cols-2 pb-8 lg:pb-24 lg:px-20">
+          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 lg:px-20">
             <h2 className="heading_style_two mb-8 lg:mb-0 text-[#29214B] lg:max-w-[398px] text-start md:text-center lg:text-left">Join me in an upcoming program</h2>
-            <div className="flex justify-center lg:justify-end text-start md:text-center lg:text-start">
+            <div className="flex justify-start lg:justify-end text-start">
               <p className=" max-w-xl ">A bit of text about the programs can go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
@@ -175,9 +174,9 @@ const Main = () => {
                 <Image src={programeone} alt="program..." />
               </div>
               <div className="program_details">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mb-2">
                   <p className="heading_three_style">Program Name</p>
-                  <p className="heading_three_style">€ 100</p>
+                  <p className="heading_three_style hidden lg:block">€ 100</p>
                 </div>
                 <p className="program_description">A bit of text about the program can go here. all the way until here, with a bit more here and here and there everywhere. oh and also here and here and ya you guessed it here.</p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
@@ -227,6 +226,14 @@ const Main = () => {
                     </div>
                   </li>
                 </ul>
+                <div className="flex justify-between items-center pt-6 border-t border-[#E1E1E1] mt-4 lg:hidden">
+                  <p className="heading_three_style">€ 100</p>
+                  <a href="" className="flex items-center text-[#4086FF] font-semibold tracking-widest">Register now 
+                    <svg width="8" height="13" className="ml-2" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.3748 13.0002L0.299805 11.9252L5.2498 6.9752L0.299805 2.0252L1.3748 0.950195L7.3998 6.9752L1.3748 13.0002Z" fill="#4086FF"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
               <a href="" className="program_register">Register now 
                 <svg width="8" height="13" className="ml-2" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,7 +248,7 @@ const Main = () => {
               <div className="program_details">
                 <div className="flex justify-between items-center">
                   <p className="heading_three_style">Program Name</p>
-                  <p className="heading_three_style">€ 100</p>
+                  <p className="heading_three_style hidden lg:block">€ 100</p>
                 </div>
                 <p className="program_description">A bit of text about the program can go here. all the way until here, with a bit more here and here and there everywhere. oh and also here and here and ya you guessed it here.</p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
@@ -291,6 +298,14 @@ const Main = () => {
                     </div>
                   </li>
                 </ul>
+                <div className="flex justify-between items-center pt-6 border-t border-[#E1E1E1] mt-4 lg:hidden">
+                  <p className="heading_three_style">€ 100</p>
+                  <a href="" className="flex items-center text-[#4086FF] font-semibold tracking-widest">Register now 
+                    <svg width="8" height="13" className="ml-2" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.3748 13.0002L0.299805 11.9252L5.2498 6.9752L0.299805 2.0252L1.3748 0.950195L7.3998 6.9752L1.3748 13.0002Z" fill="#4086FF"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
               <a href="" className="program_register">Register now 
                 <svg width="8" height="13" className="ml-2" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,7 +320,7 @@ const Main = () => {
               <div className="program_details">
                 <div className="flex justify-between items-center">
                   <p className="heading_three_style">Program Name</p>
-                  <p className="heading_three_style">€ 100</p>
+                  <p className="heading_three_style hidden lg:block">€ 100</p>
                 </div>
                 <p className="program_description">A bit of text about the program can go here. all the way until here, with a bit more here and here and there everywhere. oh and also here and here and ya you guessed it here.</p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
@@ -355,6 +370,14 @@ const Main = () => {
                     </div>
                   </li>
                 </ul>
+                <div className="flex justify-between items-center pt-6 border-t border-[#E1E1E1] mt-4 lg:hidden">
+                  <p className="heading_three_style">€ 100</p>
+                  <a href="" className="flex items-center text-[#4086FF] font-semibold tracking-widest">Register now 
+                    <svg width="8" height="13" className="ml-2" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.3748 13.0002L0.299805 11.9252L5.2498 6.9752L0.299805 2.0252L1.3748 0.950195L7.3998 6.9752L1.3748 13.0002Z" fill="#4086FF"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
               <a href="" className="program_register">Register now 
                 <svg width="8" height="13" className="ml-2" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -369,46 +392,46 @@ const Main = () => {
 
       <section className="news_letter_section">
         <div className="container mx-auto">
-          <div className="news_letter">
-            <div className="lg:w-1/2 flex items-center z-[2]">
-              <div>
-                <p className="news_letter_head pb-9">News letter</p>
-                <h2 className="news_letter_h2">Get your monthly digest of top tips</h2>
-                <p className="text-white text-lg font-normal pb-9 leading-7">A bit about the news letter and how it works goes here can be this long Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button className="secondary_button">See all challenges</button>
+          
+            <div className="news_letter">
+              <div className="lg:w-1/2 flex items-center z-[2]">
+                <div>
+                  <p className="news_letter_head pb-9">News letter</p>
+                  <h2 className="news_letter_h2">Get your monthly digest of top tips</h2>
+                  <p className="text-white text-lg font-normal pb-9 leading-7">A bit about the news letter and how it works goes here can be this long Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <button className="secondary_button">See all challenges</button>
+                </div>
               </div>
+              <div className="news_letter_form">
+                <p className="news_letter_form_head">Join news letter</p>
+                <div className="form_field">
+                  <label htmlFor="">Name</label>
+                  <input type="text" placeholder="Enter name" />
+                </div>
+                <div className="form_field">
+                  <label htmlFor="">Email address</label>
+                  <input type="text" placeholder="Enter email address" />
+                </div>
+                <div className="flex items-center mb-7">
+                  <input type="checkbox" className="mr-3 w-7 h-7" />
+                  <p className="checkbox_label">If you need to have a confirmation this is how it might look like.</p>
+                </div>
+                <button className="primary_button w-full mb-6">Subscribe</button>
+                <p className="text-sm text-[#090617] font-normal">*We respect your privacy you can unsubscribe anytime</p>
+              </div>
+              <Image src={ellipseOne} alt="..." className="news_ellipse_one right-0 hidden md:block"/>
+              <Image src={ellipseTwo} alt="..." className="news_ellipse_one left-0 block md:hidden"/>
             </div>
-            <div className="news_letter_form">
-              <p className="news_letter_form_head">Join news letter</p>
-              <div className="form_field">
-                <label htmlFor="">Name</label>
-                <input type="text" placeholder="Enter name" />
-              </div>
-              <div className="form_field">
-                <label htmlFor="">Email address</label>
-                <input type="text" placeholder="Enter email address" />
-              </div>
-              <div className="flex items-center mb-7">
-                <input type="checkbox" className="mr-3 w-7 h-7" />
-                <p className="checkbox_label">If you need to have a confirmation this is how it might look like.</p>
-              </div>
-              <button className="primary_button w-full mb-6">Subscribe</button>
-              <p className="text-sm text-[#090617] font-normal">*We respect your privacy you can unsubscribe anytime</p>
-            </div>
-            <Image src={ellipseOne} alt="..." className="news_ellipse_one"/>
-            <Image src={ellipseTwo} alt="..." className="news_ellipse_two"/>
-            <Image src={ellipseThree} alt="..." className="news_ellipse_three"/>
-            <Image src={ellipseFour} alt="..." className="news_ellipse_four"/>
-            <Image src={ellipseFive} alt="..." className="news_ellipse_five"/>
-          </div>
+          
+          
           <p className="paragraph_one_style text-center mb-2 text-[#29214B]">Can’t find what you’r looking for?</p>
-          <h2 className="heading_style_two text-center max-w-[480px] mx-auto mb-24 text-[#29214B]">Let’s start your journey in m free masterclass </h2>
+          <h2 className="heading_style_two text-center max-w-[480px] mx-auto mb-[60px] lg:mb-24 text-[#29214B]">Let’s start your journey in my free masterclass  </h2>
           <div className="grid lg:grid-cols-2 lg:px-24 gap-10">
             <div className="rounded-[20px] overflow-hidden border border-[#E1E1E1]">
               <div className="masterclass_img">
                 <Image src={masterclassimg} alt="..." />
               </div>
-              <div className="p-8">
+              <div className="p-8 bg-white">
                 <p className="heading_three_style">Breathing Masterclass</p>
                 <p className="masterclass_des">A bit of text about the program can go here. all the way until here, with a bit more here and here and there everywhere. oh and also here and here and ya you guessed it here.</p>
                 <ul className="flex items-center mt-4">
@@ -473,7 +496,7 @@ const Main = () => {
               <div className="masterclass_img">
                 <Image src={masterclassimg} alt="..." />
               </div>
-              <div className="p-8">
+              <div className="p-8 bg-white">
                 <p className="heading_three_style">Breathing Masterclass</p>
                 <p className="masterclass_des">A bit of text about the program can go here. all the way until here, with a bit more here and here and there everywhere. oh and also here and here and ya you guessed it here.</p>
                 <ul className="flex items-center mt-4">
@@ -618,9 +641,9 @@ const Main = () => {
                   </ul>
                 </div>
               </div>
-              <p className="text-base font-normal text-white mt-24 hidden lg:block">© 2023 All rights reserved Mayuri Sharma</p>
+              <p className="text-base font-normal text-white mt-24 hidden lg:block copyright_text">© 2023 All rights reserved Mayuri Sharma</p>
             </div>
-            <div className="bg-white rounded-[20px] p-8 col-span-2">
+            <div className="bg-white rounded-[20px] p-8 col-span-2 z-[2]">
               <div className="flex items-center">
                 <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-7 mr-4">
                   <path d="M2.25 24C1.65 24 1.125 23.775 0.675 23.325C0.225 22.875 0 22.35 0 21.75V2.25C0 1.65 0.225 1.125 0.675 0.675C1.125 0.225 1.65 0 2.25 0H27.75C28.35 0 28.875 0.225 29.325 0.675C29.775 1.125 30 1.65 30 2.25V21.75C30 22.35 29.775 22.875 29.325 23.325C28.875 23.775 28.35 24 27.75 24H2.25ZM15 12.675L2.25 4.3125V21.75H27.75V4.3125L15 12.675ZM15 10.425L27.6 2.25H2.4375L15 10.425ZM2.25 4.3125V2.25V21.75V4.3125Z" fill="#29214B"/>
@@ -636,8 +659,9 @@ const Main = () => {
               <p className="text-sm text-[#090617] font-normal">*We respect your privacy you can unsubscribe anytime</p>
             </div>
           </div>
-          <p className="text-base font-normal text-white mt-16 text-center block lg:hidden">© 2023 All rights reserved Mayuri Sharma</p>
+          <p className="text-base font-normal text-white mt-16 text-center block lg:hidden copyright_text">© 2023 All rights reserved Mayuri Sharma</p>
         </div>
+        <Image className="main-right-circle hidden lg:block" src={footerEllipse} alt=".." />
       </footer>
     </>
   );

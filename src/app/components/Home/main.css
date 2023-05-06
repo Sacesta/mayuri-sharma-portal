@@ -1,34 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap');
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-body{font-family: 'Kumbh Sans', sans-serif;}
+*{font-family: 'Kumbh Sans', sans-serif;}
+body{font-family: 'Kumbh Sans', sans-serif !important}
+
 .container{
   @apply sm:max-w-[600px] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1200px] 2xl:max-w-[1312px] px-6 sm:px-0
 }
 
 .primary_button{font-family: "Montserrat";
-  @apply px-10 py-3 bg-[#EB334A] text-white text-sm rounded-lg
+  @apply px-10 py-3 bg-[#EB334A] text-white text-sm rounded-lg tracking-widest
 }
 
 .secondary_button{font-family: "Montserrat";
-  @apply px-10 py-3 border border-white rounded-lg text-sm text-white
+  @apply px-10 py-3 border border-white rounded-lg text-sm text-white tracking-widest
 }
 
 .tertiary_button{font-family: "Montserrat";
-  @apply px-10 py-3 border border-[#090617] rounded-lg text-sm text-[#090617]
+  @apply px-10 py-3 border border-[#090617] rounded-lg text-sm text-[#090617] tracking-widest
 }
 
-.paragraph_one_style{
+.paragraph_one_style{font-family: "Montserrat";
   @apply text-sm lg:text-xl leading-6 font-semibold 
 }
 
-.paragraph_two_style{font-family: "Montserrat";
+.paragraph_two_style{
   @apply font-normal text-[#090617] text-lg leading-7
 }
 
 .heading_three_style{font-family: "Montserrat";
-  @apply flex items-center justify-between font-semibold text-[#29214B] text-[21px] mb-2
+  @apply  font-semibold text-[#29214B] text-[21px] 
 }
 
 h2.heading_style_two{font-family: "Montserrat";
@@ -58,7 +62,7 @@ header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 footer{
-  @apply bg-[#29214B] pt-20 pb-16 lg:pb-40 
+  @apply bg-[#29214B] pt-20 pb-16 lg:pb-40 relative
 }
 
 .footer_links li{
@@ -67,6 +71,8 @@ footer{
 .social_media_icon{
 @apply flex mb-10 lg:mb-0}
 .social_media_icon li{@apply mr-8}
+
+.copyright_text{font-family: 'Noto Sans', sans-serif;}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -98,11 +104,11 @@ footer{
 }
 
 .intro_section{background: linear-gradient(0deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);
-@apply pt-[260px] pb-56 lg:pb-[326px] relative overflow-hidden
+@apply pt-44 pb-56 lg:pb-[326px] relative overflow-hidden
 }
 
 .intro_background_img{
-  position: absolute; top: calc(50% - 243px);left: 50%; transform: translateX(-50%);
+  position: absolute; top: calc(50% - 313px);left: 50%; transform: translateX(-50%); z-index: -1;
 }
 
 .transformation{
@@ -123,7 +129,7 @@ footer{
   @apply hidden md:flex items-center mb-8
 }
 .home_story_tab li{font-family: "Montserrat";
-  @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative
+  @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative text-[#505050] font-bold
 }
 .home_story_tab li.story_tab_active::after{content: ''; position: absolute;width: 100%; height: 5px; background-color: #EB334A;bottom: 0;left: 0;
 }
@@ -137,11 +143,11 @@ footer{
 }
 .home_story_section li{@apply relative cursor-pointer transition-all ease-in duration-300}
 
-.home_story_section li .home_story_img::after{content: ''; position: absolute; height: 0px; width: 100%;background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #29214B 100%);top: 0;left: 0;display: none;
-@apply h-full transition-all ease-in duration-300}
+.home_story_section li .home_story_img::after{content: '';background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #29214B 86.46%);
+@apply absolute w-full h-0 bottom-0 left-0 transition-all ease-in duration-150}
 
 .home_story_section li:hover .home_story_img::after{
-  @apply block transition-all ease-in duration-300
+  @apply h-[63%] transition-all ease-in duration-300
 }
 
 .home_story_section li:hover .story_podcast{@apply opacity-100 bottom-6 transition-all ease-in duration-300}
@@ -155,14 +161,14 @@ footer{
 }
 
 .home_story_number{font-family: "Montserrat";
-  @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2]
+  @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold
 }
 
 .upcoming_program{background: linear-gradient(180deg, #D8D5E3 0%, rgba(216, 213, 227, 0.4) 100%);
-@apply pt-24 pb-16 lg:pt-40 lg:pb-[409px]}
+@apply pt-24 pb-60 lg:pt-40 lg:pb-[306px]}
 
 .program_list .program_list_li{
-  @apply lg:flex rounded-[20px] overflow-hidden bg-white mb-8 relative
+  @apply lg:flex rounded-[20px] overflow-hidden bg-white mb-8 relative border border-[#E1E1E1]
 }
 
 .program_register{
@@ -188,8 +194,8 @@ footer{
   @apply flex-1 p-8 
 }
 
-.program_description{
-  @apply text-sm text-[#505050] leading-6 pr-32 pb-7
+.program_description{font-family: 'Kumbh Sans', sans-serif;
+  @apply text-sm text-[#505050] leading-6 md:pr-32 pb-7
 }
 .program_icon{
   @apply w-8 h-8 flex items-center justify-center
@@ -210,18 +216,12 @@ footer{
 .news_letter_section{background: linear-gradient(180deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);padding-block-end: 160px;}
 
 .news_letter{
-  @apply gap-32 lg:flex justify-between relative overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28 lg:-mt-72 mb-40 -mx-6 lg:mx-0 
+  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28  -mx-6 lg:mx-0 relative top-[-200px] -mb-[46px]
 }
 
-.news_ellipse_one, .news_ellipse_two, .news_ellipse_three, .news_ellipse_four, .news_ellipse_five{
-  @apply absolute opacity-20
+.news_ellipse_one{
+  @apply absolute  top-0 
 }
-
-.news_ellipse_one{top: 0; left: 34%;}
-.news_ellipse_two{top: 0; left: 65%;}
-.news_ellipse_three{top: 8%; left: 59%;}
-.news_ellipse_four{bottom: 0; right: 0;}
-.news_ellipse_five{bottom: 0;left: 46%;}
 
 .news_letter_head{font-family: "Montserrat";
   @apply text-[28px] text-white font-semibold leading-9
@@ -243,7 +243,7 @@ footer{
   @apply mb-9
 }
  
-.form_field label{
+.form_field label{font-family: 'Roboto', sans-serif;
   @apply block text-base leading-5 text-[#505050] mb-[6px] font-normal
 }
 .form_field input{
@@ -254,14 +254,14 @@ footer{
   @apply text-base leading-5 font-normal text-[#505050]
 }
 .masterclass_img{
-  @apply w-full h-52
+  @apply w-full h-[200px]
 }
 
 .masterclass_img img{
   @apply h-full w-full object-cover
 }
 
-.masterclass_des{font-family: "Montserrat"; 
+.masterclass_des{
   @apply text-sm text-[#505050] leading-6 font-normal
 }
 
