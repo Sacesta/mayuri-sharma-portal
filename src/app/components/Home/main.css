@@ -47,7 +47,7 @@ header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;
 .main-right-circle {
   @apply absolute top-0 right-0
 }
-.home-banner{height: calc(100vh - 72px);}
+.banner{height: calc(100vh - 72px);}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -131,7 +131,7 @@ footer{
   @apply absolute rounded-[50%] h-16 w-16 flex items-center justify-center
 }
 .home_story_tab{
-  @apply hidden md:flex items-center mb-8
+  @apply hidden md:flex items-center justify-center mb-8
 }
 .home_story_tab li{font-family: "Montserrat";
   @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative text-[#505050] font-bold
@@ -144,7 +144,7 @@ footer{
 }
 
 .home_story_section{
-  @apply grid md:grid-cols-2  lg:grid-cols-4 gap-10 mb-16
+  @apply grid md:grid-cols-2  lg:grid-cols-4 gap-x-10 gap-y-16 mb-16
 }
 .home_story_section li{@apply relative cursor-pointer transition-all ease-in duration-300}
 
@@ -291,7 +291,7 @@ footer{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .about_banner{background-repeat: no-repeat; background-size: cover;
-  @apply h-full md:rounded-[20px] flex items-end justify-center relative lg:bg-right 
+  @apply h-full md:rounded-[20px] flex items-end justify-center relative overflow-hidden
 }
 
 .about_banner::after{content: ''; background: linear-gradient(180deg, rgba(89, 80, 125, 0) 0%, rgba(89, 80, 125, 0.5) 100%);
@@ -335,14 +335,14 @@ footer{
 
 .journey_points{@apply mr-11}
 
-.journey_details li{@apply mb-11}
+.journey_details li{@apply mb-5}
 
 .journey_details li .journey_points{
   @apply relative
 }
 .journey_details li:last-child .journey_points::after{display: none;}
-.journey_details li .journey_points::after{content: '';
-  @apply absolute h-[65%] w-[2px] bg-[#29214B] bottom-0 left-[50%] translate-x-[-50%]
+.journey_details li .journey_points::after{content: ''; height: calc(100% - 60px);
+  @apply absolute w-[2px] bg-[#29214B] bottom-0 left-[50%] translate-x-[-50%]
 }
 
 .journey_time{
@@ -400,6 +400,15 @@ footer{
 }
 
 
- 
+
+
+
+
+
+.podcast_head{font-family: "Montserrat";
+  @apply text-[38px] lg:text-[50px] text-white max-w-[627px] font-semibold leading-9 lg:leading-[60px] lg:pl-8
+}
+
+.podcast_back{background: linear-gradient(0deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);}
 
   

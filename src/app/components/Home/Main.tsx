@@ -14,10 +14,11 @@ import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png"
 
 
 
+
 const Main = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20  home-banner ">
+      <section className="md:pt-6 md:pb-20  banner ">
         <div className="home_banner container mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
             <div>
