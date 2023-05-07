@@ -39,10 +39,14 @@ h2.heading_style_two{font-family: "Montserrat";
 @apply font-semibold text-[28px] lg:text-[38px] leading-[34px] lg:leading-[46px]
 }
 h3.heading_style_three{font-family: "Montserrat";
-@apply font-semibold text-[28px] text-[#29214B]
+@apply font-semibold text-[22px] lg:text-[28px] text-[#29214B]
 }
 
 header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;}
+
+.main-right-circle {
+  @apply absolute top-0 right-0
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -144,10 +148,10 @@ footer{
 .home_story_section li{@apply relative cursor-pointer transition-all ease-in duration-300}
 
 .home_story_section li .home_story_img::after{content: '';background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #29214B 86.46%);
-@apply absolute w-full h-0 bottom-0 left-0 transition-all ease-in duration-150}
+@apply absolute w-full h-[63%] bottom-0 left-0 transition-all ease-in duration-150 opacity-0}
 
 .home_story_section li:hover .home_story_img::after{
-  @apply h-[63%] transition-all ease-in duration-300
+  @apply opacity-100 transition-all ease-in duration-300
 }
 
 .home_story_section li:hover .story_podcast{@apply opacity-100 bottom-6 transition-all ease-in duration-300}
@@ -286,38 +290,48 @@ footer{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .about_banner{background-repeat: no-repeat; background-size: cover;
-  @apply h-full rounded-[20px] flex items-end justify-center relative lg:bg-right
-  
+  @apply h-full md:rounded-[20px] flex items-end justify-center relative lg:bg-right 
 }
+
+.about_banner::after{content: ''; background: linear-gradient(180deg, rgba(89, 80, 125, 0) 0%, rgba(89, 80, 125, 0.5) 100%);
+@apply absolute h-full w-full left-0 top-0 }
+
 .about_head{font-family: "Montserrat"; 
-  @apply pl-6 lg:pl-24 pb-8 lg:pb-16 text-4xl lg:text-[50px] text-white 
+  @apply pl-6 lg:pl-24 pb-8 lg:pb-16 text-4xl lg:text-[50px] text-white  z-[3]
 }
+
 .about_funfacts{
   @apply pt-24 lg:pt-52
 }
+
 .fun_fact_tab{
   @apply mr-4
 }
+
 .fun_fact_tab li{
   @apply w-[100px] h-[100px]  mb-10 rounded-[50%] hover:bg-[#EB334A] transition-all flex items-center justify-center
 }
-.fun_fact_tab li:first-child{@apply bg-[#EB334A]}
-.fun_fact_tab li:first-child svg{fill: #fff;}
+.fun_fact_tab li.fun_fact_active{@apply bg-[#EB334A]}
+.fun_fact_tab li.fun_fact_active svg{fill: #fff;}
+/* .fun_fact_tab li:first-child{@apply bg-[#EB334A]}
+.fun_fact_tab li:first-child svg{fill: #fff;} */
 .fun_fact_tab li svg{fill: #29214B;}
 .fun_fact_tab li:hover svg{fill: #fff;}
 .fun_profile_img{
   @apply w-full h-auto rounded-[20px] overflow-hidden relative
 }
-.fun_profile_img:after{content: ''; position: absolute; height: 100%; width: 100%;background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #29214B 100%);top: 0;left: 0;}
+.fun_profile_img:after{content: ''; position: absolute; height: 60%; width: 100%;background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #29214B 100%);bottom: 0;left: 0;}
 .fun_profile_img img{
   @apply h-full w-full object-cover
 }
 .fun_profile_name{font-family: "Montserrat";
   @apply text-white text-[21px] font-semibold leading-6 px-6 pb-28 md:px-20 lg:pb-16 absolute bottom-0 z-10 text-center
 }
+
 .about_journey{
   @apply pt-24 lg:pt-[200px]
 }
+
 .journey_points{@apply mr-11}
 
 .journey_details li{@apply mb-11}
@@ -347,10 +361,10 @@ footer{
   @apply bg-[#29214B] md:rounded-[20px] overflow-hidden relative
   }
 .mission{
-  @apply flex justify-center items-center h-full px-6 md:px-10 lg:px-0 overflow-hidden py-40
+  @apply flex justify-center items-center h-full px-6 md:px-10 lg:px-0 overflow-hidden py-24 lg:py-40
 }
 .mission_ellipse{
-  @apply absolute h-full w-full top-0
+  @apply absolute h-full w-full top-0 left-0
 }
 
 .about_principles{
@@ -359,18 +373,32 @@ footer{
 
 .socialMedia_moments{
   @apply pt-[100px] lg:pt-[200px] pb-[100px] lg:pb-80
-} p
+} 
 .social_image{
-  @apply w-full h-full rounded-[20px] overflow-hidden
+  @apply w-full h-full rounded-[20px] overflow-hidden relative
 }
 .social_image img{
   @apply h-full w-full object-cover rounded-[20px]
 }
 
 
-.main-right-circle {
-  position: absolute;
-  top: 0;
-  right: 0;
+.social_image::after{content: '';background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #29214B 86.46%);
+  @apply absolute w-full h-[60%] bottom-0 left-0 transition-all ease-in duration-150 opacity-0}
+
+
+.social_image:hover::after{
+  @apply opacity-100 transition-all ease-in duration-300
 }
+
+.insta_podcast{
+  @apply h-16 w-16 flex justify-center items-center bg-[#EB334A] absolute bottom-0 right-6 rounded-[50%] opacity-0 z-[2]
+}
+
+.social_image:hover .insta_podcast{
+  @apply opacity-100 bottom-6 transition-all ease-in duration-300
+}
+
+
  
+
+  

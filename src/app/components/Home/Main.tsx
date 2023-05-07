@@ -623,21 +623,41 @@ const Main = () => {
                 <div>
                   <p className="mb-9 font-semibold text-white text-[21px]">Pages</p>
                   <ul className="footer_links">
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>My Content</li>
-                    <li>Join a Challenge</li>
-                    <li>Free Resources</li>
+                    <li>
+                      <a href="">Home</a>
+                    </li>
+                    <li>
+                      <a href="">About Me</a>
+                    </li>
+                    <li>
+                      <a href="">My Content</a>
+                    </li>
+                    <li>
+                      <a href="">Join a Challenge</a>
+                    </li>
+                    <li>
+                      <a href="">Free Resources</a>
+                    </li>
                   </ul>
                 </div>
                 <div>
                   <p className="mb-9 font-semibold text-white text-[21px]">Pages</p>
                   <ul className="footer_links">
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>My Content</li>
-                    <li>Join a Challenge</li>
-                    <li>Free Resources</li>
+                    <li>
+                      <a href="">Resources</a>
+                    </li>
+                    <li>
+                      <a href="">Resources</a>
+                    </li>
+                    <li>
+                      <a href="">Resources</a>
+                    </li>
+                    <li>
+                      <a href="">Resources</a>
+                    </li>
+                    <li>
+                      <a href="">Resources</a>
+                    </li>
                   </ul>
                 </div>
               </div>

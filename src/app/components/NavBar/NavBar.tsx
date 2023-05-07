@@ -37,8 +37,8 @@ const NavBar = () => {
           </div>
         </div>
         <div className="right-button">
-          <button className="hidden lg:block nav-btn">Contact me</button>
-          <Image
+          <button className="hidden lg:block  tertiary_button">Contact me</button>
+          <Image 
             className="menu-icon block lg:hidden"
             src={menuIcon}
             alt="Icon..."

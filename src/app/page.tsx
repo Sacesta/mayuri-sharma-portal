@@ -7,5 +7,5 @@ import About from "./components/Home/About";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Main() {
-  return <Home />;
+  return <About />;
 }
