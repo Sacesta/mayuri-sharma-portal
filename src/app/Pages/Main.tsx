@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import "../styles/main.css";
 import Image from "next/image";
 import LogoMark from "../../Assets/icons/Logo Mark.png";
@@ -11,15 +11,19 @@ import ellipseTwo from "../../Assets/Images/pageImages/news_ellipse_two.png";
 import footerLogo from "../../Assets/Images/pageImages/footer_logo.png";
 import homeStoryImg from "../../Assets/Images/pageImages/home_story_one.png";
 import footerEllipse from "../../Assets/Images/pageImages/footer_ellipse.png";
-import TestimonialCarousel from "../components/NavBar/TestimonialCarousel/TestimonialCarousel";
-import MainTestimonial from "../components/MainTestimonial/MainTestimonial";
 
+// Carousel
+import TestimonialCarousel from "../components/NavBar/TestimonialCarousel/TestimonialCarousel";
+import HeroTestimonial from "../components/HeroTestimonial/HeroTestimonial";
+
+/*Country List */
+import { countries } from "countries-list";
 const Main = () => {
   return (
     <>
       <section className="md:pt-6 md:pb-20  home-banner ">
         <div className="home_banner container mx-auto">
-          {/* <MainTestimonial /> */}
+          <HeroTestimonial />
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div>
             <Image src={LogoMark} alt="LogoMark..." />
@@ -729,7 +733,7 @@ const Main = () => {
       <section className="news_letter_section">
         <div className="container mx-auto">
           <div className="news_letter">
-            <div className="lg:w-1/2 flex items-center z-[2]">
+            {/* <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
                 <p className="news_letter_head pb-9">News letter</p>
                 <h2 className="news_letter_h2">
@@ -745,9 +749,9 @@ const Main = () => {
                 </p>
                 <button className="secondary_button">See all challenges</button>
               </div>
-            </div>
-            <div className="news_letter_form">
-              <p className="news_letter_form_head">Join news letter</p>
+            </div> */}
+            <div className="news_letter_form grid grid-cols-2  gap-3">
+              {/* <p className="news_letter_form_head">Join news letter</p> */}
               <div className="form_field">
                 <label htmlFor="">Name</label>
                 <input type="text" placeholder="Enter name" />
@@ -756,17 +760,42 @@ const Main = () => {
                 <label htmlFor="">Email address</label>
                 <input type="text" placeholder="Enter email address" />
               </div>
-              <div className="flex items-center mb-7">
+              <div className="form_field">
+                <label htmlFor="">Phone Number</label>
+                <input type="number" placeholder="Enter Phone Number" />
+              </div>
+              <div className="form_field">
+                <label
+                  htmlFor="countries"
+                  className="block mb-2 text-sm font-medium text-[#505050]  "
+                >
+                  Select an Country
+                </label>
+                <select
+                  id="countries"
+                  className="bg-white border border-[#B5B5B5] text-[#505050] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400dark:focus:ring-blue-500 "
+                >
+                  <option selected>Choose a country</option>
+                  {Object.keys(countries).map((countryCode: any) => (
+                    <option key={countryCode} value={countryCode}>
+                      {countries[countryCode].name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              {/* <div className="flex items-center mb-7">
                 <input type="checkbox" className="mr-3 w-7 h-7" />
                 <p className="checkbox_label">
                   If you need to have a confirmation this is how it might look
                   like.
                 </p>
+              </div> */}
+              <div className="col-span-2 flex items-center flex-col">
+                <button className="primary_button mb-6 w-3/6">Subscribe</button>
+                <p className="w-full text-sm text-[#090617] font-normal">
+                  *We respect your privacy you can unsubscribe anytime
+                </p>
               </div>
-              <button className="primary_button w-full mb-6">Subscribe</button>
-              <p className="text-sm text-[#090617] font-normal">
-                *We respect your privacy you can unsubscribe anytime
-              </p>
             </div>
             <Image
               src={ellipseOne}
