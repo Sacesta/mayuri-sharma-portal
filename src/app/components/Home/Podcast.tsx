@@ -75,7 +75,9 @@ const Podcast = () => {
             <ul className="home_story_section">
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video>    
                   <p className="home_story_number"># 01</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +93,9 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
+                  <video autoPlay loop muted>
+                    <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" />
+                  </video> 
                   <p className="home_story_number"># 02</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +111,9 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458879330.sd.mp4?s=b01165b44502a30f9320ebd7576469a6dbcd6159&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
                   <p className="home_story_number"># 03</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +129,9 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458895408.sd.mp4?s=ecbec3b13a90a4f5c26eb944ad7fda439a88f1a1&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
                   <p className="home_story_number"># 04</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,8 +147,10 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
-                  <p className="home_story_number"># 01</p>
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
+                  <p className="home_story_number"># 05</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.35586 25.3094C0.614658 25.3094 0 24.6948 0 23.9535V10.3949C0 9.65372 0.614658 9.03906 1.35586 9.03906C2.09707 9.03906 2.71172 9.65372 2.71172 10.3949V23.9535C2.71172 24.6948 2.09707 25.3094 1.35586 25.3094Z" fill="white"/>
@@ -155,8 +165,10 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
-                  <p className="home_story_number"># 02</p>
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
+                  <p className="home_story_number"># 06</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.35586 25.3094C0.614658 25.3094 0 24.6948 0 23.9535V10.3949C0 9.65372 0.614658 9.03906 1.35586 9.03906C2.09707 9.03906 2.71172 9.65372 2.71172 10.3949V23.9535C2.71172 24.6948 2.09707 25.3094 1.35586 25.3094Z" fill="white"/>
@@ -171,8 +183,10 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
-                  <p className="home_story_number"># 03</p>
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
+                  <p className="home_story_number"># 07</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.35586 25.3094C0.614658 25.3094 0 24.6948 0 23.9535V10.3949C0 9.65372 0.614658 9.03906 1.35586 9.03906C2.09707 9.03906 2.71172 9.65372 2.71172 10.3949V23.9535C2.71172 24.6948 2.09707 25.3094 1.35586 25.3094Z" fill="white"/>
@@ -187,8 +201,10 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
-                  <p className="home_story_number"># 04</p>
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
+                  <p className="home_story_number"># 08</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.35586 25.3094C0.614658 25.3094 0 24.6948 0 23.9535V10.3949C0 9.65372 0.614658 9.03906 1.35586 9.03906C2.09707 9.03906 2.71172 9.65372 2.71172 10.3949V23.9535C2.71172 24.6948 2.09707 25.3094 1.35586 25.3094Z" fill="white"/>
@@ -203,8 +219,10 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
-                  <p className="home_story_number"># 01</p>
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
+                  <p className="home_story_number"># 09</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.35586 25.3094C0.614658 25.3094 0 24.6948 0 23.9535V10.3949C0 9.65372 0.614658 9.03906 1.35586 9.03906C2.09707 9.03906 2.71172 9.65372 2.71172 10.3949V23.9535C2.71172 24.6948 2.09707 25.3094 1.35586 25.3094Z" fill="white"/>
@@ -219,8 +237,10 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
-                  <p className="home_story_number"># 02</p>
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
+                  <p className="home_story_number"># 10</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.35586 25.3094C0.614658 25.3094 0 24.6948 0 23.9535V10.3949C0 9.65372 0.614658 9.03906 1.35586 9.03906C2.09707 9.03906 2.71172 9.65372 2.71172 10.3949V23.9535C2.71172 24.6948 2.09707 25.3094 1.35586 25.3094Z" fill="white"/>
@@ -235,8 +255,10 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
-                  <p className="home_story_number"># 03</p>
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
+                  <p className="home_story_number"># 11</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.35586 25.3094C0.614658 25.3094 0 24.6948 0 23.9535V10.3949C0 9.65372 0.614658 9.03906 1.35586 9.03906C2.09707 9.03906 2.71172 9.65372 2.71172 10.3949V23.9535C2.71172 24.6948 2.09707 25.3094 1.35586 25.3094Z" fill="white"/>
@@ -251,8 +273,10 @@ const Podcast = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
-                  <p className="home_story_number"># 04</p>
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
+                  <p className="home_story_number"># 12</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.35586 25.3094C0.614658 25.3094 0 24.6948 0 23.9535V10.3949C0 9.65372 0.614658 9.03906 1.35586 9.03906C2.09707 9.03906 2.71172 9.65372 2.71172 10.3949V23.9535C2.71172 24.6948 2.09707 25.3094 1.35586 25.3094Z" fill="white"/>

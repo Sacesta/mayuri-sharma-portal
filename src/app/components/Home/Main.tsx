@@ -92,7 +92,9 @@ const Main = () => {
             <ul className="home_story_section">
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
+                  </video>    
                   <p className="home_story_number"># 01</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +110,9 @@ const Main = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
+                  <video autoPlay loop muted>
+                    <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" />
+                  </video> 
                   <p className="home_story_number"># 02</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +128,9 @@ const Main = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458879330.sd.mp4?s=b01165b44502a30f9320ebd7576469a6dbcd6159&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
                   <p className="home_story_number"># 03</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +146,9 @@ const Main = () => {
               </li>
               <li>
                 <div className="home_story_img">
-                  <Image src={homeStoryImg} alt="..." />
+                  <video autoPlay loop muted>
+                    <source src="https://player.vimeo.com/external/458895408.sd.mp4?s=ecbec3b13a90a4f5c26eb944ad7fda439a88f1a1&profile_id=165&oauth2_token_id=57447761" />
+                  </video> 
                   <p className="home_story_number"># 04</p>
                   <div className="story_podcast">
                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">

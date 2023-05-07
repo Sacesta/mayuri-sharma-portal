@@ -165,6 +165,10 @@ footer{
   @apply w-full h-full object-cover
 }
 
+.home_story_img video{
+  @apply w-full h-full object-cover
+}
+
 .home_story_number{font-family: "Montserrat";
   @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold
 }

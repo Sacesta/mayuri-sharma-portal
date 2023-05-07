@@ -9,5 +9,5 @@ import Podcast from "./components/Home/Podcast";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Main() {
-  return <Podcast />;
+  return <Home />;
 }
