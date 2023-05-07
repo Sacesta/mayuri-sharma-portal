@@ -147,7 +147,7 @@ const About = () => {
             <div className="max-w-[750px] text-center">
               <p className="news_letter_head pb-2">My mission</p>
               <h2 className="news_letter_h2">Mission goes here</h2>
-              <p className="text-white text-lg font-normal pb-9 leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="text-white text-lg font-normal leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
           <Image src={missionEllipse} alt="..." className="mission_ellipse"/>
@@ -166,34 +166,34 @@ const About = () => {
           </div>
           <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14 lg:px-16">
             <li>
-              <Image src={principlesOne} alt="principle" className="mb-7"/>
+              <Image src={principlesOne} alt="principle" className="mb-4 lg:mb-7"/>
               <p className="heading_three_style">Describe value one</p>
-              <p className="mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+              <p className="mt-2 lg:mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
             </li>
             <li>
-              <Image src={principlesOne} alt="principle" className="mb-7"/>
+              <Image src={principlesOne} alt="principle" className="mb-4 lg:mb-7"/>
               <p className="heading_three_style">Describe value two</p>
-              <p className="mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+              <p className="mt-2 lg:mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
             </li>
             <li>
-              <Image src={principlesOne} alt="principle" className="mb-7"/>
+              <Image src={principlesOne} alt="principle" className="mb-4 lg:mb-7"/>
               <p className="heading_three_style">Describe value three</p>
-              <p className="mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+              <p className="mt-2 lg:mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
             </li>
             <li>
-              <Image src={principlesOne} alt="principle" className="mb-7"/>
+              <Image src={principlesOne} alt="principle" className="mb-4 lg:mb-7"/>
               <p className="heading_three_style">Describe value four</p>
-              <p className="mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+              <p className="mt-2 lg:mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
             </li>
             <li>
-              <Image src={principlesOne} alt="principle" className="mb-7"/>
+              <Image src={principlesOne} alt="principle" className="mb-4 lg:mb-7"/>
               <p className="heading_three_style">Describe value five</p>
-              <p className="mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+              <p className="mt-2 lg:mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
             </li>
             <li>
-              <Image src={principlesOne} alt="principle" className="mb-7"/>
+              <Image src={principlesOne} alt="principle" className="mb-4 lg:mb-7"/>
               <p className="heading_three_style">Describe value six</p>
-              <p className="mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+              <p className="mt-2 lg:mt-5 text-base text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
             </li>
           </ul>
         </div>
@@ -204,7 +204,7 @@ const About = () => {
         <div className="container mx-auto">
           <div className="lg:px-16">
             <p className="paragraph_one_style mb-2">Social media</p>
-            <h2 className="heading_style_two mb-20">Some of my favourite moments </h2>
+            <h2 className="heading_style_two mb-10 lg:mb-20">Some of my favourite moments </h2>
             <div className="grid grid-rows-3 md:grid-cols-3 md:grid-flow-col gap-10">
               <div className="social_image">
                 <Image src={social_img_1} alt="program..." />

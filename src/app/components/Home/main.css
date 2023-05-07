@@ -32,7 +32,7 @@ body{font-family: 'Kumbh Sans', sans-serif !important}
 }
 
 .heading_three_style{font-family: "Montserrat";
-  @apply  font-semibold text-[#29214B] text-[21px] 
+  @apply  font-semibold text-[#29214B] text-lg lg:text-[21px] 
 }
 
 h2.heading_style_two{font-family: "Montserrat";
@@ -47,6 +47,7 @@ header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;
 .main-right-circle {
   @apply absolute top-0 right-0
 }
+.home-banner{height: calc(100vh - 72px);}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -94,7 +95,7 @@ footer{
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.home-banner{height: calc(100vh - 72px);}
+
 .home_banner{
   @apply w-full h-full md:rounded-[20px] bg-[#29214b] pt-20 lg:pt-0 lg:pb-20 flex lg:items-end justify-center relative px-6 lg:px-0
 }
@@ -228,11 +229,11 @@ footer{
 }
 
 .news_letter_head{font-family: "Montserrat";
-  @apply text-[28px] text-white font-semibold leading-9
+  @apply text-[22px] lg:text-[28px] text-white font-semibold leading-9
 }
 
 .news_letter_h2{font-family: "Montserrat";
-  @apply font-semibold text-white text-[38px] leading-[46px] pb-6
+  @apply font-semibold text-white text-[28px] lg:text-[38px] leading-[46px] pb-6
 }
 
 .news_letter_form{
