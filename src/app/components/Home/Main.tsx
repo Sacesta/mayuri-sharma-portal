@@ -11,6 +11,8 @@ import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
 import footerLogo from "../../../Assets/Images/pageImages/footer_logo.png";
 import homeStoryImg from "../../../Assets/Images/pageImages/home_story_one.png";
 import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png";
+import HeroTestimonial from "../Carousel/HeroTestimonial";
+import TestimonialCarousel from "../Carousel/TestimonialCarousel";
 
 
 
@@ -20,6 +22,7 @@ const Main = () => {
     <>
       <section className="md:pt-6 md:pb-20  banner ">
         <div className="home_banner container mx-auto">
+          <HeroTestimonial />
           <Image className="main-right-circle" src={rightCircle} alt=".." />
             <div>
               <Image src={LogoMark} alt="LogoMark..." />
@@ -576,6 +579,7 @@ const Main = () => {
 
       <section className="testimonial_section">
         <h2 className="heading_style_two text-center text-[#29214B]">What people say</h2>
+        <TestimonialCarousel />
       </section>
 
 
