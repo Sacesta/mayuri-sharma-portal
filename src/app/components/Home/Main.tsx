@@ -20,18 +20,22 @@ import TestimonialCarousel from "../Carousel/TestimonialCarousel";
 const Main = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20  banner ">
+      <section className="md:pt-6 md:pb-20  banner">
         <div className="home_banner container mx-auto">
-          <HeroTestimonial />
+          
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-            <div>
-              <Image src={LogoMark} alt="LogoMark..." />
-              <h3>Mayuri Sharma</h3>
-              <h1>
-                Wisdom of the past <br /> practice for the present
-              </h1>
+            <div className="home_banner_text">
+              <div className="relative">
+                <Image src={LogoMark} alt="LogoMark..." />
+                <h3>Mayuri Sharma</h3>
+                <h1>
+                  Wisdom of the past <br /> practice for the present
+                </h1>
+              </div>
+              <HeroTestimonial />
             </div>
         </div>
+        
       </section>
 
 
@@ -578,7 +582,7 @@ const Main = () => {
 
 
       <section className="testimonial_section">
-        <h2 className="heading_style_two text-center text-[#29214B]">What people say</h2>
+        <h2 className="heading_style_two text-center text-[#29214B] mb-20">What people say</h2>
         <TestimonialCarousel />
       </section>
 
