@@ -119,9 +119,11 @@ header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;
 .testimonial_section .swiper.swiper-initialized.swiper-horizontal.mySwiper{padding-block-end: 104px;position: relative;}
 .testimonial_section .swiper-button-next, .testimonial_section .swiper-button-prev {height: 60px; width: 60px; background-color: #D8D5E3;border-radius: 50%;}
 .testimonial_section .swiper-button-prev{left: 45%; bottom: 0; top: auto;}
-.testimonial_section .swiper-button-next{right: 45%; bottom: 0; top: auto;}
+.testimonial_section .swiper-button-next{right: 45%; bottom: 0; top: auto;background-image: url('/src/Assets/Images/pageImages/rightArrow.svg');background-repeat: no-repeat;background-size: contain;}
+.testimonial_section .swiper-button-next::after{opacity: 0;}
 .testimonial_section .swiper .swiper-wrapper{@apply  lg:-ml-[11%]}
 .testimonial_section .swiper .swiper-wrapper .swiper-slide{margin-inline-end: 32px !important;}
+
 
 @media screen and (max-width: 1052px) {
   .testimonial_section .swiper .swiper-wrapper{@apply -ml-[25%]}
@@ -191,13 +193,18 @@ footer{
   @apply text-4xl lg:text-[50px] text-white leading-[46px] lg:leading-[60px] font-semibold
 }
 
-.home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper{position: absolute; left: 80px; top: 80px;}
+.home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper{
+  @apply md:absolute md:left-8 lg:left-20 top-14 lg:top-20
+}
 .home_banner  .swiper.swiper-v.swiper-initialized.swiper-vertical.mySwiper2{height: 100%;}
 .home_banner .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical{display: none;}
-.home_banner_text{padding-left: 488px}
+.home_banner_text{@apply md:pl-[388px]  lg:pl-[488px]}
 .intro_section{background: linear-gradient(0deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);
-@apply pt-44 pb-56 lg:pb-[326px] relative overflow-hidden
+@apply pt-[28rem] md:pt-32 pb-56 lg:pb-[326px] relative overflow-hidden
 }
+.home_banner_text .swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{width: 70px;border-radius: 100px;margin-inline:7px;}
+.home_banner_text .swiper .swiper-pagination-bullet-active{background-color: #29214B;}
+.swiper-slide.swiper-slide-active img{height: 92% !important;border-radius: 20px;}
 
 .intro_background_img{
   position: absolute; top: calc(50% - 313px);left: 50%; transform: translateX(-50%); z-index: -1;
