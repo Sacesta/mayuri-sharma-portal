@@ -268,7 +268,7 @@ footer{
 }
 
 .upcoming_program{background: linear-gradient(180deg, #D8D5E3 0%, rgba(216, 213, 227, 0.4) 100%);
-@apply pt-24 pb-60 lg:pt-40 lg:pb-[306px]}
+@apply pt-24 pb-40 md:pb-60 lg:pt-40 lg:pb-[306px]}
 
 .program_list .program_list_li{
   @apply lg:flex rounded-[20px] overflow-hidden bg-white mb-8 relative border border-[#E1E1E1]
@@ -316,10 +316,11 @@ footer{
   @apply font-normal
 }
 
-.news_letter_section{background: linear-gradient(180deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);padding-block-end: 160px;}
+.news_letter_section{background: linear-gradient(180deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);
+@apply md:pb-11}
 .news_letter_section .container.mx-auto{@apply px-0}
 .news_letter{
-  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28 lg:mx-0 relative top-[-200px] -mb-[46px]
+  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px]
 }
 
 .news_ellipse_one{
@@ -335,8 +336,10 @@ footer{
 }
 
 .news_letter_form{
-  @apply lg:w-1/2 rounded-[20px] bg-white p-8 lg:max-w-[440px] mt-20 lg:mt-0 z-[2] relative
+  @apply  rounded-[20px] bg-white p-8 lg:max-w-[440px] lg:mt-0 z-[2] relative
 }
+
+
 
 .news_letter_form_head{font-family: "Montserrat";
   @apply text-[28px] text-[#29214B] font-semibold leading-9 mb-7
@@ -369,6 +372,8 @@ footer{
 }
 
 .testimonial_section{@apply mb-20 px-[4%] lg:px-0}
+
+.Supportive_community_section{@apply pb-40}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
