@@ -514,4 +514,9 @@ footer{
 
 .podcast_back{background: linear-gradient(0deg, #D8D5E3 0%, rgba(216, 213, 227, 0) 100%);}
 
-  
+.upcoming_program.programs{background: linear-gradient(0deg, #D8D5E3 0%, rgba(216, 213, 227, 0.4) 100%);
+@apply lg:pt-24} 
+.news_letter_section.programs_news{
+@apply md:pb-0 bg-none}
+
+.journey_details.programDetails_journey li .journey_points::after{display: none;}
