@@ -21,12 +21,12 @@ import TestimonialCarousel from "../Carousel/TestimonialCarousel";
 const ProgramDetails = () => {
   return (
     <>
-      <section className="md:py-9  banner flex items-center">
+      <section className="md:py-9 banner productDetails_banner flex items-center bg-[#F9F9F9]">
         <div className="lg:bg-right container mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="grid lg:grid-cols-2 z-[2] gap-10">
             <div className="flex flex-col justify-center">
-              <h2 className="text-3xl md:text-4xl lg:text-[50px] text-[#2B2B27] font-semibold leading-[60px]">Wellness Program</h2>
+              <h1 className="heading_one_black">Wellness Program</h1>
               <p className="text-lg text-[#2B2B27] font-normal leading-7 mt-8">A bit of text about the programs can go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <ul className="flex items-center mt-8">
                 <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto">
@@ -85,12 +85,12 @@ const ProgramDetails = () => {
         </div>
       </section>
 
-      <section>
+      <section className=" bg-[#F9F9F9] pb-24 lg:pb-[200px]">
         <div className="container mx-auto">
           <div className="lg:w-1/2">
             <div className="mb-[100px]">
-              <p className="paragraph_one_style  mb-2 text-[#29214B]">Agenda</p>
-              <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[71px] text-[#29214B]">What to expect from the wellness program </h2>
+              <p className="paragraph_one_style  mb-2 text-[#2B2B27]">Agenda</p>
+              <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[71px] text-[#2B2B27]">What to expect from the wellness program </h2>
               <ul className="journey_details programDetails_journey bg-white border border-[#E1E1E1] rounded-[20px] px-9 py-8">
                   <li className="flex">
                     <div className="journey_points">
@@ -99,7 +99,7 @@ const ProgramDetails = () => {
                       </svg>
                     </div>
                     <div className="mb-5">
-                      <h3 className="heading_three_style mb-[10px]">Day 1: Introduction</h3>
+                      <h3 className="heading_three_style_black mb-[10px]">Day 1: Introduction</h3>
                       <p className="paragraph_two_style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     </div>
                     <div>
@@ -112,7 +112,7 @@ const ProgramDetails = () => {
                       </svg>
                     </div>
                     <div className="mb-5">
-                      <h3 className="heading_three_style mb-[10px]">Day 2-6: How to set new habits</h3>
+                      <h3 className="heading_three_style_black mb-[10px]">Day 2-6: How to set new habits</h3>
                       <p className="paragraph_two_style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     </div>
                     <div>
@@ -125,7 +125,7 @@ const ProgramDetails = () => {
                       </svg>
                     </div>
                     <div className="mb-5">
-                      <h3 className="heading_three_style mb-[10px]">Day 7- 11: How to stay on</h3>
+                      <h3 className="heading_three_style_black mb-[10px]">Day 7- 11: How to stay on</h3>
                       <p className="paragraph_two_style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     </div>
                     <div>
@@ -138,7 +138,7 @@ const ProgramDetails = () => {
                       </svg>
                     </div>
                     <div className="mb-5">
-                      <h3 className="heading_three_style mb-[10px]">Day 12-13: How to set new habits</h3>
+                      <h3 className="heading_three_style_black mb-[10px]">Day 12-13: How to set new habits</h3>
                       <p className="paragraph_two_style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     </div>
                     <div>
@@ -151,7 +151,7 @@ const ProgramDetails = () => {
                       </svg>
                     </div>
                     <div className="mb-5">
-                      <h3 className="heading_three_style mb-[10px]">Day 14: How to keep momentum </h3>
+                      <h3 className="heading_three_style_black mb-[10px]">Day 14: How to keep momentum </h3>
                       <p className="paragraph_two_style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                     </div>
                     <div>
@@ -159,10 +159,10 @@ const ProgramDetails = () => {
                   </li>
               </ul>
             </div>
-            <div>
-              <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[30px] lg:mb-[41px] text-[#29214B]">The program includes</h2> 
+            <div className="mb-[100px]">
+              <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[30px] lg:mb-[41px] text-[#2B2B27]">The program includes</h2> 
               <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
-                <h4 className="heading_three_style mb-2">Accessibility</h4>
+                <h4 className="heading_three_style_black mb-2">Accessibility</h4>
                 <p className="lg:w-2/3">Easily accessible and convenient for participants. This includes offering a variety of resources and tools that can be accessed online, as well as providing support through mobile apps, virtual coaching sessions, and other digital platforms</p>
                 <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +171,7 @@ const ProgramDetails = () => {
                 </div>
               </div>
               <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
-                <h4 className="heading_three_style mb-2">Personalized Approach</h4>
+                <h4 className="heading_three_style_black mb-2">Personalized Approach</h4>
                 <p className="lg:w-2/3">Personalized approach to each individual, taking into account their unique needs, goals, and preferences. This includes personalized assessments, recommendations, and support tailored to each person's specific situation.</p>
                 <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg width="40" height="52" viewBox="0 0 40 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -180,7 +180,7 @@ const ProgramDetails = () => {
                 </div>
               </div>
               <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
-                <h4 className="heading_three_style mb-2">Holistic Approach</h4>
+                <h4 className="heading_three_style_black mb-2">Holistic Approach</h4>
                 <p className="lg:w-2/3">Personalized approach to each individual, taking into account their unique needs, goals, and preferences. This includes personalized assessments, recommendations, and support tailored to each person's specific situation.</p>
                 <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -189,7 +189,7 @@ const ProgramDetails = () => {
                 </div>
               </div>
               <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
-                <h4 className="heading_three_style mb-2">Long term support</h4>
+                <h4 className="heading_three_style_black mb-2">Long term support</h4>
                 <p className="lg:w-2/3">Personalized approach to each individual, taking into account their unique needs, goals, and preferences. This includes personalized assessments, recommendations, and support tailored to each person's specific situation.</p>
                 <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,12 +198,65 @@ const ProgramDetails = () => {
                 </div>
               </div>
             </div>
+            <div>
+              <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[41px] text-[#2B2B27]">What people say</h2>
+              <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
+                <h4 className="heading_three_style_black mb-2">John from Australia</h4>
+                <p className="lg:w-2/3">"Joining this community of habit-builders and supporters has been a game-changer. The encouragement and accountability from members have helped me develop healthier habits and improve my mental well-being. The shared insights and resources have been transformative, and the sense of belonging is amazing!" - John</p>
+                <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
+                  <Image className="w-full h-full object-cover" src={profileImage} alt=".." />
+                </div>
+                <div className="w-[51px] h-[42px] absolute top-10 right-[106px]">
+                    <svg className="w-auto max-w-full h-full object-contain" width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.1364 0L13.2273 30.0774L11.0455 19.9161C14.2273 19.9161 16.8636 20.9097 18.9545 22.8968C21.0455 24.8839 22.0909 27.5484 22.0909 30.8903C22.0909 34.2323 21.0455 36.9419 18.9545 39.0194C16.8636 41.0065 14.2727 42 11.1818 42C7.90909 42 5.22727 40.9613 3.13636 38.8839C1.04545 36.8064 0 34.1419 0 30.8903C0 29.8064 0.0454539 28.8129 0.136363 27.9097C0.318181 26.9161 0.636363 25.7419 1.09091 24.3871C1.54545 23.0323 2.18182 21.3161 3 19.2387L10.2273 0H21.1364ZM50.0455 0L42.1364 30.0774L39.9545 19.9161C43.1364 19.9161 45.7727 20.9097 47.8636 22.8968C49.9546 24.8839 51 27.5484 51 30.8903C51 34.2323 49.9546 36.9419 47.8636 39.0194C45.7727 41.0065 43.1818 42 40.0909 42C36.8182 42 34.1364 40.9613 32.0455 38.8839C29.9545 36.8064 28.9091 34.1419 28.9091 30.8903C28.9091 29.8064 28.9545 28.8129 29.0455 27.9097C29.2273 26.9161 29.5455 25.7419 30 24.3871C30.4545 23.0323 31.0909 21.3161 31.9091 19.2387L39.1364 0H50.0455Z" fill="#FF682C"/>
+                    </svg>
+                  </div>
+              </div>
+              <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
+                <h4 className="heading_three_style_black mb-2">Tammy from France</h4>
+                <p className="lg:w-2/3">"This community has been life-changing. The practical strategies and support from like-minded members have helped me prioritize my mental health and build positive habits. The progress I've made and the connections I've formed are invaluable. Highly recommend!" - Tammy</p>
+                <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
+                  <Image className="w-full h-full object-cover" src={profileImage} alt=".." />
+                </div>
+                <div className="w-[51px] h-[42px] absolute top-10 right-[106px]">
+                    <svg className="w-auto max-w-full h-full object-contain" width="51" height="42" viewBox="0 0 51 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.1364 0L13.2273 30.0774L11.0455 19.9161C14.2273 19.9161 16.8636 20.9097 18.9545 22.8968C21.0455 24.8839 22.0909 27.5484 22.0909 30.8903C22.0909 34.2323 21.0455 36.9419 18.9545 39.0194C16.8636 41.0065 14.2727 42 11.1818 42C7.90909 42 5.22727 40.9613 3.13636 38.8839C1.04545 36.8064 0 34.1419 0 30.8903C0 29.8064 0.0454539 28.8129 0.136363 27.9097C0.318181 26.9161 0.636363 25.7419 1.09091 24.3871C1.54545 23.0323 2.18182 21.3161 3 19.2387L10.2273 0H21.1364ZM50.0455 0L42.1364 30.0774L39.9545 19.9161C43.1364 19.9161 45.7727 20.9097 47.8636 22.8968C49.9546 24.8839 51 27.5484 51 30.8903C51 34.2323 49.9546 36.9419 47.8636 39.0194C45.7727 41.0065 43.1818 42 40.0909 42C36.8182 42 34.1364 40.9613 32.0455 38.8839C29.9545 36.8064 28.9091 34.1419 28.9091 30.8903C28.9091 29.8064 28.9545 28.8129 29.0455 27.9097C29.2273 26.9161 29.5455 25.7419 30 24.3871C30.4545 23.0323 31.0909 21.3161 31.9091 19.2387L39.1364 0H50.0455Z" fill="#FF682C"/>
+                    </svg>
+                  </div>
+              </div>
+              <div className="programDetails_peopleReview">
+                  <Image className="w-full h-full object-cover" src={profileImage} alt=".." />
+                  <p className="heading_three_style_white absolute top-8 left-8 z-[2]">Emma from the UK</p>
+                  <div className="absolute bottom-8 right-8 bg-[#FF682C] rounded-full h-16 w-16 z-[2] flex items-center justify-center">
+                    <svg width="22" height="29" viewBox="0 0 22 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 28.8501V0.850098L22 14.8501L0 28.8501Z" fill="white"/>
+                    </svg>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
 
-
+      <section className="bg-white pt-[100px] pb-[119px]">
+        <div className="faqs max-w-[728px] mx-auto">
+          <h1 className="heading_one_black mb-6 text-center">FAQs</h1>
+          <p className="text-[#2B2B27] text-center mt-6 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          <div className="accordian">
+            <div className="accordian_item">
+              <h5 className="accordian_header" id="headingOne">
+                <button className="accordion_button">Question text goes here</button>
+              </h5>
+              <div id="collapseOne" className="accordion_collapse hidden show">
+                <div className="accordion_body">
+                Answer goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer>
         <div className="container mx-auto xl:px-24 lg:gap-20">

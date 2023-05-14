@@ -5,7 +5,8 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 *{font-family: 'Kumbh Sans', sans-serif;}
-body{font-family: 'Kumbh Sans', sans-serif;}
+body{font-family: 'Kumbh Sans', sans-serif;
+@apply text-lg }
 
 .container{
   @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1200px] 2xl:max-w-[1312px] px-[4%] md:px-0
@@ -33,6 +34,17 @@ body{font-family: 'Kumbh Sans', sans-serif;}
 
 .heading_three_style{font-family: "Montserrat";
   @apply  font-semibold text-[#29214B] text-lg lg:text-[21px] 
+}
+
+.heading_three_style_black{font-family: "Montserrat";
+  @apply  font-semibold text-[#2B2B27] text-lg lg:text-[21px] 
+}
+
+.heading_three_style_white{font-family: "Montserrat";
+  @apply  font-semibold text-white text-lg lg:text-[21px] 
+}
+h1.heading_one_black{font-family: "Montserrat";
+@apply text-3xl md:text-4xl lg:text-[50px] text-[#2B2B27] font-semibold leading-[60px]
 }
 
 h2.heading_style_two{font-family: "Montserrat";
@@ -130,6 +142,7 @@ header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;
 }
 @media screen and (max-width: 1023px) {
   .testimonial_section .swiper .swiper-wrapper{@apply ml-[0%]}
+  .banner.productDetails_banner{height: auto;}
 }
 
 
@@ -520,3 +533,19 @@ footer{
 @apply md:pb-0 bg-none}
 
 .journey_details.programDetails_journey li .journey_points::after{display: none;}
+.programDetails_peopleReview{
+  @apply border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4 h-[242px] 
+}
+.programDetails_peopleReview::after{ content: ''; background-color: rgba(0 0 0 / 40%);
+@apply absolute top-0 left-0 w-full h-full}
+
+
+
+
+
+.accordian .accordian_item{@apply  border-b border-[#2B2B27]}
+.accordian .accordian_item .accordion_body{@apply pb-[23px]}
+.accordian .accordian_item .accordian_header .accordion_button{
+  @apply text-[#2B2B27] font-semibold py-[23px] w-full text-start
+}
+
