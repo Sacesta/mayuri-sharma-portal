@@ -1,16 +1,16 @@
 import React from "react";
 import "./main.css";
 import Image from "next/image";
-import LogoMark from "../../Assets/icons/Logo Mark.png";
-import rightCircle from "../../Assets/icons/Ellipse 24 (Stroke).png";
-import profileImage from "../../Assets/Images/pageImages/transformation_profile_img.png";
-import programeone from "../../Assets/Images/pageImages/program_img_1.png";
-import masterclassimg from "../../Assets/Images/pageImages/masterclass_one.png";
-import ellipseOne from "../../Assets/Images/pageImages/Ellipse_one.png";
-import ellipseTwo from "../../Assets/Images/pageImages/news_ellipse_two.png";
-import footerLogo from "../../Assets/Images/pageImages/footer_logo.png";
-import homeStoryImg from "../../Assets/Images/pageImages/home_story_one.png";
-import footerEllipse from "../../Assets/Images/pageImages/footer_ellipse.png";
+import LogoMark from "../../../Assets/icons/Logo Mark.png";
+import rightCircle from "../../../Assets/icons/Ellipse 24 (Stroke).png";
+import profileImage from "../../../Assets/Images/pageImages/transformation_profile_img.png";
+import programeone from "../../../Assets/Images/pageImages/program_img_1.png";
+import masterclassimg from "../../../Assets/Images/pageImages/masterclass_one.png";
+import ellipseOne from "../../../Assets/Images/pageImages/Ellipse_one.png";
+import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
+import footerLogo from "../../../Assets/Images/pageImages/footer_logo.png";
+import homeStoryImg from "../../../Assets/Images/pageImages/home_story_one.png";
+import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png";
 import HeroTestimonial from "../../components/Carousel/HeroTestimonial";
 import TestimonialCarousel from "../../components/Carousel/TestimonialCarousel";
 

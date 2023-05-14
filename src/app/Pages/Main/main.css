@@ -149,31 +149,6 @@ header {
   background-color: #d8d5e3;
   border-radius: 50%;
 }
-.testimonial_section .swiper-button-prev {
-  left: 45%;
-  bottom: 0;
-  top: auto;
-}
-.swiper-button-next {
-  background-image: url(../../Assets/Images/pageImages/Left-Arrow.png) !important;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-}
-.testimonial_section .swiper-button-next {
-  /* right: 45%; */
-  /* bottom: 0s; */
-}
-.testimonial_section .swiper-button-next::after {
-  /* opacity: 0;dis */
-  display: none;
-}
-.testimonial_section .swiper .swiper-wrapper {
-  @apply lg:-ml-[11%];
-}
-.testimonial_section .swiper .swiper-wrapper .swiper-slide {
-  margin-inline-end: 32px !important;
-}
 
 @media screen and (max-width: 1052px) {
   .testimonial_section .swiper .swiper-wrapper {
