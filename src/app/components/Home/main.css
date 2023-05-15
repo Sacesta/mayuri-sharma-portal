@@ -44,7 +44,7 @@ body{font-family: 'Kumbh Sans', sans-serif;
   @apply  font-semibold text-white text-lg lg:text-[21px] 
 }
 h1.heading_one_black{font-family: "Montserrat";
-@apply text-3xl md:text-4xl lg:text-[50px] text-[#2B2B27] font-semibold leading-[60px]
+@apply text-3xl md:text-4xl lg:text-[50px] text-[#2B2B27] font-semibold leading-8 lg:leading-[60px]
 }
 
 h2.heading_style_two{font-family: "Montserrat";
@@ -543,8 +543,15 @@ footer{
 
 
 
-.accordian .accordian_item{@apply  border-b border-[#2B2B27]}
-.accordian .accordian_item .accordion_body{@apply pb-[23px]}
+.accordian .accordian_item{
+  @apply  border-b border-[#2B2B27]
+}
+.accordian .accordian_item .accordion_body{
+  @apply pb-[23px]
+}
+.accordian .accordian_item .accordian_header{
+  @apply relative
+}
 .accordian .accordian_item .accordian_header .accordion_button{
   @apply text-[#2B2B27] font-semibold py-[23px] w-full text-start
 }

@@ -11,5 +11,5 @@ import ProgramDetails from "./components/Home/ProgramDetails";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Main() {
-  return <About />;
+  return <ProgramDetails />;
 }
