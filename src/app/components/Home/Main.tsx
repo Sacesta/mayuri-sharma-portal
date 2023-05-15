@@ -452,7 +452,7 @@ const Main = () => {
           <h2 className="heading_style_two text-center max-w-[920px] mx-auto mb-[60px] lg:mb-24 text-[#29214B]">Supportive community of like-minded individuals building habits together</h2>
           <div className="grid lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 lg:grid-flow-col xl:px-24 gap-10">
             <div className="news_letter_form lg:row-span-2 border border-[#E1E1E1]">
-                <p className="news_letter_form_head">JJoin the community for free!</p>
+                <p className="news_letter_form_head">Join the community for free!</p>
                 <div className="form_field">
                   <label htmlFor="">Name</label>
                   <input type="text" placeholder="Enter name" />
