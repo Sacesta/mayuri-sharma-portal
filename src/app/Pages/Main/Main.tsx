@@ -63,7 +63,7 @@ const Main = () => {
             >
               <path
                 opacity="0.4"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 clip-rule="evenodd"
                 d="M0.299213 452.501L38.2262 453.306L32.3198 484.522C12.4351 483.078 -1.59054 469.052 0.299213 452.501ZM82.0631 422.892C104.812 422.701 136.009 421.405 171.474 417.118C245.9 408.123 335.037 386.457 405.421 337.625C480.685 285.408 536.013 227.821 565.449 178.116C596.299 126.024 593.22 93.501 578.316 78.5974C563.412 63.6938 525.566 55.2914 458.48 71.1465C394.467 86.2753 316.467 121.19 241.203 173.407C170.819 222.239 129.121 291.344 105.045 350.689C93.5722 378.968 86.401 404.29 82.0631 422.892ZM32.3198 484.522C32.3066 484.521 32.3198 484.522 38.2262 453.306C0.299201 452.501 0.297958 452.512 0.299213 452.501L0.312083 452.39L0.333714 452.208L0.404596 451.633C0.464557 451.158 0.550556 450.499 0.666129 449.665C0.89725 447.998 1.24689 445.63 1.74336 442.629C2.73586 436.632 4.31812 428.091 6.71922 417.561C11.5126 396.54 19.617 367.379 32.9247 334.577C59.2879 269.595 107.392 187.065 194.456 126.66C276.641 69.6415 364.797 29.2743 442.142 10.9946C516.414 -6.55889 595.127 -6.49665 638.48 36.8561C681.833 80.2089 667.676 144.704 633.522 202.375C597.955 262.433 534.353 327.353 452.168 384.372C365.104 444.776 258.956 469.264 177.461 479.113C136.323 484.085 100.425 485.452 74.7369 485.579C61.8691 485.642 51.4984 485.394 44.2372 485.123C40.6048 484.987 37.7454 484.846 35.735 484.734C34.7296 484.678 33.936 484.629 33.3638 484.592L32.6724 484.546L32.4533 484.531L32.3758 484.526L32.3198 484.522Z"
                 fill="url(#paint0_linear_630_3962)"
@@ -737,7 +737,7 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="news_letter_section">
+      {/* <section className="news_letter_section">
         <div className="container mx-auto">
           <div className="news_letter">
             {/* <div className="lg:w-1/2 flex items-center z-[2]">
@@ -756,9 +756,9 @@ const Main = () => {
                 </p>
                 <button className="secondary_button">See all challenges</button>
               </div>
-            </div> */}
+            </div> 
             <div className="news_letter_form grid grid-cols-2  gap-3">
-              {/* <p className="news_letter_form_head">Join news letter</p> */}
+              {/* <p className="news_letter_form_head">Join news letter</p> 
               <div className="form_field">
                 <label htmlFor="">Name</label>
                 <input type="text" placeholder="Enter name" />
@@ -796,7 +796,7 @@ const Main = () => {
                   If you need to have a confirmation this is how it might look
                   like.
                 </p>
-              </div> */}
+              </div> *
               <div className="col-span-2 flex items-center flex-col">
                 <button className="primary_button mb-6 w-3/6">Subscribe</button>
                 <p className="w-full text-sm text-[#090617] font-normal">
@@ -1063,8 +1063,8 @@ const Main = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="Supportive_community_section">
+      </section> */}
+      <section className="Supportive_community_section mt-20">
         <div className="container mx-auto">
           <p className="paragraph_one_style text-center mb-2 text-[#29214B]">
             Let’s work on it togather

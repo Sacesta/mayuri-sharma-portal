@@ -11,26 +11,14 @@ export default function HeroTestimonial() {
     <>
       <Swiper
         className="mySwiper h-full w-[344px] home_banner_carousel rounded-[20px]"
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        loop={true}
+        pagination={true}
         modules={[Pagination]}
-        speed={1500}
-        effect="fade"
-        slidesPerView={1}
+        // spaceBetween={10}
+        // loop={true}
+        // speed={1500}
+        // slidesPerView={1}
+        // autoHeight={true}
       >
-        {/* <SwiperSlide>
-          <div className="h-full w-full">
-            <Image
-              src={homebannerSlider}
-              className="h-full w-full object-cover"
-              alt="..."
-            />
-          </div>
-        </SwiperSlide> */}
-
         <SwiperSlide>
           <div className="h-full w-full">
             <Image
