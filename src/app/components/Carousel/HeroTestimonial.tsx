@@ -13,7 +13,7 @@ export default function HeroTestimonial() {
         className="mySwiper h-full w-[344px] home_banner_carousel rounded-[20px]"
         pagination={true}
         modules={[Pagination]}
-        // spaceBetween={10}
+        spaceBetween={10}
         // loop={true}
         // speed={1500}
         // slidesPerView={1}
