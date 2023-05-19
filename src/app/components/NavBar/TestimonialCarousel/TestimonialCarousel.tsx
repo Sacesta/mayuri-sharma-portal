@@ -46,8 +46,8 @@ const TestimonialCarousel = () => {
         modules={[Navigation]}
         className="mySwiper"
       >
-        {data.map((x) => (
-          <SwiperSlide>
+        {data.map((x, index) => (
+          <SwiperSlide key={`caraousel-${index}`}>
             <div className="py-10">Slide {x.name}</div>
           </SwiperSlide>
         ))}

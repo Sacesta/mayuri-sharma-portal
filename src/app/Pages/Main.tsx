@@ -14,10 +14,10 @@ import footerEllipse from "../../Assets/Images/pageImages/footer_ellipse.png";
 
 // Carousel
 import TestimonialCarousel from "../components/NavBar/TestimonialCarousel/TestimonialCarousel";
-import HeroTestimonial from "../components/HeroTestimonial/HeroTestimonial";
+import HeroTestimonial from "../components/Carousel/HeroTestimonial";
 
 /*Country List */
-import { countries } from "countries-list";
+// import { countries } from "countries-list";
 const Main = () => {
   return (
     <>
@@ -750,8 +750,8 @@ const Main = () => {
                 <button className="secondary_button">See all challenges</button>
               </div>
             </div> */}
-            <div className="news_letter_form grid grid-cols-2  gap-3">
-              {/* <p className="news_letter_form_head">Join news letter</p> */}
+            {/* <div className="news_letter_form grid grid-cols-2  gap-3">
+              <p className="news_letter_form_head">Join news letter</p>
               <div className="form_field">
                 <label htmlFor="">Name</label>
                 <input type="text" placeholder="Enter name" />
@@ -776,27 +776,27 @@ const Main = () => {
                   className="bg-white border border-[#B5B5B5] text-[#505050] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400dark:focus:ring-blue-500 "
                 >
                   <option selected>Choose a country</option>
-                  {Object.keys(countries).map((countryCode: any) => (
+                  {Object.keys(countries).map((countryCode) => (
                     <option key={countryCode} value={countryCode}>
                       {countries[countryCode].name}
                     </option>
                   ))}
                 </select>
               </div>
-              {/* <div className="flex items-center mb-7">
+              <div className="flex items-center mb-7">
                 <input type="checkbox" className="mr-3 w-7 h-7" />
                 <p className="checkbox_label">
                   If you need to have a confirmation this is how it might look
                   like.
                 </p>
-              </div> */}
+              </div>
               <div className="col-span-2 flex items-center flex-col">
                 <button className="primary_button mb-6 w-3/6">Subscribe</button>
                 <p className="w-full text-sm text-[#090617] font-normal">
                   *We respect your privacy you can unsubscribe anytime
                 </p>
               </div>
-            </div>
+            </div> */}
             <Image
               src={ellipseOne}
               alt="..."
