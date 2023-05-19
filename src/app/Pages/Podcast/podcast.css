@@ -1,0 +1,150 @@
+.container {
+  @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1200px] 2xl:max-w-[1312px] px-[4%] md:px-0;
+}
+
+.paragraph_one_style {
+  font-family: "Montserrat";
+  @apply text-sm lg:text-xl leading-6 font-semibold;
+}
+
+.paragraph_two_style {
+  @apply font-normal text-[#090617] text-lg leading-7;
+}
+
+h2.heading_style_two {
+  font-family: "Montserrat";
+  @apply font-semibold text-[28px] lg:text-[38px] leading-[34px] lg:leading-[46px];
+}
+
+.main-right-circle {
+  @apply absolute top-0 right-0;
+}
+.banner {
+  height: calc(100vh - 72px);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.home_story_tab {
+  @apply hidden md:flex items-center justify-center mb-8;
+}
+.home_story_tab li {
+  font-family: "Montserrat";
+  @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative text-[#505050] font-bold;
+}
+.home_story_tab li.story_tab_active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #eb334a;
+  bottom: 0;
+  left: 0;
+}
+
+.story_podcast {
+  @apply absolute rounded-[50%] h-16 w-16 flex items-center justify-center right-6 bottom-0 bg-[#EB334A] z-[2] opacity-0;
+}
+
+.home_story_section {
+  @apply grid md:grid-cols-2  lg:grid-cols-4 gap-x-10 gap-y-16 mb-16;
+}
+.home_story_section li {
+  @apply relative cursor-pointer transition-all ease-in duration-300;
+}
+
+.home_story_section li .home_story_img::after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 0%,
+    #29214b 86.46%
+  );
+  @apply absolute w-full h-[63%] bottom-0 left-0 transition-all ease-in duration-150 opacity-0;
+}
+
+.home_story_section li:hover .home_story_img::after {
+  @apply opacity-100 transition-all ease-in duration-300;
+}
+
+.home_story_section li:hover .story_podcast {
+  @apply opacity-100 bottom-6 transition-all ease-in duration-300;
+}
+
+.home_story_img {
+  @apply h-96 w-full rounded-[20px] overflow-hidden relative mb-6;
+}
+
+.home_story_img img {
+  @apply w-full h-full object-cover;
+}
+
+.home_story_img video {
+  @apply w-full h-full object-cover;
+}
+
+.home_story_number {
+  font-family: "Montserrat";
+  @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.about_banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  @apply h-full md:rounded-[20px] flex items-end justify-center relative overflow-hidden;
+}
+
+.about_banner::after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(89, 80, 125, 0) 0%,
+    rgba(89, 80, 125, 0.5) 100%
+  );
+  @apply absolute h-full w-full left-0 top-0;
+}
+
+.about_principles {
+  @apply pt-[100px] lg:pt-[200px];
+}
+
+.socialMedia_moments {
+  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
+  @apply pt-[100px] lg:pt-[200px] pb-[100px] lg:pb-80;
+}
+.social_image {
+  @apply w-full h-full rounded-[20px] overflow-hidden relative;
+}
+.social_image img {
+  @apply h-full w-full object-cover rounded-[20px];
+}
+
+.social_image::after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 0%,
+    #29214b 86.46%
+  );
+  @apply absolute w-full h-[60%] bottom-0 left-0 transition-all ease-in duration-150 opacity-0;
+}
+
+.social_image:hover::after {
+  @apply opacity-100 transition-all ease-in duration-300;
+}
+
+.insta_podcast {
+  @apply h-16 w-16 flex justify-center items-center bg-[#EB334A] absolute bottom-0 right-6 rounded-[50%] opacity-0 z-[2];
+}
+
+.podcast_head {
+  font-family: "Montserrat";
+  @apply text-[38px] lg:text-[50px] text-white max-w-[627px] font-semibold leading-9 lg:leading-[60px] lg:pl-8;
+}
+
+.podcast_back {
+  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
+}

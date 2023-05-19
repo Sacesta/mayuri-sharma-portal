@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       <footer>
         <div className="container mx-auto xl:px-24 lg:gap-20">
-          <div className=" grid lg:grid-cols-5">
+          <div className="grid lg:grid-cols-5">
             <div>
               <div className="flex items-center mb-9">
                 <div className="footer-logo">

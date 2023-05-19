@@ -149,6 +149,30 @@ header {
   background-color: #d8d5e3;
   border-radius: 50%;
 }
+.testimonial_section .swiper-button-prev {
+  left: 45%;
+  bottom: 0;
+  top: auto;
+}
+
+/* .testimonial_section .swiper-button-next { */
+.swiper-button-next {
+  right: 45%;
+  bottom: 0;
+  top: auto;
+  background-image: url("../../../Assets/Images/pageImages/Left-Arrow.png") !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.testimonial_section .swiper-button-next::after {
+  opacity: 0;
+}
+.testimonial_section .swiper .swiper-wrapper {
+  @apply lg:-ml-[11%];
+}
+.testimonial_section .swiper .swiper-wrapper .swiper-slide {
+  margin-inline-end: 32px !important;
+}
 
 @media screen and (max-width: 1052px) {
   .testimonial_section .swiper .swiper-wrapper {
@@ -216,10 +240,7 @@ footer {
   background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
   @apply pt-[28rem] md:pt-32 pb-56 lg:pb-[326px] relative overflow-hidden;
 }
-.home_banner_text
-  .swiper
-  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
-  .swiper-pagination-bullet {
+.home_banner_text .swiper .swiper-pagination-bullet {
   width: 70px;
   border-radius: 100px;
   margin-inline: 7px;
@@ -227,7 +248,13 @@ footer {
 .home_banner_text .swiper .swiper-pagination-bullet-active {
   background-color: #29214b;
 }
-.swiper-slide.swiper-slide-active img {
+
+.home_banner_text .swiper-slide img {
+  height: 92% !important;
+  border-radius: 20px;
+}
+
+.home_banner_text .swiper-slide.swiper-slide-active img {
   height: 92% !important;
   border-radius: 20px;
 }
@@ -378,11 +405,13 @@ footer {
 
 .news_letter_section {
   background: linear-gradient(180deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
-  padding-block-end: 160px;
+  @apply md:pb-11;
 }
-
+.news_letter_section .container.mx-auto {
+  @apply px-0;
+}
 .news_letter {
-  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28  -mx-6 lg:mx-0 relative top-[-200px] -mb-[46px];
+  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
 }
 
 .news_ellipse_one {
@@ -391,22 +420,23 @@ footer {
 
 .news_letter_head {
   font-family: "Montserrat";
-  @apply text-[28px] text-white font-semibold leading-9;
+  @apply text-[22px] lg:text-[28px] text-white font-semibold leading-9;
 }
 
 .news_letter_h2 {
   font-family: "Montserrat";
-  @apply font-semibold text-white text-[38px] leading-[46px] pb-6;
+  @apply font-semibold text-white text-[28px] lg:text-[38px] leading-[46px] pb-6;
 }
 
 .news_letter_form {
-  @apply lg:w-full rounded-[20px] bg-white p-8  mt-20 lg:mt-0 z-[2] relative;
+  @apply rounded-[20px] bg-white p-8 lg:max-w-[440px] lg:mt-0 z-[2] relative;
 }
 
 .news_letter_form_head {
   font-family: "Montserrat";
   @apply text-[28px] text-[#29214B] font-semibold leading-9 mb-7;
 }
+
 .form_field {
   @apply mb-9;
 }

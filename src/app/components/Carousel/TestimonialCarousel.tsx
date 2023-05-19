@@ -48,7 +48,6 @@ const TestimonialCarousel = () => {
     <>
       <Swiper
         spaceBetween={10}
-        loop={true}
         direction={"horizontal"}
         centerInsufficientSlides={true}
         centeredSlidesBounds={true}
@@ -76,6 +75,7 @@ const TestimonialCarousel = () => {
         }}
         // modules={[Navigation]}
         className="mySwiper"
+        loop={true}
       >
         {data.map((x) => (
           <SwiperSlide>
