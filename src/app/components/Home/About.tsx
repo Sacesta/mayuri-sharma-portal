@@ -15,7 +15,7 @@ import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png"
 const About = () => {
   return (
     <>
-      <section className="md:py-9  banner">
+      <section className="md:py-9  banner md:px-16">
         <div className="about_banner lg:bg-right container mx-auto" style={{backgroundImage: `url(${bg.src})`}}>
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <p className="about_head w-full">About me</p>
@@ -141,7 +141,7 @@ const About = () => {
       </section>
 
 
-      <section className="about_mission">
+      <section className="about_mission md:px-16">
         <div className="container mx-auto ">
           <div className="mission">
             <div className="max-w-[750px] text-center">

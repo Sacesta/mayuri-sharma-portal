@@ -61,7 +61,7 @@ export default function HeroTestimonial() {
         </SwiperSlide>
         <SwiperSlide>Horizontal Slide 3</SwiperSlide>
         <SwiperSlide>Horizontal Slide 4</SwiperSlide>
-        <div className="h-16 w-16 bg-[#FF682C] absolute bottom-20 right-6 z-[3] rounded-full flex items-center justify-center">
+        <div className="h-16 w-16 bg-[#EB334A] absolute bottom-20 right-6 z-[3] rounded-full flex items-center justify-center">
           <svg width="17" height="25" viewBox="0 0 17 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect y="0.614258" width="6" height="24" rx="2" fill="white"/>
           <rect x="11" y="0.614258" width="6" height="24" rx="2" fill="white"/>

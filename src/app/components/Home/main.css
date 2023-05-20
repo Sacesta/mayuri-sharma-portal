@@ -8,9 +8,14 @@
 body{font-family: 'Kumbh Sans', sans-serif;
 @apply text-lg }
 
+/* .container{
+  @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1312px] 2xl:max-w-[1312px] px-[4%] md:px-0
+} */
+
 .container{
-  @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1200px] 2xl:max-w-[1312px] px-[4%] md:px-0
+  @apply max-w-full px-[4%] md:px-16
 }
+
 
 .primary_button{font-family: "Montserrat";
   @apply px-10 py-3 bg-[#EB334A] text-white text-sm rounded-lg tracking-widest hover:bg-white hover:text-[#EB334A] border border-[#EB334A] transition-all ease-in duration-150
@@ -91,7 +96,7 @@ header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #ccc;border-radius: 4px;
+  background-color: #fff;border-radius: 4px; border: 1px solid #E1E1E1;
 }
 
 /* On mouse-over, add a grey background color */
@@ -118,7 +123,7 @@ header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;
 
 /* Style the checkmark/indicator */
 .customize_checkbox .checkmark:after {
-  left: 9px;
+  left: 8px;
   top: 3px;
   width: 8px;
   height: 15px;
@@ -126,7 +131,7 @@ header{position: sticky; top: 0; left: 0; z-index: 99999;background-color: #fff;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  transform: rotate(45deg);border-radius: 2px;
+  transform: rotate(45deg);
 }
 .testimonial_section .swiper.swiper-initialized.swiper-horizontal.mySwiper{padding-block-end: 104px;position: relative;}
 .testimonial_section .swiper-button-next, .testimonial_section .swiper-button-prev {height: 60px; width: 60px; background-color: #D8D5E3;border-radius: 50%;}
