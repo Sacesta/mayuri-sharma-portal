@@ -9,13 +9,13 @@ export const SwiperNavButtons = () => {
   return (
     <div className="flex items-center justify-center mt-10 gap-5">
       <button
-        className="bg-[#F5EAE3] h-[60px] w-[60px] d-flex rounded-full"
+        className="bg-[#D8D5E3] h-[60px] w-[60px] d-flex rounded-full"
         onClick={() => swiper.slidePrev()}
       >
         <Image className="m-auto" src={Prev} alt="..." />
       </button>
       <button
-        className="bg-[#F5EAE3] h-[60px] w-[60px] d-flex rounded-full"
+        className="bg-[#D8D5E3] h-[60px] w-[60px] d-flex rounded-full"
         onClick={() => swiper.slideNext()}
       >
         <Image className="m-auto" src={Next} alt="..." />

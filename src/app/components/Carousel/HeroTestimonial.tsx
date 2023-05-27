@@ -11,7 +11,7 @@ export default function HeroTestimonial() {
     <>
       <Swiper
         className="mySwiper h-full w-[344px] home_banner_carousel rounded-[20px]"
-        pagination={true}
+        pagination={{ clickable: true }}
         modules={[Pagination]}
         spaceBetween={10}
         // loop={true}
@@ -23,7 +23,7 @@ export default function HeroTestimonial() {
           <div className="h-full w-full">
             <Image
               src={homebannerSlider}
-              className="w-full object-cover"
+              className="w-full object-cover h-[92%]"
               alt="..."
             />
           </div>
@@ -32,7 +32,7 @@ export default function HeroTestimonial() {
           <div className="h-full w-full">
             <Image
               src={homebannerSlider}
-              className="w-full object-cover"
+              className="w-full object-cover h-[92%]"
               alt="..."
             />
           </div>
@@ -42,7 +42,7 @@ export default function HeroTestimonial() {
           <div className="h-full w-full">
             <Image
               src={homebannerSlider}
-              className="w-full object-cover"
+              className="w-full object-cover h-[92%]"
               alt="..."
             />
           </div>
@@ -51,12 +51,12 @@ export default function HeroTestimonial() {
           <div className="h-full w-full">
             <Image
               src={homebannerSlider}
-              className="w-full object-cover"
+              className="w-full object-cover h-[92%]"
               alt="..."
             />
           </div>
         </SwiperSlide>
-        <div className="h-16 w-16 bg-[#FF682C] absolute bottom-20 right-6 z-[3] rounded-full flex items-center justify-center">
+        <div className="h-16 w-16 bg-[#EB334A] absolute bottom-20 right-6 z-[3] rounded-full flex items-center justify-center">
           <svg
             width="17"
             height="25"

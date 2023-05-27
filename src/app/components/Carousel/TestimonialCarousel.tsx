@@ -3,9 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
 import profileImage from "../../../Assets/Images/pageImages/transformation_profile_img.png";
-// import { ReactComponent as LeftArrowIcon } from "../../../Assets/Images/pageImages/Left-Arrow.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -52,25 +50,21 @@ const TestimonialCarousel = () => {
         centerInsufficientSlides={true}
         centeredSlidesBounds={true}
         breakpoints={{
-          "@0.00": {
+          // when window width is <= 320px
+          320: {
             slidesPerView: 1,
             spaceBetween: 10,
           },
-          "@0.75": {
+          // when window width is <= 480px
+          480: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-          "@1.00": {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-          "@1.75": {
-            slidesPerView: 4,
-            spaceBetween: 50,
+
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
           },
         }}
         // modules={[Navigation]}

@@ -8,26 +8,31 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 body {
-  font-family: "Kumbh Sans", sans-serif !important;
+  font-family: "Kumbh Sans", sans-serif;
+  @apply text-lg;
 }
 
+/* .container{
+  @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1312px] 2xl:max-w-[1312px] px-[4%] md:px-0
+} */
+
 .container {
-  @apply sm:max-w-[600px] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1200px] 2xl:max-w-[1312px] px-6 sm:px-0;
+  @apply max-w-full px-[4%] md:px-16;
 }
 
 .primary_button {
   font-family: "Montserrat";
-  @apply px-10 py-3 bg-[#EB334A] text-white text-sm rounded-lg tracking-widest;
+  @apply px-10 py-3 bg-[#EB334A] text-white text-sm rounded-lg tracking-widest hover:bg-[#E56071] transition-all ease-in duration-150;
 }
 
 .secondary_button {
   font-family: "Montserrat";
-  @apply px-10 py-3 border border-white rounded-lg text-sm text-white tracking-widest;
+  @apply px-10 py-3 border border-white rounded-lg text-sm text-white tracking-widest  hover:bg-white hover:text-[#29214B]   transition-all ease-in duration-150;
 }
 
 .tertiary_button {
   font-family: "Montserrat";
-  @apply px-10 py-3 border border-[#090617] rounded-lg text-sm text-[#090617] tracking-widest;
+  @apply px-10 py-3 border border-[#505050] rounded-lg text-sm text-[#090617] tracking-widest hover:border hover:border-[#090617]  transition-all ease-in duration-150;
 }
 
 .paragraph_one_style {
@@ -41,7 +46,21 @@ body {
 
 .heading_three_style {
   font-family: "Montserrat";
-  @apply font-semibold text-[#29214B] text-[21px];
+  @apply font-semibold text-[#29214B] text-lg lg:text-[21px];
+}
+
+.heading_three_style_black {
+  font-family: "Montserrat";
+  @apply font-semibold text-[#2B2B27] text-lg lg:text-[21px];
+}
+
+.heading_three_style_white {
+  font-family: "Montserrat";
+  @apply font-semibold text-white text-lg lg:text-[21px];
+}
+h1.heading_one_black {
+  font-family: "Montserrat";
+  @apply text-3xl md:text-4xl lg:text-[50px] text-[#2B2B27] font-semibold leading-8 lg:leading-[60px];
 }
 
 h2.heading_style_two {
@@ -64,6 +83,134 @@ header {
 .main-right-circle {
   @apply absolute top-0 right-0;
 }
+.banner {
+  height: 552px;
+}
+
+@media screen and (max-width: 1399px) {
+  .banner {
+    height: calc(100vh - 72px);
+  }
+}
+
+.customize_checkbox {
+  display: block;
+  position: relative;
+  padding-inline-start: 35px;
+  margin-block-end: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.customize_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e1e1e1;
+}
+
+/* On mouse-over, add a grey background color */
+.customize_checkbox:hover input ~ .checkmark {
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.customize_checkbox input:checked ~ .checkmark {
+  background-color: #29214b;
+  border-radius: 4px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.customize_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.customize_checkbox .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 8px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.testimonial_section .swiper.swiper-initialized.swiper-horizontal.mySwiper {
+  padding-block-end: 104px;
+  position: relative;
+}
+.testimonial_section .swiper-button-next,
+.testimonial_section .swiper-button-prev {
+  height: 60px;
+  width: 60px;
+  background-color: #d8d5e3;
+  border-radius: 50%;
+}
+.testimonial_section .swiper-button-prev {
+  left: 45%;
+  bottom: 0;
+  top: auto;
+}
+.testimonial_section .swiper-button-next {
+  right: 45%;
+  bottom: 0;
+  top: auto;
+  background-image: url("/src/Assets/Images/pageImages/rightArrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.testimonial_section .swiper-button-next::after {
+  opacity: 0;
+}
+.testimonial_section .swiper .swiper-wrapper {
+  @apply lg:-ml-[11%];
+}
+.testimonial_section .swiper .swiper-wrapper .swiper-slide {
+  margin-inline-end: 32px !important;
+}
+
+@media screen and (max-width: 1052px) {
+  .testimonial_section .swiper .swiper-wrapper {
+    @apply -ml-[25%];
+  }
+}
+@media screen and (max-width: 1023px) {
+  .testimonial_section .swiper .swiper-wrapper {
+    @apply ml-[0%];
+  }
+  .banner.productDetails_banner {
+    height: auto;
+  }
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -87,11 +234,9 @@ footer {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.home-banner {
-  height: calc(100vh - 72px);
-}
+
 .home_banner {
-  @apply w-full h-full md:rounded-[20px] bg-[#29214b] pt-20 lg:pt-0 lg:pb-20 flex lg:items-end justify-center relative px-6 lg:px-0;
+  @apply w-full h-full md:rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 lg:px-0;
 }
 
 .home_banner h3 {
@@ -104,9 +249,37 @@ footer {
   @apply text-4xl lg:text-[50px] text-white leading-[46px] lg:leading-[60px] font-semibold;
 }
 
+.home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper {
+  @apply md:absolute md:left-8 lg:left-20 top-14 lg:top-20;
+}
+.home_banner .swiper.swiper-v.swiper-initialized.swiper-vertical.mySwiper2 {
+  height: 100%;
+}
+.home_banner
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
+  display: none;
+}
+.home_banner_text {
+  @apply md:pl-[388px]  lg:pl-[488px];
+}
 .intro_section {
   background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
-  @apply pt-44 pb-56 lg:pb-[326px] relative overflow-hidden;
+  @apply pt-[28rem] md:pt-32 pb-56 lg:pb-[326px] relative overflow-hidden;
+}
+.home_banner_text
+  .swiper
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+  .swiper-pagination-bullet {
+  width: 70px;
+  border-radius: 100px;
+  margin-inline: 7px;
+}
+.home_banner_text .swiper .swiper-pagination-bullet-active {
+  background-color: #29214b;
+}
+.swiper-slide.swiper-slide-active img {
+  height: 92% !important;
+  border-radius: 20px;
 }
 
 .intro_background_img {
@@ -132,7 +305,7 @@ footer {
   @apply absolute rounded-[50%] h-16 w-16 flex items-center justify-center;
 }
 .home_story_tab {
-  @apply hidden md:flex items-center mb-8;
+  @apply hidden md:flex items-center justify-center mb-8;
 }
 .home_story_tab li {
   font-family: "Montserrat";
@@ -153,7 +326,7 @@ footer {
 }
 
 .home_story_section {
-  @apply grid md:grid-cols-2  lg:grid-cols-4 gap-10 mb-16;
+  @apply grid md:grid-cols-2  lg:grid-cols-4 gap-x-10 gap-y-16 mb-16;
 }
 .home_story_section li {
   @apply relative cursor-pointer transition-all ease-in duration-300;
@@ -185,6 +358,10 @@ footer {
   @apply w-full h-full object-cover;
 }
 
+.home_story_img video {
+  @apply w-full h-full object-cover;
+}
+
 .home_story_number {
   font-family: "Montserrat";
   @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold;
@@ -196,7 +373,7 @@ footer {
     #d8d5e3 0%,
     rgba(216, 213, 227, 0.4) 100%
   );
-  @apply pt-24 pb-60 lg:pt-40 lg:pb-[306px];
+  @apply pt-24 pb-40 md:pb-60 lg:pt-40 lg:pb-[306px];
 }
 
 .program_list .program_list_li {
@@ -251,11 +428,13 @@ footer {
 
 .news_letter_section {
   background: linear-gradient(180deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
-  padding-block-end: 160px;
+  @apply md:pb-11;
 }
-
+.news_letter_section .container.mx-auto {
+  @apply px-0;
+}
 .news_letter {
-  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28  -mx-6 lg:mx-0 relative top-[-200px] -mb-[46px];
+  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
 }
 
 .news_ellipse_one {
@@ -264,16 +443,16 @@ footer {
 
 .news_letter_head {
   font-family: "Montserrat";
-  @apply text-[28px] text-white font-semibold leading-9;
+  @apply text-[22px] lg:text-[28px] text-white font-semibold leading-9;
 }
 
 .news_letter_h2 {
   font-family: "Montserrat";
-  @apply font-semibold text-white text-[38px] leading-[46px] pb-6;
+  @apply font-semibold text-white text-[28px] lg:text-[38px] leading-[46px] pb-6;
 }
 
 .news_letter_form {
-  @apply lg:w-full rounded-[20px] bg-white p-8  mt-20 lg:mt-0 z-[2] relative;
+  @apply rounded-[20px] bg-white p-8 lg:max-w-[440px] lg:mt-0 z-[2] relative;
 }
 
 .news_letter_form_head {
@@ -309,7 +488,11 @@ footer {
 }
 
 .testimonial_section {
-  padding-block-end: 170px;
+  @apply mb-20 px-[4%] lg:px-0;
+}
+
+.Supportive_community_section {
+  @apply pb-40;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -317,7 +500,7 @@ footer {
 .about_banner {
   background-repeat: no-repeat;
   background-size: cover;
-  @apply h-full md:rounded-[20px] flex items-end justify-center relative lg:bg-right;
+  @apply h-full md:rounded-[20px] flex items-end justify-center relative overflow-hidden;
 }
 
 .about_banner::after {
@@ -336,16 +519,20 @@ footer {
 }
 
 .about_funfacts {
-  @apply pt-24 lg:pt-52;
+  @apply pt-24 lg:pt-36;
 }
 
 .fun_fact_tab {
   @apply mr-4;
 }
 
+/* .fun_fact_tab li{
+  @apply w-[100px] h-[100px]  mb-10 rounded-[50%] hover:bg-[#EB334A] transition-all flex items-center justify-center
+} */
 .fun_fact_tab li {
-  @apply w-[100px] h-[100px]  mb-10 rounded-[50%] hover:bg-[#EB334A] transition-all flex items-center justify-center cursor-pointer;
+  @apply w-[100px] h-[100px]  mb-10 rounded-[50%]  transition-all flex items-center justify-center;
 }
+
 .fun_fact_tab li.fun_fact_active {
   @apply bg-[#EB334A];
 }
@@ -357,11 +544,9 @@ footer {
 .fun_fact_tab li svg {
   fill: #29214b;
 }
-.fun_fact_tab li:hover svg {
-  fill: #fff;
-}
+/* .fun_fact_tab li:hover svg{fill: #fff;} */
 .fun_profile_img {
-  @apply w-full h-auto rounded-[20px] overflow-hidden relative;
+  @apply w-full h-auto rounded-[20px] overflow-hidden relative -mr-[5%] md:mr-0 rounded-e-none md:rounded-e-[20px];
 }
 .fun_profile_img:after {
   content: "";
@@ -389,7 +574,7 @@ footer {
 }
 
 .journey_details li {
-  @apply mb-11;
+  @apply mb-5;
 }
 
 .journey_details li .journey_points {
@@ -400,7 +585,8 @@ footer {
 }
 .journey_details li .journey_points::after {
   content: "";
-  @apply absolute h-[65%] w-[2px] bg-[#29214B] bottom-0 left-[50%] translate-x-[-50%];
+  height: calc(100% - 60px);
+  @apply absolute w-[2px] bg-[#29214B] bottom-0 left-[50%] translate-x-[-50%];
 }
 
 .journey_time {
@@ -443,6 +629,7 @@ footer {
 }
 
 .socialMedia_moments {
+  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
   @apply pt-[100px] lg:pt-[200px] pb-[100px] lg:pb-80;
 }
 .social_image {
@@ -472,4 +659,46 @@ footer {
 
 .social_image:hover .insta_podcast {
   @apply opacity-100 bottom-6 transition-all ease-in duration-300;
+}
+
+.podcast_head {
+  font-family: "Montserrat";
+  @apply text-[38px] lg:text-[50px] text-white max-w-[627px] font-semibold leading-9 lg:leading-[60px] lg:pl-8;
+}
+
+.podcast_back {
+  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
+}
+
+.upcoming_program.programs {
+  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0.4) 100%);
+  @apply lg:pt-24;
+}
+.news_letter_section.programs_news {
+  @apply md:pb-0 bg-none;
+}
+
+.journey_details.programDetails_journey li .journey_points::after {
+  display: none;
+}
+.programDetails_peopleReview {
+  @apply border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4 h-[242px];
+}
+.programDetails_peopleReview::after {
+  content: "";
+  background-color: rgba(0 0 0 / 40%);
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.accordian .accordian_item {
+  @apply border-b border-[#2B2B27];
+}
+.accordian .accordian_item .accordion_body {
+  @apply pb-[23px];
+}
+.accordian .accordian_item .accordian_header {
+  @apply relative;
+}
+.accordian .accordian_item .accordian_header .accordion_button {
+  @apply text-[#2B2B27] font-semibold py-[23px] w-full text-start;
 }
