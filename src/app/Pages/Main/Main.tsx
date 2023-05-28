@@ -1,20 +1,17 @@
 import React from "react";
 import "./main.css";
 import Image from "next/image";
-import LogoMark from "../../../Assets/icons/Logo Mark.png";
 import rightCircle from "../../../Assets/icons/Ellipse 24 (Stroke).png";
 import profileImage from "../../../Assets/Images/pageImages/transformation_profile_img.png";
 import programeone from "../../../Assets/Images/pageImages/program_img_1.png";
 import masterclassimg from "../../../Assets/Images/pageImages/masterclass_one.png";
 import ellipseOne from "../../../Assets/Images/pageImages/Ellipse_one.png";
 import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
-import footerLogo from "../../../Assets/Images/pageImages/footer_logo.png";
 import supportive_banner from "../../../Assets/Images/pageImages/Supportive_banner.png";
-import homeStoryImg from "../../../Assets/Images/pageImages/home_story_one.png";
-import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png";
 import HeroTestimonial from "@/app/components/Carousel/HeroTestimonial";
 import TestimonialCarousel from "@/app/components/Carousel/TestimonialCarousel";
 import Footer from "@/app/components/Footer";
+import Link from "next/link";
 
 const Main = () => {
   return (
@@ -127,7 +124,7 @@ const Main = () => {
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop stop-color="#D8D5E3" />
-                  <stop offset="1" stop-color="#D8D5E3" stop-opacity="0" />
+                  <stop offset="1" stop-color="#D8D5E3" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
@@ -175,7 +172,7 @@ const Main = () => {
               My podcast
             </p>
             <h2 className="heading_style_two mb-16 text-center text-[#29214B]">
-              Stories of Transformations{" "}
+              Stories of Transformations
             </h2>
             <ul className="home_story_tab">
               <li className="story_tab_active">Recent</li>
@@ -472,8 +469,8 @@ const Main = () => {
                 </ul>
                 <div className="flex justify-between items-center pt-6 border-t border-[#E1E1E1] mt-4 lg:hidden">
                   <p className="heading_three_style">€ 100</p>
-                  <a
-                    href=""
+                  <Link
+                    href="/programdetails"
                     className="flex items-center text-[#4086FF] font-semibold tracking-widest"
                   >
                     Register now
@@ -490,10 +487,10 @@ const Main = () => {
                         fill="#4086FF"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
-              <a href="" className="program_register">
+              <Link href="/programdetails" className="program_register">
                 Register now
                 <svg
                   width="8"
@@ -508,7 +505,7 @@ const Main = () => {
                     fill="#4086FF"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
             <li className="program_list_li">
               <div className="program_img">
@@ -608,8 +605,8 @@ const Main = () => {
                 </ul>
                 <div className="flex justify-between items-center pt-6 border-t border-[#E1E1E1] mt-4 lg:hidden">
                   <p className="heading_three_style">€ 100</p>
-                  <a
-                    href=""
+                  <Link
+                    href="/programdetails"
                     className="flex items-center text-[#4086FF] font-semibold tracking-widest"
                   >
                     Register now
@@ -626,10 +623,10 @@ const Main = () => {
                         fill="#4086FF"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
-              <a href="" className="program_register">
+              <Link href="/programdetails" className="program_register">
                 Register now
                 <svg
                   width="8"
@@ -644,7 +641,7 @@ const Main = () => {
                     fill="#4086FF"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
             <li className="program_list_li">
               <div className="program_img">
@@ -744,11 +741,11 @@ const Main = () => {
                 </ul>
                 <div className="flex justify-between items-center pt-6 border-t border-[#E1E1E1] mt-4 lg:hidden">
                   <p className="heading_three_style">€ 100</p>
-                  <a
-                    href=""
+                  <Link
+                    href="/progamdetails"
                     className="flex items-center text-[#4086FF] font-semibold tracking-widest"
                   >
-                    Register now
+                    Register noww
                     <svg
                       width="8"
                       height="13"
@@ -762,10 +759,10 @@ const Main = () => {
                         fill="#4086FF"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
-              <a href="" className="program_register">
+              <Link href="/programdetails" className="program_register">
                 Register now
                 <svg
                   width="8"
@@ -780,7 +777,7 @@ const Main = () => {
                     fill="#4086FF"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -816,15 +813,36 @@ const Main = () => {
                 <label htmlFor="">Email address</label>
                 <input type="text" placeholder="Enter email address" />
               </div>
+              <svg className="checkbox-symbol">
+                <symbol id="check" viewBox="0 0 12 10">
+                  <polyline
+                    points="1.5 6 4.5 9 10.5 1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polyline>
+                </symbol>
+              </svg>
+
               <div className="flex items-center mb-7">
-                <label className="customize_checkbox">
-                  <input type="checkbox" />
-                  <span className="checkmark"></span>
-                </label>
-                <p className="checkbox_label">
-                  If you need to have a confirmation this is how it might look
-                  like.
-                </p>
+                <div className="checkbox-container">
+                  <input
+                    className="checkbox-input"
+                    id="confirm_2"
+                    type="checkbox"
+                  />
+                  <label className="checkbox" htmlFor="confirm_2">
+                    <span>
+                      <svg width="12px" height="10px">
+                        <use xlinkHref="#check"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      If you need to have a confirmation this is how it might
+                      look like.
+                    </span>
+                  </label>
+                </div>
               </div>
               <button className="primary_button w-full mb-6">Subscribe</button>
               <p className="text-sm text-[#090617] font-normal">
@@ -868,14 +886,24 @@ const Main = () => {
                 <input type="text" placeholder="Enter email address" />
               </div>
               <div className="flex items-center mb-7">
-                <label className="customize_checkbox">
-                  <input type="checkbox" />
-                  <span className="checkmark"></span>
-                </label>
-                <p className="checkbox_label">
-                  If you need to have a confirmation this is how it might look
-                  like.
-                </p>
+                <div className="checkbox-container">
+                  <input
+                    className="checkbox-input"
+                    id="confirm_1"
+                    type="checkbox"
+                  />
+                  <label className="checkbox" htmlFor="confirm_1">
+                    <span>
+                      <svg width="12px" height="10px">
+                        <use xlinkHref="#check"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      If you need to have a confirmation this is how it might
+                      look like.
+                    </span>
+                  </label>
+                </div>
               </div>
               <button className="primary_button w-full mb-6">Subscribe</button>
               <p className="text-sm text-[#090617] font-normal">

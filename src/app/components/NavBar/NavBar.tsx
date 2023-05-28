@@ -4,8 +4,6 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-
-import Logo from "../../../Assets/Images/Logotype.png";
 import menuIcon from "../../../Assets/icons/menu.png";
 
 import "./NavBar.css";

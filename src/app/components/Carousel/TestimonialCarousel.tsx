@@ -46,30 +46,33 @@ const TestimonialCarousel = () => {
     <>
       <Swiper
         spaceBetween={10}
+        loop={true}
         direction={"horizontal"}
         centerInsufficientSlides={true}
         centeredSlidesBounds={true}
         breakpoints={{
-          // when window width is <= 320px
-          320: {
+          "@0.00": {
             slidesPerView: 1,
             spaceBetween: 10,
           },
-          // when window width is <= 480px
-          480: {
+          "@0.75": {
             slidesPerView: 1,
             spaceBetween: 20,
           },
-
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 30,
+          "@1.00": {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          "@1.75": {
+            slidesPerView: 4,
+            spaceBetween: 50,
           },
         }}
-        // modules={[Navigation]}
         className="mySwiper"
-        loop={true}
       >
         {data.map((x) => (
           <SwiperSlide>

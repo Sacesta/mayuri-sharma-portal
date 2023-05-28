@@ -1,11 +1,9 @@
 import React from "react";
 import "../styles/main.css";
 import Image from "next/image";
-import rightCircle from "../../../Assets/icons/Ellipse 24 (Stroke).png";
-import programDetailsBanner from "../../../Assets/Images/pageImages/programDetails_banner.png";
-import profileImage from "../../../Assets/Images/pageImages/transformation_profile_img.png";
-import footerLogo from "../../../Assets/Images/pageImages/footer_logo.png";
-import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png";
+import rightCircle from "../../Assets/icons/Ellipse 24 (Stroke).png";
+import programDetailsBanner from "../../Assets/Images/pageImages/programDetails_banner.png";
+import profileImage from "../../Assets/Images/pageImages/transformation_profile_img.png";
 import Footer from "../components/Footer";
 
 const ProgramDetails = () => {
