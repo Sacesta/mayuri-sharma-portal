@@ -13,7 +13,7 @@ import homeStoryImg from "../../Assets/Images/pageImages/home_story_one.png";
 import footerEllipse from "../../Assets/Images/pageImages/footer_ellipse.png";
 
 // Carousel
-import TestimonialCarousel from "../components/NavBar/TestimonialCarousel/TestimonialCarousel";
+import TestimonialCarousel from "../components/Carousel/TestimonialCarousel";
 import HeroTestimonial from "../components/Carousel/HeroTestimonial";
 
 /*Country List */

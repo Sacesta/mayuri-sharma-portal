@@ -296,7 +296,7 @@ const ProgramDetails = () => {
                   Personalized approach to each individual, taking into account
                   their unique needs, goals, and preferences. This includes
                   personalized assessments, recommendations, and support
-                  tailored to each person's specific situation.
+                  tailored to each person&apos;s specific situation.
                 </p>
                 <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg
@@ -320,7 +320,7 @@ const ProgramDetails = () => {
                   Personalized approach to each individual, taking into account
                   their unique needs, goals, and preferences. This includes
                   personalized assessments, recommendations, and support
-                  tailored to each person's specific situation.
+                  tailored to each person&apos;s specific situation.
                 </p>
                 <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg
@@ -344,7 +344,7 @@ const ProgramDetails = () => {
                   Personalized approach to each individual, taking into account
                   their unique needs, goals, and preferences. This includes
                   personalized assessments, recommendations, and support
-                  tailored to each person's specific situation.
+                  tailored to each person&apos;s specific situation.
                 </p>
                 <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg
@@ -370,11 +370,11 @@ const ProgramDetails = () => {
                   John from Australia
                 </h4>
                 <p className="lg:w-2/3">
-                  "Joining this community of habit-builders and supporters has
+                  &quot;Joining this community of habit-builders and supporters has
                   been a game-changer. The encouragement and accountability from
                   members have helped me develop healthier habits and improve my
                   mental well-being. The shared insights and resources have been
-                  transformative, and the sense of belonging is amazing!" - John
+                  transformative, and the sense of belonging is amazing!&quot; - John
                 </p>
                 <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
                   <Image
@@ -404,11 +404,11 @@ const ProgramDetails = () => {
                   Tammy from France
                 </h4>
                 <p className="lg:w-2/3">
-                  "This community has been life-changing. The practical
+                  &quot;This community has been life-changing. The practical
                   strategies and support from like-minded members have helped me
                   prioritize my mental health and build positive habits. The
-                  progress I've made and the connections I've formed are
-                  invaluable. Highly recommend!" - Tammy
+                  progress I&apos;ve made and the connections I&apos;ve formed are
+                  invaluable. Highly recommend!&quot; - Tammy
                 </p>
                 <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
                   <Image
