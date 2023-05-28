@@ -16,7 +16,7 @@ const Podcast = () => {
         <section className="md:py-6 banner">
           <div
             className="about_banner bg-center container mx-auto"
-            style={{ backgroundImage: `url(${podcastBanner.src})` }}
+            style={{ background: `url(${podcastBanner.src})` }}
           >
             <Image className="main-right-circle" src={rightCircle} alt=".." />
             <div className="absolute bottom-0 left-0 lg:flex items-center pl-6 lg:pl-[90px] pb-8 lg:pb-14 z-[2]">

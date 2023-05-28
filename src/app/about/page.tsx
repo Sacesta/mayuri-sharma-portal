@@ -15,7 +15,7 @@ const About = () => {
       <section className="md:py-9  banner md:px-16">
         <div
           className="about_banner lg:bg-right container mx-auto"
-          style={{ backgroundImage: `url(${bg.src})` }}
+          style={{ background: `url(${bg.src})` }}
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <p className="about_head w-full">About me</p>
