@@ -13,7 +13,7 @@ const Podcast = () => {
   return (
     <>
       <div className="podcast_back">
-        <section className="md:py-6 banner">
+        <section className="md:pt-6 md:pb-20  banner md:px-16">
           <div
             className="about_banner bg-center container mx-auto"
             style={{ background: `url(${podcastBanner.src})` }}
