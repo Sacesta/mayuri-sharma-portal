@@ -16,7 +16,7 @@ import Footer from "../../components/Footer";
 const Programs = () => {
   return (
     <>
-      <section className="md:py-9  banner">
+      <section className="md:pt-6 md:pb-20  banner md:px-16">
         <div
           className="about_banner lg:bg-right container mx-auto"
           style={{ backgroundImage: `url(${bg.src})` }}

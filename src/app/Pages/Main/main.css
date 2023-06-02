@@ -1,3 +1,4 @@
+/* Main */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
@@ -292,7 +293,7 @@ header {
   @apply lg:-ml-[11%];
 }
 .testimonial_section .swiper .swiper-wrapper .swiper-slide {
-  margin-inline-end: 32px !important;
+  margin-right: 32px !important;
 }
 
 @media screen and (max-width: 1052px) {
@@ -306,6 +307,14 @@ header {
   }
   .banner.productDetails_banner {
     height: auto;
+  }
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .testimonial_section .swiper .swiper-wrapper .swiper-slide {
+    margin-right: 40px !important;
   }
 }
 
