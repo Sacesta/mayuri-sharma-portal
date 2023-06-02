@@ -292,9 +292,9 @@ header {
 .testimonial_section .swiper .swiper-wrapper {
   @apply lg:-ml-[11%];
 }
-.testimonial_section .swiper .swiper-wrapper .swiper-slide {
+/* .testimonial_section .swiper .swiper-wrapper .swiper-slide {
   margin-right: 32px !important;
-}
+} */
 
 @media screen and (max-width: 1052px) {
   .testimonial_section .swiper .swiper-wrapper {
@@ -310,13 +310,11 @@ header {
   }
 }
 
-
-
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
     margin-right: 40px !important;
   }
-}
+} */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 

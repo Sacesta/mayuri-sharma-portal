@@ -7,7 +7,7 @@ import missionEllipse from "../../Assets/Images/pageImages/Ellipse _six.svg";
 import principlesOne from "../../Assets/Images/pageImages/principles_one.svg";
 import social_img_1 from "../../Assets/Images/pageImages/social_img_1.png";
 import ThisIsMe from "../components/About/ThisIsMe";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 
 const About = () => {
   return (

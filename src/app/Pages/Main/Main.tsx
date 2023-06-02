@@ -10,7 +10,7 @@ import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
 import supportive_banner from "../../../Assets/Images/pageImages/Supportive_banner.png";
 import HeroTestimonial from "@/app/components/Carousel/HeroTestimonial";
 import TestimonialCarousel from "@/app/components/Carousel/TestimonialCarousel";
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/footer/Footer";
 import Link from "next/link";
 
 const Main = () => {
@@ -819,7 +819,7 @@ const Main = () => {
                     points="1.5 6 4.5 9 10.5 1"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeWidth="2"
                   ></polyline>
                 </symbol>
               </svg>

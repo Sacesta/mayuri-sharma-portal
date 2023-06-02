@@ -1,8 +1,8 @@
 import React from "react";
 // import "../styles/main.css";
 import Image from "next/image";
-import footerLogo from "../../Assets/Images/pageImages/footer_logo.png";
-import footerEllipse from "../../Assets/Images/pageImages/footer_ellipse.png";
+import footerLogo from "../../../Assets/Images/pageImages/footer_logo.png";
+import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png";
 
 const Footer = () => {
   return (
