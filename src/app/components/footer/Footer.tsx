@@ -1,5 +1,5 @@
 import React from "react";
-// import "../styles/main.css";
+import "../../styles/footer.css";
 import Image from "next/image";
 import footerLogo from "../../../Assets/Images/pageImages/footer_logo.png";
 import footerEllipse from "../../../Assets/Images/pageImages/footer_ellipse.png";
@@ -198,9 +198,9 @@ const Footer = () => {
                 <input type="text" placeholder="Enter email address" />
               </div>
               <button className="primary_button w-full mb-6">Subscribe</button>
-              <p className="text-sm text-[#090617] font-normal">
+              {/* <p className="text-sm text-[#090617] font-normal">
                 *We respect your privacy you can unsubscribe anytime
-              </p>
+              </p> */}
             </div>
           </div>
           <p className="text-base font-normal text-white mt-16 text-center block lg:hidden copyright_text">

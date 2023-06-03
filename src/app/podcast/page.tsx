@@ -1,5 +1,5 @@
 import React from "react";
-import "./podcast.css";
+// import "./podcast.css";
 import "../styles/main.css";
 import Image from "next/image";
 import rightCircle from "../../Assets/icons/Ellipse 24 (Stroke).png";
