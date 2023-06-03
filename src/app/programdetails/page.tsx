@@ -5,7 +5,7 @@ import rightCircle from "../../Assets/icons/Ellipse 24 (Stroke).png";
 import programDetailsBanner from "../../Assets/Images/pageImages/programDetails_banner.png";
 import profileImage from "../../Assets/Images/pageImages/transformation_profile_img.png";
 import Footer from "../components/footer/Footer";
-import Accordion from "../components/Accoraian/Aco";
+import Accordion from "../components/Accordion/Accordion";
 import items from "../Data/accordion.json";
 
 const ProgramDetails = () => {
