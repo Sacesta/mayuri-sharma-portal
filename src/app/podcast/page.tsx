@@ -1,5 +1,6 @@
 import React from "react";
 import "./podcast.css";
+import "../styles/main.css";
 import Image from "next/image";
 import rightCircle from "../../Assets/icons/Ellipse 24 (Stroke).png";
 import podcastBanner from "../../Assets/Images/pageImages/podcast_banner.png";
@@ -12,7 +13,7 @@ const page = () => {
       <div className="podcast_back">
         <section className="md:pt-6 md:pb-20  banner md:px-16">
           <div
-            className="about_banner bg-center container mx-auto"
+            className="about_banner bg-center mx-auto"
             style={{ backgroundImage: `url(${podcastBanner.src})` }}
           >
             <Image className="main-right-circle" src={rightCircle} alt=".." />

@@ -11,7 +11,7 @@ import items from "../Data/accordion.json";
 const ProgramDetails = () => {
   return (
     <>
-      <section className="py-9 banner productDetails_banner flex items-center bg-[#F9F9F9]">
+      <section className="py-9 productDetails_banner flex items-center bg-[#F9F9F9]">
         <div className="lg:bg-right container mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="grid lg:grid-cols-2 z-[2] gap-10">

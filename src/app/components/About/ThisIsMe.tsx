@@ -33,7 +33,7 @@ const ThisIsMe = () => {
   };
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-14 lg:mt-[200px] ">
         <div className="lg:grid grid-cols-2 gap-20 lg:px-16">
           <div className="mb-14 lg:mb-0">
             <p className="paragraph_one_style mb-2">This is me</p>

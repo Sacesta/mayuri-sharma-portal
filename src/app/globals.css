@@ -11,3 +11,28 @@ body {
   background: #ffffff;
   font-family: "Montserrat";
 }
+
+.container {
+  @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1200px] 2xl:max-w-[1312px] px-[4%] md:px-0;
+}
+
+.paragraph_one_style {
+  font-family: "Montserrat";
+  @apply text-sm lg:text-xl leading-6 font-semibold;
+}
+
+.paragraph_two_style {
+  @apply font-normal text-[#090617] text-lg leading-7;
+}
+
+h2.heading_style_two {
+  font-family: "Montserrat";
+  @apply font-semibold text-[28px] lg:text-[38px] leading-[34px] lg:leading-[46px];
+}
+
+.main-right-circle {
+  @apply absolute top-0 right-0;
+}
+.banner {
+  height: calc(100vh - 72px);
+}

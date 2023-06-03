@@ -13,7 +13,7 @@ const NavBar = () => {
     <>
       <nav
         style={{ boxShadow: "0px 12px 24px rgba(0, 0, 0, 0.1)" }}
-        className="px-6 lg:px-auto py-6 flex justify-between items-center lg:px-16 nav-height"
+        className="px-6 lg:px-auto py-6 flex justify-between items-center lg:px-16 nav-height sticky left-0 top-0 w-full z-[99999] bg-white"
       >
         <div className="flex gap-20">
           <div className="cursor-pointer">
@@ -62,7 +62,7 @@ const NavBar = () => {
                 href="/"
                 className={`${
                   router === "/" && "active"
-                } mr-10 hover:text-[#eb334a]`}
+                } mr-5 xl:mr-10 hover:text-[#eb334a]`}
               >
                 Home
               </Link>
@@ -70,7 +70,7 @@ const NavBar = () => {
                 href="/about"
                 className={`${
                   router === "/about" && "active"
-                } mr-10 hover:text-[#eb334a]`}
+                }  mr-5 xl:mr-10 hover:text-[#eb334a]`}
               >
                 About Me
               </Link>
@@ -78,7 +78,7 @@ const NavBar = () => {
                 href="/podcast"
                 className={`${
                   router === "/podcast" && "active"
-                } mr-10 hover:text-[#eb334a]`}
+                }  mr-5 xl:mr-10 hover:text-[#eb334a]`}
               >
                 My Podcast
               </Link>
@@ -86,7 +86,7 @@ const NavBar = () => {
                 href="/programs"
                 className={`${
                   router === "/programs" && "active"
-                } mr-10 hover:text-[#eb334a]`}
+                }  mr-5 xl:mr-10 hover:text-[#eb334a]`}
               >
                 Programs
               </Link>
@@ -94,7 +94,7 @@ const NavBar = () => {
                 href="/"
                 className={`${
                   router === "/masterclass" && "active"
-                } mr-10 hover:text-[#eb334a]`}
+                }  mr-5 xl:mr-10 hover:text-[#eb334a]`}
               >
                 Masterclass
               </Link>
@@ -103,13 +103,31 @@ const NavBar = () => {
         </div>
         <div className="right-button">
           <button className="hidden lg:block nav-btn">Contact me</button>
-          <Image
-            className="menu-icon block lg:hidden"
-            src={menuIcon}
-            alt="Icon..."
-          />
+          <div className="flex lg:hidden">
+            <Image
+              className="menu-icon block"
+              src={menuIcon}
+              alt="Icon..."
+            />
+            <div>
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.4501 27.6501L0.350098 25.5501L11.9001 14.0001L0.350098 2.4501L2.4501 0.350098L14.0001 11.9001L25.5501 0.350098L27.6501 2.4501L16.1001 14.0001L27.6501 25.5501L25.5501 27.6501L14.0001 16.1001L2.4501 27.6501Z" fill="#EB334A"/>
+            </svg>
+            </div>
+          </div>
         </div>
+          {/* <div className="mobile_menu">
+            <ul className="mob_nav">
+              <li><a href="">Home</a></li>
+              <li><a href="">About me</a></li>
+              <li><a href="">My podcast</a></li>
+              <li><a href="">Programs</a></li>
+              <li><a href="">Masterclass</a></li>
+            </ul>
+            <a href="#" className="mob_nav_button">Contact me</a>
+          </div> */}
       </nav>
+      
     </>
   );
 };
