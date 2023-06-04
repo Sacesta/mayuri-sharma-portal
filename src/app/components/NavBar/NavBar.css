@@ -1,3 +1,4 @@
+nav{box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1)}
 .active {
   color: #eb334a;
 }
@@ -65,10 +66,14 @@
 }
 
 .navbar.open {
-  top: 10%;
+  top: 11%;
 }
 
 .navbar-menu {
   list-style-type: none;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  nav{box-shadow: none}
 }

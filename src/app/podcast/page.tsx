@@ -77,8 +77,21 @@ const page = () => {
         </section>
       </div>
 
-      <section className="pb-24 lg:pb-60 pt-24">
+      <section className="pb-24 lg:pb-60 pt-16 lg:pt-24">
         <div className="container mx-auto">
+          <div className="relative mb-8 lg:hidden">
+            <select name="" id="" className="w-full h-full py-4 px-6 border border-[#B5B5B5] rounded-lg appearance-none text-[#090617]">
+              <option value="">ALL EPISODES</option>
+              <option value="">a</option>
+              <option value="">a</option>
+              <option value="">a</option>
+            </select>
+            <div className="absolute top-7 right-6 pointer-events-none">
+              <svg width="18" height="10" viewBox="0 0 10.6148C218 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L9 9L17 1" stroke="#252525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
           <div className="lg:px-20">
             <ul className="home_story_tab">
               <li className="story_tab_active">Recent</li>

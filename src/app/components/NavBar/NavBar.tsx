@@ -66,7 +66,7 @@ const NavBar = () => {
   return (
     <>
       <nav
-        style={{ boxShadow: "0px 12px 24px rgba(0, 0, 0, 0.1)" }}
+       
         className="px-6 lg:px-auto py-6 flex justify-between items-center lg:px-16 nav-height sticky left-0 top-0 w-full z-[99999] bg-white"
       >
         <div className="flex gap-20">
