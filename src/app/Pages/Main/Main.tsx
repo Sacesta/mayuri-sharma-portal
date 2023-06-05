@@ -370,7 +370,7 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <ul className="program_list lg:px-20">
+          <ul className="program_list xl:px-20">
             <li className="program_list_li">
               <div className="program_img">
                 <Image src={programeone} alt="program..." />
@@ -872,7 +872,7 @@ const Main = () => {
             Supportive community of like-minded individuals building habits
             together
           </h2>
-          <div className="grid lg:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 lg:grid-flow-col xl:px-24 gap-10 ">
+          <div className="grid lg:grid-rows-2 lg:grid-cols-2 xl:grid-cols-3 xl:grid-flow-col xxl:px-24 gap-10 ">
             <div className="news_letter_form lg:row-span-2 border border-[#E1E1E1] bg-white">
               <p className="news_letter_form_head">
                 Join the community for free!

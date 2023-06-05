@@ -317,7 +317,7 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <ul className="program_list lg:px-20">
+          <ul className="program_list xl:px-20">
             <li className="program_list_li">
               <div className="program_img">
                 <Image src={programeone} alt="program..." />

@@ -93,6 +93,18 @@ header {
     height: calc(100vh - 72px);
   }
 }
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: calc(70vh - 72px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    height: 100vh;
+  }
+}
+
+
 
 .customize_checkbox {
   display: block;
@@ -379,6 +391,13 @@ footer {
   border-radius: 100px;
   margin-inline: 7px;
 }
+@media screen and (max-width: 639px) {
+  .home_banner_text .swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{width:50px;border-radius:100px;margin-inline:7px}
+  }
+
+
+
+
 .home_banner_text .swiper .swiper-pagination-bullet-active {
   background-color: #29214b;
 }
@@ -495,7 +514,7 @@ footer {
 }
 
 .program_list .program_list_li:hover .program_register {
-  @apply opacity-100 bottom-8 transition-all ease-in duration-150;
+  @apply opacity-100 bottom-8 transition-all ease-in duration-150 hidden lg:flex;
 }
 
 .program_img {
@@ -558,6 +577,9 @@ footer {
 
 .news_letter_form {
   @apply rounded-[20px] bg-white p-8 lg:max-w-[440px] lg:mt-0 z-[2] relative;
+}
+.Supportive_community_section .news_letter_form {
+  @apply  lg:max-w-full
 }
 
 .news_letter_form_head {
