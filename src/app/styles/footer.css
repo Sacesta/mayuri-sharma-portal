@@ -1,0 +1,17 @@
+footer {
+    @apply bg-[#29214B] pt-20 pb-16 lg:pb-40 relative;
+  }
+  
+  .footer_links li {
+    @apply mb-4 text-white font-normal text-base;
+  }
+  .social_media_icon {
+    @apply flex mb-10 lg:mb-0;
+  }
+  .social_media_icon li {
+    @apply mr-8;
+  }
+  
+  .copyright_text {
+    font-family: "Noto Sans", sans-serif;
+  }

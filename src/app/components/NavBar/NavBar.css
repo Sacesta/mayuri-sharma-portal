@@ -32,3 +32,43 @@
   height: 22px;
   cursor: pointer;
 }
+.mobile_menu {
+  @apply absolute top-[100%] left-0 w-full bg-white p-6 border-t border-[#E1E1E1];
+}
+.mob_nav {
+  font-family: "Montserrat";
+}
+.mob_nav li {
+  padding-bottom: 20px;
+  font-size: 21px;
+  color: #505050;
+  font-weight: 600;
+}
+.mob_nav_button {
+  width: 100%;
+  border: 1px solid #090617;
+  color: #090617;
+  display: block;
+  border-radius: 8px;
+  padding-block: 8px;
+  text-align: center;
+  font-weight: 600;
+  margin-block-start: 60px;
+}
+
+.navbar {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  transition: top 1s ease-in-out;
+  z-index: 100;
+}
+
+.navbar.open {
+  top: 10%;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+}

@@ -1,19 +1,73 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import menuIcon from "../../../Assets/icons/menu.png";
 
 import "./NavBar.css";
-const NavBar = () => {
+
+function DynamicTag({ tag, children }: any) {
+  const Tag = tag;
+  return <Tag>{children}</Tag>;
+}
+
+const Links = ({ tag }: any) => {
   const router = usePathname();
+
+  const links = [
+    {
+      href: "/",
+      title: "Home",
+    },
+    {
+      href: "/about",
+      title: "About Me",
+    },
+    {
+      href: "/podcast",
+      title: "My Podcast",
+    },
+    {
+      href: "/programs",
+      title: "Programs",
+    },
+    {
+      href: "/masterclass",
+      title: "Masterclass",
+    },
+  ];
+  return (
+    <>
+      {links?.map((x: any) => (
+        <DynamicTag tag={tag}>
+          <Link
+            href={x?.href}
+            className={`${
+              router === x.href && "active"
+            } mr-5 xl:mr-10 hover:text-[#eb334a]`}
+          >
+            {x?.title}
+          </Link>
+        </DynamicTag>
+      ))}
+    </>
+  );
+};
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleToggle = () => {
+    console.log(isOpen);
+
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <nav
         style={{ boxShadow: "0px 12px 24px rgba(0, 0, 0, 0.1)" }}
-        className="px-6 lg:px-auto py-6 flex justify-between items-center lg:px-16 nav-height"
+        className="px-6 lg:px-auto py-6 flex justify-between items-center lg:px-16 nav-height sticky left-0 top-0 w-full z-[99999] bg-white"
       >
         <div className="flex gap-20">
           <div className="cursor-pointer">
@@ -58,58 +112,51 @@ const NavBar = () => {
           </div>
           <div className="hidden lg:block nan-list">
             <ul className="nav-ul">
-              <Link
-                href="/"
-                className={`${
-                  router === "/" && "active"
-                } mr-10 hover:text-[#eb334a]`}
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className={`${
-                  router === "/about" && "active"
-                } mr-10 hover:text-[#eb334a]`}
-              >
-                About Me
-              </Link>
-              <Link
-                href="/podcast"
-                className={`${
-                  router === "/podcast" && "active"
-                } mr-10 hover:text-[#eb334a]`}
-              >
-                My Podcast
-              </Link>
-              <Link
-                href="/programs"
-                className={`${
-                  router === "/programs" && "active"
-                } mr-10 hover:text-[#eb334a]`}
-              >
-                Programs
-              </Link>
-              <Link
-                href="/"
-                className={`${
-                  router === "/masterclass" && "active"
-                } mr-10 hover:text-[#eb334a]`}
-              >
-                Masterclass
-              </Link>
+              <Links tag="span" />
             </ul>
           </div>
         </div>
         <div className="right-button">
           <button className="hidden lg:block nav-btn">Contact me</button>
-          <Image
-            className="menu-icon block lg:hidden"
-            src={menuIcon}
-            alt="Icon..."
-          />
+          <div className="flex lg:hidden">
+            <Image
+              onClick={handleToggle}
+              className={`toggle-btn ${
+                isOpen === true ? "hidden" : "block"
+              } menu-icon`}
+              src={menuIcon}
+              alt="Icon..."
+            />
+            <div
+              onClick={handleToggle}
+              className={`${
+                isOpen === true ? "block" : "hidden"
+              } cursor-pointer`}
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.4501 27.6501L0.350098 25.5501L11.9001 14.0001L0.350098 2.4501L2.4501 0.350098L14.0001 11.9001L25.5501 0.350098L27.6501 2.4501L16.1001 14.0001L27.6501 25.5501L25.5501 27.6501L14.0001 16.1001L2.4501 27.6501Z"
+                  fill="#EB334A"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </nav>
+      <div className={`navbar ${isOpen ? "open" : ""} mobile_menu lg:hidden `}>
+        <ul className="mob_nav navbar-menu">
+          <Links tag={"li"} />
+        </ul>
+        <a href="#" className="mob_nav_button">
+          Contact me
+        </a>
+      </div>
     </>
   );
 };
