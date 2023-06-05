@@ -40,8 +40,8 @@ const Links = ({ tag }: any) => {
   ];
   return (
     <>
-      {links?.map((x: any) => (
-        <DynamicTag tag={tag}>
+      {links?.map((x: any,index:number) => (
+        <DynamicTag key={`navbar${index}`} tag={tag}>
           <Link
             href={x?.href}
             className={`${
