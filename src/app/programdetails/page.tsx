@@ -372,11 +372,12 @@ const ProgramDetails = () => {
                   John from Australia
                 </h4>
                 <p className="lg:w-2/3">
-                  &quot;Joining this community of habit-builders and supporters has
-                  been a game-changer. The encouragement and accountability from
-                  members have helped me develop healthier habits and improve my
-                  mental well-being. The shared insights and resources have been
-                  transformative, and the sense of belonging is amazing!&quot; - John
+                  &quot;Joining this community of habit-builders and supporters
+                  has been a game-changer. The encouragement and accountability
+                  from members have helped me develop healthier habits and
+                  improve my mental well-being. The shared insights and
+                  resources have been transformative, and the sense of belonging
+                  is amazing!&quot; - John
                 </p>
                 <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
                   <Image
@@ -409,8 +410,8 @@ const ProgramDetails = () => {
                   &quot;This community has been life-changing. The practical
                   strategies and support from like-minded members have helped me
                   prioritize my mental health and build positive habits. The
-                  progress I&apos;ve made and the connections I&apos;ve formed are
-                  invaluable. Highly recommend!&quot; - Tammy
+                  progress I&apos;ve made and the connections I&apos;ve formed
+                  are invaluable. Highly recommend!&quot; - Tammy
                 </p>
                 <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
                   <Image
