@@ -88,21 +88,7 @@ header {
   height: 552px;
 }
 
-@media screen and (max-width: 1399px) {
-  .banner {
-    height: calc(100vh - 72px);
-  }
-}
-@media screen and (max-width: 1024px) {
-  .banner {
-    height: calc(70vh - 72px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .banner {
-    height: 100vh;
-  }
-}
+
 
 
 
@@ -322,11 +308,7 @@ header {
   }
 }
 
-/* @media screen and (max-width: 991px) {
-  .testimonial_section .swiper .swiper-wrapper .swiper-slide {
-    margin-right: 40px !important;
-  }
-} */
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -535,6 +517,8 @@ footer {
 .program_icon {
   @apply w-8 h-8 flex items-center justify-center;
 }
+
+
 .program_icon svg {
   @apply h-full w-auto max-w-full;
 }
@@ -829,3 +813,36 @@ footer {
 .accordian .accordian_item .accordian_header .accordion_button {
   @apply text-[#2B2B27] font-semibold py-[23px] w-full text-start;
 }
+
+
+
+
+/* Media quary css */
+@media screen and (max-width: 1399px) {
+  .banner{height:calc(100vh - 72px)}
+}
+@media screen and (max-width: 1024px) {
+ .banner{height:calc(70vh - 72px)}
+}
+@media screen and (max-width: 991px) {
+  .testimonial_section .swiper .swiper-wrapper .swiper-slide{margin-right:40px!important}
+}
+@media screen and (max-width: 767px) {
+.banner{height:calc(100vh - 72px)}
+ .program_icon{@apply w-6 h-6;}
+}
+@media screen and (max-width: 701px) {
+  .testimonial_section .swiper .swiper-wrapper .swiper-slide {
+    margin-right: 20px !important;
+  }
+}
+@media screen and (max-width: 639px) {
+  .home_banner_text .swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{width:50px;border-radius:100px;margin-inline:7px}
+  }
+@media screen and (max-width: 526px) {
+  .testimonial_section .swiper .swiper-wrapper .swiper-slide {
+    margin-right: 10px !important;
+  }
+}
+
+

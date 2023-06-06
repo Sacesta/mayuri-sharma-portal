@@ -13,7 +13,7 @@ function DynamicTag({ tag, children }: any) {
   return <Tag>{children}</Tag>;
 }
 
-const Links = ({ tag }: any) => {
+const Links = ({ tag, setIsOpen, isOpen }: any) => {
   const router = usePathname();
 
   const links = [
@@ -43,6 +43,7 @@ const Links = ({ tag }: any) => {
       {links?.map((x: any,index:number) => (
         <DynamicTag key={`navbar${index}`} tag={tag}>
           <Link
+            onClick={() => setIsOpen(!isOpen)}
             href={x?.href}
             className={`${
               router === x.href && "active"
@@ -65,10 +66,7 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav
-       
-        className="px-6 lg:px-auto py-6 flex justify-between items-center lg:px-16 nav-height sticky left-0 top-0 w-full z-[99999] bg-white"
-      >
+      <nav className="px-6 lg:px-auto py-6 flex justify-between items-center lg:px-16 nav-height sticky left-0 top-0 w-full z-[99999] bg-white">
         <div className="flex gap-20">
           <div className="cursor-pointer">
             <Link href="/">
@@ -112,7 +110,7 @@ const NavBar = () => {
           </div>
           <div className="hidden lg:block nan-list">
             <ul className="nav-ul">
-              <Links tag="span" />
+              <Links tag="span" setIsOpen={setIsOpen} isOpen={isOpen} />
             </ul>
           </div>
         </div>
@@ -151,7 +149,7 @@ const NavBar = () => {
       </nav>
       <div className={`navbar ${isOpen ? "open" : ""} mobile_menu lg:hidden `}>
         <ul className="mob_nav navbar-menu">
-          <Links tag={"li"} />
+          <Links tag={"li"} setIsOpen={setIsOpen} isOpen={isOpen} />
         </ul>
         <a href="#" className="mob_nav_button">
           Contact me
