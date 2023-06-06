@@ -489,7 +489,7 @@ header {
 }
 
 .program_list .program_list_li:hover .program_register {
-  @apply opacity-100 bottom-8 transition-all ease-in duration-150;
+  @apply opacity-100 bottom-8 transition-all ease-in duration-150 hidden lg:flex;;
 }
 
 .program_img {
@@ -552,6 +552,10 @@ header {
 
 .news_letter_form {
   @apply rounded-[20px] bg-white p-8 lg:max-w-[440px] lg:mt-0 z-[2] relative;
+}
+
+.Supportive_community_section .news_letter_form {
+  @apply  lg:max-w-full
 }
 
 .news_letter_form_head {
@@ -801,3 +805,6 @@ header {
 .accordian .accordian_item .accordian_header .accordion_button {
   @apply text-[#2B2B27] font-semibold py-[23px] w-full text-start;
 }
+@media screen and (max-width: 639px) {
+  .home_banner_text .swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{width:50px;border-radius:100px;margin-inline:7px}
+  }

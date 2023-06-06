@@ -36,7 +36,8 @@ nav {
   cursor: pointer;
 }
 .mobile_menu {
-  @apply absolute top-[100%] left-0 w-full bg-white p-6 border-t border-[#E1E1E1];
+  @apply absolute top-[100%] left-0 w-full bg-white p-6;
+  border-top: 7px solid #e1e1e1;
 }
 .mob_nav {
   font-family: "Montserrat";
@@ -68,7 +69,7 @@ nav {
 }
 
 .navbar.open {
-  top: 72px;
+  top: 10%;
 }
 
 .navbar-menu {
