@@ -16,7 +16,7 @@ import Link from "next/link";
 const Main = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20  banner md:px-16">
+      <section className="md:pt-6 md:pb-20  banner md:px-6 lg:px-16">
         <div className="home_banner container mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="home_banner_text">
@@ -356,7 +356,7 @@ const Main = () => {
 
       <section className="upcoming_program">
         <div className="container mx-auto ">
-          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 lg:px-20">
+          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
             <h2 className="heading_style_two mb-8 lg:mb-0 text-[#29214B] lg:max-w-[398px] text-start  lg:text-left">
               Join me in an upcoming program
             </h2>
@@ -370,7 +370,7 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <ul className="program_list xl:px-20">
+          <ul className="program_list xxl:px-20">
             <li className="program_list_li">
               <div className="program_img">
                 <Image src={programeone} alt="program..." />
@@ -386,7 +386,7 @@ const Main = () => {
                   and also here and here and ya you guessed it here.
                 </p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="29"
@@ -406,7 +406,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="28"
@@ -426,7 +426,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -446,7 +446,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -522,7 +522,7 @@ const Main = () => {
                   and also here and here and ya you guessed it here.
                 </p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="29"
@@ -542,7 +542,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="28"
@@ -562,7 +562,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -582,7 +582,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -658,7 +658,7 @@ const Main = () => {
                   and also here and here and ya you guessed it here.
                 </p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="29"
@@ -678,7 +678,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="28"
@@ -698,7 +698,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -718,7 +718,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"

@@ -500,7 +500,7 @@ footer {
 }
 
 .program_img {
-  @apply w-full lg:w-[290px] h-[200px] lg:h-auto;
+  @apply w-full lg:w-[20%] h-[200px] lg:h-auto;
 }
 
 .program_img img {
@@ -805,8 +805,11 @@ footer {
   @apply border-b border-[#2B2B27];
 }
 .accordian .accordian_item .accordion_body {
+
   @apply pb-[23px];
 }
+.accordian .accordian_item  .accordion_collapse.hidden{transition: top 0.8s ease-in-out;}
+.accordian .accordian_item  .accordion_collapse.show{transition: top 0.8s ease-in-out;}
 .accordian .accordian_item .accordian_header {
   @apply relative;
 }
@@ -822,8 +825,14 @@ footer {
   .banner{height:calc(100vh - 72px)}
 }
 @media screen and (max-width: 1024px) {
- .banner{height:calc(70vh - 72px)}
+ .banner{height:calc(100vh - 72px)}
 }
+
+@media all and (max-width:  1024px) and (max-height: 1366px) and (orientation:portrait) {
+  /* your css rules for ipad portrait */
+  .banner{height:calc(70vh - 72px)}
+}
+
 @media screen and (max-width: 991px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide{margin-right:40px!important}
 }
