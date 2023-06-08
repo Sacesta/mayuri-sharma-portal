@@ -88,10 +88,6 @@ header {
   height: 552px;
 }
 
-
-
-
-
 .customize_checkbox {
   display: block;
   position: relative;
@@ -308,8 +304,6 @@ header {
   }
 }
 
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -374,11 +368,15 @@ footer {
   margin-inline: 7px;
 }
 @media screen and (max-width: 639px) {
-  .home_banner_text .swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{width:50px;border-radius:100px;margin-inline:7px}
+  .home_banner_text
+    .swiper
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+    .swiper-pagination-bullet {
+    width: 50px;
+    border-radius: 100px;
+    margin-inline: 7px;
   }
-
-
-
+}
 
 .home_banner_text .swiper .swiper-pagination-bullet-active {
   background-color: #29214b;
@@ -518,7 +516,6 @@ footer {
   @apply w-8 h-8 flex items-center justify-center;
 }
 
-
 .program_icon svg {
   @apply h-full w-auto max-w-full;
 }
@@ -563,7 +560,7 @@ footer {
   @apply rounded-[20px] bg-white p-8 lg:max-w-[440px] lg:mt-0 z-[2] relative;
 }
 .Supportive_community_section .news_letter_form {
-  @apply  lg:max-w-full
+  @apply lg:max-w-full;
 }
 
 .news_letter_form_head {
@@ -814,22 +811,29 @@ footer {
   @apply text-[#2B2B27] font-semibold py-[23px] w-full text-start;
 }
 
-
-
-
 /* Media quary css */
 @media screen and (max-width: 1399px) {
-  .banner{height:calc(100vh - 72px)}
+  .banner {
+    height: calc(100vh - 72px);
+  }
 }
 @media screen and (max-width: 1024px) {
- .banner{height:calc(70vh - 72px)}
+  .banner {
+    height: calc(70vh - 72px);
+  }
 }
 @media screen and (max-width: 991px) {
-  .testimonial_section .swiper .swiper-wrapper .swiper-slide{margin-right:40px!important}
+  .testimonial_section .swiper .swiper-wrapper .swiper-slide {
+    margin-right: 40px !important;
+  }
 }
 @media screen and (max-width: 767px) {
-.banner{height:calc(100vh - 72px)}
- .program_icon{@apply w-6 h-6;}
+  .banner {
+    height: calc(100vh - 72px);
+  }
+  .program_icon {
+    @apply w-6 h-6;
+  }
 }
 @media screen and (max-width: 701px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
@@ -837,12 +841,17 @@ footer {
   }
 }
 @media screen and (max-width: 639px) {
-  .home_banner_text .swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{width:50px;border-radius:100px;margin-inline:7px}
+  .home_banner_text
+    .swiper
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+    .swiper-pagination-bullet {
+    width: 50px;
+    border-radius: 100px;
+    margin-inline: 7px;
   }
+}
 @media screen and (max-width: 526px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
     margin-right: 10px !important;
   }
 }
-
-

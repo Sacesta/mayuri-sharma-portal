@@ -12,6 +12,7 @@ import HeroTestimonial from "@/app/components/Carousel/HeroTestimonial";
 import TestimonialCarousel from "@/app/components/Carousel/TestimonialCarousel";
 import Footer from "@/app/components/footer/Footer";
 import Link from "next/link";
+import Transformations from "@/app/components/Carousel/Transformations";
 
 const Main = () => {
   return (
@@ -182,7 +183,7 @@ const Main = () => {
               <li>Wellness</li>
             </ul>
             <ul className="home_story_section">
-              <li>
+              {/* <li>
                 <div className="home_story_img">
                   <video autoPlay loop muted>
                     <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
@@ -345,7 +346,8 @@ const Main = () => {
                 <p className="paragraph_two_style text-center">
                   Episode description goes here with no more than three lines.
                 </p>
-              </li>
+              </li> */}
+              <Transformations />
             </ul>
             <button className="tertiary_button">
               View full list of episodes
@@ -745,7 +747,7 @@ const Main = () => {
                     href="/progamdetails"
                     className="flex items-center text-[#4086FF] font-semibold tracking-widest"
                   >
-                    Register noww
+                    Register now
                     <svg
                       width="8"
                       height="13"
@@ -1004,7 +1006,7 @@ const Main = () => {
                   </ul>
                 </div>
               </div>
-                {/* <ul className="flex items-center mt-4">
+              {/* <ul className="flex items-center mt-4">
                   <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto">
                     <div className="program_icon">
                     <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1028,29 +1030,28 @@ const Main = () => {
                     </div>
                   </li>
                 </ul> */}
-                <div className="flex justify-between pt-6 border-t border-[#E1E1E1] mt-10 p-8 bg-white">
-                  <p className="text-[#EB334A] text-[21px] font-bold">Free</p>
-                  <a
-                    href=""
-                    className="flex items-center text-[#4086FF] font-semibold tracking-widest"
+              <div className="flex justify-between pt-6 border-t border-[#E1E1E1] mt-10 p-8 bg-white">
+                <p className="text-[#EB334A] text-[21px] font-bold">Free</p>
+                <a
+                  href=""
+                  className="flex items-center text-[#4086FF] font-semibold tracking-widest"
+                >
+                  Register now
+                  <svg
+                    width="8"
+                    height="13"
+                    className="ml-2"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    Register now
-                    <svg
-                      width="8"
-                      height="13"
-                      className="ml-2"
-                      viewBox="0 0 8 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.3748 13.0002L0.299805 11.9252L5.2498 6.9752L0.299805 2.0252L1.3748 0.950195L7.3998 6.9752L1.3748 13.0002Z"
-                        fill="#4086FF"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              
+                    <path
+                      d="M1.3748 13.0002L0.299805 11.9252L5.2498 6.9752L0.299805 2.0252L1.3748 0.950195L7.3998 6.9752L1.3748 13.0002Z"
+                      fill="#4086FF"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
             <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden">
               <h4 className="heading_three_style mb-2">Knowledge</h4>
