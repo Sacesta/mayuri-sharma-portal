@@ -14,8 +14,8 @@ const Transformations = () => {
   return (
     <div>
       <Swiper slidesPerView={3} spaceBetween={1} className="mySwiper">
-        {a.map(() => (
-          <SwiperSlide>
+        {a.map((x, i) => (
+          <SwiperSlide key={`${x}-${i}`}>
             <li>
               <div className="home_story_img">
                 <video autoPlay loop muted>

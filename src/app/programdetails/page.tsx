@@ -13,7 +13,7 @@ const ProgramDetails = () => {
     <>
       <section className="py-9 productDetails_banner flex items-center bg-[#F9F9F9]">
         <div className="lg:bg-right container mx-auto">
-          <Image className="main-right-circle" src={rightCircle} alt=".." />
+          
           <div className="grid lg:grid-cols-2 z-[2] gap-10">
             <div className="flex flex-col justify-center">
               <h1 className="heading_one_black">Wellness Program</h1>
@@ -110,12 +110,13 @@ const ProgramDetails = () => {
                 <button className="primary_button">Register now</button>
               </div>
             </div>
-            <div className="rounded-[20px] overflow-hidden h-[358px] lg:h-full w-full">
+            <div className="rounded-[20px] overflow-hidden h-[358px] lg:h-full w-full relative">
               <Image
                 src={programDetailsBanner}
                 alt="..."
                 className="h-full w-full object-cover"
               />
+              <Image className="main-right-circle h-[85%] w-[48%]" src={rightCircle} alt=".." />
             </div>
           </div>
         </div>
