@@ -7,13 +7,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// import required modules
-import { Navigation } from "swiper";
 const Transformations = () => {
   const a = [1, 2, 3, 4];
   return (
     <div>
-      <Swiper slidesPerView={3} spaceBetween={1} className="mySwiper">
+      <Swiper slidesPerView={4} className="mySwiper">
         {a.map((x, i) => (
           <SwiperSlide key={`${x}-${i}`}>
             <li>

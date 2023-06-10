@@ -122,8 +122,8 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-span-2 lg:pr-24 mb-8 lg:mb-0">
-              <div className="flex justify-between">
-                <div>
+              <div className="flex">
+                <div className="mr-[77px]">
                   <p className="mb-9 font-semibold text-white text-[21px]">
                     Pages
                   </p>

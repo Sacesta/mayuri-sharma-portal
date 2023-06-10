@@ -13,19 +13,21 @@ import ProgramCards from "../components/ProgramCards/ProgramCards";
 const page = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20  banner md:px-16">
+      <section className="md:pt-6 md:pb-20 commonbanner banner md:px-16">
         <div
-          className="about_banner lg:bg-right container mx-auto"
+          className="about_banner lg:bg-right"
           style={{ backgroundImage: `url(${bg.src})` }}
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <p className="about_head w-full">Programs</p>
+          <div className="container mx-auto z-10">
+            <p className="about_head w-full">Programs</p>
+          </div>
         </div>
       </section>
 
       <section className="upcoming_program programs">
         <div className="container mx-auto ">
-          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 lg:px-20">
+          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20">
             <p className=" max-w-xl ">
               A bit of text about the programs can go here. Lorem ipsum dolor
               sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -34,15 +36,16 @@ const page = () => {
               ex ea commodo consequat.
             </p>
           </div>
+
           <ul className="program_list lg:px-20">
             <ProgramCards />
           </ul>
         </div>
       </section>
 
-      <section className="news_letter_section programs_news">
-        <div className="container mx-auto">
-          <div className="news_letter">
+      <section className="news_letter_section programs_news md:px-6 lg:px-16">
+        <div className="news_letter">
+          <div className="container mx-auto lg:flex justify-between">
             <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
                 <p className="news_letter_head pb-9">News letter</p>
@@ -60,7 +63,7 @@ const page = () => {
                 <button className="secondary_button">See all challenges</button>
               </div>
             </div>
-            <div className="news_letter_form lg:w-1/2 mt-20">
+            <div className="news_letter_form lg:w-1/2 mt-28">
               <p className="news_letter_form_head">Join news letter</p>
               <div className="form_field">
                 <label htmlFor="">Name</label>

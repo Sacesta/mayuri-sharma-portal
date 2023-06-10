@@ -14,11 +14,11 @@ body {
 }
 
 /* .container{
-  @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1312px] 2xl:max-w-[1312px] px-[4%] md:px-0
+  @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1112px] px-[4%] md:px-0
 } */
 
 .container {
-  @apply max-w-full px-[4%] md:px-16;
+  @apply max-w-[1112px] px-[4%];
 }
 
 .primary_button {
@@ -310,8 +310,6 @@ header {
   }
 }
 
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -321,7 +319,7 @@ header {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home_banner {
-  @apply w-full h-full md:rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 lg:px-0;
+  @apply w-full h-full rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 lg:px-0;
 }
 
 .home_banner h3 {
@@ -411,7 +409,7 @@ header {
 }
 
 .home_story_section {
-  @apply grid md:grid-cols-2  lg:grid-cols-4 gap-x-10 gap-y-16 mb-16;
+  @apply gap-x-10 gap-y-16 mb-16;
 }
 .home_story_section li {
   @apply relative cursor-pointer transition-all ease-in duration-300;
@@ -475,7 +473,7 @@ header {
 }
 
 .program_list .program_list_li:hover .program_register {
-  @apply opacity-100 bottom-8 transition-all ease-in duration-150 hidden lg:flex;;
+  @apply opacity-100 bottom-8 transition-all ease-in duration-150 hidden lg:flex;
 }
 
 .program_img {
@@ -519,11 +517,11 @@ header {
   @apply px-0;
 }
 .news_letter {
-  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
+  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 xl:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
 }
 
 .news_ellipse_one {
-  @apply absolute  top-0;
+  @apply absolute top-0 object-cover;
 }
 
 .news_letter_head {
@@ -541,7 +539,7 @@ header {
 }
 
 .Supportive_community_section .news_letter_form {
-  @apply  lg:max-w-full
+  @apply lg:max-w-full;
 }
 
 .news_letter_form_head {
@@ -604,7 +602,7 @@ header {
 
 .about_head {
   font-family: "Montserrat";
-  @apply pl-6 lg:pl-24 pb-8 lg:pb-16 text-4xl lg:text-[50px] text-white  z-[3];
+  @apply pb-8 lg:pb-16 text-4xl lg:text-[50px] text-white  z-[3];
 }
 
 .about_funfacts {
@@ -651,7 +649,7 @@ header {
 }
 .fun_profile_name {
   font-family: "Montserrat";
-  @apply text-white text-[21px] font-semibold leading-6 px-6 pb-28 md:px-20 lg:pb-16 absolute bottom-0 z-10 text-center;
+  @apply text-white text-[21px] font-semibold leading-6 px-6 pb-28 xl:px-20 lg:pb-16 absolute bottom-0 z-10 text-center mx-auto;
 }
 
 .about_journey {
@@ -703,7 +701,7 @@ header {
   @apply lg:pt-24;
 }
 
-.about_mission .container {
+.about_mission .about_missiongoes {
   @apply bg-[#29214B] md:rounded-[20px] overflow-hidden relative;
 }
 .mission {
@@ -785,11 +783,14 @@ header {
 .accordian .accordian_item .accordion_body {
   transition: top 0.8s ease-in-out;
   @apply pb-[23px];
-
 }
 
-.accordian .accordian_item  .accordion_collapse.hidden{transition: top 0.8s ease-in-out;}
-.accordian .accordian_item  .accordion_collapse.show{transition: top 0.8s ease-in-out;}
+.accordian .accordian_item .accordion_collapse.hidden {
+  transition: top 0.8s ease-in-out;
+}
+.accordian .accordian_item .accordion_collapse.show {
+  transition: top 0.8s ease-in-out;
+}
 .accordian .accordian_item .accordian_header {
   @apply relative;
 }
@@ -797,26 +798,39 @@ header {
   @apply text-[#2B2B27] font-semibold py-[23px] w-full text-start;
 }
 
-
 /* Media quary css */
 @media screen and (max-width: 1399px) {
-  .banner{height:calc(100vh - 72px)}
+  .banner {
+    height: calc(100vh - 72px);
+  }
 }
 @media screen and (max-width: 1024px) {
- .banner{height:calc(100vh - 72px)}
+  .banner {
+    height: calc(100vh - 72px);
+  }
 }
 
-@media all and (max-width:  1024px) and (max-height: 1366px) and (orientation:portrait) {
-
-  .banner{height:calc(70vh - 72px)}
+@media all and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+  .banner {
+    height: calc(70vh - 72px);
+  }
 }
 
 @media screen and (max-width: 991px) {
-  .testimonial_section .swiper .swiper-wrapper .swiper-slide{margin-right:40px!important}
+  .testimonial_section .swiper .swiper-wrapper .swiper-slide {
+    margin-right: 40px !important;
+  }
 }
 @media screen and (max-width: 767px) {
-.banner{height:calc(100vh - 72px)}
- .program_icon{@apply w-6 h-6;}
+  .banner {
+    height: calc(100vh - 72px);
+  }
+  .banner.commonbanner {
+    height: calc(60vh - 72px);
+  }
+  .program_icon {
+    @apply w-6 h-6;
+  }
 }
 @media screen and (max-width: 701px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
@@ -824,8 +838,15 @@ header {
   }
 }
 @media screen and (max-width: 639px) {
-  .home_banner_text .swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{width:50px;border-radius:100px;margin-inline:7px}
+  .home_banner_text
+    .swiper
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+    .swiper-pagination-bullet {
+    width: 50px;
+    border-radius: 100px;
+    margin-inline: 7px;
   }
+}
 @media screen and (max-width: 526px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
     margin-right: 10px !important;
