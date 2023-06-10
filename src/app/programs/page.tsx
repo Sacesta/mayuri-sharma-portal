@@ -12,7 +12,7 @@ import Footer from "@/app/components/footer/Footer";
 const page = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20  banner md:px-16">
+      <section className="md:pt-6 md:pb-20 commonbanner banner md:px-16">
         <div
           className="about_banner lg:bg-right container mx-auto"
           style={{ backgroundImage: `url(${bg.src})` }}

@@ -1,12 +1,12 @@
 import React from "react";
-import "./main.css";
+import "../../styles/main.css";
 import Image from "next/image";
 import rightCircle from "../../../Assets/icons/Ellipse 24 (Stroke).png";
 import profileImage from "../../../Assets/Images/pageImages/transformation_profile_img.png";
 import programeone from "../../../Assets/Images/pageImages/program_img_1.png";
 import masterclassimg from "../../../Assets/Images/pageImages/masterclass_one.png";
 import ellipseOne from "../../../Assets/Images/pageImages/Ellipse_one.png";
-import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
+// import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
 import supportive_banner from "../../../Assets/Images/pageImages/Supportive_banner.png";
 import HeroTestimonial from "@/app/components/Carousel/HeroTestimonial";
 import TestimonialCarousel from "@/app/components/Carousel/TestimonialCarousel";
@@ -18,9 +18,9 @@ const Main = () => {
   return (
     <>
       <section className="md:pt-6 md:pb-20  banner md:px-6 lg:px-16">
-        <div className="home_banner container mx-auto">
+        <div className="home_banner  mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <div className="home_banner_text">
+          <div className="home_banner_text container mx-auto">
             <div className="relative">
               <svg
                 width="98"
@@ -70,7 +70,6 @@ const Main = () => {
                   fill="#EB334A"
                 />
               </svg>
-
               <h3>Mayuri Sharma</h3>
               <h1>
                 Wisdom of the past <br /> practice for the present
@@ -786,8 +785,9 @@ const Main = () => {
       </section>
 
       <section className="news_letter_section md:px-16">
-        <div className="container mx-auto">
-          <div className="news_letter">
+        
+        <div className="news_letter">
+          <div className="container mx-auto flex justify-between">
             <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
                 <p className="news_letter_head pb-9">News letter</p>
@@ -856,11 +856,11 @@ const Main = () => {
               alt="..."
               className="news_ellipse_one right-0 hidden md:block"
             />
-            <Image
+            {/* <Image
               src={ellipseTwo}
               alt="..."
               className="news_ellipse_one left-0 block md:hidden"
-            />
+            /> */}
           </div>
         </div>
       </section>

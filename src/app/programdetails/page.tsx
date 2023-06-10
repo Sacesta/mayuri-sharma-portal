@@ -277,7 +277,7 @@ const ProgramDetails = () => {
                   accessed online, as well as providing support through mobile
                   apps, virtual coaching sessions, and other digital platforms
                 </p>
-                <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
+                <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg
                     className="h-6 w-6 lg:h-11 lg:w-11"
                     viewBox="0 0 24 24"
@@ -301,7 +301,7 @@ const ProgramDetails = () => {
                   personalized assessments, recommendations, and support
                   tailored to each person&apos;s specific situation.
                 </p>
-                <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
+                <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg
                     className="h-7 w-5 lg:w-10 lg:h-14"
                     viewBox="0 0 40 52"
@@ -325,7 +325,7 @@ const ProgramDetails = () => {
                   personalized assessments, recommendations, and support
                   tailored to each person&apos;s specific situation.
                 </p>
-                <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
+                <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg
                     className="h-6 w-6 lg:h-11 lg:w-11"
                     viewBox="0 0 44 44"
@@ -349,7 +349,7 @@ const ProgramDetails = () => {
                   personalized assessments, recommendations, and support
                   tailored to each person&apos;s specific situation.
                 </p>
-                <div className="absolute right-0 top-0 bg-[#FF682C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
+                <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg
                     className="h-7 w-6 lg:h-11 lg:w-11"
                     viewBox="0 0 44 40"
@@ -398,7 +398,7 @@ const ProgramDetails = () => {
                   >
                     <path
                       d="M21.1364 0L13.2273 30.0774L11.0455 19.9161C14.2273 19.9161 16.8636 20.9097 18.9545 22.8968C21.0455 24.8839 22.0909 27.5484 22.0909 30.8903C22.0909 34.2323 21.0455 36.9419 18.9545 39.0194C16.8636 41.0065 14.2727 42 11.1818 42C7.90909 42 5.22727 40.9613 3.13636 38.8839C1.04545 36.8064 0 34.1419 0 30.8903C0 29.8064 0.0454539 28.8129 0.136363 27.9097C0.318181 26.9161 0.636363 25.7419 1.09091 24.3871C1.54545 23.0323 2.18182 21.3161 3 19.2387L10.2273 0H21.1364ZM50.0455 0L42.1364 30.0774L39.9545 19.9161C43.1364 19.9161 45.7727 20.9097 47.8636 22.8968C49.9546 24.8839 51 27.5484 51 30.8903C51 34.2323 49.9546 36.9419 47.8636 39.0194C45.7727 41.0065 43.1818 42 40.0909 42C36.8182 42 34.1364 40.9613 32.0455 38.8839C29.9545 36.8064 28.9091 34.1419 28.9091 30.8903C28.9091 29.8064 28.9545 28.8129 29.0455 27.9097C29.2273 26.9161 29.5455 25.7419 30 24.3871C30.4545 23.0323 31.0909 21.3161 31.9091 19.2387L39.1364 0H50.0455Z"
-                      fill="#FF682C"
+                      fill="#EB334A"
                     />
                   </svg>
                 </div>
@@ -432,7 +432,7 @@ const ProgramDetails = () => {
                   >
                     <path
                       d="M21.1364 0L13.2273 30.0774L11.0455 19.9161C14.2273 19.9161 16.8636 20.9097 18.9545 22.8968C21.0455 24.8839 22.0909 27.5484 22.0909 30.8903C22.0909 34.2323 21.0455 36.9419 18.9545 39.0194C16.8636 41.0065 14.2727 42 11.1818 42C7.90909 42 5.22727 40.9613 3.13636 38.8839C1.04545 36.8064 0 34.1419 0 30.8903C0 29.8064 0.0454539 28.8129 0.136363 27.9097C0.318181 26.9161 0.636363 25.7419 1.09091 24.3871C1.54545 23.0323 2.18182 21.3161 3 19.2387L10.2273 0H21.1364ZM50.0455 0L42.1364 30.0774L39.9545 19.9161C43.1364 19.9161 45.7727 20.9097 47.8636 22.8968C49.9546 24.8839 51 27.5484 51 30.8903C51 34.2323 49.9546 36.9419 47.8636 39.0194C45.7727 41.0065 43.1818 42 40.0909 42C36.8182 42 34.1364 40.9613 32.0455 38.8839C29.9545 36.8064 28.9091 34.1419 28.9091 30.8903C28.9091 29.8064 28.9545 28.8129 29.0455 27.9097C29.2273 26.9161 29.5455 25.7419 30 24.3871C30.4545 23.0323 31.0909 21.3161 31.9091 19.2387L39.1364 0H50.0455Z"
-                      fill="#FF682C"
+                      fill="#EB334A"
                     />
                   </svg>
                 </div>
@@ -446,7 +446,7 @@ const ProgramDetails = () => {
                 <p className="heading_three_style_white absolute top-8 left-8 z-[2]">
                   Emma from the UK
                 </p>
-                <div className="absolute bottom-8 right-8 bg-[#FF682C] rounded-full h-16 w-16 z-[2] flex items-center justify-center">
+                <div className="absolute bottom-8 right-8 bg-[#EB334A] rounded-full h-16 w-16 z-[2] flex items-center justify-center">
                   <svg
                     width="22"
                     height="29"
