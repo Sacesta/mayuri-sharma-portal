@@ -82,3 +82,19 @@ nav {
     box-shadow: none;
   }
 }
+
+.btn-animation {
+  animation: btn_animation 0.8s;
+}
+
+@keyframes btn_animation {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    display: block;
+  }
+}
