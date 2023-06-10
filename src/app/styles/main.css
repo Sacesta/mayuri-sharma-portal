@@ -321,7 +321,7 @@ header {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home_banner {
-  @apply w-full h-full md:rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 lg:px-0;
+  @apply w-full h-full rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 lg:px-0;
 }
 
 .home_banner h3 {
@@ -411,7 +411,7 @@ header {
 }
 
 .home_story_section {
-  @apply grid md:grid-cols-2  lg:grid-cols-4 gap-x-10 gap-y-16 mb-16;
+  @apply  gap-x-10 gap-y-16 mb-16;
 }
 .home_story_section li {
   @apply relative cursor-pointer transition-all ease-in duration-300;
@@ -519,11 +519,11 @@ header {
   @apply px-0;
 }
 .news_letter {
-  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 lg:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
+  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 xl:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
 }
 
 .news_ellipse_one {
-  @apply absolute  top-0 h-full object-cover;
+  @apply absolute top-0 object-cover;
 }
 
 .news_letter_head {

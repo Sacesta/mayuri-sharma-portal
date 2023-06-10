@@ -6,7 +6,7 @@ import profileImage from "../../../Assets/Images/pageImages/transformation_profi
 import programeone from "../../../Assets/Images/pageImages/program_img_1.png";
 import masterclassimg from "../../../Assets/Images/pageImages/masterclass_one.png";
 import ellipseOne from "../../../Assets/Images/pageImages/Ellipse_one.png";
-// import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
+import ellipseTwo from "../../../Assets/Images/pageImages/news_ellipse_two.png";
 import supportive_banner from "../../../Assets/Images/pageImages/Supportive_banner.png";
 import HeroTestimonial from "@/app/components/Carousel/HeroTestimonial";
 import TestimonialCarousel from "@/app/components/Carousel/TestimonialCarousel";
@@ -371,7 +371,7 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <ul className="program_list xxl:px-20">
+          <ul className="program_list">
             <li className="program_list_li">
               <div className="program_img">
                 <Image src={programeone} alt="program..." />
@@ -387,7 +387,7 @@ const Main = () => {
                   and also here and here and ya you guessed it here.
                 </p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="29"
@@ -407,7 +407,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="28"
@@ -427,7 +427,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -447,7 +447,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -787,7 +787,7 @@ const Main = () => {
       <section className="news_letter_section md:px-16">
         
         <div className="news_letter">
-          <div className="container mx-auto flex justify-between">
+          <div className="container mx-auto lg:flex justify-between">
             <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
                 <p className="news_letter_head pb-9">News letter</p>
@@ -805,7 +805,7 @@ const Main = () => {
                 <button className="secondary_button">See all challenges</button>
               </div>
             </div>
-            <div className="news_letter_form lg:w-1/2 mt-20">
+            <div className="news_letter_form lg:w-1/2 mt-28">
               <p className="news_letter_form_head">Join news letter</p>
               <div className="form_field">
                 <label htmlFor="">Name</label>
@@ -856,11 +856,11 @@ const Main = () => {
               alt="..."
               className="news_ellipse_one right-0 hidden md:block"
             />
-            {/* <Image
+            <Image
               src={ellipseTwo}
               alt="..."
               className="news_ellipse_one left-0 block md:hidden"
-            /> */}
+            />
           </div>
         </div>
       </section>
