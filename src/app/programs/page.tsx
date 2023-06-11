@@ -37,7 +37,7 @@ const page = () => {
             </p>
           </div>
 
-          <ul className="program_list lg:px-20">
+          <ul className="program_list ">
             <ProgramCards />
           </ul>
         </div>
