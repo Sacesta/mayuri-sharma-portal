@@ -12,7 +12,7 @@ import Footer from "../components/footer/Footer";
 const About = () => {
   return (
     <>
-      <section className="md:py-9 banner commonbanner md:px-16">
+      <section className="md:py-9 banner commonbanner md:px-4 xl:px-16">
         <div
           className="about_banner lg:bg-right"
           style={{ backgroundImage: `url(${bg.src})` }}
@@ -166,7 +166,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about_mission md:px-16">
+      <section className="about_mission md:px-4 xl:px-16">
         <div className="relative about_missiongoes">
           <div className="mission container mx-auto">
             <div className="max-w-[750px] text-center">

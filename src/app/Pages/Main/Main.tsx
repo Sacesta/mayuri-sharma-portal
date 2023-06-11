@@ -785,7 +785,7 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="news_letter_section md:px-16">
+      <section className="news_letter_section md:px-4 xl:px-16">
         <div className="news_letter">
           <div className="container mx-auto lg:flex justify-between">
             <div className="lg:w-1/2 flex items-center z-[2]">
