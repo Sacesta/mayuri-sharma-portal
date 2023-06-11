@@ -74,8 +74,8 @@ const TestimonialCarousel = () => {
         }}
         className="mySwiper"
       >
-        {data.map((x) => (
-          <SwiperSlide>
+        {data.map((x, i) => (
+          <SwiperSlide key={`${x.name}-${i}`}>
             <div className="w-full h-auto border-2 border-[#E1E1E1] rounded-[20px] p-8">
               <p className="paragraph_two_style">{x.desc}</p>
               <div className="mt-6 flex items-center">

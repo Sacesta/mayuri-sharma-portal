@@ -1,5 +1,5 @@
 import React from "react";
-import "./main.css";
+import "../../styles/main.css";
 import Image from "next/image";
 import rightCircle from "../../../Assets/icons/Ellipse 24 (Stroke).png";
 import profileImage from "../../../Assets/Images/pageImages/transformation_profile_img.png";
@@ -12,14 +12,16 @@ import HeroTestimonial from "@/app/components/Carousel/HeroTestimonial";
 import TestimonialCarousel from "@/app/components/Carousel/TestimonialCarousel";
 import Footer from "@/app/components/footer/Footer";
 import Link from "next/link";
+import Transformations from "@/app/components/Carousel/Transformations";
+import ProgramCards from "@/app/components/ProgramCards/ProgramCards";
 
 const Main = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20  banner md:px-16">
-        <div className="home_banner container mx-auto">
+      <section className="md:pt-6 md:pb-20  banner md:px-6 lg:px-16">
+        <div className="home_banner  mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <div className="home_banner_text">
+          <div className="home_banner_text container mx-auto">
             <div className="relative">
               <svg
                 width="98"
@@ -29,38 +31,38 @@ const Main = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M23.0115 49.0953L21.7402 50.4614L20.4688 49.0953C21.1833 48.4167 22.297 48.4167 23.0115 49.0953ZM21.7402 53.1937C21.0092 54.0379 20.0552 55.2336 19.1026 56.6964C17.1035 59.7662 15.2199 63.8436 15.2199 68.2306C15.2199 72.9218 16.1201 77.0769 17.493 79.9892C18.9317 83.0413 20.5567 84.1248 21.7402 84.1248C22.9236 84.1248 24.5486 83.0413 25.9873 79.9892C27.3602 77.0769 28.2604 72.9218 28.2604 68.2306C28.2604 63.8436 26.3768 59.7662 24.3777 56.6964C23.4251 55.2336 22.4711 54.0379 21.7402 53.1937ZM20.4688 49.0953C20.4693 49.0949 20.4688 49.0953 21.7402 50.4614C23.0115 49.0953 23.011 49.0949 23.0115 49.0953L23.0163 49.0999L23.0241 49.1074L23.0488 49.1312C23.0691 49.1509 23.0972 49.1783 23.1325 49.2132C23.2032 49.2831 23.3028 49.3831 23.4274 49.5117C23.6762 49.769 24.0252 50.1415 24.4408 50.6173C25.2704 51.5673 26.3739 52.9386 27.4789 54.6354C29.6679 57.9968 31.9725 62.8039 31.9725 68.2306C31.9725 73.3531 30.9976 78.0826 29.3388 81.6015C27.746 84.9806 25.1828 87.8748 21.7402 87.8748C18.2975 87.8748 15.7343 84.9806 14.1415 81.6015C12.4827 78.0826 11.5078 73.3531 11.5078 68.2306C11.5078 62.8039 13.8124 57.9968 16.0014 54.6354C17.1064 52.9386 18.2099 51.5673 19.0395 50.6173C19.4551 50.1415 19.8041 49.769 20.053 49.5117C20.1775 49.3831 20.2771 49.2831 20.3478 49.2132C20.3831 49.1783 20.4112 49.1509 20.4315 49.1312L20.4562 49.1074L20.464 49.0999L20.4668 49.0973L20.4688 49.0953Z"
                   fill="white"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M49.8142 49.0953L48.5429 50.4614L47.2715 49.0953C47.986 48.4167 49.0998 48.4167 49.8142 49.0953ZM48.5429 53.1937C47.8119 54.0379 46.8579 55.2336 45.9054 56.6964C43.9062 59.7662 42.0227 63.8436 42.0227 68.2306C42.0227 72.9218 42.9229 77.0769 44.2957 79.9892C45.7345 83.0413 47.3594 84.1248 48.5429 84.1248C49.7264 84.1248 51.3513 83.0413 52.7901 79.9892C54.1629 77.0769 55.0631 72.9218 55.0631 68.2306C55.0631 63.8436 53.1796 59.7662 51.1804 56.6964C50.2278 55.2336 49.2739 54.0379 48.5429 53.1937ZM47.2715 49.0953C47.272 49.0949 47.2715 49.0953 48.5429 50.4614C49.8142 49.0953 49.8138 49.0949 49.8142 49.0953L49.819 49.0999L49.8269 49.1074L49.8515 49.1312C49.8719 49.1509 49.9 49.1783 49.9353 49.2132C50.0059 49.2831 50.1056 49.3831 50.2301 49.5117C50.479 49.769 50.8279 50.1415 51.2435 50.6173C52.0731 51.5673 53.1766 52.9386 54.2816 54.6354C56.4706 57.9968 58.7752 62.8039 58.7752 68.2306C58.7752 73.3531 57.8003 78.0826 56.1416 81.6015C54.5487 84.9806 51.9855 87.8748 48.5429 87.8748C45.1003 87.8748 42.5371 84.9806 40.9442 81.6015C39.2854 78.0826 38.3105 73.3531 38.3105 68.2306C38.3105 62.8039 40.6151 57.9968 42.8041 54.6354C43.9091 52.9386 45.0126 51.5673 45.8423 50.6173C46.2579 50.1415 46.6068 49.769 46.8557 49.5117C46.9802 49.3831 47.0798 49.2831 47.1505 49.2132C47.1858 49.1783 47.2139 49.1509 47.2343 49.1312L47.2589 49.1074L47.2667 49.0999L47.2695 49.0973L47.2715 49.0953Z"
                   fill="white"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M33.8713 38.9044L35.1427 37.5384L36.414 38.9044C35.6995 39.583 34.5858 39.583 33.8713 38.9044ZM35.1427 34.806C35.8737 33.9619 36.8276 32.7661 37.7802 31.3034C39.7793 28.2336 41.6629 24.1561 41.6629 19.7691C41.6629 15.078 40.7627 10.9229 39.3898 8.01054C37.9511 4.95841 36.3261 3.87492 35.1427 3.87492C33.9592 3.87492 32.3342 4.95841 30.8955 8.01054C29.5227 10.9229 28.6224 15.078 28.6224 19.7691C28.6224 24.1561 30.506 28.2336 32.5051 31.3034C33.4577 32.7661 34.4117 33.9619 35.1427 34.806ZM36.414 38.9044C36.4136 38.9049 36.414 38.9044 35.1427 37.5384C33.8713 38.9044 33.8718 38.9049 33.8713 38.9044L33.8665 38.8999L33.8587 38.8923L33.834 38.8686C33.8137 38.8489 33.7856 38.8215 33.7503 38.7865C33.6796 38.7167 33.58 38.6167 33.4555 38.488C33.2066 38.2308 32.8576 37.8583 32.442 37.3824C31.6124 36.4325 30.5089 35.0612 29.4039 33.3644C27.2149 30.003 24.9103 25.1958 24.9103 19.7691C24.9103 14.6466 25.8852 9.91713 27.544 6.39826C29.1368 3.01919 31.7001 0.124915 35.1427 0.124915C38.5853 0.124916 41.1485 3.0192 42.7413 6.39826C44.4001 9.91713 45.375 14.6466 45.375 19.7691C45.375 25.1958 43.0704 30.003 40.8814 33.3644C39.7764 35.0612 38.6729 36.4325 37.8433 37.3824C37.4277 37.8583 37.0788 38.2308 36.8299 38.488C36.7054 38.6167 36.6057 38.7167 36.5351 38.7865C36.4997 38.8215 36.4716 38.8489 36.4513 38.8686L36.4267 38.8923L36.4188 38.8999L36.416 38.9025L36.414 38.9044Z"
                   fill="white"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M60.674 38.9044L61.9454 37.5384L63.2168 38.9044C62.5023 39.583 61.3885 39.583 60.674 38.9044ZM61.9454 34.806C62.6764 33.9619 63.6303 32.7661 64.5829 31.3034C66.5821 28.2336 68.4656 24.1561 68.4656 19.7691C68.4656 15.078 67.5654 10.9229 66.1926 8.01054C64.7538 4.95841 63.1289 3.87492 61.9454 3.87492C60.7619 3.87492 59.137 4.95841 57.6982 8.01054C56.3254 10.9229 55.4252 15.078 55.4252 19.7691C55.4252 24.1561 57.3087 28.2336 59.3079 31.3034C60.2604 32.7661 61.2144 33.9619 61.9454 34.806ZM63.2168 38.9044C63.2163 38.9049 63.2168 38.9044 61.9454 37.5384C60.674 38.9044 60.6745 38.9049 60.674 38.9044L60.6692 38.8999L60.6614 38.8923L60.6368 38.8686C60.6164 38.8489 60.5883 38.8215 60.553 38.7865C60.4824 38.7167 60.3827 38.6167 60.2582 38.488C60.0093 38.2308 59.6604 37.8583 59.2448 37.3824C58.4152 36.4325 57.3116 35.0612 56.2067 33.3644C54.0176 30.003 51.7131 25.1958 51.7131 19.7691C51.7131 14.6466 52.6879 9.91713 54.3467 6.39826C55.9396 3.01919 58.5028 0.124915 61.9454 0.124915C65.388 0.124916 67.9512 3.0192 69.5441 6.39826C71.2028 9.91713 72.1777 14.6466 72.1777 19.7691C72.1777 25.1958 69.8731 30.003 67.6841 33.3644C66.5792 35.0612 65.4756 36.4325 64.646 37.3824C64.2304 37.8583 63.8815 38.2308 63.6326 38.488C63.5081 38.6167 63.4084 38.7167 63.3378 38.7865C63.3025 38.8215 63.2744 38.8489 63.254 38.8686L63.2294 38.8923L63.2215 38.8999L63.2188 38.9025L63.2168 38.9044Z"
                   fill="white"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M76.6189 49.0953L75.3476 50.4614L74.0762 49.0953C74.7907 48.4167 75.9045 48.4167 76.6189 49.0953ZM75.3476 53.1937C74.6166 54.0379 73.6626 55.2336 72.71 56.6964C70.7109 59.7662 68.8274 63.8436 68.8274 68.2306C68.8274 72.9218 69.7276 77.0769 71.1004 79.9892C72.5392 83.0413 74.1641 84.1248 75.3476 84.1248C76.5311 84.1248 78.156 83.0413 79.5947 79.9892C80.9676 77.0769 81.8678 72.9218 81.8678 68.2306C81.8678 63.8436 79.9842 59.7662 77.9851 56.6964C77.0325 55.2336 76.0786 54.0379 75.3476 53.1937ZM74.0762 49.0953C74.0767 49.0949 74.0762 49.0953 75.3476 50.4614C76.6189 49.0953 76.6185 49.0949 76.6189 49.0953L76.6237 49.0999L76.6316 49.1074L76.6562 49.1312C76.6765 49.1509 76.7046 49.1783 76.74 49.2132C76.8106 49.2831 76.9103 49.3831 77.0348 49.5117C77.2837 49.769 77.6326 50.1415 78.0482 50.6173C78.8778 51.5673 79.9813 52.9386 81.0863 54.6354C83.2753 57.9968 85.5799 62.8039 85.5799 68.2306C85.5799 73.3531 84.605 78.0826 82.9463 81.6015C81.3534 84.9806 78.7902 87.8748 75.3476 87.8748C71.905 87.8748 69.3418 84.9806 67.7489 81.6015C66.0901 78.0826 65.1152 73.3531 65.1152 68.2306C65.1152 62.8039 67.4198 57.9968 69.6088 54.6354C70.7138 52.9386 71.8173 51.5673 72.647 50.6173C73.0625 50.1415 73.4115 49.769 73.6604 49.5117C73.7849 49.3831 73.8845 49.2831 73.9552 49.2132C73.9905 49.1783 74.0186 49.1509 74.0389 49.1312L74.0636 49.1074L74.0714 49.0999L74.0742 49.0973L74.0762 49.0953Z"
                   fill="white"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M33.8609 36.1821C34.5782 35.4905 35.7068 35.4905 36.424 36.1821L48.5445 47.8694L60.665 36.1821C61.3823 35.4905 62.5109 35.4905 63.2281 36.1821L75.3185 47.8403L86.8287 36.2126C87.5536 35.4804 88.7288 35.4804 89.4536 36.2126C90.1784 36.9449 90.1784 38.1321 89.4536 38.8643L76.6611 51.7873C75.9481 52.5075 74.7964 52.521 74.0671 51.8177L61.9466 40.1304L49.8261 51.8177C49.1089 52.5093 47.9802 52.5093 47.263 51.8177L35.1425 40.1304L23.022 51.8177C22.2927 52.521 21.1409 52.5075 20.428 51.7872L15.5934 46.9031C14.8686 46.1708 14.8686 44.9836 15.5935 44.2514C16.3183 43.5192 17.4935 43.5192 18.2183 44.2515L21.7707 47.8402L33.8609 36.1821Z"
                   fill="white"
                 />
@@ -69,7 +71,6 @@ const Main = () => {
                   fill="#EB334A"
                 />
               </svg>
-
               <h3>Mayuri Sharma</h3>
               <h1>
                 Wisdom of the past <br /> practice for the present
@@ -109,8 +110,8 @@ const Main = () => {
             >
               <path
                 opacity="0.4"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M0.299213 452.501L38.2262 453.306L32.3198 484.522C12.4351 483.078 -1.59054 469.052 0.299213 452.501ZM82.0631 422.892C104.812 422.701 136.009 421.405 171.474 417.118C245.9 408.123 335.037 386.457 405.421 337.625C480.685 285.408 536.013 227.821 565.449 178.116C596.299 126.024 593.22 93.501 578.316 78.5974C563.412 63.6938 525.566 55.2914 458.48 71.1465C394.467 86.2753 316.467 121.19 241.203 173.407C170.819 222.239 129.121 291.344 105.045 350.689C93.5722 378.968 86.401 404.29 82.0631 422.892ZM32.3198 484.522C32.3066 484.521 32.3198 484.522 38.2262 453.306C0.299201 452.501 0.297958 452.512 0.299213 452.501L0.312083 452.39L0.333714 452.208L0.404596 451.633C0.464557 451.158 0.550556 450.499 0.666129 449.665C0.89725 447.998 1.24689 445.63 1.74336 442.629C2.73586 436.632 4.31812 428.091 6.71922 417.561C11.5126 396.54 19.617 367.379 32.9247 334.577C59.2879 269.595 107.392 187.065 194.456 126.66C276.641 69.6415 364.797 29.2743 442.142 10.9946C516.414 -6.55889 595.127 -6.49665 638.48 36.8561C681.833 80.2089 667.676 144.704 633.522 202.375C597.955 262.433 534.353 327.353 452.168 384.372C365.104 444.776 258.956 469.264 177.461 479.113C136.323 484.085 100.425 485.452 74.7369 485.579C61.8691 485.642 51.4984 485.394 44.2372 485.123C40.6048 484.987 37.7454 484.846 35.735 484.734C34.7296 484.678 33.936 484.629 33.3638 484.592L32.6724 484.546L32.4533 484.531L32.3758 484.526L32.3198 484.522Z"
                 fill="url(#paint0_linear_630_3962)"
               />
@@ -123,8 +124,8 @@ const Main = () => {
                   y2="-59.6519"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#D8D5E3" />
-                  <stop offset="1" stop-color="#D8D5E3" stopOpacity="0" />
+                  <stop stopColor="#D8D5E3" />
+                  <stop offset="1" stopColor="#D8D5E3" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
@@ -182,7 +183,7 @@ const Main = () => {
               <li>Wellness</li>
             </ul>
             <ul className="home_story_section">
-              <li>
+              {/* <li>
                 <div className="home_story_img">
                   <video autoPlay loop muted>
                     <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
@@ -345,7 +346,8 @@ const Main = () => {
                 <p className="paragraph_two_style text-center">
                   Episode description goes here with no more than three lines.
                 </p>
-              </li>
+              </li> */}
+              <Transformations />
             </ul>
             <button className="tertiary_button">
               View full list of episodes
@@ -356,7 +358,7 @@ const Main = () => {
 
       <section className="upcoming_program">
         <div className="container mx-auto ">
-          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 lg:px-20">
+          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
             <h2 className="heading_style_two mb-8 lg:mb-0 text-[#29214B] lg:max-w-[398px] text-start  lg:text-left">
               Join me in an upcoming program
             </h2>
@@ -370,7 +372,7 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <ul className="program_list xl:px-20">
+          <ul className="program_list">
             <li className="program_list_li">
               <div className="program_img">
                 <Image src={programeone} alt="program..." />
@@ -386,7 +388,7 @@ const Main = () => {
                   and also here and here and ya you guessed it here.
                 </p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="29"
@@ -406,7 +408,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="28"
@@ -426,7 +428,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -446,7 +448,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -522,7 +524,7 @@ const Main = () => {
                   and also here and here and ya you guessed it here.
                 </p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="29"
@@ -542,7 +544,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="28"
@@ -562,7 +564,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -582,7 +584,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -658,7 +660,7 @@ const Main = () => {
                   and also here and here and ya you guessed it here.
                 </p>
                 <ul className="flex items-center flex-wrap lg:flex-auto">
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="29"
@@ -678,7 +680,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="28"
@@ -698,7 +700,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -718,7 +720,7 @@ const Main = () => {
                       <p>14th April</p>
                     </div>
                   </li>
-                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-11 w-1/2 lg:w-auto">
+                  <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                     <div className="program_icon">
                       <svg
                         width="32"
@@ -745,7 +747,7 @@ const Main = () => {
                     href="/progamdetails"
                     className="flex items-center text-[#4086FF] font-semibold tracking-widest"
                   >
-                    Register noww
+                    Register now
                     <svg
                       width="8"
                       height="13"
@@ -783,9 +785,9 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="news_letter_section md:px-16">
-        <div className="container mx-auto">
-          <div className="news_letter">
+      <section className="news_letter_section md:px-4 xl:px-16">
+        <div className="news_letter">
+          <div className="container mx-auto lg:flex justify-between">
             <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
                 <p className="news_letter_head pb-9">News letter</p>
@@ -803,7 +805,7 @@ const Main = () => {
                 <button className="secondary_button">See all challenges</button>
               </div>
             </div>
-            <div className="news_letter_form lg:w-1/2 mt-20">
+            <div className="news_letter_form lg:w-1/2 mt-28">
               <p className="news_letter_form_head">Join news letter</p>
               <div className="form_field">
                 <label htmlFor="">Name</label>
@@ -818,7 +820,7 @@ const Main = () => {
                   <polyline
                     points="1.5 6 4.5 9 10.5 1"
                     strokeLinecap="round"
-                    stroke-linejoin="round"
+                    strokeLinejoin="round"
                     strokeWidth="2"
                   ></polyline>
                 </symbol>
@@ -1004,7 +1006,7 @@ const Main = () => {
                   </ul>
                 </div>
               </div>
-                {/* <ul className="flex items-center mt-4">
+              {/* <ul className="flex items-center mt-4">
                   <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto">
                     <div className="program_icon">
                     <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1028,29 +1030,28 @@ const Main = () => {
                     </div>
                   </li>
                 </ul> */}
-                <div className="flex justify-between pt-6 border-t border-[#E1E1E1] mt-10 p-8 bg-white">
-                  <p className="text-[#EB334A] text-[21px] font-bold">Free</p>
-                  <a
-                    href=""
-                    className="flex items-center text-[#4086FF] font-semibold tracking-widest"
+              <div className="flex justify-between pt-6 border-t border-[#E1E1E1] mt-10 p-8 bg-white">
+                <p className="text-[#EB334A] text-[21px] font-bold">Free</p>
+                <a
+                  href=""
+                  className="flex items-center text-[#4086FF] font-semibold tracking-widest"
+                >
+                  Register now
+                  <svg
+                    width="8"
+                    height="13"
+                    className="ml-2"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    Register now
-                    <svg
-                      width="8"
-                      height="13"
-                      className="ml-2"
-                      viewBox="0 0 8 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.3748 13.0002L0.299805 11.9252L5.2498 6.9752L0.299805 2.0252L1.3748 0.950195L7.3998 6.9752L1.3748 13.0002Z"
-                        fill="#4086FF"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              
+                    <path
+                      d="M1.3748 13.0002L0.299805 11.9252L5.2498 6.9752L0.299805 2.0252L1.3748 0.950195L7.3998 6.9752L1.3748 13.0002Z"
+                      fill="#4086FF"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
             <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden">
               <h4 className="heading_three_style mb-2">Knowledge</h4>

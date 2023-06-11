@@ -40,7 +40,7 @@ const Links = ({ tag, setIsOpen, isOpen }: any) => {
   ];
   return (
     <>
-      {links?.map((x: any,index:number) => (
+      {links?.map((x: any, index: number) => (
         <DynamicTag key={`navbar${index}`} tag={tag}>
           <Link
             onClick={() => setIsOpen(!isOpen)}
@@ -119,16 +119,16 @@ const NavBar = () => {
           <div className="flex lg:hidden">
             <Image
               onClick={handleToggle}
-              className={`toggle-btn ${
-                isOpen === true ? "hidden" : "block"
+              className={`${
+                isOpen === true ? "hidden" : "btn-animation"
               } menu-icon`}
               src={menuIcon}
               alt="Icon..."
             />
             <div
               onClick={handleToggle}
-              className={`${
-                isOpen === true ? "block" : "hidden"
+              className={`menu-icon ${
+                isOpen === true ? "btn-animation" : "hidden"
               } cursor-pointer`}
             >
               <svg

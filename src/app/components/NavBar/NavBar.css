@@ -69,7 +69,7 @@ nav {
 }
 
 .navbar.open {
-  top: 10%;
+  top: 68px;
 }
 
 .navbar-menu {
@@ -80,5 +80,21 @@ nav {
 @media screen and (max-width: 767px) {
   nav {
     box-shadow: none;
+  }
+}
+
+.btn-animation {
+  animation: btn_animation 0.8s;
+}
+
+@keyframes btn_animation {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    display: block;
   }
 }
