@@ -8,10 +8,31 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const Transformations = () => {
-  const a = [1, 2, 3, 4];
+  const a = [1, 2, 3, 4, 5, 6, 7];
   return (
-   
-      <Swiper slidesPerView={4} className="mySwiper">
+    <>
+      <Swiper
+        slidesPerView={1}
+        breakpoints={{
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        }}
+        className="mySwiper"
+      >
         {a.map((x, i) => (
           <SwiperSlide key={`${x}-${i}`}>
             <li>
@@ -58,7 +79,7 @@ const Transformations = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    
+    </>
   );
 };
 
