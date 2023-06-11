@@ -521,7 +521,7 @@ header {
 }
 
 .news_ellipse_one {
-  @apply absolute top-0 object-cover;
+  @apply absolute top-0 object-cover h-full;
 }
 
 .news_letter_head {
