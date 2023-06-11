@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 const Transformations = () => {
   const a = [1, 2, 3, 4];
   return (
-    <div>
+   
       <Swiper slidesPerView={4} className="mySwiper">
         {a.map((x, i) => (
           <SwiperSlide key={`${x}-${i}`}>
@@ -58,7 +58,7 @@ const Transformations = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    
   );
 };
 
