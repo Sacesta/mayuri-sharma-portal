@@ -13,7 +13,6 @@ const ProgramDetails = () => {
     <>
       <section className="py-9 productDetails_banner flex items-center bg-[#F9F9F9]">
         <div className="lg:bg-right container mx-auto">
-          
           <div className="grid lg:grid-cols-2 z-[2] gap-10">
             <div className="flex flex-col justify-center">
               <div>
@@ -462,7 +461,7 @@ const ProgramDetails = () => {
             </div>
             </div>
             <div className="hidden lg:block">
-              <div className="rounded-[20px] overflow-hidden h-[358px] xl:h-[552px] w-full  sticky left-0 top-[108px]">
+              <div className="rounded-[20px] overflow-hidden h-[358px] xl:max-h-[552px] w-full  sticky left-0 top-[108px]">
                 <Image
                   src={programDetailsBanner}
                   alt="..."
