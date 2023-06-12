@@ -21,7 +21,7 @@ const Main = () => {
       <section className="md:pt-6 md:pb-20  banner md:px-6 lg:px-16">
         <div className="home_banner  mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <div className="home_banner_text container mx-auto">
+          <div className="home_banner_text container mx-auto relative">
             <div className="relative">
               <svg
                 width="98"
@@ -182,7 +182,7 @@ const Main = () => {
               <li>Health</li>
               <li>Wellness</li>
             </ul>
-            <ul className="home_story_section">
+            <div className="home_story_section">
               {/* <li>
                 <div className="home_story_img">
                   <video autoPlay loop muted>
@@ -348,7 +348,7 @@ const Main = () => {
                 </p>
               </li> */}
               <Transformations />
-            </ul>
+            </div>
             <button className="tertiary_button">
               View full list of episodes
             </button>
