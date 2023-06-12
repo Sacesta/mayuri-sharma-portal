@@ -46,8 +46,8 @@ const Links = ({ tag, setIsOpen, isOpen }: any) => {
             onClick={() => setIsOpen(!isOpen)}
             href={x?.href}
             className={`${
-              router === x.href && "active"
-            } mr-5 xl:mr-10 text-[#505050] hover:text-[#eb334a]`}
+              router === x.href ? "active" : "inactivelink"
+            } mr-5 xl:mr-10 hover:text-[#eb334a]`}
           >
             {x?.title}
           </Link>

@@ -182,7 +182,7 @@ const Main = () => {
               <li>Health</li>
               <li>Wellness</li>
             </ul>
-            <ul className="home_story_section">
+            <ul className="home_story_section w-full">
               <Transformations />
             </ul>
             <button className="tertiary_button">
@@ -940,8 +940,6 @@ const Main = () => {
           <Image className="w-full" src={supportive_banner} alt=".." />
         </div>
       </section>
-
-      <Transformations />
 
       <section className="testimonial_section">
         <h2 className="heading_style_two text-center text-[#29214B] mb-20">

@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const Transformations = () => {
-  const a = [1, 2, 3, 4, 5, 6, 7];
+  const a = [1, 2, 3, 4];
   return (
     <>
       <Swiper
@@ -16,19 +16,15 @@ const Transformations = () => {
         breakpoints={{
           "@0.00": {
             slidesPerView: 1,
-            spaceBetween: 10,
           },
           "@0.75": {
             slidesPerView: 1,
-            spaceBetween: 20,
           },
           "@1.00": {
-            slidesPerView: 3,
-            spaceBetween: 40,
+            slidesPerView: 2,
           },
           "@1.50": {
             slidesPerView: 4,
-            spaceBetween: 50,
           },
         }}
         className="mySwiper"
@@ -40,7 +36,7 @@ const Transformations = () => {
                 <video autoPlay loop muted>
                   <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
                 </video>
-                <p className="home_story_number"># 01</p>
+                <p className="home_story_number"># 0{i + 1}</p>
                 <div className="story_podcast">
                   <svg
                     width="36"
