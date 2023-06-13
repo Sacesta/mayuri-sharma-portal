@@ -118,7 +118,7 @@ const page = () => {
               <li>Health</li>
               <li>Wellness</li>
             </ul>
-            <ul className="home_story_section">
+            <ul className="home_story_section grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               <li>
                 <div className="home_story_img">
                   <video autoPlay loop muted>
