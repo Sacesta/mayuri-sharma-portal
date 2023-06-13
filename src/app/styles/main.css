@@ -333,7 +333,7 @@ header {
 }
 
 .home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper {
-  @apply md:absolute md:left-8 lg:left-20 top-14 lg:top-20;
+  @apply md:absolute md:left-8 lg:left-20 top-14 lg:top-20 h-[522px];
 }
 .home_banner .swiper.swiper-v.swiper-initialized.swiper-vertical.mySwiper2 {
   height: 100%;
@@ -374,7 +374,7 @@ header {
 }
 
 .transformation {
-  @apply -mt-[106px] relative z-[2] flex flex-col items-center lg:px-20 pb-16 lg:pb-[100px];
+  @apply -mt-[106px] relative z-[2] flex flex-col items-center pb-16 lg:pb-[100px];
 }
 
 .transformation_profile_img {
@@ -409,12 +409,13 @@ header {
 }
 
 .home_story_section {
-  @apply gap-x-10 gap-y-16 mb-16;
+  @apply gap-x-10 gap-y-16 mb-16 ;
 }
 .home_story_section li {
   @apply relative cursor-pointer transition-all ease-in duration-300;
 }
 
+.home_story_section .swiper.swiper-initialized.swiper-horizontal .swiper-wrapper .swiper-slide{padding-inline: 20px;}
 .home_story_section li .home_story_img::after {
   content: "";
   background: linear-gradient(

@@ -106,8 +106,9 @@ const ProgramDetails = () => {
                     </div>
                   </li>
                 </ul>
-                <div className="mt-4">
-                  <button className="primary_button">Register now</button>
+                <div className="mt-4 md:flex items-center">
+                  <button className="w-full md:w-auto primary_button">Register now</button>
+                  <p className="text-[#505050] text-[14px] ml-6 leading-6 mt-2 md:mt-0 text-center md:text-left">25 out of 30 already joined</p>
                 </div>
               </div>
               <div className="block lg:hidden mt-12">

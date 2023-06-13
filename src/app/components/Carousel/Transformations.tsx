@@ -10,16 +10,33 @@ import "swiper/css/navigation";
 const Transformations = () => {
   const a = [1, 2, 3, 4];
   return (
-    <div>
-      <Swiper slidesPerView={4} className="mySwiper">
+    <>
+      <Swiper
+        slidesPerView={1}
+        breakpoints={{
+          "@0.00": {
+            slidesPerView: 1,
+          },
+          "@0.75": {
+            slidesPerView: 1,
+          },
+          "@1.00": {
+            slidesPerView: 2,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+          },
+        }}
+        className="mySwiper"
+      >
         {a.map((x, i) => (
           <SwiperSlide key={`${x}-${i}`}>
-            <li>
+            <div>
               <div className="home_story_img">
                 <video autoPlay loop muted>
                   <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
                 </video>
-                <p className="home_story_number"># 01</p>
+                <p className="home_story_number"># 0{i + 1}</p>
                 <div className="story_podcast">
                   <svg
                     width="36"
@@ -54,11 +71,11 @@ const Transformations = () => {
               <p className="paragraph_two_style text-center">
                 Episode description goes here with no more than three lines.
               </p>
-            </li>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </>
   );
 };
 
