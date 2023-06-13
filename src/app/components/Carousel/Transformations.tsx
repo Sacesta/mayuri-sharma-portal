@@ -31,7 +31,7 @@ const Transformations = () => {
       >
         {a.map((x, i) => (
           <SwiperSlide key={`${x}-${i}`}>
-            <div>
+            <li>
               <div className="home_story_img">
                 <video autoPlay loop muted>
                   <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
@@ -71,7 +71,7 @@ const Transformations = () => {
               <p className="paragraph_two_style text-center">
                 Episode description goes here with no more than three lines.
               </p>
-            </div>
+            </li>
           </SwiperSlide>
         ))}
       </Swiper>
