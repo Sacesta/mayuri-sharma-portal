@@ -319,7 +319,7 @@ header {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home_banner {
-  @apply w-full h-full rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 lg:px-0;
+  @apply w-full h-full rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 xl:px-0;
 }
 
 .home_banner h3 {
@@ -333,7 +333,7 @@ header {
 }
 
 .home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper {
-  @apply md:absolute md:left-8 lg:left-20 top-14 lg:top-20 h-[522px];
+  @apply md:absolute left-0 top-14 lg:top-20 h-[522px];
 }
 .home_banner .swiper.swiper-v.swiper-initialized.swiper-vertical.mySwiper2 {
   height: 100%;
@@ -343,11 +343,11 @@ header {
   display: none;
 }
 .home_banner_text {
-  @apply md:pl-[388px]  lg:pl-[488px];
+  @apply md:pl-[388px]  lg:pl-[440px];
 }
 .intro_section {
   background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
-  @apply pt-[28rem] md:pt-32 pb-56 lg:pb-[326px] relative overflow-hidden;
+  @apply pt-[28rem] md:pt-32 lg:pt-60 pb-56 lg:pb-[326px] relative overflow-hidden;
 }
 .home_banner_text
   .swiper
@@ -485,7 +485,7 @@ header {
   @apply h-full w-full object-cover;
 }
 .program_details {
-  @apply flex-1 p-8;
+  @apply flex-1 px-4 py-8 md:px-8;
 }
 
 .program_description {
@@ -650,7 +650,7 @@ header {
 }
 .fun_profile_name {
   font-family: "Montserrat";
-  @apply text-white text-[21px] font-semibold leading-6 px-6 pb-28 xl:px-20 lg:pb-16 absolute bottom-0 z-10 text-center mx-auto;
+  @apply text-white text-[21px] w-full font-semibold leading-6 px-6 pb-12 md:pb-28 xl:px-20 lg:pb-16 absolute bottom-0 z-10 text-center mx-auto;
 }
 
 .about_journey {

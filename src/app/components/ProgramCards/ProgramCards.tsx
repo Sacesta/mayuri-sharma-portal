@@ -7,8 +7,8 @@ const ProgramCards = () => {
   const array = [1, 2, 3];
   return (
     <>
-      {array.map((card, index) => (
-        <li key={`programCardNumber-${index}`} className="program_list_li">
+      {array.map((item,index) => (
+        <li key={`programitem-${index}`} className="program_list_li">
           <div className="program_img">
             <Image src={programeone} alt="program..." />
           </div>

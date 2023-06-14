@@ -298,7 +298,7 @@ const ProgramDetails = () => {
                     personalized assessments, recommendations, and support
                     tailored to each person&apos;s specific situation.
                   </p>
-                  <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
+                  <div className="absolute right-0 top-0 bg-[#39315C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                     <svg
                       className="h-7 w-5 lg:w-10 lg:h-14"
                       viewBox="0 0 40 52"
@@ -322,7 +322,7 @@ const ProgramDetails = () => {
                     personalized assessments, recommendations, and support
                     tailored to each person&apos;s specific situation.
                   </p>
-                  <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
+                  <div className="absolute right-0 top-0 bg-[#39315C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                     <svg
                       className="h-6 w-6 lg:h-11 lg:w-11"
                       viewBox="0 0 44 44"
@@ -346,7 +346,7 @@ const ProgramDetails = () => {
                     personalized assessments, recommendations, and support
                     tailored to each person&apos;s specific situation.
                   </p>
-                  <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
+                  <div className="absolute right-0 top-0 bg-[#39315C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                     <svg
                       className="h-7 w-6 lg:h-11 lg:w-11"
                       viewBox="0 0 44 40"
