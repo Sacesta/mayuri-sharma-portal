@@ -695,7 +695,7 @@ const Main = () => {
             <Image
               src={ellipseTwo}
               alt="..."
-              className="news_ellipse_one left-0 block md:hidden"
+              className="news_ellipse_one left-0 block md:hidden w-full object-cover"
             />
           </div>
         </div>
