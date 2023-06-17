@@ -20,8 +20,8 @@ const Principles = () => {
           </div>
         </div>
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
-          {a.map(() => (
-            <li>
+          {a.map((item,index) => (
+            <li key={`principleItem-${index}`}>
               <Image
                 src={principlesOne}
                 alt="principle"
