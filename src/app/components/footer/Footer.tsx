@@ -172,7 +172,7 @@ const Footer = () => {
                 © 2023 All rights reserved Mayuri Sharma
               </p>
             </div>
-            <div className="bg-white rounded-[20px] p-8 col-span-2 z-[2]">
+            <div className="bg-white rounded-[20px] p-8 col-span-2 ">
               <div className="flex items-center">
                 <svg
                   width="30"

@@ -18,7 +18,7 @@ body {
 } */
 
 .container {
-  @apply max-w-[1112px] px-[4%] xl:px-0;
+  @apply max-w-[1112px] px-[4%] lg:px-0;
 }
 
 .primary_button {
@@ -47,7 +47,7 @@ body {
 
 .heading_three_style {
   font-family: "Montserrat";
-  @apply font-semibold text-[#29214B] text-lg lg:text-[21px];
+  @apply font-semibold text-[#090617] text-lg lg:text-[21px];
 }
 
 .heading_three_style_black {
@@ -201,8 +201,8 @@ header {
 }
 
 .checkbox span:last-child {
-  padding-left: 8px;
-  line-height: 18px;
+  padding-left: 12px;
+  line-height: 18px;font-size: 16px;
 }
 
 .checkbox:hover span:first-child {
@@ -329,11 +329,11 @@ header {
 
 .home_banner h1 {
   font-family: "Montserrat";
-  @apply text-4xl lg:text-[50px] text-white leading-[46px] lg:leading-[60px] font-semibold;
+  @apply text-4xl xl:text-[50px] text-white leading-[46px] xl:leading-[60px] font-semibold;
 }
 
 .home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper {
-  @apply md:absolute left-0 top-14 lg:top-20 h-[522px];
+  @apply md:absolute left-0 top-[31px] h-[522px];
 }
 .home_banner .swiper.swiper-v.swiper-initialized.swiper-vertical.mySwiper2 {
   height: 100%;
@@ -346,8 +346,8 @@ header {
   @apply md:pl-[388px]  lg:pl-[440px];
 }
 .intro_section {
-  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
-  @apply pt-[28rem] md:pt-32 lg:pt-60 pb-56 lg:pb-[326px] relative overflow-hidden;
+  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+  @apply pt-[28rem] md:pt-32 lg:pt-44 pb-56 lg:pb-[326px] relative overflow-hidden;
 }
 .home_banner_text
   .swiper
@@ -451,12 +451,7 @@ header {
   @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold;
 }
 
-.upcoming_program {
-  background: linear-gradient(
-    180deg,
-    #d8d5e3 0%,
-    rgba(216, 213, 227, 0.4) 100%
-  );
+.upcoming_program {background: linear-gradient(180deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
   @apply pt-24 pb-40 md:pb-60 lg:pt-40 lg:pb-[306px];
 }
 
@@ -511,14 +506,14 @@ header {
 }
 
 .news_letter_section {
-  background: linear-gradient(180deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
+
   @apply md:pb-11;
 }
 .news_letter_section .container.mx-auto {
   @apply px-0;
 }
 .news_letter {
-  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 xl:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
+  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 md:px-10 xl:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
 }
 
 .news_ellipse_one {
@@ -545,7 +540,7 @@ header {
 
 .news_letter_form_head {
   font-family: "Montserrat";
-  @apply text-[28px] text-[#29214B] font-semibold leading-9 mb-7;
+  @apply text-[28px] text-[#0E0F1D] font-semibold leading-9 mb-7;
 }
 
 .form_field {
@@ -580,6 +575,7 @@ header {
 }
 
 .Supportive_community_section {
+  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
   @apply pb-40;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -805,6 +801,12 @@ header {
     height: calc(100vh - 72px);
   }
 }
+/* @media screen and (max-width: 1288px){
+  .testimonial_section .swiper .swiper-wrapper .swiper-slide {
+    width: auto!important;
+  }
+  
+} */
 @media screen and (max-width: 1024px) {
   .banner {
     height: calc(100vh - 72px);

@@ -169,10 +169,10 @@ const Main = () => {
                 </svg>
               </div>
             </div>
-            <p className="paragraph_one_style mb-2 text-[#29214B]">
+            <p className="paragraph_one_style mb-2 text-[#39315C]">
               My podcast
             </p>
-            <h2 className="heading_style_two mb-16 text-center text-[#29214B]">
+            <h2 className="heading_style_two mb-16 text-center text-[#090617]">
               Stories of Transformations
             </h2>
             <ul className="home_story_tab">
@@ -195,7 +195,7 @@ const Main = () => {
       <section className="upcoming_program">
         <div className="container mx-auto ">
           <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
-            <h2 className="heading_style_two mb-8 lg:mb-0 text-[#29214B] lg:max-w-[398px] text-start  lg:text-left">
+            <h2 className="heading_style_two mb-8 lg:mb-0 text-[#090617] lg:max-w-[398px] text-start  lg:text-left">
               Join me in an upcoming program
             </h2>
             <div className="flex justify-start lg:justify-end text-start">
@@ -936,13 +936,13 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="absolute left-0 top-[30%] w-full -z-50 hidden lg:block">
+        <div className="absolute left-0 top-[26%] w-full -z-50 hidden lg:block">
           <Image className="w-full" src={supportive_banner} alt=".." />
         </div>
       </section>
 
       <section className="testimonial_section">
-        <h2 className="heading_style_two text-center text-[#29214B] mb-20">
+        <h2 className="heading_style_two text-center text-[#29214B] mb-20 mt-28">
           What people say
         </h2>
         <TestimonialCarousel />
