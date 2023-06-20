@@ -18,8 +18,8 @@ import Transformations from "@/app/components/Carousel/Transformations";
 const Main = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20  banner md:px-6 lg:px-16">
-        <div className="home_banner  mx-auto">
+      <section className="md:pt-6 md:pb-20 md:px-6 lg:px-16">
+        <div className="home_banner mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="home_banner_text container mx-auto relative">
             <div className="relative">
@@ -866,7 +866,7 @@ const Main = () => {
                     </div>
                   </li>
                 </ul> */}
-              <div className="flex justify-between pt-6 border-t border-[#E1E1E1] mt-10 p-8 bg-white">
+              <div className="flex justify-between pt-6 border-t border-[#E1E1E1] p-8 bg-white">
                 <p className="text-[#EB334A] text-[21px] font-bold">Free</p>
                 <a
                   href=""
@@ -942,7 +942,7 @@ const Main = () => {
       </section>
 
       <section className="testimonial_section">
-        <h2 className="heading_style_two text-center text-[#29214B] mb-20 mt-28">
+        <h2 className="heading_style_two text-center text-[#29214B] mb-10 lg:mb-20 mt-[60px] lg:mt-28">
           What people say
         </h2>
         <TestimonialCarousel />

@@ -319,7 +319,7 @@ header {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home_banner {
-  @apply w-full h-full rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 xl:px-0;
+  @apply w-full h-[552px] rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 xl:px-0;
 }
 
 .home_banner h3 {
@@ -571,12 +571,12 @@ header {
 }
 
 .testimonial_section {
-  @apply mb-20 px-[4%] lg:px-0;
+  @apply lg:mb-20 px-[4%] lg:px-0;
 }
 
 .Supportive_community_section {
   background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
-  @apply pb-40;
+  @apply pb-20 lg:pb-40;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
