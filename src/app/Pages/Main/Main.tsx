@@ -172,7 +172,7 @@ const Main = () => {
             <p className="paragraph_one_style mb-2 text-[#39315C]">
               My podcast
             </p>
-            <h2 className="heading_style_two mb-16 text-center text-[#090617]">
+            <h2 className="heading_style_two mb-10 md:mb-16 text-center text-[#090617]">
               Stories of Transformations
             </h2>
             <ul className="home_story_tab">
@@ -641,7 +641,7 @@ const Main = () => {
                 <button className="secondary_button">See all challenges</button>
               </div>
             </div>
-            <div className="news_letter_form lg:w-1/2 mt-28">
+            <div className="news_letter_form lg:w-1/2 mt-[76px] lg:mt-28">
               <p className="news_letter_form_head">Join news letter</p>
               <div className="form_field">
                 <label htmlFor="">Name</label>
@@ -706,7 +706,7 @@ const Main = () => {
           <p className="paragraph_one_style text-center mb-2 text-[#29214B]">
             Let’s work on it togather
           </p>
-          <h2 className="heading_style_two text-center max-w-[920px] mx-auto mb-[60px] lg:mb-24 text-[#29214B]">
+          <h2 className="heading_style_two text-center max-w-[920px] mx-auto mb-[60px] lg:mb-24 text-[#090617]">
             Supportive community of like-minded individuals building habits
             together
           </h2>
@@ -890,7 +890,7 @@ const Main = () => {
               </div>
             </div>
             <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden">
-              <h4 className="heading_three_style mb-2">Knowledge</h4>
+              <h4 className="heading_three_style_blue mb-2 ">Knowledge</h4>
               <p>
                 Joining a community focused on habit-building and mental health
                 facilitates knowledge and resource exchange, where members can
@@ -913,7 +913,7 @@ const Main = () => {
               </div>
             </div>
             <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden">
-              <h4 className="heading_three_style mb-2">Support</h4>
+              <h4 className="heading_three_style_blue mb-2">Support</h4>
               <p>
                 A community of like-minded individuals provides accountability,
                 encouragement, and motivation to help members stick to positive
@@ -942,7 +942,7 @@ const Main = () => {
       </section>
 
       <section className="testimonial_section">
-        <h2 className="heading_style_two text-center text-[#29214B] mb-10 lg:mb-20 mt-[60px] lg:mt-28">
+        <h2 className="heading_style_two text-center text-[#090617] mb-10 lg:mb-20 mt-[60px] lg:mt-28">
           What people say
         </h2>
         <TestimonialCarousel />

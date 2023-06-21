@@ -10,7 +10,7 @@ export default function HeroTestimonial() {
   return (
     <>
       <Swiper
-        className="mySwiper h-full w-[274px] sm:w-[344px] home_banner_carousel rounded-[20px]"
+        className="mySwiper h-full w-[full] sm:w-[344px] home_banner_carousel rounded-[20px]"
         pagination={{ clickable: true }}
         modules={[Pagination]}
         spaceBetween={10}
