@@ -662,7 +662,7 @@ const Main = () => {
                 </symbol>
               </svg>
 
-              <div className="flex items-center mb-7">
+              <div className="flex items-center mb-[26px]">
                 <div className="checkbox-container">
                   <input
                     className="checkbox-input"
@@ -723,7 +723,7 @@ const Main = () => {
                 <label htmlFor="">Email address</label>
                 <input type="text" placeholder="Enter email address" />
               </div>
-              <div className="flex items-center mb-7">
+              <div className="flex items-center mb-[26px]">
                 <div className="checkbox-container">
                   <input
                     className="checkbox-input"

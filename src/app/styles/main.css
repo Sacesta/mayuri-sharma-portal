@@ -165,7 +165,6 @@ header {
 .checkbox {
   user-select: none;
   cursor: pointer;
-  padding: 6px 8px;
   border-radius: 6px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -553,7 +552,7 @@ header {
 }
 
 .form_field {
-  @apply mb-9;
+  @apply mb-[26px];
 }
 
 .form_field label {
