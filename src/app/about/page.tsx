@@ -23,8 +23,9 @@ const About = () => {
           </div>
         </div>
       </section>
-      <ThisIsMe />
-
+      <section className="thisIsme_wrapper lg:-mt-40">
+        <ThisIsMe />
+      </section>
       <section className="about_journey">
         <div className="container mx-auto">
           <div className="lg:grid grid-cols-2 gap-20">
