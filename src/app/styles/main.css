@@ -326,7 +326,7 @@ header {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home_banner {
-  @apply w-full h-[820px] sm:h-[552px] rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative sm:px-6 xl:px-0;
+  @apply w-full h-[820px] sm:h-[552px] rounded-[20px] bg-[#29214b] pb-20 pt-20 flex md:pt-0 lg:pb-20 lg:items-end relative sm:px-6 xl:px-0;
 }
 
 .home_banner h3 {
@@ -340,7 +340,7 @@ header {
 }
 
 .home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper {
-  @apply md:absolute left-0 top-[31px] h-[522px];
+  @apply md:absolute left-0 top-[59px] md:top-[95px] h-[522px];
 }
 .home_banner .swiper.swiper-v.swiper-initialized.swiper-vertical.mySwiper2 {
   height: 100%;
@@ -349,12 +349,12 @@ header {
   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
   display: none;
 }
-.home_banner_text {
+.home_banner_text {align-items: flex-end;
   @apply md:pl-[388px]  lg:pl-[440px];
 }
 .intro_section {
   background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
-  @apply pt-56 sm:pt-[28rem] md:pt-32 lg:pt-44 pb-56 lg:pb-[326px] relative overflow-hidden;
+  @apply pt-72 sm:pt-[28rem] md:pt-32 lg:pt-44 pb-56 lg:pb-[326px] relative overflow-hidden;
 }
 .home_banner_text
   .swiper
