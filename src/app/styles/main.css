@@ -267,7 +267,7 @@ header {
   transform: rotate(45deg);
 }
 .testimonial_section .swiper.swiper-initialized.swiper-horizontal.mySwiper {
-  padding-block-end: 104px;
+  
   position: relative;
 }
 .testimonial_section .swiper-button-next,
@@ -762,11 +762,11 @@ header {
 }
 
 .podcast_back {
-  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
+  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
 }
 
 .upcoming_program.programs {
-  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0.4) 100%);
+  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
   @apply lg:pt-24;
 }
 .news_letter_section.programs_news {
