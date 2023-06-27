@@ -7,7 +7,7 @@ export const SwiperNavButtons = () => {
   const swiper = useSwiper();
 
   return (
-    <div className="flex items-center justify-center mt-10 gap-5">
+    <div className="flex items-center justify-center mt-11 gap-5">
       <button
         className="bg-[#D8D5E3] h-[60px] w-[60px] d-flex rounded-full mr-4"
         onClick={() => swiper.slidePrev()}
