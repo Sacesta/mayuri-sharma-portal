@@ -18,10 +18,10 @@ import Transformations from "@/app/components/Carousel/Transformations";
 const Main = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20  banner md:px-6 lg:px-16">
-        <div className="home_banner  mx-auto">
+      <section className="md:pt-6 md:pb-20 md:px-6 lg:px-16">
+        <div className="home_banner mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <div className="home_banner_text container mx-auto relative">
+          <div className="home_banner_text container mx-auto relative h-full md:flex">
             <div className="relative">
               <svg
                 width="98"
@@ -169,10 +169,10 @@ const Main = () => {
                 </svg>
               </div>
             </div>
-            <p className="paragraph_one_style mb-2 text-[#29214B]">
+            <p className="paragraph_one_style mb-2 text-[#39315C]">
               My podcast
             </p>
-            <h2 className="heading_style_two mb-16 text-center text-[#29214B]">
+            <h2 className="heading_style_two mb-10 md:mb-16 text-center text-[#090617]">
               Stories of Transformations
             </h2>
             <ul className="home_story_tab">
@@ -195,7 +195,7 @@ const Main = () => {
       <section className="upcoming_program">
         <div className="container mx-auto ">
           <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
-            <h2 className="heading_style_two mb-8 lg:mb-0 text-[#29214B] lg:max-w-[398px] text-start  lg:text-left">
+            <h2 className="heading_style_two mb-8 lg:mb-0 text-[#090617] lg:max-w-[398px] text-start  lg:text-left">
               Join me in an upcoming program
             </h2>
             <div className="flex justify-start lg:justify-end text-start">
@@ -641,7 +641,7 @@ const Main = () => {
                 <button className="secondary_button">See all challenges</button>
               </div>
             </div>
-            <div className="news_letter_form lg:w-1/2 mt-28">
+            <div className="news_letter_form lg:w-1/2 mt-[76px] lg:mt-28">
               <p className="news_letter_form_head">Join news letter</p>
               <div className="form_field">
                 <label htmlFor="">Name</label>
@@ -662,7 +662,7 @@ const Main = () => {
                 </symbol>
               </svg>
 
-              <div className="flex items-center mb-7">
+              <div className="flex items-center mb-[26px]">
                 <div className="checkbox-container">
                   <input
                     className="checkbox-input"
@@ -706,7 +706,7 @@ const Main = () => {
           <p className="paragraph_one_style text-center mb-2 text-[#29214B]">
             Let’s work on it togather
           </p>
-          <h2 className="heading_style_two text-center max-w-[920px] mx-auto mb-[60px] lg:mb-24 text-[#29214B]">
+          <h2 className="heading_style_two text-center max-w-[920px] mx-auto mb-[60px] lg:mb-24 text-[#090617]">
             Supportive community of like-minded individuals building habits
             together
           </h2>
@@ -723,7 +723,7 @@ const Main = () => {
                 <label htmlFor="">Email address</label>
                 <input type="text" placeholder="Enter email address" />
               </div>
-              <div className="flex items-center mb-7">
+              <div className="flex items-center mb-[26px]">
                 <div className="checkbox-container">
                   <input
                     className="checkbox-input"
@@ -866,7 +866,7 @@ const Main = () => {
                     </div>
                   </li>
                 </ul> */}
-              <div className="flex justify-between pt-6 border-t border-[#E1E1E1] mt-10 p-8 bg-white">
+              <div className="flex justify-between pt-6 border-t border-[#E1E1E1] p-8 bg-white">
                 <p className="text-[#EB334A] text-[21px] font-bold">Free</p>
                 <a
                   href=""
@@ -890,7 +890,7 @@ const Main = () => {
               </div>
             </div>
             <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden">
-              <h4 className="heading_three_style mb-2">Knowledge</h4>
+              <h4 className="heading_three_style_blue mb-2 ">Knowledge</h4>
               <p>
                 Joining a community focused on habit-building and mental health
                 facilitates knowledge and resource exchange, where members can
@@ -913,7 +913,7 @@ const Main = () => {
               </div>
             </div>
             <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden">
-              <h4 className="heading_three_style mb-2">Support</h4>
+              <h4 className="heading_three_style_blue mb-2">Support</h4>
               <p>
                 A community of like-minded individuals provides accountability,
                 encouragement, and motivation to help members stick to positive
@@ -936,13 +936,13 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="absolute left-0 top-[30%] w-full -z-50 hidden lg:block">
+        <div className="absolute left-0 top-[26%] w-full -z-50 hidden lg:block">
           <Image className="w-full" src={supportive_banner} alt=".." />
         </div>
       </section>
 
       <section className="testimonial_section">
-        <h2 className="heading_style_two text-center text-[#29214B] mb-20">
+        <h2 className="heading_style_two text-center text-[#090617] mb-10 lg:mb-20 mt-[60px] lg:mt-28">
           What people say
         </h2>
         <TestimonialCarousel />

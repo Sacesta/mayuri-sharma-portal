@@ -18,7 +18,7 @@ body {
 } */
 
 .container {
-  @apply max-w-[1112px] px-[4%] xl:px-0;
+  @apply max-w-[1112px] px-[24px] xl:px-0;
 }
 
 .primary_button {
@@ -47,13 +47,18 @@ body {
 
 .heading_three_style {
   font-family: "Montserrat";
-  @apply font-semibold text-[#29214B] text-lg lg:text-[21px];
+  @apply font-semibold text-[#090617] text-lg lg:text-[21px];
 }
 
 .heading_three_style_black {
   font-family: "Montserrat";
   @apply font-semibold text-[#2B2B27] text-lg lg:text-[21px];
 }
+.heading_three_style_blue {
+  font-family: "Montserrat";
+  @apply font-semibold text-[#39315C] text-lg lg:text-[21px];
+}
+
 
 .heading_three_style_white {
   font-family: "Montserrat";
@@ -85,14 +90,14 @@ header {
   @apply absolute top-0 right-0;
 }
 .banner {
-  height: 552px;
+  @apply h-[350px] md:h-[552px]
 }
 
-@media screen and (max-width: 1399px) {
+/* @media screen and (max-width: 1399px) {
   .banner {
     height: calc(100vh - 72px);
   }
-}
+} */
 
 .customize_checkbox {
   display: block;
@@ -160,12 +165,11 @@ header {
 .checkbox {
   user-select: none;
   cursor: pointer;
-  padding: 6px 8px;
   border-radius: 6px;
   overflow: hidden;
   transition: all 0.3s ease;
   display: flex;
-  align-items: center;
+ 
 }
 
 .checkbox:not(:last-child) {
@@ -201,8 +205,8 @@ header {
 }
 
 .checkbox span:last-child {
-  padding-left: 8px;
-  line-height: 18px;
+  padding-left: 12px;
+  line-height: 18px;font-size: 16px;
 }
 
 .checkbox:hover span:first-child {
@@ -263,7 +267,7 @@ header {
   transform: rotate(45deg);
 }
 .testimonial_section .swiper.swiper-initialized.swiper-horizontal.mySwiper {
-  padding-block-end: 104px;
+  
   position: relative;
 }
 .testimonial_section .swiper-button-next,
@@ -308,6 +312,8 @@ header {
   .banner.productDetails_banner {
     height: auto;
   }
+.thisIsme_wrapper{background: #fff !important}
+
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -319,7 +325,7 @@ header {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home_banner {
-  @apply w-full h-full rounded-[20px] bg-[#29214b] pt-20 flex lg:pt-0 lg:pb-20 lg:items-end relative px-6 xl:px-0;
+  @apply w-full h-[820px] sm:h-[552px] rounded-[20px] bg-[#29214b] pb-[80px] pt-20 flex md:pt-0 lg:items-end relative sm:px-6 xl:px-0;
 }
 
 .home_banner h3 {
@@ -329,11 +335,11 @@ header {
 
 .home_banner h1 {
   font-family: "Montserrat";
-  @apply text-4xl lg:text-[50px] text-white leading-[46px] lg:leading-[60px] font-semibold;
+  @apply text-4xl xl:text-[50px] text-white leading-[46px] xl:leading-[60px] font-semibold;
 }
 
 .home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper {
-  @apply md:absolute left-0 top-14 lg:top-20 h-[522px];
+  @apply md:absolute left-0 top-[59px] md:top-[95px] h-[522px];
 }
 .home_banner .swiper.swiper-v.swiper-initialized.swiper-vertical.mySwiper2 {
   height: 100%;
@@ -342,12 +348,12 @@ header {
   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
   display: none;
 }
-.home_banner_text {
-  @apply md:pl-[388px]  lg:pl-[440px];
+.home_banner_text {align-items: flex-end;
+  @apply md:pl-[388px]  lg:pl-[410px];
 }
 .intro_section {
-  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
-  @apply pt-[28rem] md:pt-32 lg:pt-60 pb-56 lg:pb-[326px] relative overflow-hidden;
+  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+  @apply pt-72 sm:pt-[28rem] md:pt-32 lg:pt-44 pb-56 lg:pb-[326px] relative overflow-hidden;
 }
 .home_banner_text
   .swiper
@@ -404,6 +410,8 @@ header {
   left: 0;
 }
 
+.thisIsme_wrapper{background: linear-gradient(180deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%) }
+
 .story_podcast {
   @apply absolute rounded-[50%] h-16 w-16 flex items-center justify-center right-6 bottom-0 bg-[#EB334A] z-[2] opacity-0;
 }
@@ -415,7 +423,7 @@ header {
   @apply relative cursor-pointer transition-all ease-in duration-300;
 }
 
-.home_story_section .swiper.swiper-initialized.swiper-horizontal .swiper-wrapper .swiper-slide{padding-inline: 20px;}
+.home_story_section .swiper.swiper-initialized.swiper-horizontal .swiper-wrapper .swiper-slide{@apply sm:px-5}
 .home_story_section li .home_story_img::after {
   content: "";
   background: linear-gradient(
@@ -451,17 +459,12 @@ header {
   @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold;
 }
 
-.upcoming_program {
-  background: linear-gradient(
-    180deg,
-    #d8d5e3 0%,
-    rgba(216, 213, 227, 0.4) 100%
-  );
-  @apply pt-24 pb-40 md:pb-60 lg:pt-40 lg:pb-[306px];
+.upcoming_program {background: linear-gradient(180deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+  @apply pt-24 pb-36 md:pb-60 lg:pt-40 lg:pb-[306px];
 }
 
 .program_list .program_list_li {
-  @apply lg:flex rounded-[20px] overflow-hidden bg-white mb-8 relative border border-[#E1E1E1];
+  @apply lg:flex rounded-[20px] overflow-hidden bg-white mb-[25px] md:mb-8 relative border border-[#E1E1E1];
 }
 
 .program_register {
@@ -511,14 +514,14 @@ header {
 }
 
 .news_letter_section {
-  background: linear-gradient(180deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
+
   @apply md:pb-11;
 }
 .news_letter_section .container.mx-auto {
   @apply px-0;
 }
 .news_letter {
-  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 xl:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
+  @apply gap-32 lg:flex justify-between  overflow-hidden bg-[#29214B] md:rounded-[20px] px-6 md:px-10 xl:px-24 py-20 lg:py-28 lg:mx-0 relative  top-[-110px] md:top-[-200px] -mb-[46px];
 }
 
 .news_ellipse_one {
@@ -536,7 +539,7 @@ header {
 }
 
 .news_letter_form {
-  @apply rounded-[20px] bg-white p-8 lg:max-w-[440px] lg:mt-0 z-[2] relative;
+  @apply rounded-[20px] bg-white py-[27px] px-[25px] lg:max-w-[440px] lg:mt-0 z-[2] relative;
 }
 
 .Supportive_community_section .news_letter_form {
@@ -545,11 +548,11 @@ header {
 
 .news_letter_form_head {
   font-family: "Montserrat";
-  @apply text-[28px] text-[#29214B] font-semibold leading-9 mb-7;
+  @apply text-[28px] text-[#090617] font-semibold leading-9 mb-7;
 }
 
 .form_field {
-  @apply mb-9;
+  @apply mb-[26px];
 }
 
 .form_field label {
@@ -576,11 +579,12 @@ header {
 }
 
 .testimonial_section {
-  @apply mb-20 px-[4%] lg:px-0;
+  @apply mb-[100px] lg:mb-20 px-[4%] lg:px-0;
 }
 
 .Supportive_community_section {
-  @apply pb-40;
+  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+  @apply pb-20 lg:pb-40 overflow-hidden;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -717,9 +721,12 @@ header {
 }
 
 .socialMedia_moments {
-  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
-  @apply pt-[100px] lg:pt-[200px] pb-[100px] lg:pb-80;
+
+  
+  @apply pt-[100px] lg:pt-[200px] pb-[100px] lg:pb-80 relative;
 }
+.socialMedia_moments::after{content: ''; position: absolute; width: 100%; height: 70%; bottom: 0; left: 0; background: linear-gradient(0deg, rgb(216 213 227 / 20%) 0%, rgba(216, 213, 227, 0) 100%);}
+
 .social_image {
   @apply w-full h-full rounded-[20px] overflow-hidden relative;
 }
@@ -755,11 +762,11 @@ header {
 }
 
 .podcast_back {
-  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0) 100%);
+  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
 }
 
 .upcoming_program.programs {
-  background: linear-gradient(0deg, #d8d5e3 0%, rgba(216, 213, 227, 0.4) 100%);
+  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
   @apply lg:pt-24;
 }
 .news_letter_section.programs_news {
@@ -800,22 +807,30 @@ header {
 }
 
 /* Media quary css */
-@media screen and (max-width: 1399px) {
+/* @media screen and (max-width: 1399px) {
   .banner {
     height: calc(100vh - 72px);
   }
-}
-@media screen and (max-width: 1024px) {
+} */
+/* @media screen and (max-width: 1288px){
+  .testimonial_section .swiper .swiper-wrapper .swiper-slide {
+    width: auto!important;
+  }
+  
+} */
+/* @media screen and (max-width: 1024px) {
   .banner {
     height: calc(100vh - 72px);
   }
-}
+} */
 
-@media all and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+/* @media all and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   .banner {
     height: calc(70vh - 72px);
   }
-}
+} */
+
+
 
 @media screen and (max-width: 991px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
@@ -823,15 +838,16 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
-  .banner {
+  /* .banner {
     height: calc(100vh - 72px);
-  }
-  .banner.commonbanner {
+  } */
+  /* .banner.commonbanner {
     height: calc(60vh - 72px);
-  }
+  } */
   .program_icon {
     @apply w-6 h-6;
   }
+  .about_banner{background-position: center;}
 }
 @media screen and (max-width: 701px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
