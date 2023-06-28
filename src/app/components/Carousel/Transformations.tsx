@@ -16,11 +16,11 @@ const Transformations = () => {
         breakpoints={{
           "@0.00": {
             slidesPerView: 1.5,
-            spaceBetween: "40px",
+            spaceBetween: "20px",
           },
           "@0.75": {
             slidesPerView: 1.5,
-            spaceBetween: "40px",
+            spaceBetween: "20px",
           },
           "@1.00": {
             slidesPerView: 2,
