@@ -89,9 +89,9 @@ header {
 .main-right-circle {
   @apply absolute top-0 right-0;
 }
-.banner {
+/* .banner {
   @apply h-[350px] md:h-[552px]
-}
+} */
 
 /* @media screen and (max-width: 1399px) {
   .banner {
@@ -592,7 +592,7 @@ header {
 .about_banner {
   background-repeat: no-repeat;
   background-size: cover;
-  @apply h-full md:rounded-[20px] flex items-end justify-center relative overflow-hidden;
+  @apply h-[350px] md:h-[552px] md:rounded-[20px] flex items-end justify-center relative overflow-hidden;
 }
 
 .about_banner::after {
@@ -767,7 +767,7 @@ header {
 
 .upcoming_program.programs {
   background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
-  @apply lg:pt-24;
+  @apply lg:pt-4;
 }
 .news_letter_section.programs_news {
   @apply md:pb-0 bg-none;
