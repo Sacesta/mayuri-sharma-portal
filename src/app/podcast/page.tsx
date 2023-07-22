@@ -54,7 +54,7 @@ const page = () => {
           </div>
         </section>
 
-        <section className="pt-24 pb-16 lg:py-36 container mx-auto">
+        <section className="pt-24 pb-16 lg:py-16 container mx-auto">
           <div className="grid lg:grid-cols-2 gap-[73px]">
             <div>
               <p className="paragraph_one_style mb-2">
