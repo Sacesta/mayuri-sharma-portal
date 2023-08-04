@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <div className="podcast_back">
-        <section className="md:pt-6 md:pb-20 commonbanner banner md:px-4 xl:px-16">
+        <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
           <div
             className="about_banner bg-center mx-auto"
             style={{ backgroundImage: `url(${podcastBanner.src})` }}
