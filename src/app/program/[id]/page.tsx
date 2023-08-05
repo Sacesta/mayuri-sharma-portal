@@ -1,8 +1,12 @@
-"use client";
+import ProgramDetails from "@/app/components/programdetails/ProgramDetails";
+
 const page = ({ params }: { params: { id: string } }) => {
   console.log(params);
-
-  return <div>My Post: {params.id}</div>;
+  return (
+    <>
+      <ProgramDetails programId={params.id} />
+    </>
+  );
 };
 
 export default page;

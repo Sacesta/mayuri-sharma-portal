@@ -24,6 +24,8 @@ const ProgramCards = () => {
 
   console.log(programs);
 
+  console.log(programs);
+
   const array = [1, 2, 3];
   return (
     <>
@@ -145,7 +147,7 @@ const ProgramCards = () => {
               </Link>
             </div>
           </div>
-          <Link href="/programdetails" className="program_register">
+          <Link href={`/program/${program._id}`} className="program_register">
             Register now
             <svg
               width="8"

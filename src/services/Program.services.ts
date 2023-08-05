@@ -2,10 +2,11 @@ import axiosInstance from "@/configs/api";
 
 // Define the API endpoint URLs as constants
 const PROGRAMS_API_URL = "/public/get-programs";
+const PROGRAM_API_URL = "/public/get-program";
 
 // Define a TypeScript interface for the Program object
 export interface Program {
-  id: string | null;
+  _id: string | null;
   title: string | number;
   image: string;
   description: string;
@@ -14,20 +15,22 @@ export interface Program {
   duration: number;
   language: string;
   price: string;
-  agendamaintitle: string;
-  agendaList: AgendaItem[];
-  agendainclude: AgendaItem[];
+  agandamaintitle: string;
+  agandaList: AgendaItem[];
+  agandainclude: AgendaItem[];
   qa: QAItem[];
 }
 
 export interface AgendaItem {
   title: string;
   description: string;
+  _id: string;
 }
 
 export interface QAItem {
   question: string;
   answer: string;
+  _id: string;
 }
 
 // Function to get programs
@@ -38,6 +41,18 @@ export const getPrograms = async () => {
   } catch (error) {
     // Handle any errors here
     console.error("Error fetching programs:", error);
+    throw error;
+  }
+};
+
+export const getProgram = async (pId: string) => {
+  try {
+    const response = await axiosInstance.get<Program>(
+      PROGRAM_API_URL + `/${pId}`
+    );
+    return response.data;
+  } catch (error) {
+    console.log(error);
     throw error;
   }
 };

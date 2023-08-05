@@ -10,10 +10,7 @@ import TestimonialCarousel from "../components/Carousel/TestimonialCarousel";
 import Footer from "@/app/components/footer/Footer";
 import ProgramCards from "../components/ProgramCards/ProgramCards";
 
-
 const page = async () => {
- 
-  
   return (
     <>
       <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
