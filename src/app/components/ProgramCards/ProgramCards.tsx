@@ -1,27 +1,45 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import programeone from "../../../Assets/Images/pageImages/program_img_1.png";
+import { Program, getPrograms } from "@/services/Program.services";
+import { format } from "date-fns";
 
 const ProgramCards = () => {
+  const [programs, setPrograms] = useState<Program[]>([]);
+
+  useEffect(() => {
+    const fetchProgramsData = async () => {
+      try {
+        const res: any = await getPrograms();
+        setPrograms(res?.data || []);
+      } catch (error) {
+        console.log("Error fetching the programs");
+      }
+    };
+    fetchProgramsData();
+  }, []);
+
+  console.log(programs);
+
   const array = [1, 2, 3];
   return (
     <>
-      {array.map((item,index) => (
+      {programs?.map((program: Program, index: any) => (
         <li key={`programitem-${index}`} className="program_list_li">
           <div className="program_img">
             <Image src={programeone} alt="program..." />
           </div>
           <div className="program_details">
             <div className="flex justify-between items-center mb-2">
-              <p className="heading_three_style">Program Name</p>
-              <p className="heading_three_style hidden lg:block">€ 100</p>
+              <p className="heading_three_style">{program?.title}</p>
+              <p className="heading_three_style hidden lg:block">
+                € {program?.price}
+              </p>
             </div>
-            <p className="program_description">
-              A bit of text about the program can go here. all the way until
-              here, with a bit more here and here and there everywhere. oh and
-              also here and here and ya you guessed it here.
-            </p>
+            <p className="program_description">{program?.description}</p>
             <ul className="flex items-center flex-wrap lg:flex-auto">
               <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
                 <div className="program_icon">
@@ -40,7 +58,7 @@ const ProgramCards = () => {
                 </div>
                 <div className="program_time">
                   <p>Start date</p>
-                  <p>14th April</p>
+                  <p>{format(new Date(program?.sdate), "do MMMM")}</p>
                 </div>
               </li>
               <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
@@ -59,8 +77,8 @@ const ProgramCards = () => {
                   </svg>
                 </div>
                 <div className="program_time">
-                  <p>Start date</p>
-                  <p>14th April</p>
+                  <p>End date</p>
+                  <p>{format(new Date(program?.edate), "do MMMM")}</p>
                 </div>
               </li>
               <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
@@ -79,8 +97,8 @@ const ProgramCards = () => {
                   </svg>
                 </div>
                 <div className="program_time">
-                  <p>Start date</p>
-                  <p>14th April</p>
+                  <p>Duration</p>
+                  <p>{program?.duration}</p>
                 </div>
               </li>
               <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
@@ -99,8 +117,8 @@ const ProgramCards = () => {
                   </svg>
                 </div>
                 <div className="program_time">
-                  <p>Start date</p>
-                  <p>14th April</p>
+                  <p>Language</p>
+                  <p>{program?.language}</p>
                 </div>
               </li>
             </ul>
