@@ -18,7 +18,7 @@ import Transformations from "@/app/components/Carousel/Transformations";
 const Main = () => {
   return (
     <>
-      <section className="md:pt-6 md:pb-20 md:px-6 lg:px-16">
+      <section className="md:pt-9 md:pb-20 md:px-6 lg:px-16">
         <div className="home_banner mx-auto">
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="home_banner_text container mx-auto relative h-full md:flex">

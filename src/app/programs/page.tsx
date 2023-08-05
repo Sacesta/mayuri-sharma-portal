@@ -16,7 +16,7 @@ const page = async () => {
   
   return (
     <>
-      <section className="md:pt-6 md:pb-20 commonbanner banner md:px-4 xl:px-16">
+      <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
         <div
           className="about_banner lg:bg-right"
           style={{ backgroundImage: `url(${bg.src})` }}
