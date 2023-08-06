@@ -7,7 +7,7 @@ import programeone from "../../../Assets/Images/pageImages/program_img_1.png";
 import { Program, getPrograms } from "@/services/Program.services";
 import { format } from "date-fns";
 
-const ProgramCards = () => {
+const HomeProgramCards = () => {
   const [programs, setPrograms] = useState<Program[]>([]);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const ProgramCards = () => {
 
   return (
     <>
-      {programs?.map((program: Program, index: any) => (
+      {programs?.slice(0, 3)?.map((program: Program, index: any) => (
         <li key={`programitem-${index}`} className="program_list_li">
           <div className="program_img">
             <Image src={programeone} alt="program..." />
@@ -164,4 +164,4 @@ const ProgramCards = () => {
   );
 };
 
-export default ProgramCards;
+export default HomeProgramCards;
