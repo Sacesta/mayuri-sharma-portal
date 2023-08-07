@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { useSwiper } from "swiper/react";
 import Prev from "@/Assets/Images/pageImages/Left-Arrow.png";
