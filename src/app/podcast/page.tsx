@@ -1,12 +1,12 @@
 import React from "react";
 // import "./podcast.css";
-import "../styles/main.css";
+import "@/styles/main.css";
 import Image from "next/image";
-import rightCircle from "../../Assets/icons/Ellipse 24 (Stroke).png";
-import podcastBanner from "../../Assets/Images/pageImages/podcast_banner.png";
-import spotify from "../../Assets/Images/pageImages/spotify.png";
-import Footer from "@/app/components/footer/Footer";
-import CategoryTabs from "../components/CategoryTabs/CategoryTabs";
+import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
+import podcastBanner from "@/Assets/Images/pageImages/podcast_banner.png";
+import spotify from "@/Assets/Images/pageImages/spotify.png";
+import Footer from "@/components/footer/Footer";
+import CategoryTabs from "@/components/CategoryTabs/CategoryTabs";
 
 const page = () => {
   return (
