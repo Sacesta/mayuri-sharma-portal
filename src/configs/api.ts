@@ -5,7 +5,7 @@ import axios from "axios";
 
 // Axios instance
 const axiosInstance = axios.create({
-  baseURL: "https://mayuri-admin-be.onrender.com",
+  baseURL: "http://localhost:8000",
   timeout: 600000,
   headers: {
     "Content-Type": "application/json; charset=utf-8",
