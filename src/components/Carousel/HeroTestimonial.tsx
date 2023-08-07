@@ -4,7 +4,7 @@ import Image from "next/image";
 import homebannerSlider from "@/Assets/Images/pageImages/fun_profile.png";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Pagination } from "swiper/modules";
 
 export default function HeroTestimonial() {
   return (
