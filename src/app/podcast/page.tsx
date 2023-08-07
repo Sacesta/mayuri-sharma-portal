@@ -6,6 +6,7 @@ import rightCircle from "../../Assets/icons/Ellipse 24 (Stroke).png";
 import podcastBanner from "../../Assets/Images/pageImages/podcast_banner.png";
 import spotify from "../../Assets/Images/pageImages/spotify.png";
 import Footer from "@/app/components/footer/Footer";
+import CategoryTabs from "../components/CategoryTabs/CategoryTabs";
 
 const page = () => {
   return (
@@ -111,7 +112,7 @@ const page = () => {
             </div>
           </div>
           <div className="">
-            <ul className="home_story_tab">
+            {/* <ul className="home_story_tab">
               <li className="story_tab_active">Recent</li>
               <li>Inner peace</li>
               <li>Lifestyle</li>
@@ -611,7 +612,8 @@ const page = () => {
                   Episode description goes here with no more than three lines.
                 </p>
               </li>
-            </ul>
+            </ul> */}
+            <CategoryTabs />
           </div>
         </div>
       </section>

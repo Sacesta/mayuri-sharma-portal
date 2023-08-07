@@ -15,6 +15,7 @@ import Link from "next/link";
 import ProgramCards from "@/app/components/ProgramCards/ProgramCards";
 import Transformations from "@/app/components/Carousel/Transformations";
 import HomeProgramCards from "@/app/components/ProgramCards/HomeProgramCards";
+import Categories from "@/app/components/CategoryTabs/Categories";
 
 const Main = () => {
   return (
@@ -176,13 +177,7 @@ const Main = () => {
             <h2 className="heading_style_two mb-10 md:mb-16 text-center text-[#090617]">
               Stories of Transformations
             </h2>
-            <ul className="home_story_tab">
-              <li className="story_tab_active">Recent</li>
-              <li>Inner peace</li>
-              <li>Lifestyle</li>
-              <li>Health</li>
-              <li>Wellness</li>
-            </ul>
+            <Categories />
             <div className="home_story_section w-full">
               <Transformations />
             </div>
