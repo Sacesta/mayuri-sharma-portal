@@ -8,7 +8,7 @@ const CategoryTabs = () => {
   return (
     <>
       <Categories />
-      <ul className="home_story_section grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {/* <ul className="home_story_section grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <li>
           <div className="home_story_img">
             <video autoPlay loop muted>
@@ -501,7 +501,7 @@ const CategoryTabs = () => {
             Episode description goes here with no more than three lines.
           </p>
         </li>
-      </ul>
+      </ul> */}
     </>
   );
 };
