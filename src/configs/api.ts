@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// window
-// const Window = window as any;
+const Window = window as any;
+let document = Window.document;
 
 // Axios instance
 const axiosInstance = axios.create({
@@ -20,6 +20,41 @@ const axiosInstance = axios.create({
 // function getUserRefreshToken() {
 //   return localStorage.getItem("userRefreshToken");
 // }
+
+function showLoading(loadingOverlay: any) {
+  if (loadingOverlay) {
+    document.activeElement.blur();
+    if (loadingOverlay.classList.contains("loaderhidden")) {
+      loadingOverlay.classList.remove("loaderhidden");
+    }
+  }
+}
+
+function disableLoading(loadingOverlay: any) {
+  if (loadingOverlay) loadingOverlay.classList.add("loaderhidden");
+}
+
+axiosInstance.interceptors.request.use(
+  function (config: any) {
+    console.log("Request started");
+    let loadingOverlay = document.querySelector(".loading");
+    showLoading(loadingOverlay);
+    return config;
+  },
+  function (error) {
+    console.log("Request ended");
+    let loadingOverlay = document.querySelector(".loading");
+    disableLoading(loadingOverlay);
+  }
+);
+
+axiosInstance.interceptors.response.use(function (response) {
+  console.log(response);
+  console.log("Request ended");
+  let loadingOverlay = document.querySelector(".loading");
+  disableLoading(loadingOverlay);
+  return response;
+});
 
 // axiosInstance.interceptors.request.use(
 //   function (config: any) {

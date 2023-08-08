@@ -1,5 +1,4 @@
 "use client";
-
 import { Category, getCategories } from "@/services/Category.services";
 import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
