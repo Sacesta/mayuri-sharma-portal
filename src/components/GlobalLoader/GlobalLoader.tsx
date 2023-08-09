@@ -1,11 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./loader.css";
 import axiosInstance from "@/configs/api";
 
 const GlobalLoader = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [loadingCount, setLoadingCount] = useState(0);
+
+  useEffect(() => {
+    const handleBodyOverflow = () => {
+      if (isLoading && loadingCount > 0) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    };
+
+    handleBodyOverflow();
+  }, [isLoading, loadingCount]);
 
   const increaseLoadingCount = () => {
     setLoadingCount((prevCount) => prevCount + 1);
