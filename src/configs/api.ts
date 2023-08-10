@@ -5,13 +5,16 @@ import axios from "axios";
 
 // Axios instance
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8000",
+  // Production Url
+  baseURL: "https://mayuri-admin-be.onrender.com",
+  // Dev url
+  // baseURL: "http://localhost:8000",
   timeout: 600000,
   headers: {
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWQiOiI2NGFiZDRjNTkwOTU0MGU0Y2ZiMGUxNmIiLCJpYXQiOjE2OTE2Njk1MjQsImV4cCI6MTY5MTc1NTkyNH0.ObjWKKTFaHL9Y1_9moFdEkvt-J8ENwbNxQL397BdagA",
     "Content-Type": "application/json; charset=utf-8",
     "Access-Control-Allow-Origin": "*",
+    // Authorization:
+    //   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWQiOiI2NGFiZDRjNTkwOTU0MGU0Y2ZiMGUxNmIiLCJpYXQiOjE2OTE2Njk1MjQsImV4cCI6MTY5MTc1NTkyNH0.ObjWKKTFaHL9Y1_9moFdEkvt-J8ENwbNxQL397BdagA",
   },
 });
 
@@ -36,27 +39,27 @@ const axiosInstance = axios.create({
 //   if (loadingOverlay) loadingOverlay.classList.add("loaderhidden");
 // }
 
-axiosInstance.interceptors.request.use(
-  function (config: any) {
-    console.log("Request started");
-    // let loadingOverlay = document.querySelector(".loading");
-    // showLoading(loadingOverlay);
-    return config;
-  },
-  function (error) {
-    console.log("Request ended");
-    // let loadingOverlay = document.querySelector(".loading");
-    // disableLoading(loadingOverlay);
-  }
-);
+// axiosInstance.interceptors.request.use(
+//   function (config: any) {
+//     console.log("Request started");
+//     // let loadingOverlay = document.querySelector(".loading");
+//     // showLoading(loadingOverlay);
+//     return config;
+//   },
+//   function (error) {
+//     console.log("Request ended");
+//     // let loadingOverlay = document.querySelector(".loading");
+//     // disableLoading(loadingOverlay);
+//   }
+// );
 
-axiosInstance.interceptors.response.use(function (response) {
-  console.log(response);
-  console.log("Request ended");
-  // let loadingOverlay = document.querySelector(".loading");
-  // disableLoading(loadingOverlay);
-  return response;
-});
+// axiosInstance.interceptors.response.use(function (response) {
+//   console.log(response);
+//   console.log("Request ended");
+//   // let loadingOverlay = document.querySelector(".loading");
+//   // disableLoading(loadingOverlay);
+//   return response;
+// });
 
 // axiosInstance.interceptors.request.use(
 //   function (config: any) {
