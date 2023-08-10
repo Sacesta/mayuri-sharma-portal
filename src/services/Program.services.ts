@@ -15,15 +15,25 @@ export interface Program {
   duration: number;
   language: string;
   price: string;
+  batchTiming: string;
   agandamaintitle: string;
   agandaList: AgendaItem[];
   agandainclude: AgendaItem[];
   qa: QAItem[];
+  reviews: ReviewItem[];
 }
 
 export interface AgendaItem {
   title: string;
   description: string;
+  _id: string;
+}
+
+export interface ReviewItem {
+  name: string;
+  country: string;
+  review: string;
+  profileImg: string;
   _id: string;
 }
 

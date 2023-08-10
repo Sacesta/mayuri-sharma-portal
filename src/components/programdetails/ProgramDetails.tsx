@@ -9,8 +9,13 @@ import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.
 import Footer from "../footer/Footer";
 import Accordion from "../Accordion/Accordion";
 import items from "@/Data/accordion.json";
-import { AgendaItem, Program, getProgram } from "@/services/Program.services";
-import { format } from "date-fns";
+import {
+  AgendaItem,
+  Program,
+  ReviewItem,
+  getProgram,
+} from "@/services/Program.services";
+import { format, parse } from "date-fns";
 
 const ProgramDetails = ({ programId }: any) => {
   const [program, setProgram] = useState<Program | any>({});
@@ -22,6 +27,12 @@ const ProgramDetails = ({ programId }: any) => {
     };
     fetchProgram();
   }, [programId]);
+
+  const parseBatchTiming = (batchTiming: string) => {
+    const parsedTime = parse(batchTiming, "HH:mm", new Date());
+    const formattedTime = format(parsedTime, "h:mm a");
+    return formattedTime;
+  };
 
   return (
     <>
@@ -95,7 +106,7 @@ const ProgramDetails = ({ programId }: any) => {
                         </div>
                         <div className="program_time">
                           <p>Duration</p>
-                          <p>{program?.duration}</p>
+                          <p>{program?.duration} minutes</p>
                         </div>
                       </li>
                       <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
@@ -116,6 +127,26 @@ const ProgramDetails = ({ programId }: any) => {
                         <div className="program_time">
                           <p>Language </p>
                           <p>{program?.language}</p>
+                        </div>
+                      </li>
+                      <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
+                        <div className="program_icon">
+                          <svg
+                            width="28"
+                            height="32"
+                            viewBox="0 0 28 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.15375 2.28844V0H18.3075V2.28844H9.15375ZM12.5864 19.3373H14.8749V10.565H12.5864V19.3373ZM13.7306 32C11.849 32 10.0755 31.6377 8.41001 30.913C6.74454 30.1883 5.28884 29.203 4.04291 27.9571C2.79698 26.7112 1.81168 25.2555 1.08701 23.59C0.362336 21.9245 0 20.151 0 18.2694C0 16.3878 0.362336 14.6142 1.08701 12.9487C1.81168 11.2833 2.79698 9.82757 4.04291 8.58165C5.28884 7.33572 6.74454 6.35042 8.41001 5.62574C10.0755 4.90107 11.849 4.53874 13.7306 4.53874C15.4342 4.53874 17.0362 4.82479 18.5364 5.3969C20.0366 5.96901 21.3715 6.76361 22.5411 7.78069L24.4863 5.83552L26.0882 7.43743L24.143 9.3826C25.0584 10.3997 25.8403 11.6329 26.4887 13.0822C27.1371 14.5316 27.4613 16.2606 27.4613 18.2694C27.4613 20.151 27.0989 21.9245 26.3743 23.59C25.6496 25.2555 24.6643 26.7112 23.4184 27.9571C22.1724 29.203 20.7167 30.1883 19.0513 30.913C17.3858 31.6377 15.6122 32 13.7306 32ZM13.7306 29.7116C16.909 29.7116 19.6106 28.5991 21.8355 26.3743C24.0604 24.1494 25.1728 21.4478 25.1728 18.2694C25.1728 15.091 24.0604 12.3894 21.8355 10.1645C19.6106 7.93961 16.909 6.82717 13.7306 6.82717C10.5522 6.82717 7.85062 7.93961 5.62574 10.1645C3.40087 12.3894 2.28844 15.091 2.28844 18.2694C2.28844 21.4478 3.40087 24.1494 5.62574 26.3743C7.85062 28.5991 10.5522 29.7116 13.7306 29.7116Z"
+                              fill="#C50019"
+                            />
+                          </svg>
+                        </div>
+                        <div className="program_time">
+                          <p>Batch Timing </p>
+                          <p>{parseBatchTiming(program?.batchTiming)}</p>
                         </div>
                       </li>
                     </ul>
@@ -308,7 +339,7 @@ const ProgramDetails = ({ programId }: any) => {
                                     </div>
                                     <div className="mb-5">
                                       <h3 className="heading_three_style_black mb-[10px]">
-                                        {`Day ${i + 1}: ${aganda?.title}`}{" "}
+                                        {`${aganda?.title}`}{" "}
                                       </h3>
                                       <p className="paragraph_two_style">
                                         {aganda?.description}
@@ -366,101 +397,89 @@ const ProgramDetails = ({ programId }: any) => {
                       <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[41px] text-[#2B2B27]">
                         What people say
                       </h2>
-                      <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
-                        <h4 className="heading_three_style_black mb-2">
-                          John from Australia
-                        </h4>
-                        <p className="lg:w-2/3">
-                          &quot;Joining this community of habit-builders and
-                          supporters has been a game-changer. The encouragement
-                          and accountability from members have helped me develop
-                          healthier habits and improve my mental well-being. The
-                          shared insights and resources have been
-                          transformative, and the sense of belonging is
-                          amazing!&quot; - John
-                        </p>
-                        <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
-                          <Image
-                            className="w-full h-full object-cover"
-                            src={profileImage}
-                            alt=".."
-                          />
-                        </div>
-                        <div className="w-[26px] h-[22px] lg:w-[51px] lg:h-[42px] absolute top-10 right-10 lg:right-[106px]">
-                          <svg
-                            className="w-auto max-w-full h-full object-contain"
-                            width="51"
-                            height="42"
-                            viewBox="0 0 51 42"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M21.1364 0L13.2273 30.0774L11.0455 19.9161C14.2273 19.9161 16.8636 20.9097 18.9545 22.8968C21.0455 24.8839 22.0909 27.5484 22.0909 30.8903C22.0909 34.2323 21.0455 36.9419 18.9545 39.0194C16.8636 41.0065 14.2727 42 11.1818 42C7.90909 42 5.22727 40.9613 3.13636 38.8839C1.04545 36.8064 0 34.1419 0 30.8903C0 29.8064 0.0454539 28.8129 0.136363 27.9097C0.318181 26.9161 0.636363 25.7419 1.09091 24.3871C1.54545 23.0323 2.18182 21.3161 3 19.2387L10.2273 0H21.1364ZM50.0455 0L42.1364 30.0774L39.9545 19.9161C43.1364 19.9161 45.7727 20.9097 47.8636 22.8968C49.9546 24.8839 51 27.5484 51 30.8903C51 34.2323 49.9546 36.9419 47.8636 39.0194C45.7727 41.0065 43.1818 42 40.0909 42C36.8182 42 34.1364 40.9613 32.0455 38.8839C29.9545 36.8064 28.9091 34.1419 28.9091 30.8903C28.9091 29.8064 28.9545 28.8129 29.0455 27.9097C29.2273 26.9161 29.5455 25.7419 30 24.3871C30.4545 23.0323 31.0909 21.3161 31.9091 19.2387L39.1364 0H50.0455Z"
-                              fill="#EB334A"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
-                        <h4 className="heading_three_style_black mb-2">
-                          Tammy from France
-                        </h4>
-                        <p className="lg:w-2/3">
-                          &quot;This community has been life-changing. The
-                          practical strategies and support from like-minded
-                          members have helped me prioritize my mental health and
-                          build positive habits. The progress I&apos;ve made and
-                          the connections I&apos;ve formed are invaluable.
-                          Highly recommend!&quot; - Tammy
-                        </p>
-                        <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
-                          <Image
-                            className="w-full h-full object-cover"
-                            src={profileImage}
-                            alt=".."
-                          />
-                        </div>
-                        <div className="w-[26px] h-[22px] lg:w-[51px] lg:h-[42px] absolute top-10 right-10 lg:right-[106px]">
-                          <svg
-                            className="w-auto max-w-full h-full object-contain"
-                            width="51"
-                            height="42"
-                            viewBox="0 0 51 42"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M21.1364 0L13.2273 30.0774L11.0455 19.9161C14.2273 19.9161 16.8636 20.9097 18.9545 22.8968C21.0455 24.8839 22.0909 27.5484 22.0909 30.8903C22.0909 34.2323 21.0455 36.9419 18.9545 39.0194C16.8636 41.0065 14.2727 42 11.1818 42C7.90909 42 5.22727 40.9613 3.13636 38.8839C1.04545 36.8064 0 34.1419 0 30.8903C0 29.8064 0.0454539 28.8129 0.136363 27.9097C0.318181 26.9161 0.636363 25.7419 1.09091 24.3871C1.54545 23.0323 2.18182 21.3161 3 19.2387L10.2273 0H21.1364ZM50.0455 0L42.1364 30.0774L39.9545 19.9161C43.1364 19.9161 45.7727 20.9097 47.8636 22.8968C49.9546 24.8839 51 27.5484 51 30.8903C51 34.2323 49.9546 36.9419 47.8636 39.0194C45.7727 41.0065 43.1818 42 40.0909 42C36.8182 42 34.1364 40.9613 32.0455 38.8839C29.9545 36.8064 28.9091 34.1419 28.9091 30.8903C28.9091 29.8064 28.9545 28.8129 29.0455 27.9097C29.2273 26.9161 29.5455 25.7419 30 24.3871C30.4545 23.0323 31.0909 21.3161 31.9091 19.2387L39.1364 0H50.0455Z"
-                              fill="#EB334A"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div className="programDetails_peopleReview">
-                        <Image
-                          className="w-full h-full object-cover"
-                          src={profileImage}
-                          alt=".."
-                        />
-                        <p className="heading_three_style_white absolute top-8 left-8 z-[2]">
-                          Emma from the UK
-                        </p>
-                        <div className="absolute bottom-8 right-8 bg-[#EB334A] rounded-full h-16 w-16 z-[2] flex items-center justify-center">
-                          <svg
-                            width="22"
-                            height="29"
-                            viewBox="0 0 22 29"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M0 28.8501V0.850098L22 14.8501L0 28.8501Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </div>
-                      </div>
+                      {program?.reviews?.length ? (
+                        <>
+                          {program.reviews.map(
+                            (reviewItem: ReviewItem, i: number) => {
+                              return (
+                                <div
+                                  key={reviewItem?._id}
+                                  className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4"
+                                >
+                                  <h4 className="heading_three_style_black mb-2">
+                                    {reviewItem?.name}
+                                  </h4>
+                                  <p className="lg:w-2/3">
+                                    &quot;{reviewItem?.review}&quot; -{" "}
+                                    {reviewItem?.name}
+                                  </p>
+                                  <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
+                                    <Image
+                                      className="w-full h-full object-cover"
+                                      src={profileImage}
+                                      alt=".."
+                                    />
+                                  </div>
+                                  <div className="w-[26px] h-[22px] lg:w-[51px] lg:h-[42px] absolute top-10 right-10 lg:right-[106px]">
+                                    <svg
+                                      className="w-auto max-w-full h-full object-contain"
+                                      width="51"
+                                      height="42"
+                                      viewBox="0 0 51 42"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M21.1364 0L13.2273 30.0774L11.0455 19.9161C14.2273 19.9161 16.8636 20.9097 18.9545 22.8968C21.0455 24.8839 22.0909 27.5484 22.0909 30.8903C22.0909 34.2323 21.0455 36.9419 18.9545 39.0194C16.8636 41.0065 14.2727 42 11.1818 42C7.90909 42 5.22727 40.9613 3.13636 38.8839C1.04545 36.8064 0 34.1419 0 30.8903C0 29.8064 0.0454539 28.8129 0.136363 27.9097C0.318181 26.9161 0.636363 25.7419 1.09091 24.3871C1.54545 23.0323 2.18182 21.3161 3 19.2387L10.2273 0H21.1364ZM50.0455 0L42.1364 30.0774L39.9545 19.9161C43.1364 19.9161 45.7727 20.9097 47.8636 22.8968C49.9546 24.8839 51 27.5484 51 30.8903C51 34.2323 49.9546 36.9419 47.8636 39.0194C45.7727 41.0065 43.1818 42 40.0909 42C36.8182 42 34.1364 40.9613 32.0455 38.8839C29.9545 36.8064 28.9091 34.1419 28.9091 30.8903C28.9091 29.8064 28.9545 28.8129 29.0455 27.9097C29.2273 26.9161 29.5455 25.7419 30 24.3871C30.4545 23.0323 31.0909 21.3161 31.9091 19.2387L39.1364 0H50.0455Z"
+                                        fill="#EB334A"
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              );
+                            }
+                          )}
+                        </>
+                      ) : null}
+
+                      {program?.reviews?.length ? (
+                        <>
+                          {program.reviews.map(
+                            (reviewItem: ReviewItem, i: number) => {
+                              return (
+                                <div
+                                  className="programDetails_peopleReview"
+                                  key={reviewItem?._id}
+                                >
+                                  <Image
+                                    className="w-full h-full object-cover"
+                                    src={profileImage}
+                                    alt=".."
+                                  />
+                                  <p className="heading_three_style_white absolute top-8 left-8 z-[2]">
+                                    {reviewItem?.name} from the{" "}
+                                    {reviewItem?.country}
+                                  </p>
+                                  <div className="absolute bottom-8 right-8 bg-[#EB334A] rounded-full h-16 w-16 z-[2] flex items-center justify-center">
+                                    <svg
+                                      width="22"
+                                      height="29"
+                                      viewBox="0 0 22 29"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M0 28.8501V0.850098L22 14.8501L0 28.8501Z"
+                                        fill="white"
+                                      />
+                                    </svg>
+                                  </div>
+                                </div>
+                              );
+                            }
+                          )}
+                        </>
+                      ) : null}
                     </div>
                   </div>
                 </div>
