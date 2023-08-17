@@ -16,6 +16,7 @@ import {
   getProgram,
 } from "@/services/Program.services";
 import { format, parse } from "date-fns";
+import HostCarousel from "../Carousel/HostCarousel";
 
 const ProgramDetails = ({ programId }: any) => {
   const [program, setProgram] = useState<Program | any>({});
@@ -595,8 +596,13 @@ const ProgramDetails = ({ programId }: any) => {
             </div>
           </section>
 
-          <section className=" bg-[#F9F9F9] pb-12 lg:pb-24 xl:pb-[200px]">
-            <div className="container mx-auto"></div>
+          <section className=" bg-[#F9F9F9] pb-10  pt-10">
+            <div className="container mx-auto">
+              <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[41px] text-[#2B2B27]">
+                Program Hosts
+              </h2>
+              <HostCarousel data={program?.host} />
+            </div>
           </section>
 
           <section className="bg-white pt-12 lg:pt-[100px] pb-[119px]">

@@ -21,8 +21,15 @@ export interface Program {
   agandainclude: AgendaItem[];
   qa: QAItem[];
   reviews: ReviewItem[];
+  free: boolean;
+  host: HostItem[];
 }
 
+export interface HostItem {
+  name: string;
+  description: string;
+  img: string;
+}
 export interface AgendaItem {
   title: string;
   description: string;
