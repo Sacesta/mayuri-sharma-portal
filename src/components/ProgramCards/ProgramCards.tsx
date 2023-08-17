@@ -122,7 +122,7 @@ const ProgramCards = () => {
             <div className="flex justify-between items-center pt-6 border-t border-[#E1E1E1] mt-4 lg:hidden">
               <p className="heading_three_style">€ 100</p>
               <Link
-                href="/programdetails"
+                href={`/program/${program._id}`}
                 className="flex items-center text-[#4086FF] font-semibold tracking-widest"
               >
                 Register now
