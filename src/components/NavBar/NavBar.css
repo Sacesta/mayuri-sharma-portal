@@ -27,6 +27,16 @@ nav {
   border-radius: 8px;
 }
 
+.user-btn {
+  padding: 5px 12px;
+  background: #eb334a;
+  font-family: "Montserrat";
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
 @media (min-width: 1024px) {
   .nav-height {
     height: 72px;
