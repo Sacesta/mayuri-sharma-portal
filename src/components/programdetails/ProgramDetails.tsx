@@ -14,12 +14,44 @@ import {
   Program,
   ReviewItem,
   getProgram,
+  registerProgram,
 } from "@/services/Program.services";
 import { format, parse } from "date-fns";
 import HostCarousel from "../Carousel/HostCarousel";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+import { getUser, setLoginModal } from "@/redux/features/userSlice";
+import { User } from "@/services/auth.services";
+import { toast } from "react-toastify";
 
 const ProgramDetails = ({ programId }: any) => {
+  const dispatch = useAppDispatch();
+  const user: User = useAppSelector(getUser);
+
   const [program, setProgram] = useState<Program | any>({});
+
+  const handleRegisterProgram = async (program: Program) => {
+    try {
+      const payload = {
+        userId: user._id,
+        cartItems: [
+          {
+            name: program.title,
+            description: program.description,
+            images: [program.image],
+            price: program.price,
+            quantity: 1,
+            id: program._id,
+          },
+        ],
+      };
+
+      const response = await registerProgram(payload);
+      window.location.href = response.url;
+    } catch (error) {
+      dispatch(setLoginModal(true));
+      toast.error(`User not logged in`);
+    }
+  };
 
   useEffect(() => {
     const fetchProgram = async () => {
@@ -39,7 +71,6 @@ const ProgramDetails = ({ programId }: any) => {
     <>
       {Object.keys(program).length > 0 ? (
         <>
-          {console.log(program?.agandaList?.length)}
           <section className="py-9 productDetails_banner flex items-center bg-[#F9F9F9]">
             <div className="lg:bg-right container mx-auto">
               <div className="grid lg:grid-cols-2 z-[2] gap-10">
@@ -152,7 +183,10 @@ const ProgramDetails = ({ programId }: any) => {
                       </li>
                     </ul>
                     <div className="mt-4 md:flex items-center">
-                      <button className="w-full md:w-auto primary_button">
+                      <button
+                        className="w-full md:w-auto primary_button"
+                        onClick={() => handleRegisterProgram(program)}
+                      >
                         Register now
                       </button>
                       <p className="text-[#505050] text-[14px] ml-6 leading-6 mt-2 md:mt-0 text-center md:text-left">
@@ -163,7 +197,14 @@ const ProgramDetails = ({ programId }: any) => {
                   <div className="block lg:hidden mt-12">
                     <div className="rounded-[20px] overflow-hidden h-[358px] xl:h-[552px] w-full  sticky left-0 top-[108px]">
                       <Image
-                        src={programDetailsBanner}
+                        src={
+                          program?.image.startsWith("https")
+                            ? program?.image
+                            : programDetailsBanner
+                        }
+                        width={0}
+                        height={0}
+                        sizes="100vw"
                         alt="..."
                         className=" w-full h-full object-cover"
                       />
@@ -487,7 +528,14 @@ const ProgramDetails = ({ programId }: any) => {
                 <div className="hidden lg:block relative">
                   <div className="rounded-[20px] overflow-hidden h-[358px] lg:h-[552px] w-full absolute z-10">
                     <Image
-                      src={programDetailsBanner}
+                      src={
+                        program?.image.startsWith("https")
+                          ? program?.image
+                          : programDetailsBanner
+                      }
+                      width={0}
+                      height={0}
+                      sizes="100vw"
                       alt="..."
                       className=" w-full h-full object-cover"
                     />

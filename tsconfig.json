@@ -29,6 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/components/About/Tab/Tab.js"
-  ],
+, "src/components/AuthGuard/AuthGuard.tsx"  ],
   "exclude": ["node_modules"]
 }

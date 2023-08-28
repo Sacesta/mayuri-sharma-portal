@@ -6,9 +6,9 @@ import axios from "axios";
 // Axios instance
 const axiosInstance = axios.create({
   // Production Url
-  baseURL: "https://mayuri-admin-be.onrender.com",
+  // baseURL: "https://mayuri-admin-be.onrender.com",
   // Dev url
-  // baseURL: "http://localhost:8000",
+  baseURL: "http://localhost:8000",
   timeout: 600000,
   headers: {
     "Content-Type": "application/json; charset=utf-8",
@@ -39,19 +39,21 @@ const axiosInstance = axios.create({
 //   if (loadingOverlay) loadingOverlay.classList.add("loaderhidden");
 // }
 
-// axiosInstance.interceptors.request.use(
-//   function (config: any) {
-//     console.log("Request started");
-//     // let loadingOverlay = document.querySelector(".loading");
-//     // showLoading(loadingOverlay);
-//     return config;
-//   },
-//   function (error) {
-//     console.log("Request ended");
-//     // let loadingOverlay = document.querySelector(".loading");
-//     // disableLoading(loadingOverlay);
-//   }
-// );
+axiosInstance.interceptors.request.use(
+  function (config: any) {
+    const token = localStorage.getItem("accessToken");
+    if (token && !config.url.startsWith("/public")) {
+      config.headers["Authorization"] = `Bearer ${token}`;
+    }
+    // let loadingOverlay = document.querySelector(".loading");
+    // showLoading(loadingOverlay);
+    return config;
+  },
+  function (error) {
+    // let loadingOverlay = document.querySelector(".loading");
+    // disableLoading(loadingOverlay);
+  }
+);
 
 // axiosInstance.interceptors.response.use(function (response) {
 //   console.log(response);

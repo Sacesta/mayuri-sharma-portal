@@ -4,13 +4,17 @@ import Logo from "../../Assets/Images/Logotype.png";
 import Image from "next/image";
 import Link from "next/link";
 import loginService, { LoginPayload } from "@/services/auth.services";
+import { useAppDispatch } from "@/redux/hooks";
+import { setLoginModal, setUser } from "@/redux/features/userSlice";
 interface PropTypes {
   setShowModal: (bool: boolean) => void;
 }
 
 const LoginModal = ({ setShowModal }: PropTypes) => {
+  const dispatch = useAppDispatch();
   const toggleModal = () => {
     setShowModal(false);
+    dispatch(setLoginModal(false));
   };
 
   const handleFormSubmit = async (e: any) => {
@@ -25,6 +29,8 @@ const LoginModal = ({ setShowModal }: PropTypes) => {
         password,
       };
       const data = await loginService(payload);
+      const user = data.data.session.userData;
+      dispatch(setUser(user));
       e.target.reset();
       toggleModal();
       toast.success("Logged in successfully");

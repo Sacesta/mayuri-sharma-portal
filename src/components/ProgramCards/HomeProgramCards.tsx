@@ -22,12 +22,24 @@ const HomeProgramCards = () => {
     fetchProgramsData();
   }, []);
 
+  console.log(programs);
+
   return (
     <>
       {programs?.slice(0, 3)?.map((program: Program, index: any) => (
         <li key={`programitem-${index}`} className="program_list_li">
           <div className="program_img">
-            <Image src={programeone} alt="program..." />
+            <Image
+              src={
+                program?.image.startsWith("https")
+                  ? program?.image
+                  : programeone
+              }
+              width={0}
+              height={0}
+              sizes="100vw"
+              alt="program..."
+            />
           </div>
           <div className="program_details">
             <div className="flex justify-between items-center mb-2">

@@ -1,13 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import menuIcon from "@/Assets/icons/menu.png";
 
 import "./NavBar.css";
 import LoginModal from "../Modal/LoginModal";
+import { useAppSelector } from "@/redux/hooks";
+import { getLoggedIn, getShowModal, getUser } from "@/redux/features/userSlice";
+import { User } from "@/services/auth.services";
 
 function DynamicTag({ tag, children }: any) {
   const Tag = tag;
@@ -61,9 +64,11 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
 
-  const handleToggle = () => {
-    console.log(isOpen);
+  const isLoggedIn = useAppSelector(getLoggedIn);
+  const user: User = useAppSelector(getUser);
+  const isLoginModalOpen = useAppSelector(getShowModal);
 
+  const handleToggle = () => {
     setIsOpen(!isOpen);
   };
   return (
@@ -87,21 +92,27 @@ const NavBar = () => {
           </div>
         </div>
         <div className="right-button">
-          <button
-            className="hidden lg:flex user-btn items-center"
-            onClick={() => setShowModal(true)}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={23}
-              height={18}
-              viewBox="0 0 24 24"
-              fill="#fff"
+          {isLoggedIn ? (
+            <button className="hidden lg:flex user-btn items-center">
+              Hello {user.fullName}
+            </button>
+          ) : (
+            <button
+              className="hidden lg:flex user-btn items-center"
+              onClick={() => setShowModal(true)}
             >
-              <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
-            </svg>
-            <span>Login</span>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={23}
+                height={18}
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
+              </svg>
+              <span>Login</span>
+            </button>
+          )}
         </div>
         <div className="right-button">
           <button className="hidden lg:block nav-btn">Contact me</button>
@@ -136,7 +147,9 @@ const NavBar = () => {
           Contact me
         </a>
       </div>
-      {showModal && <LoginModal setShowModal={setShowModal} />}
+      {showModal || isLoginModalOpen ? (
+        <LoginModal setShowModal={setShowModal} />
+      ) : null}
     </>
   );
 };
