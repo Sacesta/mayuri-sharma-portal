@@ -22,6 +22,8 @@ import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { getUser, setLoginModal } from "@/redux/features/userSlice";
 import { User } from "@/services/auth.services";
 import { toast } from "react-toastify";
+import RegisterBtn from "./RegisterBtn";
+import { validUrl } from "../utils";
 
 const ProgramDetails = ({ programId }: any) => {
   const dispatch = useAppDispatch();
@@ -48,6 +50,7 @@ const ProgramDetails = ({ programId }: any) => {
       const response = await registerProgram(payload);
       window.location.href = response.url;
     } catch (error) {
+      console.log(error);
       dispatch(setLoginModal(true));
       toast.error(`User not logged in`);
     }
@@ -66,6 +69,8 @@ const ProgramDetails = ({ programId }: any) => {
     const formattedTime = format(parsedTime, "h:mm a");
     return formattedTime;
   };
+
+  console.log(program);
 
   return (
     <>
@@ -182,23 +187,20 @@ const ProgramDetails = ({ programId }: any) => {
                         </div>
                       </li>
                     </ul>
-                    <div className="mt-4 md:flex items-center">
-                      <button
-                        className="w-full md:w-auto primary_button"
-                        onClick={() => handleRegisterProgram(program)}
-                      >
-                        Register now
-                      </button>
-                      <p className="text-[#505050] text-[14px] ml-6 leading-6 mt-2 md:mt-0 text-center md:text-left">
-                        25 out of 30 already joined
-                      </p>
-                    </div>
+
+                    <RegisterBtn
+                      divCls="mt-4 md:flex items-center"
+                      btnCls="w-full md:w-auto primary_button"
+                      pCls="text-[#505050] text-[14px] ml-6 leading-6 mt-2 md:mt-0 text-center md:text-left"
+                      handler={handleRegisterProgram}
+                      program={program}
+                    />
                   </div>
                   <div className="block lg:hidden mt-12">
                     <div className="rounded-[20px] overflow-hidden h-[358px] xl:h-[552px] w-full  sticky left-0 top-[108px]">
                       <Image
                         src={
-                          program?.image.startsWith("https")
+                          validUrl(program?.image)
                             ? program?.image
                             : programDetailsBanner
                         }
@@ -224,141 +226,6 @@ const ProgramDetails = ({ programId }: any) => {
                         {program?.agandamaintitle}{" "}
                       </h2>
                       <ul className="journey_details programDetails_journey bg-white border border-[#E1E1E1] rounded-[20px] px-9 py-8">
-                        {/* <li className="flex">
-                          <div className="journey_points">
-                            <svg
-                              width="40"
-                              height="40"
-                              viewBox="0 0 40 40"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.05 29.1L31.2 14.95L28.9 12.7L17.05 24.55L11.05 18.55L8.8 20.8L17.05 29.1ZM20 40C17.2667 40 14.6833 39.475 12.25 38.425C9.81667 37.375 7.69167 35.9417 5.875 34.125C4.05833 32.3083 2.625 30.1833 1.575 27.75C0.525 25.3167 0 22.7333 0 20C0 17.2333 0.525 14.6333 1.575 12.2C2.625 9.76667 4.05833 7.65 5.875 5.85C7.69167 4.05 9.81667 2.625 12.25 1.575C14.6833 0.525 17.2667 0 20 0C22.7667 0 25.3667 0.525 27.8 1.575C30.2333 2.625 32.35 4.05 34.15 5.85C35.95 7.65 37.375 9.76667 38.425 12.2C39.475 14.6333 40 17.2333 40 20C40 22.7333 39.475 25.3167 38.425 27.75C37.375 30.1833 35.95 32.3083 34.15 34.125C32.35 35.9417 30.2333 37.375 27.8 38.425C25.3667 39.475 22.7667 40 20 40ZM20 37C24.7333 37 28.75 35.3417 32.05 32.025C35.35 28.7083 37 24.7 37 20C37 15.2667 35.35 11.25 32.05 7.95C28.75 4.65 24.7333 3 20 3C15.3 3 11.2917 4.65 7.975 7.95C4.65833 11.25 3 15.2667 3 20C3 24.7 4.65833 28.7083 7.975 32.025C11.2917 35.3417 15.3 37 20 37Z"
-                                fill="#EB334A"
-                              />
-                            </svg>
-                          </div>
-                          <div className="mb-5">
-                            <h3 className="heading_three_style_black mb-[10px]">
-                              Day 1: Introduction
-                            </h3>
-                            <p className="paragraph_two_style">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Suspendisse varius enim in eros elementum
-                              tristique.
-                            </p>
-                          </div>
-                          <div></div>
-                        </li>
-                        <li className="flex">
-                          <div className="journey_points">
-                            <svg
-                              width="40"
-                              height="40"
-                              viewBox="0 0 40 40"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.05 29.1L31.2 14.95L28.9 12.7L17.05 24.55L11.05 18.55L8.8 20.8L17.05 29.1ZM20 40C17.2667 40 14.6833 39.475 12.25 38.425C9.81667 37.375 7.69167 35.9417 5.875 34.125C4.05833 32.3083 2.625 30.1833 1.575 27.75C0.525 25.3167 0 22.7333 0 20C0 17.2333 0.525 14.6333 1.575 12.2C2.625 9.76667 4.05833 7.65 5.875 5.85C7.69167 4.05 9.81667 2.625 12.25 1.575C14.6833 0.525 17.2667 0 20 0C22.7667 0 25.3667 0.525 27.8 1.575C30.2333 2.625 32.35 4.05 34.15 5.85C35.95 7.65 37.375 9.76667 38.425 12.2C39.475 14.6333 40 17.2333 40 20C40 22.7333 39.475 25.3167 38.425 27.75C37.375 30.1833 35.95 32.3083 34.15 34.125C32.35 35.9417 30.2333 37.375 27.8 38.425C25.3667 39.475 22.7667 40 20 40ZM20 37C24.7333 37 28.75 35.3417 32.05 32.025C35.35 28.7083 37 24.7 37 20C37 15.2667 35.35 11.25 32.05 7.95C28.75 4.65 24.7333 3 20 3C15.3 3 11.2917 4.65 7.975 7.95C4.65833 11.25 3 15.2667 3 20C3 24.7 4.65833 28.7083 7.975 32.025C11.2917 35.3417 15.3 37 20 37Z"
-                                fill="#EB334A"
-                              />
-                            </svg>
-                          </div>
-                          <div className="mb-5">
-                            <h3 className="heading_three_style_black mb-[10px]">
-                              Day 2-6: How to set new habits
-                            </h3>
-                            <p className="paragraph_two_style">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Suspendisse varius enim in eros elementum
-                              tristique.
-                            </p>
-                          </div>
-                          <div></div>
-                        </li>
-                        <li className="flex">
-                          <div className="journey_points">
-                            <svg
-                              width="40"
-                              height="40"
-                              viewBox="0 0 40 40"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.05 29.1L31.2 14.95L28.9 12.7L17.05 24.55L11.05 18.55L8.8 20.8L17.05 29.1ZM20 40C17.2667 40 14.6833 39.475 12.25 38.425C9.81667 37.375 7.69167 35.9417 5.875 34.125C4.05833 32.3083 2.625 30.1833 1.575 27.75C0.525 25.3167 0 22.7333 0 20C0 17.2333 0.525 14.6333 1.575 12.2C2.625 9.76667 4.05833 7.65 5.875 5.85C7.69167 4.05 9.81667 2.625 12.25 1.575C14.6833 0.525 17.2667 0 20 0C22.7667 0 25.3667 0.525 27.8 1.575C30.2333 2.625 32.35 4.05 34.15 5.85C35.95 7.65 37.375 9.76667 38.425 12.2C39.475 14.6333 40 17.2333 40 20C40 22.7333 39.475 25.3167 38.425 27.75C37.375 30.1833 35.95 32.3083 34.15 34.125C32.35 35.9417 30.2333 37.375 27.8 38.425C25.3667 39.475 22.7667 40 20 40ZM20 37C24.7333 37 28.75 35.3417 32.05 32.025C35.35 28.7083 37 24.7 37 20C37 15.2667 35.35 11.25 32.05 7.95C28.75 4.65 24.7333 3 20 3C15.3 3 11.2917 4.65 7.975 7.95C4.65833 11.25 3 15.2667 3 20C3 24.7 4.65833 28.7083 7.975 32.025C11.2917 35.3417 15.3 37 20 37Z"
-                                fill="#EB334A"
-                              />
-                            </svg>
-                          </div>
-                          <div className="mb-5">
-                            <h3 className="heading_three_style_black mb-[10px]">
-                              Day 7- 11: How to stay on
-                            </h3>
-                            <p className="paragraph_two_style">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Suspendisse varius enim in eros elementum
-                              tristique.
-                            </p>
-                          </div>
-                          <div></div>
-                        </li>
-                        <li className="flex">
-                          <div className="journey_points">
-                            <svg
-                              width="40"
-                              height="40"
-                              viewBox="0 0 40 40"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.05 29.1L31.2 14.95L28.9 12.7L17.05 24.55L11.05 18.55L8.8 20.8L17.05 29.1ZM20 40C17.2667 40 14.6833 39.475 12.25 38.425C9.81667 37.375 7.69167 35.9417 5.875 34.125C4.05833 32.3083 2.625 30.1833 1.575 27.75C0.525 25.3167 0 22.7333 0 20C0 17.2333 0.525 14.6333 1.575 12.2C2.625 9.76667 4.05833 7.65 5.875 5.85C7.69167 4.05 9.81667 2.625 12.25 1.575C14.6833 0.525 17.2667 0 20 0C22.7667 0 25.3667 0.525 27.8 1.575C30.2333 2.625 32.35 4.05 34.15 5.85C35.95 7.65 37.375 9.76667 38.425 12.2C39.475 14.6333 40 17.2333 40 20C40 22.7333 39.475 25.3167 38.425 27.75C37.375 30.1833 35.95 32.3083 34.15 34.125C32.35 35.9417 30.2333 37.375 27.8 38.425C25.3667 39.475 22.7667 40 20 40ZM20 37C24.7333 37 28.75 35.3417 32.05 32.025C35.35 28.7083 37 24.7 37 20C37 15.2667 35.35 11.25 32.05 7.95C28.75 4.65 24.7333 3 20 3C15.3 3 11.2917 4.65 7.975 7.95C4.65833 11.25 3 15.2667 3 20C3 24.7 4.65833 28.7083 7.975 32.025C11.2917 35.3417 15.3 37 20 37Z"
-                                fill="#EB334A"
-                              />
-                            </svg>
-                          </div>
-                          <div className="mb-5">
-                            <h3 className="heading_three_style_black mb-[10px]">
-                              Day 12-13: How to set new habits
-                            </h3>
-                            <p className="paragraph_two_style">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Suspendisse varius enim in eros elementum
-                              tristique.
-                            </p>
-                          </div>
-                          <div></div>
-                        </li>
-                        <li className="flex">
-                          <div className="journey_points">
-                            <svg
-                              width="40"
-                              height="40"
-                              viewBox="0 0 40 40"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.05 29.1L31.2 14.95L28.9 12.7L17.05 24.55L11.05 18.55L8.8 20.8L17.05 29.1ZM20 40C17.2667 40 14.6833 39.475 12.25 38.425C9.81667 37.375 7.69167 35.9417 5.875 34.125C4.05833 32.3083 2.625 30.1833 1.575 27.75C0.525 25.3167 0 22.7333 0 20C0 17.2333 0.525 14.6333 1.575 12.2C2.625 9.76667 4.05833 7.65 5.875 5.85C7.69167 4.05 9.81667 2.625 12.25 1.575C14.6833 0.525 17.2667 0 20 0C22.7667 0 25.3667 0.525 27.8 1.575C30.2333 2.625 32.35 4.05 34.15 5.85C35.95 7.65 37.375 9.76667 38.425 12.2C39.475 14.6333 40 17.2333 40 20C40 22.7333 39.475 25.3167 38.425 27.75C37.375 30.1833 35.95 32.3083 34.15 34.125C32.35 35.9417 30.2333 37.375 27.8 38.425C25.3667 39.475 22.7667 40 20 40ZM20 37C24.7333 37 28.75 35.3417 32.05 32.025C35.35 28.7083 37 24.7 37 20C37 15.2667 35.35 11.25 32.05 7.95C28.75 4.65 24.7333 3 20 3C15.3 3 11.2917 4.65 7.975 7.95C4.65833 11.25 3 15.2667 3 20C3 24.7 4.65833 28.7083 7.975 32.025C11.2917 35.3417 15.3 37 20 37Z"
-                                fill="#EB334A"
-                              />
-                            </svg>
-                          </div>
-                          <div className="mb-5">
-                            <h3 className="heading_three_style_black mb-[10px]">
-                              Day 14: How to keep momentum{" "}
-                            </h3>
-                            <p className="paragraph_two_style">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Suspendisse varius enim in eros elementum
-                              tristique.
-                            </p>
-                          </div>
-                          <div></div>
-                        </li> */}
                         {program?.agandaList?.length ? (
                           <>
                             {program.agandaList.map(
@@ -457,8 +324,15 @@ const ProgramDetails = ({ programId }: any) => {
                                   </p>
                                   <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
                                     <Image
+                                      width={0}
+                                      height={0}
+                                      sizes="100vw"
                                       className="w-full h-full object-cover"
-                                      src={profileImage}
+                                      src={
+                                        validUrl(reviewItem?.profileImg)
+                                          ? reviewItem?.profileImg
+                                          : profileImage
+                                      }
                                       alt=".."
                                     />
                                   </div>
@@ -529,7 +403,7 @@ const ProgramDetails = ({ programId }: any) => {
                   <div className="rounded-[20px] overflow-hidden h-[358px] lg:h-[552px] w-full absolute z-10">
                     <Image
                       src={
-                        program?.image.startsWith("https")
+                        validUrl(program?.image)
                           ? program?.image
                           : programDetailsBanner
                       }
@@ -630,14 +504,13 @@ const ProgramDetails = ({ programId }: any) => {
                         </div>
                       </li>
                     </ul>
-                    <div className="mt-4">
-                      <button className="w-full primary_button">
-                        Register now
-                      </button>
-                      <p className="text-[#505050] text-[14px] leading-6 mt-4 text-center">
-                        25 out of 30 already joined
-                      </p>
-                    </div>
+                    <RegisterBtn
+                      divCls="mt-4"
+                      btnCls="w-full primary_button"
+                      pCls="text-[#505050] text-[14px] leading-6 mt-4 text-center"
+                      handler={handleRegisterProgram}
+                      program={program}
+                    />
                   </div>
                 </div>
               </div>

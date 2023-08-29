@@ -9,6 +9,7 @@ export interface Category {
   rank: string;
   name: string;
   isActive: boolean;
+  thumbnail: string;
 }
 
 // Function to get programs
