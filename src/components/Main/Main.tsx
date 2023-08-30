@@ -173,10 +173,10 @@ const Main = () => {
             <p className="paragraph_one_style mb-2 text-[#39315C]">
               My podcast
             </p>
+            <Categories />
             <h2 className="heading_style_two mb-10 md:mb-16 text-center text-[#090617]">
               Stories of Transformations
             </h2>
-            <Categories />
             <div className="home_story_section w-full">
               <Transformations />
             </div>
