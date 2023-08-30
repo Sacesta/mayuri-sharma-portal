@@ -8,7 +8,7 @@ const axiosInstance = axios.create({
   // Production Url
   // baseURL: "https://mayuri-admin-be.onrender.com",
   // Testing URL
-  baseURL:"https://mayuribackend.onrender.com";
+  baseURL: "https://mayuribackend.onrender.com",
   // Dev url
   // baseURL: "http://localhost:8000",
   timeout: 600000,
