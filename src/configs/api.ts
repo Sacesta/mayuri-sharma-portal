@@ -14,7 +14,7 @@ const axiosInstance = axios.create({
   timeout: 600000,
   headers: {
     "Content-Type": "application/json; charset=utf-8",
-    "Access-Control-Allow-Origin": "*",
+    // "Access-Control-Allow-Origin": "*",
     // Authorization:
     //   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWQiOiI2NGFiZDRjNTkwOTU0MGU0Y2ZiMGUxNmIiLCJpYXQiOjE2OTE2Njk1MjQsImV4cCI6MTY5MTc1NTkyNH0.ObjWKKTFaHL9Y1_9moFdEkvt-J8ENwbNxQL397BdagA",
   },
