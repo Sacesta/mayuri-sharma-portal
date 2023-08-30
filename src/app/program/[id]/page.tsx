@@ -1,8 +1,11 @@
-"use client";
-const page = ({ params }: { params: { id: string } }) => {
-  console.log(params);
+import ProgramDetails from "@/components/programdetails/ProgramDetails";
 
-  return <div>My Post: {params.id}</div>;
+const page = ({ params }: { params: { id: string } }) => {
+  return (
+    <>
+      <ProgramDetails programId={params.id} />
+    </>
+  );
 };
 
 export default page;
