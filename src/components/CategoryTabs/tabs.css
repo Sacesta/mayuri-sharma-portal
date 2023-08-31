@@ -51,6 +51,6 @@
   display: none;
 }
 
-/* .react-tabs__tab-panel--selected {
-  display: block;
-} */
+.react-tabs__tab-panel--selected {
+  display: grid;
+}

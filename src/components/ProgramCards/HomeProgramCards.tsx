@@ -22,8 +22,6 @@ const HomeProgramCards = () => {
     fetchProgramsData();
   }, []);
 
-  console.log(programs);
-
   return (
     <>
       {programs?.slice(0, 3)?.map((program: Program, index: any) => (

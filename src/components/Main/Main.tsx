@@ -14,7 +14,7 @@ import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
 import Footer from "@/components/footer/Footer";
 import Transformations from "@/components/Carousel/Transformations";
 import HomeProgramCards from "@/components/ProgramCards/HomeProgramCards";
-import Categories from "@/components/CategoryTabs/Categories";
+import CategoriesHome from "../CategoryTabs/CategoriesHome";
 
 const Main = () => {
   return (
@@ -173,7 +173,7 @@ const Main = () => {
             <p className="paragraph_one_style mb-2 text-[#39315C]">
               My podcast
             </p>
-            <Categories />
+            <CategoriesHome />
             <h2 className="heading_style_two mb-10 md:mb-16 text-center text-[#090617]">
               Stories of Transformations
             </h2>
