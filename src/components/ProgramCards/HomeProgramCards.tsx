@@ -105,7 +105,7 @@ const HomeProgramCards = () => {
                 </div>
                 <div className="program_time">
                   <p>Duration</p>
-                  <p>{program?.duration}</p>
+                  <p>{program?.duration} minutes</p>
                 </div>
               </li>
               <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">

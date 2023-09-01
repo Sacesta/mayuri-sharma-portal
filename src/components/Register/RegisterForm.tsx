@@ -1,6 +1,9 @@
 "use client";
+import { setLoginModal } from "@/redux/features/userSlice";
+import { AppDispatch } from "@/redux/store";
 import { UserRegistration, registerService } from "@/services/auth.services";
 import React, { useReducer } from "react";
+import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 
 const initialState = {
@@ -41,6 +44,8 @@ const reducer = (state: any, action: any) => {
 
 const RegisterForm = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const reduxDispatch = useDispatch<AppDispatch>();
+
   const handleFieldChange = (event: any) => {
     const { name, value } = event.target;
     dispatch({ type: "SET_FIELD", field: name, value });
@@ -127,6 +132,8 @@ const RegisterForm = () => {
       };
 
       const data = await registerService(payload);
+      reduxDispatch(setLoginModal(true));
+
       toast.success("Registered Successfully");
       console.log(event);
       dispatch({ type: "RESET" });

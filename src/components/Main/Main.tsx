@@ -174,12 +174,12 @@ const Main = () => {
             <p className="paragraph_one_style mb-2 text-[#39315C]">
               My podcast
             </p>
-            <CategoriesHome />
             <h2 className="heading_style_two mb-10 md:mb-16 text-center text-[#090617]">
               Stories of Transformations
             </h2>
             <div className="home_story_section w-full">
-              <Transformations />
+              <CategoriesHome />
+              {/* <Transformations /> */}
             </div>
             <Link href="/podcast" className="tertiary_button">
               View full list of episodes
