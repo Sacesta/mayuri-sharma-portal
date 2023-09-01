@@ -6,7 +6,7 @@ import axios from "axios";
 // Axios instance
 const axiosInstance = axios.create({
   // Production Url
-  baseURL: "https://mayuri-admin-be.onrender.com",
+  baseURL: "https://mayuri-sharma-be.onrender.com",
   // Testing URL
   // baseURL: "https://mayuribackend.onrender.com",
   // Dev url
