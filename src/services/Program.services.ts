@@ -43,6 +43,7 @@ export interface ReviewItem {
   review: string;
   profileImg: string;
   _id: string;
+  video: string;
 }
 
 export interface QAItem {

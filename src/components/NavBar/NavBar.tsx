@@ -9,7 +9,13 @@ import menuIcon from "@/Assets/icons/menu.png";
 import "./NavBar.css";
 import LoginModal from "../Modal/LoginModal";
 import { useAppSelector } from "@/redux/hooks";
-import { getLoggedIn, getShowModal, getUser } from "@/redux/features/userSlice";
+import {
+  clearUser,
+  getLoggedIn,
+  getShowModal,
+  getUser,
+  setUser,
+} from "@/redux/features/userSlice";
 import { User } from "@/services/auth.services";
 
 function DynamicTag({ tag, children }: any) {
@@ -141,7 +147,14 @@ const NavBar = () => {
           <Links tag={"li"} setIsOpen={setIsOpen} isOpen={isOpen} />
         </ul>
 
-        <a href="#">Login</a>
+        <a
+          onClick={() => {
+            setIsOpen(!isOpen);
+            setShowModal(true);
+          }}
+        >
+          Login
+        </a>
 
         <a href="#" className="mob_nav_button">
           Contact me

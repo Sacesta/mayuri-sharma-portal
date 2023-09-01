@@ -19,7 +19,6 @@ const Categories = ({
   tabIndex: number;
   setTabIndex: (p: any) => void;
 }) => {
-  console.log(tabIndex);
   // const [categories, setCategories] = useState<Category[]>([]);
   // const [podcasts, setPodcasts] = useState<Podcast[]>([]);
   // useEffect(() => {
@@ -64,8 +63,6 @@ const Categories = ({
   // );
 
   // const grpPod = groupPodcastsByCategory(podcasts);
-  console.log(categories);
-  console.log(grpPod);
 
   return (
     <>
@@ -129,7 +126,6 @@ const Categories = ({
             <TabPanel className="" key={index}>
               <ul className="home_story_section grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {grpPod[category?.rank]?.map((podcast: Podcast, index) => {
-                  console.log(grpPod[category?.rank]);
                   return (
                     <li key={podcast?._id}>
                       <div className="home_story_img">

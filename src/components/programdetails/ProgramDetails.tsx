@@ -24,6 +24,7 @@ import { User } from "@/services/auth.services";
 import { toast } from "react-toastify";
 import RegisterBtn from "./RegisterBtn";
 import { validUrl } from "../utils";
+import ReviewItemComponent from "./ReviewItemComponent";
 
 const ProgramDetails = ({ programId }: any) => {
   const dispatch = useAppDispatch();
@@ -69,8 +70,6 @@ const ProgramDetails = ({ programId }: any) => {
     const formattedTime = format(parsedTime, "h:mm a");
     return formattedTime;
   };
-
-  console.log(program);
 
   return (
     <>
@@ -363,34 +362,10 @@ const ProgramDetails = ({ programId }: any) => {
                           {program.reviews.map(
                             (reviewItem: ReviewItem, i: number) => {
                               return (
-                                <div
-                                  className="programDetails_peopleReview"
-                                  key={reviewItem?._id}
-                                >
-                                  <Image
-                                    className="w-full h-full object-cover"
-                                    src={profileImage}
-                                    alt=".."
-                                  />
-                                  <p className="heading_three_style_white absolute top-8 left-8 z-[2]">
-                                    {reviewItem?.name} from the{" "}
-                                    {reviewItem?.country}
-                                  </p>
-                                  <div className="absolute bottom-8 right-8 bg-[#EB334A] rounded-full h-16 w-16 z-[2] flex items-center justify-center">
-                                    <svg
-                                      width="22"
-                                      height="29"
-                                      viewBox="0 0 22 29"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M0 28.8501V0.850098L22 14.8501L0 28.8501Z"
-                                        fill="white"
-                                      />
-                                    </svg>
-                                  </div>
-                                </div>
+                                <ReviewItemComponent
+                                  key={i}
+                                  reviewItem={reviewItem}
+                                />
                               );
                             }
                           )}

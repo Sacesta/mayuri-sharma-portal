@@ -13,14 +13,14 @@ const SpotifyCard = () => {
         `https://open.spotify.com/oembed?url=${podCastUrl}`
       );
       const podcast = await response.json();
-      console.log(podcast);
+
       setPodCastData(podcast);
     };
     fetchSpotifyPodCast();
   }, []);
 
   return (
-    <div className="justify-center  items-center flex w-[640px] h-[330px]">
+    <div className="justify-center  items-center flex w-[100%] h-[330px]">
       <iframe
         className="mx-auto"
         src={podcastData?.iframe_url}

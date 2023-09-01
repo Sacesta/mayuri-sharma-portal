@@ -6,9 +6,9 @@ import axios from "axios";
 // Axios instance
 const axiosInstance = axios.create({
   // Production Url
-  baseURL: "https://mayuri-admin-be.onrender.com",
+  // baseURL: "https://mayuri-admin-be.onrender.com",
   // Testing URL
-  // baseURL: "https://mayuribackend.onrender.com",
+  baseURL: "https://mayuribackend.onrender.com",
   // Dev url
   // baseURL: "http://localhost:8000",
   timeout: 600000,
@@ -42,7 +42,7 @@ const axiosInstance = axios.create({
 // }
 
 axiosInstance.interceptors.request.use(
-  function (config: any) {
+  async function (config: any) {
     const token = localStorage.getItem("accessToken");
     if (token && !config.url.startsWith("/public")) {
       config.headers["Authorization"] = `Bearer ${token}`;
