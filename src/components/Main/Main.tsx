@@ -15,6 +15,7 @@ import Footer from "@/components/footer/Footer";
 import Transformations from "@/components/Carousel/Transformations";
 import HomeProgramCards from "@/components/ProgramCards/HomeProgramCards";
 import CategoriesHome from "../CategoryTabs/CategoriesHome";
+import Link from "next/link";
 
 const Main = () => {
   return (
@@ -180,9 +181,9 @@ const Main = () => {
             <div className="home_story_section w-full">
               <Transformations />
             </div>
-            <button className="tertiary_button">
+            <Link href="/podcast" className="tertiary_button">
               View full list of episodes
-            </button>
+            </Link>
           </div>
         </div>
       </section>

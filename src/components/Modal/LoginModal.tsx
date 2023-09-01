@@ -6,12 +6,15 @@ import Link from "next/link";
 import loginService, { LoginPayload } from "@/services/auth.services";
 import { useAppDispatch } from "@/redux/hooks";
 import { setLoginModal, setUser } from "@/redux/features/userSlice";
+import { useRouter } from "next/navigation";
+
 interface PropTypes {
   setShowModal: (bool: boolean) => void;
 }
 
 const LoginModal = ({ setShowModal }: PropTypes) => {
   const dispatch = useAppDispatch();
+  const router = useRouter();
   const toggleModal = () => {
     setShowModal(false);
     dispatch(setLoginModal(false));
@@ -33,6 +36,7 @@ const LoginModal = ({ setShowModal }: PropTypes) => {
       dispatch(setUser(user));
       e.target.reset();
       toggleModal();
+      router.push("/");
       toast.success("Logged in successfully");
       console.log(data);
     } catch (error: any) {

@@ -21,7 +21,7 @@ const PodcastMedia = ({ media }: PodcastMediaCompProps) => {
     );
   } else {
     return (
-      <video autoPlay loop muted controls>
+      <video autoPlay loop muted>
         <source src={media} />
         Your browser does not support the video tag.
       </video>

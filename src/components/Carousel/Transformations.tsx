@@ -1,18 +1,41 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import { Podcast, getPodcasts } from "@/services/PodcastService";
+import PodcastMedia from "../CategoryTabs/PodcastMedia";
 
 const Transformations = () => {
-  const a = [1, 2, 3, 4];
+  const [tabIndex, setTabIndex] = useState(0);
+
+  const [podcasts, setPodcasts] = useState<Podcast[]>([]);
+  useEffect(() => {
+    const fetchPodcastsData = async () => {
+      try {
+        const res: any = await getPodcasts();
+        setPodcasts(res?.data || []);
+      } catch (error) {
+        console.log("Error in fetching podcasts");
+      }
+    };
+
+    fetchPodcastsData();
+  }, []);
+
   return (
     <>
       <Swiper
         slidesPerView={1}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
         breakpoints={{
           "@0.00": {
             slidesPerView: 1.5,
@@ -31,13 +54,11 @@ const Transformations = () => {
         }}
         className="mySwiper"
       >
-        {a.map((x, i) => (
-          <SwiperSlide key={`${x}-${i}`}>
+        {podcasts?.map((podcast: Podcast, i) => (
+          <SwiperSlide key={podcast._id}>
             <li>
               <div className="home_story_img">
-                <video autoPlay loop muted>
-                  <source src="https://player.vimeo.com/external/458869473.sd.mp4?s=8a12f7ccab0e8c2f76fc4d035432896a94c39867&profile_id=165&oauth2_token_id=57447761" />
-                </video>
+                <PodcastMedia media={podcast.thumbnail} />
                 <p className="home_story_number"># 0{i + 1}</p>
                 <div className="story_podcast">
                   <svg
@@ -71,7 +92,9 @@ const Transformations = () => {
                 </div>
               </div>
               <p className="paragraph_two_style text-center">
-                Episode description goes here with no more than three lines.
+                {podcast.description.length >= 50
+                  ? podcast.description.slice(0, 50) + "..."
+                  : podcast.description}
               </p>
             </li>
           </SwiperSlide>
