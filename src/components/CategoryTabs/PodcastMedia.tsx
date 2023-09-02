@@ -7,7 +7,10 @@ interface PodcastMediaCompProps {
 
 const PodcastMedia = ({ media }: PodcastMediaCompProps) => {
   const isImage =
-    media.endsWith(".gif") || media.endsWith(".png") || media.endsWith(".jpg");
+    media.endsWith(".gif") ||
+    media.endsWith(".png") ||
+    media.endsWith(".jpg") ||
+    media.endsWith(".jpeg");
 
   if (isImage) {
     return (
