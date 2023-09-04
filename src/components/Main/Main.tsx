@@ -1,6 +1,7 @@
 import React from "react";
 import "@/styles/main.css";
 import Image from "next/image";
+import data from "../../Data/websiteData.json";
 
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
 import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.png";
@@ -16,8 +17,13 @@ import Transformations from "@/components/Carousel/Transformations";
 import HomeProgramCards from "@/components/ProgramCards/HomeProgramCards";
 import CategoriesHome from "../CategoryTabs/CategoriesHome";
 import Link from "next/link";
+import MainNewsLetter from "../NewsLetters/MainNewsLetter";
 
 const Main = () => {
+  const { homepage } = data;
+
+  const { banner1, scroll } = homepage;
+
   return (
     <>
       <section className="md:pt-9 md:pb-20 md:px-6 lg:px-16 relative">
@@ -73,9 +79,9 @@ const Main = () => {
                   fill="#EB334A"
                 />
               </svg>
-              <h3>Mayuri Sharma</h3>
+              <h3>Mayuri</h3>
               <h1>
-                Wisdom of the past <br /> practice for the present
+                {banner1.headline} <br />
               </h1>
             </div>
             <HeroTestimonial />
@@ -86,21 +92,18 @@ const Main = () => {
       <section className="intro_section">
         <div className="container mx-auto">
           <p className="paragraph_one_style mb-2 text-center text-[#090617]">
-            Hi I’m Mayuri,
+            {scroll.headline}
           </p>
           <h2 className="heading_style_two mb-4 text-center text-[#090617]">
-            Nice to meet you
+            {scroll.subHeadline}
           </h2>
           <p className="paragraph_two_style max-w-3xl text-center mx-auto mb-14">
-            Born and brought up in Northern India close to Himalayas. She has
-            lived in various cities within India and Europe for studies and
-            work. Apart from managing projects and people, she has also mastered
-            the art of managing mind, emotions and energies through the various
-            Mind Management, Art of Breathing, Art of Meditation and more such
-            workshops.
+            {scroll.info}
           </p>
           <div className="flex justify-center relative z-[2]">
-            <button className="primary_button">About me</button>
+            <Link href="/about">
+              <button className="primary_button">{scroll.cta}</button>
+            </Link>{" "}
           </div>
           <div className="intro_background_img">
             <svg
@@ -230,7 +233,7 @@ const Main = () => {
                 <button className="secondary_button">See all challenges</button>
               </div>
             </div>
-            <div className="news_letter_form lg:w-1/2 mt-[76px] lg:mt-28">
+            {/* <div className="news_letter_form lg:w-1/2 mt-[76px] lg:mt-28">
               <p className="news_letter_form_head">Join news letter</p>
               <div className="form_field">
                 <label htmlFor="">Name</label>
@@ -275,7 +278,8 @@ const Main = () => {
               <p className="text-sm text-[#090617] font-normal">
                 *We respect your privacy you can unsubscribe anytime
               </p>
-            </div>
+            </div> */}
+            <MainNewsLetter />
             <Image
               src={ellipseOne}
               alt="..."
