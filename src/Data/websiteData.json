@@ -23,6 +23,58 @@
       "subHeadline": "I am so glad you're here",
       "info": "Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the science of our mind. My quest has led me to travel extensively within India as well as Europe. During these travels, I attended many workshops to master the art of breathing and meditation. And in a way, every place has shaped me and my practice. The journey has been long and arduous, spanning almost two decades. But in many ways, it has just begun.",
       "cta": "Tell me more"
+    },
+    "scroll4": {
+      "headline1": "Fuel your spirit.",
+      "headline2": "Join me in an upcoming program.",
+      "bodyCopy": "An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom."
+    },
+    "scroll5": {
+      "headline": "Live a life of intention",
+      "bodyCopy": "Alan Cohen said, “When the intention is clear, so is the way.” This newsletter is a nudge to live an intentional life and to show up for yourself with compassion. Make it a monthly practice to feed your inner life with the best in spirituality, growth, and healing.",
+      "cta": "Read old newsletters"
+    },
+    "scroll6": {
+      "headline": "Together we thrive",
+      "subHeadline": "Lean into a supportive community of like-minded individuals and grow together, one rock-solid habit at a time",
+      "weeklyHeading": "Meditate Weekly With The Community",
+      "cardHeading1": "Sharing",
+      "cardBody1": "Join a legion of kindred souls and open your hearts and minds as each invites theother to share personal stories of healing, self-growth, and transformation.",
+      "cardHeading2": "Support",
+      "cardBody2": "Make the most of a robust community that checks-in regularly and nurtures your growth with encouragement, accountability, and motivation."
+    },
+    "scroll7": {
+      "headline": "Word around the town"
+    }
+  },
+  "aboutPage": {
+    "scroll1": {
+      "para1": "Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the human mind. This innate inquiry got some direction when I happened to attend a breathing and meditation program conducted by Art of Living, during my engineering days. Fast forward to 2008 - this was the year I started my practice as a meditation and breathwork teacher. And since then I have taught in various corporations, universities, and meditation centres. The rest as they say is history.",
+      "para2": "Something that not many people know about me is that I am also an Ayurveda enthusiast and have received formal training in Vedic astrology. This training helped me find answers to questions like why we behave in a specific pattern, how our outlook towards life is influenced by our planetary positions, and so on. It was an eye-opener to say the least and it further propelled me in my journey.",
+      "para3": "Something that not many people know about me is that I am also an Ayurveda enthusiast and have received formal training in Vedic astrology. This training helped me find answers to questions like why we behave in a specific pattern, how our outlook towards life is influenced by our planetary positions, and so on. It was an eye-opener to say the least and it further propelled me in my journey.",
+      "1stToggle": "Bachelors of Engineering in Information Technology.",
+      "2ndToggle": "Conducted 200+ Mind & Meditation workshops in leading corporates & universities",
+      "3rdToggle": "Partner at the learning platform, Inner Cord",
+      "4thTogggle": "Always planning a trip in my free time"
+    },
+    "scroll2": {
+      "heading": "Here’s a little roadmap of things that has helped me find my true north",
+      "subHeading1": "Curiosity",
+      "subBody1": "This is how it all began. Learning to ask questions that go beyond the surface was my initiation into spiritual enquiry.",
+      "subHeading2": "Passion for Science",
+      "subBody2": "I followed my curiosity by researching extensively on the science of emotions and the human mind. Psychology became not just an interest but a soul-calling.",
+      "subHeading3": "Ayurveda",
+      "subBody3": "The wisdom in Ayurveda is the wisdom of not just plants and medicines, it’s the wisdom of life. Being an Ayurveda enthusiast, I have rooted myself in a plant-based lifestyle that nurtures my wellbeing holistically.",
+      "subHeading4": "Vedic Astrology",
+      "subBody4": "Vedic astrology is the ancient science of stars. And learning about it has helped me understand how the cosmic energy has a pull on us just like gravity.",
+      "subHeading5": "Breathing",
+      "subBody5": "This might seem simple, but the art of breathing has been one of my constant anchors in life. Allowing my breath to flow is how I align with the divine.",
+      "subHeading6": "Meditation",
+      "subBody6": "Devoting myself to meditation early in life pointed me towards my passion, my purpose. The lessons learned in these sessions have made me who I am today."
+    },
+    "scroll3": {
+      "heading": "You can find me living my best life here ",
+      "subHeading": "Here’s a sneak peek into some of my favourite moments"
     }
   }
 }

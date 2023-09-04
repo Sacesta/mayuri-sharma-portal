@@ -22,7 +22,7 @@ import MainNewsLetter from "../NewsLetters/MainNewsLetter";
 const Main = () => {
   const { homepage } = data;
 
-  const { banner1, scroll } = homepage;
+  const { banner1, scroll, scroll4, scroll5, scroll6, scroll7 } = homepage;
 
   return (
     <>
@@ -195,16 +195,10 @@ const Main = () => {
         <div className="container mx-auto ">
           <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
             <h2 className="heading_style_two mb-8 lg:mb-0 text-[#090617] lg:max-w-[398px] text-start  lg:text-left">
-              Join me in an upcoming program
+              {scroll4.headline1} <br /> {scroll4.headline2}
             </h2>
             <div className="flex justify-start lg:justify-end text-start">
-              <p className=" max-w-xl ">
-                A bit of text about the programs can go here. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
-              </p>
+              <p className=" max-w-xl ">{scroll4.bodyCopy}</p>
             </div>
           </div>
           <ul className="program_list">
@@ -219,18 +213,11 @@ const Main = () => {
             <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
                 <p className="news_letter_head pb-9">News letter</p>
-                <h2 className="news_letter_h2">
-                  Get your monthly digest of top tips
-                </h2>
+                <h2 className="news_letter_h2">{scroll5.headline}</h2>
                 <p className="text-white text-lg font-normal pb-9 leading-7">
-                  A bit about the news letter and how it works goes here can be
-                  this long Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
+                  {scroll5.bodyCopy}
                 </p>
-                <button className="secondary_button">See all challenges</button>
+                <button className="secondary_button">{scroll5.cta}</button>
               </div>
             </div>
             {/* <div className="news_letter_form lg:w-1/2 mt-[76px] lg:mt-28">
@@ -297,11 +284,10 @@ const Main = () => {
       <section className="Supportive_community_section relative">
         <div className="container mx-auto">
           <p className="paragraph_one_style text-center mb-2 text-[#29214B]">
-            Let’s work on it togather
+            {scroll6.headline}
           </p>
           <h2 className="heading_style_two text-center max-w-[920px] mx-auto mb-[60px] lg:mb-24 text-[#090617]">
-            Supportive community of like-minded individuals building habits
-            together
+            {scroll6.subHeadline}
           </h2>
           <div className="grid lg:grid-rows-2 lg:grid-cols-2 xl:grid-cols-3 xl:grid-flow-col xxl:px-24 gap-10 ">
             <div className="news_letter_form lg:row-span-2 border border-[#E1E1E1] bg-white">
@@ -347,9 +333,7 @@ const Main = () => {
                   <Image src={masterclassimg} alt="..." />
                 </div>
                 <div className="p-8 bg-white">
-                  <p className="heading_three_style">
-                    Weekly community only meditation session
-                  </p>
+                  <p className="heading_three_style">{scroll6.weeklyHeading}</p>
                   {/* <p className="masterclass_des">A bit of text about the program can go here. all the way until here, with a bit more here and here and there everywhere. oh and also here and here and ya you guessed it here.</p> */}
                   <ul className="flex items-center mt-9 flex-wrap">
                     <li className="flex items-center  w-1/2 mb-6">
@@ -483,13 +467,10 @@ const Main = () => {
               </div>
             </div>
             <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden">
-              <h4 className="heading_three_style_blue mb-2 ">Knowledge</h4>
-              <p>
-                Joining a community focused on habit-building and mental health
-                facilitates knowledge and resource exchange, where members can
-                share valuable insights, tips, and strategies to optimize their
-                personal growth journey.
-              </p>
+              <h4 className="heading_three_style_blue mb-2 ">
+                {scroll6.cardHeading1}
+              </h4>
+              <p>{scroll6.cardBody1}</p>
               <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 rounded-s-full rounded-br-full flex items-center justify-center">
                 <svg
                   width="24"
@@ -506,12 +487,10 @@ const Main = () => {
               </div>
             </div>
             <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden">
-              <h4 className="heading_three_style_blue mb-2">Support</h4>
-              <p>
-                A community of like-minded individuals provides accountability,
-                encouragement, and motivation to help members stick to positive
-                habits and overcome challenges, promoting personal growth.
-              </p>
+              <h4 className="heading_three_style_blue mb-2">
+                {scroll6.cardHeading2}
+              </h4>
+              <p>{scroll6.cardBody2}</p>
               <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 rounded-s-full rounded-br-full flex items-center justify-center">
                 <svg
                   width="24"
@@ -536,7 +515,7 @@ const Main = () => {
 
       <section className="testimonial_section">
         <h2 className="heading_style_two text-center text-[#090617] mb-10 lg:mb-20 mt-[60px] lg:mt-28">
-          What people say
+          {scroll7.headline}
         </h2>
         <TestimonialCarousel />
       </section>

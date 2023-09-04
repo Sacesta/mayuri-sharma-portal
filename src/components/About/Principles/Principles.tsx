@@ -1,9 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import principlesOne from "@/Assets/Images/pageImages/principles_one.svg";
+import websiteData from "../../../Data/websiteData.json";
 
 const Principles = () => {
-  const a = [1, 2, 3, 4, 5, 6];
+  const { aboutPage } = websiteData;
+  const scroll2: Record<string, string> = aboutPage.scroll2;
+
+  const a = ["1", "2", "3", "4", "5", "6"];
   return (
     <div>
       <div className="container mx-auto">
@@ -13,28 +17,27 @@ const Principles = () => {
             <h2 className="heading_style_two mb-6">
               These are the principles important to me
             </h2>
-            <p className="paragraph_two_style">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique.
-            </p>
+            <p className="paragraph_two_style">{scroll2.heading}</p>
           </div>
         </div>
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-14">
-          {a.map((item, index) => (
-            <li key={`principleItem-${index}`}>
-              <Image
-                src={principlesOne}
-                alt="principle"
-                className="mb-4 lg:mb-7"
-              />
-              <p className="heading_three_style">Describe value one</p>
-              <p className="mt-2 lg:mt-5 text-base text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla.
-              </p>
-            </li>
-          ))}
+          {a.map((item: string, index: number) => {
+            const key = `subHeading${item}`;
+            const key2 = `subBody${item}`;
+            const heading: string = scroll2[key];
+            const body: string = scroll2[key2];
+            return (
+              <li key={`principleItem-${index}`}>
+                <Image
+                  src={principlesOne}
+                  alt="principle"
+                  className="mb-4 lg:mb-7"
+                />
+                <p className="heading_three_style">{heading}</p>
+                <p className="mt-2 lg:mt-5 text-base text-black">{body}</p>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

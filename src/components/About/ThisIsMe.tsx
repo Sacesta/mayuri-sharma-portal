@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import websiteData from "../../Data/websiteData.json";
 
 // import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Img1 from "@/Assets/Images/pageImages/fun_profile.png";
@@ -13,24 +14,27 @@ import "@/styles/main.css";
 
 const ThisIsMe = () => {
   const [currentTab, setCurrentTab] = useState<number>(0);
+  const { aboutPage } = websiteData;
+  const { scroll1 } = aboutPage;
   const data = [
-    { img: Img1, decs: "Bachelors of Engineering in Information Technology." },
+    { img: Img1, decs: scroll1["1stToggle"] },
     {
       img: Img2,
-      decs: "Have conducted 200+ Mind and Meditation workshops in leading corporates and Universities.",
+      decs: scroll1["2ndToggle"],
     },
     {
       img: Img3,
-      decs: "Description goes here no longer than 4 lines please all the way here like this looks best so try to stick to this",
+      decs: scroll1["3rdToggle"],
     },
     {
       img: Img4,
-      decs: "Description goes here no longer than 4 lines please all the way here like this looks best so try to stick to this",
+      decs: scroll1["4thTogggle"],
     },
   ];
   const changeTab = (num: number) => {
     setCurrentTab(num);
   };
+
   return (
     <>
       <div className="container mx-auto pt-24 lg:pt-[324px] overflow-hidden">
@@ -39,19 +43,8 @@ const ThisIsMe = () => {
             <p className="paragraph_one_style mb-2">This is me</p>
             <h2 className="heading_style_two mb-6">Some fun facts</h2>
             <p className="paragraph_two_style">
-              Born and brought up in Northern India close to Himalayas. She has
-              lived in various cities within India and Europe for studies and
-              work. Apart from managing projects and people, she has also
-              mastered the art of managing mind, emotions and energies through
-              the various Mind Management, Art of Breathing, Art of Meditation
-              and more such workshops. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
+              {scroll1.para1} <br /> {scroll1.para2} <br />
+              {scroll1.para3}
             </p>
           </div>
           <div>

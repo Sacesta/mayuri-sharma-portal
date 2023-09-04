@@ -15,8 +15,8 @@ import { SwiperNavButtons } from "./SwiperButtons";
 const TestimonialCarousel = () => {
   const data = [
     {
-      desc: "The challenge taught me a lot,I immediately applied this knowledge in my work, and my everyday life.",
-      name: "Larissa",
+      desc: "The community meditation practices have given me a solid foundation to further pursue advanced breathwork workshops.",
+      name: "Tina Dawson",
       position: "CEO | MediGo",
     },
     {
