@@ -1,8 +1,8 @@
 "use client";
+import "./tabs.css";
 import { Category, getCategories } from "@/services/Category.services";
 import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "./tabs.css";
 import { Podcast, getPodcasts } from "@/services/PodcastService";
 import { validUrl } from "../utils";
 import PodcastMedia from "./PodcastMedia";
@@ -68,7 +68,7 @@ const Categories = ({
     <>
       <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
         <TabList>
-          <Tab tabIndex="0">All Episodes</Tab>
+          <Tab tabIndex="0">All</Tab>
           {categories?.map((category: Category, index) => {
             return <Tab key={index}>{category?.name}</Tab>;
           })}
