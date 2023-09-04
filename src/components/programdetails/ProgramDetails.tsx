@@ -85,7 +85,7 @@ const ProgramDetails = ({ programId }: any) => {
                       {program?.description}
                     </p>
                     <ul className="flex flex-wrap items-center mt-8">
-                      <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
+                      <li className="flex items-center min-w-[130px] md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
                         <div className="program_icon">
                           <svg
                             width="29"
@@ -105,7 +105,7 @@ const ProgramDetails = ({ programId }: any) => {
                           <p>{format(new Date(program?.sdate), "do MMMM")}</p>
                         </div>
                       </li>
-                      <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
+                      <li className="flex items-center min-w-[130px] md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
                         <div className="program_icon">
                           <svg
                             width="29"
@@ -125,7 +125,7 @@ const ProgramDetails = ({ programId }: any) => {
                           <p>{format(new Date(program?.edate), "do MMMM")}</p>
                         </div>
                       </li>
-                      <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
+                      <li className="flex items-center min-w-[130px] md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
                         <div className="program_icon">
                           <svg
                             width="28"
@@ -145,7 +145,7 @@ const ProgramDetails = ({ programId }: any) => {
                           <p>{program?.duration} minutes</p>
                         </div>
                       </li>
-                      <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
+                      <li className="flex items-center min-w-[130px] md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
                         <div className="program_icon">
                           <svg
                             width="32"
@@ -165,7 +165,7 @@ const ProgramDetails = ({ programId }: any) => {
                           <p>{program?.language}</p>
                         </div>
                       </li>
-                      <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
+                      <li className="flex items-center min-w-[130px] md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
                         <div className="program_icon">
                           <svg
                             width="28"

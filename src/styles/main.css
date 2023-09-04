@@ -59,7 +59,6 @@ body {
   @apply font-semibold text-[#39315C] text-lg lg:text-[21px];
 }
 
-
 .heading_three_style_white {
   font-family: "Montserrat";
   @apply font-semibold text-white text-lg lg:text-[21px];
@@ -169,7 +168,6 @@ header {
   overflow: hidden;
   transition: all 0.3s ease;
   display: flex;
- 
 }
 
 .checkbox:not(:last-child) {
@@ -206,7 +204,8 @@ header {
 
 .checkbox span:last-child {
   padding-left: 12px;
-  line-height: 18px;font-size: 16px;
+  line-height: 18px;
+  font-size: 16px;
 }
 
 .checkbox:hover span:first-child {
@@ -267,7 +266,6 @@ header {
   transform: rotate(45deg);
 }
 .testimonial_section .swiper.swiper-initialized.swiper-horizontal.mySwiper {
-  
   position: relative;
 }
 .testimonial_section .swiper-button-next,
@@ -312,8 +310,9 @@ header {
   .banner.productDetails_banner {
     height: auto;
   }
-.thisIsme_wrapper{background: #fff !important}
-
+  .thisIsme_wrapper {
+    background: #fff !important;
+  }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -348,11 +347,16 @@ header {
   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
   display: none;
 }
-.home_banner_text {align-items: flex-end;
+.home_banner_text {
+  align-items: flex-end;
   @apply md:pl-[388px]  lg:pl-[410px];
 }
 .intro_section {
-  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(216 213 227 / 40%) 0%,
+    rgba(216, 213, 227, 0) 100%
+  );
   @apply pt-72 sm:pt-[28rem] md:pt-32 lg:pt-44 pb-56 lg:pb-[326px] relative overflow-hidden;
 }
 .home_banner_text
@@ -367,7 +371,7 @@ header {
   background-color: #29214b;
 }
 .swiper-slide.swiper-slide-active img {
-  height: 92% !important;
+  /* height: 92% !important; */
   border-radius: 20px;
 }
 
@@ -410,20 +414,31 @@ header {
   left: 0;
 }
 
-.thisIsme_wrapper{background: linear-gradient(180deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%) }
+.thisIsme_wrapper {
+  background: linear-gradient(
+    180deg,
+    rgb(216 213 227 / 40%) 0%,
+    rgba(216, 213, 227, 0) 100%
+  );
+}
 
 .story_podcast {
   @apply absolute rounded-[50%] h-16 w-16 flex items-center justify-center right-6 bottom-0 bg-[#EB334A] z-[2] opacity-0;
 }
 
 .home_story_section {
-  @apply gap-x-10 gap-y-16 mb-16 ;
+  @apply gap-x-10 gap-y-16 mb-16;
 }
 .home_story_section li {
   @apply relative cursor-pointer transition-all ease-in duration-300;
 }
 
-.home_story_section .swiper.swiper-initialized.swiper-horizontal .swiper-wrapper .swiper-slide{@apply sm:px-5}
+.home_story_section
+  .swiper.swiper-initialized.swiper-horizontal
+  .swiper-wrapper
+  .swiper-slide {
+  @apply sm:px-5;
+}
 .home_story_section li .home_story_img::after {
   content: "";
   background: linear-gradient(
@@ -459,7 +474,12 @@ header {
   @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold;
 }
 
-.upcoming_program {background: linear-gradient(180deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+.upcoming_program {
+  background: linear-gradient(
+    180deg,
+    rgb(216 213 227 / 40%) 0%,
+    rgba(216, 213, 227, 0) 100%
+  );
   @apply pt-24 pb-36 md:pb-60 lg:pt-40 lg:pb-[306px];
 }
 
@@ -514,7 +534,6 @@ header {
 }
 
 .news_letter_section {
-
   @apply md:pb-11;
 }
 .news_letter_section .container.mx-auto {
@@ -583,7 +602,11 @@ header {
 }
 
 .Supportive_community_section {
-  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(216 213 227 / 40%) 0%,
+    rgba(216, 213, 227, 0) 100%
+  );
   @apply pb-20 lg:pb-40 overflow-hidden;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ HOME_PAGE_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -721,11 +744,21 @@ header {
 }
 
 .socialMedia_moments {
-
-  
   @apply pt-[100px] lg:pt-[200px] pb-[100px] lg:pb-80 relative;
 }
-.socialMedia_moments::after{content: ''; position: absolute; width: 100%; height: 70%; bottom: 0; left: 0; background: linear-gradient(0deg, rgb(216 213 227 / 20%) 0%, rgba(216, 213, 227, 0) 100%);}
+.socialMedia_moments::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(216 213 227 / 20%) 0%,
+    rgba(216, 213, 227, 0) 100%
+  );
+}
 
 .social_image {
   @apply w-full h-full rounded-[20px] overflow-hidden relative;
@@ -762,11 +795,19 @@ header {
 }
 
 .podcast_back {
-  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(216 213 227 / 40%) 0%,
+    rgba(216, 213, 227, 0) 100%
+  );
 }
 
 .upcoming_program.programs {
-  background: linear-gradient(0deg, rgb(216 213 227 / 40%) 0%, rgba(216, 213, 227, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(216 213 227 / 40%) 0%,
+    rgba(216, 213, 227, 0) 100%
+  );
   @apply lg:pt-4;
 }
 .news_letter_section.programs_news {
@@ -830,8 +871,6 @@ header {
   }
 } */
 
-
-
 @media screen and (max-width: 991px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
     margin-right: 40px !important;
@@ -847,7 +886,9 @@ header {
   .program_icon {
     @apply w-6 h-6;
   }
-  .about_banner{background-position: center;}
+  .about_banner {
+    background-position: center;
+  }
 }
 @media screen and (max-width: 701px) {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {

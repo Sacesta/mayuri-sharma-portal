@@ -2,8 +2,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import "./TestimonialCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.png";
+import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
+import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -96,6 +99,44 @@ const TestimonialCarousel = () => {
         ))}
         <SwiperNavButtons />
       </Swiper>
+
+      {/* <div className="container mx-auto news_letter_section md:px-4 xl:px-16">
+        <div className="testimonial">
+          <div className="container mx-auto lg:flex justify-around">
+            <div className="lg:w-1/2 flex items-center z-[2]">
+              <div>
+                <p className="news_letter_head pb-9">{data[0].name}</p>
+                <h2 className="news_letter_h2">{data[0].position}</h2>
+                <p className="text-white text-lg font-normal pb-9 leading-7">
+                  {data[0].desc}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center flex-col">
+              <Image
+                className="testimonial_avatar w-[20rem] h-[20rem]  mt-[76px] lg:mt-28 rounded-full"
+                src={profileImage}
+                alt="Testimonial avatar"
+              />
+              <p className="mt-5 text-center text-white news_letter_h2">
+                {data[0].name}
+              </p>
+            </div>
+
+            <Image
+              src={ellipseOne}
+              alt="..."
+              className="news_ellipse_one right-0 hidden md:block"
+            />
+            <Image
+              src={ellipseTwo}
+              alt="..."
+              className="news_ellipse_one left-0 block md:hidden w-full object-cover"
+            />
+          </div>
+        </div>
+      </div> */}
     </>
   );
 };

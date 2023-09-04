@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import "./TestimonialCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.png";
 import "swiper/css";
@@ -10,6 +11,8 @@ import "swiper/css/pagination";
 import { SwiperNavButtons } from "./SwiperButtons";
 import { HostItem } from "@/services/Program.services";
 import { validUrl } from "../utils";
+import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
+import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
 
 const HostCarousel = ({ data = [] }: any) => {
   //   const data = [
@@ -46,7 +49,7 @@ const HostCarousel = ({ data = [] }: any) => {
   //   ];
   return (
     <>
-      <Swiper
+      {/* <Swiper
         spaceBetween={10}
         loop={true}
         direction={"horizontal"}
@@ -99,7 +102,53 @@ const HostCarousel = ({ data = [] }: any) => {
           </SwiperSlide>
         ))}
         <SwiperNavButtons />
-      </Swiper>
+      </Swiper> */}
+
+      {data.slice(0, 1).map((host: HostItem, index: number) => (
+        <div key={index} className="news_letter_section md:px-4 xl:px-16">
+          <div
+            className="testimonial"
+            style={{ paddingTop: "2rem", paddingBottom: "2rem" }}
+          >
+            <div className="container mx-auto lg:flex justify-around">
+              <div className="lg:w-1/2 flex items-center z-[2]">
+                <div>
+                  <p className="news_letter_head pb-9">{host.name}</p>
+                  <h2 className="news_letter_h2">{data[0].position}</h2>
+                  <p className="text-white text-lg font-normal pb-9 leading-7">
+                    {host.description}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center flex-col">
+                <Image
+                  className="testimonial_avatar w-[20rem] h-[20rem]  mt-[76px] lg:mt-28 rounded-full"
+                  src={host.img.startsWith("http") ? host.img : profileImage}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  alt="Testimonial avatar"
+                />
+                <p className="mt-5 text-center text-white news_letter_h2">
+                  {data[0].name}
+                </p>
+              </div>
+
+              <Image
+                src={ellipseOne}
+                alt="..."
+                className="news_ellipse_one right-0 hidden md:block"
+              />
+              <Image
+                src={ellipseTwo}
+                alt="..."
+                className="news_ellipse_one left-0 block md:hidden w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      ))}
     </>
   );
 };

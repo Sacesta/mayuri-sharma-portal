@@ -1,0 +1,22 @@
+{
+  "homepage": {
+    "banner1": {
+      "headline": "Master your inner journey with the master of wellness",
+      "subheadline": "Healing | Community | Growth",
+      "options": [
+        {
+          "title": "Evolve with your consciousness, one breath at a time",
+          "subheadline": "Come home to yourself by beginning your inner journey with the best of ancient wisdom and modern science"
+        },
+        {
+          "title": "Reclaim your story, redesign your life",
+          "subheadline": "Come home to yourself by beginning your healing journey with the best of ancient wisdom and modern science"
+        },
+        {
+          "title": "Shaping inner quests",
+          "subheadline": "With a fair mix of spirituality and science, I help individuals reclaim their lives and step into their own healing"
+        }
+      ]
+    }
+  }
+}
