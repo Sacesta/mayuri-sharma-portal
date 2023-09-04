@@ -61,7 +61,7 @@ const CategoryTabs = () => {
           className="w-full h-full py-4 px-6 border border-[#B5B5B5] rounded-lg appearance-none text-[#090617]"
           onClick={(e) => setTabIndex(+(e.target as HTMLInputElement).value)}
         >
-          <option value={0}>All Episodes</option>
+          <option value={0}>All</option>
           {categories?.map((category: Category, index) => {
             return (
               <option key={index} value={index + 1}>
