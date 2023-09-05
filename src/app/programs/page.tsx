@@ -12,6 +12,21 @@ import ProgramCards from "@/components/ProgramCards/ProgramCards";
 
 import websiteData from "../../Data/websiteData.json";
 import MainNewsLetter from "@/components/NewsLetters/MainNewsLetter";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Programs",
+  description:
+    "An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom.",
+  openGraph: {
+    title: "Programs",
+    description:
+      "An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom.",
+    url: `https://mayuri-sharma-portal.vercel.app/programs`,
+    siteName: "Mayuri-Sharma-Portal",
+    type: "website",
+  },
+};
 
 const page = async () => {
   const { programsPage } = websiteData;

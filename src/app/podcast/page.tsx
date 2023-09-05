@@ -8,6 +8,21 @@ import spotify from "@/Assets/Images/pageImages/spotify.png";
 import Footer from "@/components/footer/Footer";
 import CategoryTabs from "@/components/CategoryTabs/CategoryTabs";
 import SpotifyCard from "@/components/CategoryTabs/SpotifyCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Podcasts",
+  description:
+    "Listen to the latest episode. In this podcast episode, Mayuri explores the topic of wellbeing, discussing various strategies and practices that can help individuals enhance their overall sense of mental, physical, and emotional health. Drawing on expert insights and personal experiences, the episode delves into topics such as mindfulness, self-care, exercise, and social connection, offering practical tips and advice for listeners looking to improve their wellbeing.",
+  openGraph: {
+    title: "Podcasts",
+    description:
+      "Listen to the latest episode. In this podcast episode, Mayuri explores the topic of wellbeing, discussing various strategies and practices that can help individuals enhance their overall sense of mental, physical, and emotional health. Drawing on expert insights and personal experiences, the episode delves into topics such as mindfulness, self-care, exercise, and social connection, offering practical tips and advice for listeners looking to improve their wellbeing.",
+    url: `https://mayuri-sharma-portal.vercel.app/podcast`,
+    siteName: "Mayuri-Sharma-Portal",
+    type: "website",
+  },
+};
 
 const page = () => {
   return (
@@ -60,7 +75,7 @@ const page = () => {
           <div className="grid lg:grid-cols-2 gap-[73px]">
             <div>
               <p className="paragraph_one_style mb-2">
-                Listen to the latest episod
+                Listen to the latest episode
               </p>
               <h2 className="heading_style_two mb-6">Episode #08 Title here</h2>
               <p className="paragraph_two_style">

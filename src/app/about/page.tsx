@@ -13,6 +13,13 @@ import Principles from "@/components/About/Principles/Principles";
 
 import websiteData from "../../Data/websiteData.json";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description:
+    "Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the human mind. This innate inquiry got some direction when I happened to attend a breathing and meditation program conducted by Art of Living, during my engineering days. Fast forward to 2008 - this was the year I started my practice as a meditation and breathwork teacher. And since then I have taught in various corporations, universities, and meditation centres. The rest as they say is history.",
+};
 
 const About = () => {
   const { scroll3 } = websiteData.aboutPage;

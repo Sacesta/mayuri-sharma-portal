@@ -43,12 +43,14 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   async function (config: any) {
-    const token = localStorage.getItem("accessToken");
-    if (token && !config.url.startsWith("/public")) {
-      config.headers["Authorization"] = `Bearer ${token}`;
+    if (typeof window !== "undefined") {
+      const token = localStorage.getItem("accessToken");
+      if (token && !config.url.startsWith("/public")) {
+        config.headers["Authorization"] = `Bearer ${token}`;
+      }
+      // let loadingOverlay = document.querySelector(".loading");
+      // showLoading(loadingOverlay);
     }
-    // let loadingOverlay = document.querySelector(".loading");
-    // showLoading(loadingOverlay);
     return config;
   },
   function (error) {
