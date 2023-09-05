@@ -16,9 +16,13 @@ export const metadata: Metadata = {
     default: "Mayuri Sharma",
     template: "%s | Mayuri",
   },
+  themeColor: "#EB334A",
   description:
     "With a fair mix of spirituality and science, I help individuals reclaim their lives and step into their own healing",
   metadataBase: new URL("https://mayuri-sharma-portal.vercel.app/"),
+  verification: {
+    google: "google-site-verification=23242342342", //Change with your own google site verification id
+  },
   alternates: {
     canonical: "/",
     languages: {
@@ -38,6 +42,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+      </head>
       <body className={inter.className}>
         <Providers>
           <AuthGuard>

@@ -24,6 +24,7 @@ export interface Program {
   reviews: ReviewItem[];
   free: boolean;
   host: HostItem[];
+  updatedAt: string;
 }
 
 export interface HostItem {
