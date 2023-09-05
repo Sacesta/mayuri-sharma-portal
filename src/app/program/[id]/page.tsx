@@ -20,6 +20,9 @@ export async function generateMetadata({
     return {
       title: program.title,
       description: program.description,
+      alternates: {
+        canonical: `https://mayuri-sharma-portal.vercel.app/program/${programId}`,
+      },
       openGraph: {
         title: program.title + " | Mayuri",
         description: program.description,

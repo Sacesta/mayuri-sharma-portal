@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Programs",
   description:
     "An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom.",
+  alternates: {
+    canonical: "https://mayuri-sharma-portal.vercel.app/programs",
+  },
   openGraph: {
     title: "Programs",
     description:

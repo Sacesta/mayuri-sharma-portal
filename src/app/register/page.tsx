@@ -6,7 +6,17 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Register",
-  description: "Register yourself",
+  description: "Sign Up with Mayuri for full benefits !",
+  alternates: {
+    canonical: "https://mayuri-sharma-portal.vercel.app/register",
+  },
+  openGraph: {
+    title: "Register",
+    description: "Sign Up with Mayuri for full benefits !",
+    url: `https://mayuri-sharma-portal.vercel.app/register`,
+    siteName: "Mayuri-Sharma-Portal",
+    type: "website",
+  },
 };
 
 export default function Register() {

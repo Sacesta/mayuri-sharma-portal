@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Podcasts",
   description:
     "Listen to the latest episode. In this podcast episode, Mayuri explores the topic of wellbeing, discussing various strategies and practices that can help individuals enhance their overall sense of mental, physical, and emotional health. Drawing on expert insights and personal experiences, the episode delves into topics such as mindfulness, self-care, exercise, and social connection, offering practical tips and advice for listeners looking to improve their wellbeing.",
+  alternates: {
+    canonical: "https://mayuri-sharma-portal.vercel.app/podcast",
+  },
   openGraph: {
     title: "Podcasts",
     description:
