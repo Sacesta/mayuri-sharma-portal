@@ -76,5 +76,33 @@
       "heading": "You can find me living my best life here ",
       "subHeading": "Here’s a sneak peek into some of my favourite moments"
     }
+  },
+  "programsPage": {
+    "bodyCopy": "An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom.",
+    "scroll2": {
+      "headline": "Live a life of intention",
+      "bodyCopy": "Alan Cohen said, “When the intention is clear, so is the way.” This newsletter is a nudge to live an intentional life and to show up for yourself with compassion. Make it a monthly practice to feed your inner life with the best in spirituality, growth, and healing.",
+      "cta": "Read old newsletters"
+    },
+    "scroll3": {
+      "headline": "Word around the town"
+    }
+  },
+
+  "programsInnerPage": {
+    "scroll2": {
+      "header": "Agenda",
+      "subHeadline": "This program covers all base of holistic wellbeing and lays the foundation to form healthy habits that can become the bedrock of your days and your life"
+    },
+    "scroll3": {
+      "heading": "This program includes"
+    },
+    "scroll4": {
+      "heading": "What People Say"
+    },
+    "scroll5": {
+      "heading": "FAQs",
+      "subHeading": "NEED HELP"
+    }
   }
 }

@@ -25,10 +25,15 @@ import { toast } from "react-toastify";
 import RegisterBtn from "./RegisterBtn";
 import { validUrl } from "../utils";
 import ReviewItemComponent from "./ReviewItemComponent";
+import websiteData from "../../Data/websiteData.json";
 
 const ProgramDetails = ({ programId }: any) => {
   const dispatch = useAppDispatch();
   const user: User = useAppSelector(getUser);
+
+  const { programsInnerPage } = websiteData;
+
+  const { scroll2, scroll3, scroll4, scroll5 } = programsInnerPage;
 
   const [program, setProgram] = useState<Program | any>({});
 
@@ -219,10 +224,10 @@ const ProgramDetails = ({ programId }: any) => {
                   <div className="">
                     <div className="my-12 lg:my-[100px]">
                       <p className="paragraph_one_style  mb-2 text-[#2B2B27]">
-                        Agenda
+                        {scroll2.header}
                       </p>
                       <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[71px] text-[#2B2B27]">
-                        {program?.agandamaintitle}{" "}
+                        {program?.agandamaintitle}
                       </h2>
                       <ul className="journey_details programDetails_journey bg-white border border-[#E1E1E1] rounded-[20px] px-9 py-8">
                         {program?.agandaList?.length ? (
@@ -264,7 +269,7 @@ const ProgramDetails = ({ programId }: any) => {
                     </div>
                     <div className="mb-12 lg:mb-[100px]">
                       <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[30px] lg:mb-[41px] text-[#2B2B27]">
-                        The program includes
+                        {scroll3.heading}
                       </h2>
                       {program?.agandainclude?.length ? (
                         <>
@@ -303,7 +308,7 @@ const ProgramDetails = ({ programId }: any) => {
                     </div>
                     <div>
                       <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[41px] text-[#2B2B27]">
-                        What people say
+                        {scroll4.heading}
                       </h2>
                       {program?.reviews?.length ? (
                         <>
@@ -504,10 +509,11 @@ const ProgramDetails = ({ programId }: any) => {
           <section className="bg-white pt-12 lg:pt-[100px] pb-[119px]">
             <div className="container mx-auto">
               <div className="faqs max-w-[728px] mx-auto">
-                <h1 className="heading_one_black mb-6 text-center">FAQs</h1>
+                <h1 className="heading_one_black mb-6 text-center">
+                  {scroll5.heading}
+                </h1>
                 <p className="text-[#2B2B27] text-center mt-6 mb-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique.
+                  {scroll5.subHeading}
                 </p>
                 <Accordion items={program?.qa} />
               </div>

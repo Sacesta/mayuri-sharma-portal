@@ -10,7 +10,14 @@ import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
 import Footer from "@/components/footer/Footer";
 import ProgramCards from "@/components/ProgramCards/ProgramCards";
 
+import websiteData from "../../Data/websiteData.json";
+import MainNewsLetter from "@/components/NewsLetters/MainNewsLetter";
+
 const page = async () => {
+  const { programsPage } = websiteData;
+
+  const { bodyCopy, scroll2, scroll3 } = programsPage;
+
   return (
     <>
       <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
@@ -28,13 +35,7 @@ const page = async () => {
       <section className="upcoming_program programs">
         <div className="container mx-auto ">
           <div className="lg:grid grid-cols-2 pb-8 lg:pb-20">
-            <p className=" max-w-xl ">
-              A bit of text about the programs can go here. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
+            <p className=" max-w-xl ">{bodyCopy}</p>
           </div>
 
           <ul className="program_list ">
@@ -49,21 +50,14 @@ const page = async () => {
             <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
                 <p className="news_letter_head pb-9">News letter</p>
-                <h2 className="news_letter_h2">
-                  Get updated when new programs start
-                </h2>
+                <h2 className="news_letter_h2">{scroll2.headline}</h2>
                 <p className="text-white text-lg font-normal pb-9 leading-7">
-                  A bit about the news letter and how it works goes here can be
-                  this long Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
+                  {scroll2.bodyCopy}
                 </p>
-                <button className="secondary_button">See all challenges</button>
+                <button className="secondary_button">{scroll2.cta}</button>
               </div>
             </div>
-            <div className="news_letter_form lg:w-1/2 mt-28">
+            {/* <div className="news_letter_form lg:w-1/2 mt-28">
               <p className="news_letter_form_head">Join news letter</p>
               <div className="form_field">
                 <label htmlFor="">Name</label>
@@ -87,7 +81,8 @@ const page = async () => {
               <p className="text-sm text-[#090617] font-normal">
                 *We respect your privacy you can unsubscribe anytime
               </p>
-            </div>
+            </div> */}
+            <MainNewsLetter />
             <Image
               src={ellipseOne}
               alt="..."
@@ -104,7 +99,7 @@ const page = async () => {
 
       <section className="testimonial_section">
         <h2 className="heading_style_two text-center text-[#29214B] mb-20">
-          What people say
+          {scroll3.headline}
         </h2>
         <TestimonialCarousel />
       </section>
