@@ -18,7 +18,7 @@ export async function generateMetadata({
       };
 
     return {
-      title: program.title + " | Mayuri",
+      title: program.title,
       description: program.description,
       openGraph: {
         title: program.title + " | Mayuri",

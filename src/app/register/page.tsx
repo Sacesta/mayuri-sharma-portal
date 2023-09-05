@@ -2,6 +2,12 @@ import React from "react";
 import "@/styles/main.css";
 import RegisterForm from "@/components/Register/RegisterForm";
 import Footer from "@/components/footer/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Register",
+  description: "Register yourself",
+};
 
 export default function Register() {
   return (

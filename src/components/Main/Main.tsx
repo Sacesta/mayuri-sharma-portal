@@ -11,13 +11,26 @@ import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
 import supportive_banner from "@/Assets/Images/pageImages/Supportive_banner.png";
 
 import HeroTestimonial from "@/components/Carousel/HeroTestimonial";
-import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
-import Footer from "@/components/footer/Footer";
+// import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
+// import Footer from "@/components/footer/Footer";
 import Transformations from "@/components/Carousel/Transformations";
-import HomeProgramCards from "@/components/ProgramCards/HomeProgramCards";
-import CategoriesHome from "../CategoryTabs/CategoriesHome";
+// import HomeProgramCards from "@/components/ProgramCards/HomeProgramCards";
+// import CategoriesHome from "../CategoryTabs/CategoriesHome";
 import Link from "next/link";
-import MainNewsLetter from "../NewsLetters/MainNewsLetter";
+// import MainNewsLetter from "../NewsLetters/MainNewsLetter";
+import dynamic from "next/dynamic";
+
+const HomeProgramCards = dynamic(
+  () => import("@/components/ProgramCards/HomeProgramCards")
+);
+const CategoriesHome = dynamic(() => import("../CategoryTabs/CategoriesHome"));
+const MainNewsLetter = dynamic(() => import("../NewsLetters/MainNewsLetter"));
+
+// Should be loaded at last
+const Footer = dynamic(() => import("@/components/footer/Footer"));
+const TestimonialCarousel = dynamic(
+  () => import("@/components/Carousel/TestimonialCarousel")
+);
 
 const Main = () => {
   const { homepage } = data;
@@ -28,7 +41,12 @@ const Main = () => {
     <>
       <section className="md:pt-9 md:pb-20 md:px-6 lg:px-16 relative">
         <div className="home_banner mx-auto">
-          <Image className="main-right-circle" src={rightCircle} alt=".." />
+          <Image
+            priority
+            className="main-right-circle"
+            src={rightCircle}
+            alt=".."
+          />
           <div className="home_banner_text container mx-auto relative h-full md:flex">
             <div className="relative">
               <svg

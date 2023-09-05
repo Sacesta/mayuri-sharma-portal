@@ -12,7 +12,10 @@ import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mayuri Sharma",
+  title: {
+    default: "Mayuri Sharma",
+    template: "%s | Mayuri",
+  },
   description:
     "With a fair mix of spirituality and science, I help individuals reclaim their lives and step into their own healing",
   metadataBase: new URL("https://mayuri-sharma-portal.vercel.app/"),
