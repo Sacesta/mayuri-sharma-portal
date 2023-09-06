@@ -97,7 +97,7 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
-        <div className="right-button">
+        <div className="ml-auto">
           {isLoggedIn ? (
             <button className="hidden lg:flex user-btn items-center">
               Hello {user.fullName}
@@ -121,7 +121,7 @@ const NavBar = () => {
           )}
         </div>
         <div className="right-button">
-          <button className="hidden lg:block nav-btn">Contact me</button>
+          {/* <button className="hidden lg:block nav-btn">Contact me</button> */}
           <div className="flex lg:hidden">
             <Image
               onClick={handleToggle}
@@ -145,20 +145,19 @@ const NavBar = () => {
       <div className={`navbar ${isOpen ? "open" : ""} mobile_menu lg:hidden `}>
         <ul className="mob_nav navbar-menu">
           <Links tag={"li"} setIsOpen={setIsOpen} isOpen={isOpen} />
+          <li
+            onClick={() => {
+              setIsOpen(!isOpen);
+              setShowModal(true);
+            }}
+          >
+            Login
+          </li>
         </ul>
 
-        <a
-          onClick={() => {
-            setIsOpen(!isOpen);
-            setShowModal(true);
-          }}
-        >
-          Login
-        </a>
-
-        <a href="#" className="mob_nav_button">
+        {/* <a href="#" className="mob_nav_button">
           Contact me
-        </a>
+        </a> */}
       </div>
       {showModal || isLoginModalOpen ? (
         <LoginModal setShowModal={setShowModal} />
