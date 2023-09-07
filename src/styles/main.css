@@ -1,15 +1,16 @@
 /* Main */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap"); */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 * {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-kumbhSans), sans-serif;
 }
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-kumbhSans), sans-serif;
   @apply text-lg;
 }
 
@@ -22,22 +23,22 @@ body {
 }
 
 .primary_button {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply px-10 py-3 bg-[#EB334A] text-white text-sm rounded-lg tracking-widest hover:bg-[#E56071] transition-all ease-in duration-150;
 }
 
 .secondary_button {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply px-10 py-3 border border-white rounded-lg text-sm text-white tracking-widest  hover:bg-white hover:text-[#29214B]   transition-all ease-in duration-150;
 }
 
 .tertiary_button {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply px-10 py-3 border border-[#505050] rounded-lg text-sm text-[#090617] tracking-widest hover:border hover:border-[#090617]  transition-all ease-in duration-150;
 }
 
 .paragraph_one_style {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-sm lg:text-xl leading-6 font-semibold;
 }
 
@@ -46,34 +47,34 @@ body {
 }
 
 .heading_three_style {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply font-semibold text-[#090617] text-lg lg:text-[21px];
 }
 
 .heading_three_style_black {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply font-semibold text-[#2B2B27] text-lg lg:text-[21px];
 }
 .heading_three_style_blue {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply font-semibold text-[#39315C] text-lg lg:text-[21px];
 }
 
 .heading_three_style_white {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply font-semibold text-white text-lg lg:text-[21px];
 }
 h1.heading_one_black {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-3xl md:text-4xl lg:text-[50px] text-[#2B2B27] font-semibold leading-8 lg:leading-[60px];
 }
 
 h2.heading_style_two {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply font-semibold text-[28px] lg:text-[38px] leading-[34px] lg:leading-[46px];
 }
 h3.heading_style_three {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply font-semibold text-[22px] lg:text-[28px] text-[#29214B];
 }
 
@@ -328,12 +329,12 @@ header {
 }
 
 .home_banner h3 {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply py-8 font-semibold text-white text-[21px] lg:text-[28px] leading-8;
 }
 
 .home_banner h1 {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-4xl xl:text-[50px] text-white leading-[46px] xl:leading-[60px] font-semibold;
 }
 
@@ -401,7 +402,7 @@ header {
   @apply hidden md:flex items-center justify-center mb-8;
 }
 .home_story_tab li {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative text-[#505050] font-bold cursor-pointer;
 }
 .home_story_tab li.story_tab_active::after {
@@ -470,7 +471,7 @@ header {
 }
 
 .home_story_number {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold;
 }
 
@@ -512,7 +513,7 @@ header {
 }
 
 .program_description {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-kumbhSans), sans-serif;
   @apply text-sm text-[#505050] leading-6 md:pr-32 pb-7;
 }
 .program_icon {
@@ -548,12 +549,12 @@ header {
 }
 
 .news_letter_head {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-[22px] lg:text-[28px] text-white font-semibold leading-9;
 }
 
 .news_letter_h2 {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply font-semibold text-white text-[28px] lg:text-[38px] leading-[46px] pb-6;
 }
 
@@ -566,7 +567,7 @@ header {
 }
 
 .news_letter_form_head {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-[28px] text-[#090617] font-semibold leading-9 mb-7;
 }
 
@@ -575,7 +576,7 @@ header {
 }
 
 .form_field label {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto), sans-serif;
   @apply block text-base leading-5 text-[#505050] mb-[6px] font-normal;
 }
 .form_field input {
@@ -629,7 +630,7 @@ header {
 }
 
 .about_head {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply pb-8 lg:pb-16 text-4xl lg:text-[50px] text-white  z-[3];
 }
 
@@ -676,7 +677,7 @@ header {
   @apply h-full w-full object-cover;
 }
 .fun_profile_name {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-white text-[21px] w-full font-semibold leading-6 px-6 pb-12 md:pb-28 xl:px-20 lg:pb-16 absolute bottom-0 z-10 text-center mx-auto;
 }
 
@@ -790,7 +791,7 @@ header {
 }
 
 .podcast_head {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-[38px] lg:text-[50px] text-white max-w-[627px] font-semibold leading-9 lg:leading-[60px] lg:pl-8;
 }
 

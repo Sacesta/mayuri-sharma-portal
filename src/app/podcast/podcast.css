@@ -1,10 +1,8 @@
 /* Main */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap");
-
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap"); */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -14,7 +12,7 @@
   @apply hidden md:flex items-center justify-center mb-8;
 }
 .home_story_tab li {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative text-[#505050] font-bold;
 }
 .home_story_tab li.story_tab_active::after {
@@ -69,7 +67,7 @@
 }
 
 .home_story_number {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply absolute left-0 bottom-0 pl-6 pb-8 text-white text-4xl z-[2] font-semibold;
 }
 
@@ -124,7 +122,7 @@
 }
 
 .podcast_head {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-[38px] lg:text-[50px] text-white max-w-[627px] font-semibold leading-9 lg:leading-[60px] lg:pl-8;
 }
 
@@ -147,6 +145,6 @@ footer {
 }
 
 .copyright_text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font-notoSans), sans-serif;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER_CSS_END ~~~~~~~~~~~~~~~~~~~~~~~~~~ */

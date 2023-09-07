@@ -7,9 +7,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background: #ffffff;
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
 }
 
 .container {
@@ -17,7 +18,7 @@ body {
 }
 
 .paragraph_one_style {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply text-sm lg:text-xl leading-6 font-semibold;
 }
 
@@ -26,7 +27,7 @@ body {
 }
 
 h2.heading_style_two {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply font-semibold text-[28px] lg:text-[38px] leading-[34px] lg:leading-[46px];
 }
 

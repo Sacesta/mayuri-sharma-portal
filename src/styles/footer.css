@@ -13,5 +13,5 @@ footer {
 }
 
 .copyright_text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--font-notoSans), sans-serif;
 }

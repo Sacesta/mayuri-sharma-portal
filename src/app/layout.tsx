@@ -1,6 +1,5 @@
 import Header from "@/components/NavBar/NavBar";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import GlobalLoader from "@/components/GlobalLoader/GlobalLoader";
 import { ToastContainer } from "react-toastify";
 import ToastContainerWrapper from "@/components/ToastContainer/ToastContainerWrapper";
@@ -8,6 +7,42 @@ import ToastContainerWrapper from "@/components/ToastContainer/ToastContainerWra
 import { Providers } from "../redux/provider";
 import AuthGuard from "@/components/AuthGuard/AuthGuard";
 import { Metadata } from "next";
+
+import {
+  Inter,
+  Montserrat,
+  Kumbh_Sans,
+  Roboto,
+  Noto_Sans,
+} from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: "600",
+  display: "swap",
+  variable: "--font-montserrat",
+});
+
+const kumbhSans = Kumbh_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+  variable: "--font-kumbhSans",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"],
+  display: "swap",
+  variable: "--font-roboto",
+});
+
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-notoSans",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +76,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${montserrat.variable} ${kumbhSans.variable} ${roboto.variable} ${notoSans.variable}`}
+    >
       <head>
         <link
           rel="apple-touch-icon"

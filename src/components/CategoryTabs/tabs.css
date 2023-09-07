@@ -7,7 +7,7 @@
 }
 
 .react-tabs__tab {
-  font-family: "Montserrat";
+  font-family: var(--font-montserrat);
   @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative text-[#505050] font-bold cursor-pointer;
 }
 
