@@ -20,11 +20,11 @@ import Link from "next/link";
 // import MainNewsLetter from "../NewsLetters/MainNewsLetter";
 import dynamic from "next/dynamic";
 
-const HomeProgramCards = dynamic(
-  () => import("@/components/ProgramCards/HomeProgramCards")
-);
+// const HomeProgramCards = dynamic(
+//   () => import("@/components/ProgramCards/HomeProgramCards")
+// );
 const CategoriesHome = dynamic(() => import("../CategoryTabs/CategoriesHome"));
-const MainNewsLetter = dynamic(() => import("../NewsLetters/MainNewsLetter"));
+// const MainNewsLetter = dynamic(() => import("../NewsLetters/MainNewsLetter"));
 
 // Should be loaded at last
 const Footer = dynamic(() => import("@/components/footer/Footer"));
@@ -209,7 +209,9 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="upcoming_program">
+      {/* Upcoming programs section commented on client request */}
+
+      {/* <section className="upcoming_program">
         <div className="container mx-auto ">
           <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
             <h2 className="heading_style_two mb-8 lg:mb-0 text-[#090617] lg:max-w-[398px] text-start  lg:text-left">
@@ -223,9 +225,10 @@ const Main = () => {
             <HomeProgramCards />
           </ul>
         </div>
-      </section>
+      </section> */}
 
-      <section className="news_letter_section md:px-4 xl:px-16">
+      {/* Commented newsletter section on request of client */}
+      {/* <section className="news_letter_section md:px-4 xl:px-16">
         <div className="news_letter">
           <div className="container mx-auto lg:flex justify-between">
             <div className="lg:w-1/2 flex items-center z-[2]">
@@ -238,52 +241,6 @@ const Main = () => {
                 <button className="secondary_button">{scroll5.cta}</button>
               </div>
             </div>
-            {/* <div className="news_letter_form lg:w-1/2 mt-[76px] lg:mt-28">
-              <p className="news_letter_form_head">Join news letter</p>
-              <div className="form_field">
-                <label htmlFor="">Name</label>
-                <input type="text" placeholder="Enter name" />
-              </div>
-              <div className="form_field">
-                <label htmlFor="">Email address</label>
-                <input type="text" placeholder="Enter email address" />
-              </div>
-              <svg className="checkbox-symbol">
-                <symbol id="check" viewBox="0 0 12 10">
-                  <polyline
-                    points="1.5 6 4.5 9 10.5 1"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  ></polyline>
-                </symbol>
-              </svg>
-
-              <div className="flex items-center mb-[26px]">
-                <div className="checkbox-container">
-                  <input
-                    className="checkbox-input"
-                    id="confirm_2"
-                    type="checkbox"
-                  />
-                  <label className="checkbox" htmlFor="confirm_2">
-                    <span>
-                      <svg width="12px" height="10px">
-                        <use xlinkHref="#check"></use>
-                      </svg>
-                    </span>
-                    <span>
-                      If you need to have a confirmation this is how it might
-                      look like.
-                    </span>
-                  </label>
-                </div>
-              </div>
-              <button className="primary_button w-full mb-6">Subscribe</button>
-              <p className="text-sm text-[#090617] font-normal">
-                *We respect your privacy you can unsubscribe anytime
-              </p>
-            </div> */}
             <MainNewsLetter />
             <Image
               src={ellipseOne}
@@ -297,7 +254,7 @@ const Main = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="Supportive_community_section relative">
         <div className="container mx-auto">
@@ -464,8 +421,8 @@ const Main = () => {
               <div className="flex justify-between pt-6 border-t border-[#E1E1E1] p-8 bg-white">
                 <p className="text-[#EB334A] text-[21px] font-bold">Free</p>
                 <a
-                  href=""
-                  className="flex items-center text-[#4086FF] font-semibold tracking-widest"
+                  href="#"
+                  className="flex items-center text-[#29214B] font-semibold tracking-widest"
                 >
                   Register now
                   <svg

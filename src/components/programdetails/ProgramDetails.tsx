@@ -337,7 +337,7 @@ const ProgramDetails = ({ programId }: any) => {
                                           ? reviewItem?.profileImg
                                           : profileImage
                                       }
-                                      alt=".."
+                                      alt="reviewer profile image"
                                     />
                                   </div>
                                   <div className="w-[26px] h-[22px] lg:w-[51px] lg:h-[42px] absolute top-10 right-10 lg:right-[106px]">

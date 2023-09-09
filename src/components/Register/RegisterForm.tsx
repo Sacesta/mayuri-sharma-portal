@@ -135,13 +135,10 @@ const RegisterForm = () => {
       reduxDispatch(setLoginModal(true));
 
       toast.success("Registered Successfully");
-      console.log(event);
       dispatch({ type: "RESET" });
       form.reset();
-      console.log(data);
     } catch (error: any) {
       const { response } = error;
-      console.log(response?.data);
       toast.error(response?.data?.message || "Error during registration");
     }
   };
