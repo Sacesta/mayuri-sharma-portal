@@ -1,18 +1,29 @@
-import React, { useEffect, useState } from "react";
+"use client";
+
+import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import Logo from "../../Assets/Images/Logotype.png";
 import Image from "next/image";
 import Link from "next/link";
 import loginService, { LoginPayload } from "@/services/auth.services";
 import { useAppDispatch } from "@/redux/hooks";
-import { setLoginModal, setUser } from "@/redux/features/userSlice";
-import { useRouter } from "next/navigation";
+import {
+  getRegisterClicked,
+  setLoginModal,
+  setRegisterClicked,
+  setUser,
+} from "@/redux/features/userSlice";
+import { useRouter, usePathname } from "next/navigation";
+import { useSelector } from "react-redux";
 
 interface PropTypes {
   setShowModal: (bool: boolean) => void;
 }
 
 const LoginModal = ({ setShowModal }: PropTypes) => {
+  const pathName = usePathname();
+  const registerBtnClicked = useSelector(getRegisterClicked);
+
   const dispatch = useAppDispatch();
   const router = useRouter();
   const toggleModal = () => {
@@ -22,6 +33,7 @@ const LoginModal = ({ setShowModal }: PropTypes) => {
 
   const handleFormSubmit = async (e: any) => {
     try {
+      console.log(pathName);
       e.preventDefault();
       console.log(e);
       const email = e.target.email.value;
@@ -36,9 +48,8 @@ const LoginModal = ({ setShowModal }: PropTypes) => {
       dispatch(setUser(user));
       e.target.reset();
       toggleModal();
-      router.push("/");
+      router.push(`${pathName}`);
       toast.success("Logged in successfully");
-      console.log(data);
     } catch (error: any) {
       const { response } = error;
       toast.error(response?.data?.message || "Error during registration");

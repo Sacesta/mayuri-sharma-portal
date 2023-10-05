@@ -5,12 +5,14 @@ type UserState = {
   isLoggedIn: boolean;
   user: User | {};
   showLoginModal: boolean;
+  registerClicked: boolean;
 };
 
 const initialState: UserState = {
   isLoggedIn: false,
   user: {},
   showLoginModal: false,
+  registerClicked: false,
 };
 
 const user = createSlice({
@@ -30,11 +32,18 @@ const user = createSlice({
     setLoginModal: (state, action: PayloadAction<boolean>) => {
       state.showLoginModal = action.payload;
     },
+
+    setRegisterClicked: (state, action: PayloadAction<boolean>) => {
+      state.registerClicked = action.payload;
+    },
   },
 });
-export const { setUser, clearUser, setLoginModal } = user.actions;
+export const { setUser, clearUser, setLoginModal, setRegisterClicked } =
+  user.actions;
 export default user.reducer;
 
 export const getUser = (state: any) => state.userState.user;
 export const getLoggedIn = (state: any) => state.userState.isLoggedIn;
 export const getShowModal = (state: any) => state.userState.showLoginModal;
+export const getRegisterClicked = (state: any) =>
+  state.userState.registerClicked;

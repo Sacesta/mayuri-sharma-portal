@@ -135,7 +135,7 @@ const ProgramCards = () => {
                 href={`/program/${program._id}`}
                 className="flex items-center text-[#4086FF] font-semibold tracking-widest"
               >
-                Register now
+                Know more
                 <svg
                   width="8"
                   height="13"
@@ -153,7 +153,7 @@ const ProgramCards = () => {
             </div>
           </div>
           <Link href={`/program/${program._id}`} className="program_register">
-            Register now
+            Know more
             <svg
               width="8"
               height="13"

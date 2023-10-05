@@ -19,7 +19,11 @@ import {
 import { format, parse } from "date-fns";
 import HostCarousel from "../Carousel/HostCarousel";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
-import { getUser, setLoginModal } from "@/redux/features/userSlice";
+import {
+  getUser,
+  setLoginModal,
+  setRegisterClicked,
+} from "@/redux/features/userSlice";
 import { User } from "@/services/auth.services";
 import { toast } from "react-toastify";
 import RegisterBtn from "./RegisterBtn";
@@ -39,6 +43,7 @@ const ProgramDetails = ({ programId }: any) => {
 
   const handleRegisterProgram = async (program: Program) => {
     try {
+      console.log(program);
       const payload = {
         userId: user._id,
         cartItems: [
@@ -48,17 +53,20 @@ const ProgramDetails = ({ programId }: any) => {
             images: [program.image],
             price: program.price,
             quantity: 1,
-            id: program._id,
+            id: programId,
           },
         ],
       };
 
+      console.log(payload);
+
       const response = await registerProgram(payload);
       window.location.href = response.url;
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       dispatch(setLoginModal(true));
       toast.error(`User not logged in`);
+      dispatch(setRegisterClicked(true));
     }
   };
 
