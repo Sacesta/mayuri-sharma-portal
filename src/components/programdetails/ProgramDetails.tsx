@@ -43,7 +43,6 @@ const ProgramDetails = ({ programId }: any) => {
 
   const handleRegisterProgram = async (program: Program) => {
     try {
-      console.log(program);
       const payload = {
         userId: user._id,
         cartItems: [
@@ -56,9 +55,14 @@ const ProgramDetails = ({ programId }: any) => {
             id: programId,
           },
         ],
+        whatsappUrl: program?.whatsappUrl,
+        zoomUrl: program?.zoomUrl,
       };
 
-      console.log(payload);
+      if (program.isArtOfLiving) {
+        window.location.href = program.isArtOfLivingUrl;
+        return;
+      }
 
       const response = await registerProgram(payload);
       window.location.href = response.url;

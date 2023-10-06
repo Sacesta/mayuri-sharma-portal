@@ -23,6 +23,10 @@ export interface Program {
   qa: QAItem[];
   reviews: ReviewItem[];
   free: boolean;
+  isArtOfLiving: boolean;
+  isArtOfLivingUrl: string;
+  whatsappUrl: string;
+  zoomUrl: string;
   host: HostItem[];
   updatedAt: string;
 }
