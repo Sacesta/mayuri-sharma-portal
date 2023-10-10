@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "mayurisharma-programs.s3.ap-south-1.amazonaws.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "dummyimage.com",
+        port: "",
+      },
     ],
   },
   async headers() {

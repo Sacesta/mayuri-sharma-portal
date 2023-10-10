@@ -19,7 +19,7 @@ import {
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: "600",
+  weight: ["300", "600"],
   display: "swap",
   variable: "--font-montserrat",
 });
@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     default: "Mayuri Sharma",
     template: "%s | Mayuri",
   },
+
   applicationName: "Mayuri Sharma",
   authors: { name: "Mayuri-Sharma" },
   themeColor: "#EB334A",
@@ -82,6 +83,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    siteName: "Mayuri Sharma",
     images:
       "/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffun_profile.20e015cf.png&w=640&q=75",
   },

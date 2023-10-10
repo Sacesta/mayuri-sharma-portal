@@ -6,6 +6,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import menuIcon from "@/Assets/icons/menu.png";
 
+import Logo from "../../Assets/svg/mayuri.logo.svg";
+
 import "./NavBar.css";
 import LoginModal from "../Modal/LoginModal";
 import { useAppSelector } from "@/redux/hooks";
@@ -17,6 +19,7 @@ import {
   setUser,
 } from "@/redux/features/userSlice";
 import { User } from "@/services/auth.services";
+import Dropdown from "./DropDown/Dropdown";
 
 function DynamicTag({ device, children }: any) {
   const Device = device;
@@ -89,12 +92,7 @@ const NavBar = () => {
         <div className="flex gap-20">
           <div className="cursor-pointer">
             <Link href="/">
-              <Image
-                width="86"
-                height="25"
-                src="./svg/mayuri.logo.svg"
-                alt="Logo..."
-              />
+              <Image width="86" height="25" src={Logo} alt="Logo..." />
             </Link>
           </div>
           <div className="hidden lg:block nan-list">
@@ -102,6 +100,9 @@ const NavBar = () => {
               <Links device="desktop" setIsOpen={setIsOpen} isOpen={isOpen} />
             </ul>
           </div>
+        </div>
+        <div className="hidden lg:block">
+          <Dropdown device="desktop" />
         </div>
         <div className="ml-auto">
           {isLoggedIn ? (
@@ -151,6 +152,9 @@ const NavBar = () => {
       <div className={`navbar ${isOpen ? "open" : ""} mobile_menu lg:hidden `}>
         <ul className="mob_nav navbar-menu">
           <Links device={"mobile"} setIsOpen={setIsOpen} isOpen={isOpen} />
+          <li>
+            <Dropdown device="mobile" />
+          </li>
           <li
             onClick={() => {
               setIsOpen(!isOpen);
