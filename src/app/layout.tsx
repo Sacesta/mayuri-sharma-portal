@@ -65,9 +65,9 @@ export const metadata: Metadata = {
     "inner journey podcasts",
   ],
   icons: {
-    icon: "./favicon.ico",
-    shortcut: "./favicon.ico",
-    apple: "./apple-touch-icon.png",
+    icon: ["/android-chrome-96x96.png"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/apple-touch-icon.png"],
   },
   description:
     "With a fair mix of spirituality and science, I help individuals reclaim their lives and step into their own healing",
@@ -102,6 +102,12 @@ export default function RootLayout({
           rel="apple-touch-icon"
           sizes="76x76"
           href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/android-chrome-96x96.png"
         />
         <link
           rel="icon"
