@@ -7,6 +7,7 @@ import ToastContainerWrapper from "@/components/ToastContainer/ToastContainerWra
 import { Providers } from "../redux/provider";
 import AuthGuard from "@/components/AuthGuard/AuthGuard";
 import { Metadata } from "next";
+import WebIcon from "./favicon.ico";
 
 import {
   Inter,
@@ -51,7 +52,23 @@ export const metadata: Metadata = {
     default: "Mayuri Sharma",
     template: "%s | Mayuri",
   },
+  applicationName: "Mayuri Sharma",
+  authors: { name: "Mayuri-Sharma" },
   themeColor: "#EB334A",
+  keywords: [
+    "mayuri sharma",
+    "inner journey",
+    "inner journey counseling",
+    "inner journey programs",
+    "inner journey healing arts",
+    "inner journey wellness",
+    "inner journey podcasts",
+  ],
+  icons: {
+    icon: "./favicon.ico",
+    shortcut: "./favicon.ico",
+    apple: "./apple-touch-icon.png",
+  },
   description:
     "With a fair mix of spirituality and science, I help individuals reclaim their lives and step into their own healing",
   metadataBase: new URL("https://mayuri-sharma-portal.vercel.app/"),
