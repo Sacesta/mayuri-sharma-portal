@@ -19,9 +19,11 @@
       ]
     },
     "scroll": {
-      "headline": "Hi, I am Mayuri",
-      "subHeadline": "I am so glad you're here",
-      "info": "Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the science of our mind. My quest has led me to travel extensively within India as well as Europe. During these travels, I attended many workshops to master the art of breathing and meditation. And in a way, every place has shaped me and my practice. The journey has been long and arduous, spanning almost two decades. But in many ways, it has just begun.",
+      "headline": "Hello, I'm Mayuri,",
+      "subHeadline": "Crafting Blissful Minds, One Breath at a Time",
+      "subHeadline1": "Your Guide to Inner Serenity and Mindful Living.",
+      "info": "Let us embark on a simplified, transformative journey together. With roots in the spiritual heartland of India, I've embarked on a two-decade journey spanning continents. Join me as wecraft blissful minds through breath and meditation.",
+      "info1": "With two decades of exploring the realms of the mind and emotions across continents, I'm here to share and simplify your journey toward inner bliss. Join me as we breathe life intomindfulness and meditation, drawing inspiration from the spiritual heart of India.",
       "cta": "Tell me more"
     },
     "scroll4": {
@@ -35,13 +37,13 @@
       "cta": "Read old newsletters"
     },
     "scroll6": {
-      "headline": "Together we thrive",
-      "subHeadline": "Lean into a supportive community of like-minded individuals and grow together, one rock-solid habit at a time",
+      "headline": "Thrive Together in the Community",
+      "subHeadline": "A Space for Growth, Support, and Transformation",
       "weeklyHeading": "Meditate Weekly With The Community",
-      "cardHeading1": "Sharing",
-      "cardBody1": "Join a legion of kindred souls and open your hearts and minds as each invites theother to share personal stories of healing, self-growth, and transformation.",
-      "cardHeading2": "Support",
-      "cardBody2": "Make the most of a robust community that checks-in regularly and nurtures your growth with encouragement, accountability, and motivation."
+      "cardHeading1": "Sharing Stories",
+      "cardBody1": "Join a legion of kindred souls who open their hearts and minds, sharing personal stories of healing, self-growth, and transformation.",
+      "cardHeading2": "Ongoing Support",
+      "cardBody2": "Immerse yourself in a robust community, where regular check-ins nurture growth. Expect encouragement, accountability, and motivation as we embark on this journey together."
     },
     "scroll7": {
       "headline": "Word around the town"
@@ -49,14 +51,65 @@
   },
   "aboutPage": {
     "scroll1": {
-      "para1": "Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the human mind. This innate inquiry got some direction when I happened to attend a breathing and meditation program conducted by Art of Living, during my engineering days. Fast forward to 2008 - this was the year I started my practice as a meditation and breathwork teacher. And since then I have taught in various corporations, universities, and meditation centres. The rest as they say is history.",
-      "para2": "Something that not many people know about me is that I am also an Ayurveda enthusiast and have received formal training in Vedic astrology. This training helped me find answers to questions like why we behave in a specific pattern, how our outlook towards life is influenced by our planetary positions, and so on. It was an eye-opener to say the least and it further propelled me in my journey.",
-      "para3": "Something that not many people know about me is that I am also an Ayurveda enthusiast and have received formal training in Vedic astrology. This training helped me find answers to questions like why we behave in a specific pattern, how our outlook towards life is influenced by our planetary positions, and so on. It was an eye-opener to say the least and it further propelled me in my journey.",
+      "point1": {
+        "head": "Inquisitive Beginnings",
+        "body": "Born and raised in India, the land of spiritual wonders, I've always been a curious soul, eager to unravel the mysteries of spirituality, emotions, and the human mind."
+      },
+      "point2": {
+        "head": "Breath of Transformation",
+        "body": "My journey took a pivotal turn during my engineering days when I stumbled upon a life-altering breathing and meditation program offered by the Art of Living. Drawing guidance and inspiration from the footsteps of my master, little did I know that this moment would set the course for a lifelong exploration."
+      },
+      "point3": {
+        "head": "Becoming a Guide",
+        "body": ": In 2008, I ventured into a new chapter as a meditation and breathwork teacher. Over the years, I've had the privilege of sharing these transformative practices with diverse communities, from corporate settings to university campuses and serene meditation centers"
+      },
+      "point4": {
+        "head": "A Tech-Infused Twist",
+        "body": "Adding a unique twist to my journey, I pursued a Bachelor of Engineering in Information Technology, blending the spiritual with the technological. Working in a corporate world as well for almost two decades, I have a first hand experience of the challenges we all through on a daily basis"
+      },
+      "point5": {
+        "head": "Hidden Passions",
+        "body": "Beyond the well-known facets, there are some secrets not many are aware of. I'm not just a meditation enthusiast; I'm also deeply immersed in the world of Ayurveda and hold formal training in Vedic astrology. These pursuits have provided profound insights into the patterns of human behavior and the influence of celestial forces on our lives."
+      },
+
       "1stToggle": "Bachelors of Engineering in Information Technology.",
       "2ndToggle": "Conducted 200+ Mind & Meditation workshops in leading corporates & universities",
       "3rdToggle": "Partner at the learning platform, Inner Cord",
       "4thTogggle": "Always planning a trip in my free time"
     },
+
+    "journey": [
+      {
+        "year": "2023",
+        "month": "January",
+        "head": "The Spark Ignition",
+        "body": "A pivotal moment marked the beginning of it all. It was the first step toward understanding the intricate world of spirituality, emotions, and the human mind."
+      },
+      {
+        "year": "2023",
+        "month": "January",
+        "head": "The Birth of a Vision",
+        "body": "Inspired by my own personal growth, I envisioned a startup that would bring these transformative practices to the world, nurturing well-being and inner peace."
+      },
+      {
+        "year": "2023",
+        "month": "January",
+        "head": "Execution to achieve",
+        "body": "By July dedicated to simplifying the journey to inner bliss through meditation and breathwork. It was a moment of excitement and purpose."
+      },
+      {
+        "year": "2023",
+        "month": "January",
+        "head": "Expanding Horizons",
+        "body": "I intend to share these ancient practices with diverse communities, leaving a trail of mindfulness and serenity in our wake."
+      },
+      {
+        "year": "2023",
+        "month": "January",
+        "head": "Looking Ahead",
+        "body": "Today, as we stand at the cusp of a new year, my journey continues. With each breath and meditation session, we craft a brighter, more fulfilled tomorrow for ourselves and those who join us."
+      }
+    ],
     "scroll2": {
       "heading": "Here’s a little roadmap of things that has helped me find my true north",
       "subHeading1": "Curiosity",

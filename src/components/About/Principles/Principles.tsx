@@ -13,10 +13,8 @@ const Principles = () => {
       <div className="container mx-auto">
         <div className="lg:grid grid-cols-2">
           <div>
-            <p className="paragraph_one_style mb-2">My values</p>
-            <h2 className="heading_style_two mb-6">
-              These are the principles important to me
-            </h2>
+            <p className="paragraph_one_style mb-2">My Driving Purpose</p>
+            <h2 className="heading_style_two mb-6">Inner Peace for All</h2>
             <p className="paragraph_two_style">{scroll2.heading}</p>
           </div>
         </div>

@@ -40,11 +40,34 @@ const ThisIsMe = () => {
       <div className="container mx-auto pt-24 lg:pt-[324px] overflow-hidden">
         <div className="lg:grid grid-cols-2 gap-20">
           <div className="mb-14 lg:mb-0">
-            <p className="paragraph_one_style mb-2">This is me</p>
-            <h2 className="heading_style_two mb-6">Some fun facts</h2>
+            <p className="paragraph_one_style mb-2">This is Me:</p>
+            <h2 className="heading_style_two mb-6">
+              A Journey of Curiosity and Growth
+            </h2>
             <p className="paragraph_two_style">
-              {scroll1.para1} <br /> {scroll1.para2} <br />
-              {scroll1.para3}
+              <ul>
+                <li>
+                  <strong>{scroll1.point1.head}</strong> {scroll1.point1.body}
+                </li>
+                <li>
+                  <strong>{scroll1.point2.head}</strong> {scroll1.point2.body}
+                </li>
+                <li>
+                  <strong>{scroll1.point3.head}</strong> {scroll1.point3.body}
+                </li>
+                <li>
+                  <strong>{scroll1.point4.head}</strong> {scroll1.point4.body}
+                </li>
+                <li>
+                  <strong>{scroll1.point5.head}</strong> {scroll1.point5.body}
+                </li>
+              </ul>
+              <p className="mt-2">
+                My life story is one of ceaseless exploration, fueled by an
+                insatiable curiosity about the human experience. Join me in
+                Ongoing Support as we uncover the extraordinary world of the
+                mind and spirit together
+              </p>
             </p>
           </div>
           <div>
