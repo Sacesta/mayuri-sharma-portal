@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 const About = () => {
-  const { scroll3, journey } = websiteData.aboutPage;
+  const { scroll3, journey, cardBody } = websiteData.aboutPage;
   return (
     <>
       <section className="md:py-9 banner commonbanner md:px-4 xl:px-16">
@@ -104,13 +104,10 @@ const About = () => {
               <p className="news_letter_head pb-2">My mission</p>
               <h2 className="news_letter_h2">Mission goes here</h2>
               <p className="text-white text-lg font-normal leading-7">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                {cardBody.line1}
+              </p>
+              <p className="text-white text-lg font-normal leading-7">
+                {cardBody.line2}
               </p>
             </div>
           </div>

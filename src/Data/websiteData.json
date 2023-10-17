@@ -75,7 +75,10 @@
       "3rdToggle": "Partner at the learning platform, Inner Cord",
       "4thTogggle": "Always planning a trip in my free time"
     },
-
+    "cardBody": {
+      "line1": "My journey centers around a singular driving purpose: to make inner peace attainable amidst life's hustle.",
+      "line2": "Through the profound practices of meditation and breathwork, my aim is to empower individuals to embrace inner peace. Join me in this endeavor, Together, let's breathe, let's meditate, and create a world where inner peace is universal"
+    },
     "journey": [
       {
         "year": "2023",

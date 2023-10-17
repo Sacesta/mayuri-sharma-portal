@@ -53,7 +53,7 @@ const page = async () => {
       <section className="upcoming_program programs">
         <div className="container mx-auto ">
           <div className="lg:grid grid-cols-2 pb-8 lg:pb-20">
-            <p className=" max-w-xl ">{bodyCopy}</p>
+            <p className="">{bodyCopy}</p>
           </div>
 
           <ul className="program_list ">
