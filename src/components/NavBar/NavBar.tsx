@@ -50,10 +50,10 @@ const Links = ({ device, setIsOpen, isOpen }: any) => {
       href: "/programs",
       title: "Programs",
     },
-    {
-      href: "/masterclass",
-      title: "Masterclass",
-    },
+    // {
+    //   href: "/masterclass",
+    //   title: "Masterclass",
+    // },
   ];
   return (
     <>

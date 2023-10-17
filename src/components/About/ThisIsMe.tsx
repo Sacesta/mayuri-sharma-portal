@@ -45,7 +45,7 @@ const ThisIsMe = () => {
               A Journey of Curiosity and Growth
             </h2>
             <p className="paragraph_two_style">
-              <ul>
+              {/* <ul>
                 <li>
                   <strong>{scroll1.point1.head}</strong> {scroll1.point1.body}
                 </li>
@@ -61,12 +61,29 @@ const ThisIsMe = () => {
                 <li>
                   <strong>{scroll1.point5.head}</strong> {scroll1.point5.body}
                 </li>
-              </ul>
-              <p className="mt-2">
-                My life story is one of ceaseless exploration, fueled by an
-                insatiable curiosity about the human experience. Join me in
-                Ongoing Support as we uncover the extraordinary world of the
-                mind and spirit together
+              </ul> */}
+              <p>
+                Born and brought up in India, the land of Gods, I have always
+                had a curiosity to understand spirituality, emotions, and the
+                human mind. This innate inquiry got some direction when I
+                happened to attend a breathing and meditation program conducted
+                by Art of Living, during my engineering days. Fast forward to
+                2008 - this was the year I started my practice as a meditation
+                and breathwork teacher. And since then I have taught in various
+                corporations, universities, and meditation centres. The rest as
+                they say is history. Something that not many people know about
+                me is that I am also an Ayurveda enthusiast and have received
+                formal training in Vedic astrology. This training helped me find
+                answers to questions like why we behave in a specific pattern,
+                how our outlook towards life is influenced by our planetary
+                positions, and so on. It was an eye-opener to say the least and
+                it further propelled me in my journey. Another thing that’s
+                shaped my journey of self discovery is travelling. I am an avid
+                traveller and this is what I have learnt from my adventures so
+                far - it’s as enriching an experience to travel within yourself
+                as it is to travel outside of yourself. It was during my travels
+                that I realised that with every new road we take in our lives,
+                we are actually seeking a new way to come home to ourselves.
               </p>
             </p>
           </div>

@@ -115,15 +115,11 @@ const Main = () => {
           <h2 className="heading_style_two mb-4 text-center text-[#090617]">
             {scroll.subHeadline}
           </h2>
-          <h2 className="heading_style_two mb-4 text-center text-[#090617]">
-            {scroll.subHeadline1}
-          </h2>
-          <p className="paragraph_two_style max-w-3xl text-center mx-auto mb-1">
+
+          <p className="paragraph_two_style max-w-3xl text-center mx-auto mb-14">
             {scroll.info}
           </p>
-          <p className="paragraph_two_style max-w-3xl text-center mx-auto mb-14">
-            {scroll.info1}
-          </p>
+
           <div className="flex justify-center relative z-[2]">
             <Link href="/about">
               <button className="primary_button">{scroll.cta}</button>

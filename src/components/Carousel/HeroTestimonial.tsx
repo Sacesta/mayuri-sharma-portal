@@ -4,7 +4,7 @@ import Image from "next/image";
 import homebannerSlider from "@/Assets/Images/pageImages/fun_profile.png";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 export default function HeroTestimonial() {
   return (
@@ -12,12 +12,13 @@ export default function HeroTestimonial() {
       <Swiper
         className="mySwiper h-full w-[full] sm:w-[344px] home_banner_carousel rounded-[20px]"
         pagination={{ clickable: true }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={10}
         // loop={true}
         // speed={1500}
         // slidesPerView={1}
         // autoHeight={true}
+        autoplay={true}
       >
         <SwiperSlide>
           <div className="h-full w-full relative">

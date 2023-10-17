@@ -79,9 +79,9 @@ const About = () => {
                         </svg>
                       </div>
                       <div className="mb-5">
-                        <p className="journey_time">
+                        {/* <p className="journey_time">
                           <span>{item.year}</span> <span>{item.month}</span>
-                        </p>
+                        </p> */}
                         <h3 className="heading_style_three mb-[10px]">
                           {item.head}
                         </h3>
@@ -118,11 +118,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about_principles">
+      <section className="about_principles mb-28">
         <Principles />
       </section>
 
-      <section className="socialMedia_moments">
+      {/* <section className="socialMedia_moments">
         <div className="container mx-auto ">
           <div className="flex items-center">
             <p className="paragraph_one_style mb-2 inline-block">
@@ -256,7 +256,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>
