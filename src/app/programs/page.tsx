@@ -2,7 +2,9 @@ import React from "react";
 import "@/styles/main.css";
 import Image from "next/image";
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import bg from "@/Assets/Images/pageImages/programs_banner.png";
+// import bg from "@/Assets/Images/pageImages/programs_banner.png";
+import bg from "@/Assets/Images/3C4A4677.jpg";
+// 3C4A4677
 import programeone from "@/Assets/Images/pageImages/program_img_1.png";
 import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
 import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
@@ -41,7 +43,7 @@ const page = async () => {
       <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
         <div
           className="about_banner lg:bg-right"
-          style={{ backgroundImage: `url(${bg.src})` }}
+          style={{ backgroundImage: `url(${bg.src})`, backgroundPosition: 'top' }}
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="container mx-auto z-10">
@@ -72,7 +74,7 @@ const page = async () => {
                 <p className="text-white text-lg font-normal pb-9 leading-7">
                   {scroll2.bodyCopy}
                 </p>
-                <button className="secondary_button">{scroll2.cta}</button>
+                {/* <button className="secondary_button">{scroll2.cta}</button> */}
               </div>
             </div>
             {/* <div className="news_letter_form lg:w-1/2 mt-28">

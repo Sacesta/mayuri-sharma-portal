@@ -4,7 +4,8 @@ import Image from "next/image";
 import data from "../../Data/websiteData.json";
 
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.png";
+// import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.png";
+import profileImage from "@/Assets/Images/DSC_0186.jpg";
 import masterclassimg from "@/Assets/Images/pageImages/masterclass_one.png";
 import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
 import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
@@ -98,9 +99,9 @@ const Main = () => {
                 />
               </svg>
               <h3>Mayuri</h3>
-              <h1>
+              <h2>
                 {banner1.headline} <br />
-              </h1>
+              </h2>
             </div>
             <HeroTestimonial />
           </div>
@@ -117,7 +118,7 @@ const Main = () => {
           </h2>
 
           <p className="paragraph_two_style max-w-3xl text-center mx-auto mb-14">
-            {scroll.info}
+            {scroll.info.slice(0, 145)}...
           </p>
 
           <div className="flex justify-center relative z-[2]">
