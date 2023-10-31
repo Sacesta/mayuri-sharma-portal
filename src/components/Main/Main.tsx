@@ -19,6 +19,7 @@ import Transformations from "@/components/Carousel/Transformations";
 import Link from "next/link";
 // import MainNewsLetter from "../NewsLetters/MainNewsLetter";
 import dynamic from "next/dynamic";
+import HomeProgramCards from "../ProgramCards/HomeProgramCards";
 
 // const HomeProgramCards = dynamic(
 //   () => import("@/components/ProgramCards/HomeProgramCards")
@@ -213,7 +214,7 @@ const Main = () => {
 
       {/* Upcoming programs section commented on client request */}
 
-      {/* <section className="upcoming_program">
+      <section className="upcoming_program">
         <div className="container mx-auto ">
           <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
             <h2 className="heading_style_two mb-8 lg:mb-0 text-[#090617] lg:max-w-[398px] text-start  lg:text-left">
@@ -227,7 +228,7 @@ const Main = () => {
             <HomeProgramCards />
           </ul>
         </div>
-      </section> */}
+      </section>
 
       {/* Commented newsletter section on request of client */}
       {/* <section className="news_letter_section md:px-4 xl:px-16">

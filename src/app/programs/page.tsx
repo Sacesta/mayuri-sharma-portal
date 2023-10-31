@@ -72,7 +72,7 @@ const page = async () => {
                 <p className="text-white text-lg font-normal pb-9 leading-7">
                   {scroll2.bodyCopy}
                 </p>
-                <button className="secondary_button">{scroll2.cta}</button>
+                {/* <button className="secondary_button">{scroll2.cta}</button> */}
               </div>
             </div>
             {/* <div className="news_letter_form lg:w-1/2 mt-28">
