@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
-import Img3 from "@/Assets/Images/3C4A4677 (1).jpg";
-import Img4 from "@/Assets/Images/DSC_0185 (1).jpg";
-import Imgg from "@/Assets/Images/3C4A4708 (1).jpg";
+import Img3 from "@/Assets/Images/3C4A4677.jpg";
+import Img4 from "@/Assets/Images/DSC_0185.jpg";
+import Imgg from "@/Assets/Images/3C4A4708.jpg";
 
 export default function HeroTestimonial() {
   return (
