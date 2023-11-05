@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
-import Logo from "../../Assets/Images/Logotype.png";
+import Logo from "@/Assets/Images/pageImages/Logotype.png";
 import Image from "next/image";
 import Link from "next/link";
 import loginService, { LoginPayload } from "@/services/auth.services";
