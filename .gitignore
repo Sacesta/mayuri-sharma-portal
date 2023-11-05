@@ -7,7 +7,7 @@
 node
 # testing
 /coverage
-
+/bin
 # next.js
 /.next/
 /out/
