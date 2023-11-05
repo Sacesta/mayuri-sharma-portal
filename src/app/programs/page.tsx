@@ -2,10 +2,7 @@ import React from "react";
 import "@/styles/main.css";
 import Image from "next/image";
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-// import bg from "@/Assets/Images/pageImages/programs_banner.png";
 import bg from "@/Assets/Images/3C4A4677.jpg";
-// 3C4A4677
-import programeone from "@/Assets/Images/pageImages/program_img_1.png";
 import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
 import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
 import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";

@@ -7,8 +7,6 @@ import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
 // import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.png";
 import profileImage from "@/Assets/Images/DSC_0186.jpg";
 import masterclassimg from "@/Assets/Images/pageImages/masterclass_one.png";
-import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
-import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
 import supportive_banner from "@/Assets/Images/pageImages/Supportive_banner.png";
 
 import HeroTestimonial from "@/components/Carousel/HeroTestimonial";
