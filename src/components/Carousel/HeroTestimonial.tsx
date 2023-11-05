@@ -1,10 +1,14 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import homebannerSlider from "@/Assets/Images/pageImages/fun_profile.png";
+import homebannerSlider from "../../Assets/Images/pageImages/fun_profile.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
+
+import Img3 from "../../Assets/Images/3C4A4677.jpg";
+import Img4 from "../../Assets/Images/DSC_0185.jpg";
+import Imgg from "../../Assets/Images/3C4A4708.jpg";
 
 export default function HeroTestimonial() {
   return (
@@ -51,7 +55,7 @@ export default function HeroTestimonial() {
         <SwiperSlide>
           <div className="h-full w-full relative">
             <Image
-              src={homebannerSlider}
+              src={Img4}
               className="w-full object-cover h-[92%]"
               alt="..."
             />
@@ -80,7 +84,7 @@ export default function HeroTestimonial() {
         <SwiperSlide>
           <div className="h-full w-full relative">
             <Image
-              src={homebannerSlider}
+              src={Img3}
               className="w-full object-cover h-[92%]"
               alt="..."
             />
@@ -108,7 +112,7 @@ export default function HeroTestimonial() {
         <SwiperSlide>
           <div className="h-full w-full relative">
             <Image
-              src={homebannerSlider}
+              src={Imgg}
               className="w-full object-cover h-[92%]"
               alt="..."
             />
