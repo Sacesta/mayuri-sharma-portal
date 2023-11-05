@@ -38,7 +38,7 @@ const About = () => {
       <section className="md:py-9 banner commonbanner md:px-4 xl:px-16">
         <div
           className="about_banner lg:bg-right"
-          style={{ backgroundImage: `url('/Assets/Images/pageImages/w_m_2.jpg')` }}
+          style={{ backgroundImage: `url('/Assets/Images/pageImages/mayuri_1.jpg')` }}
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="container mx-auto z-10">
