@@ -3,7 +3,6 @@ import "@/styles/main.css";
 import Image from "next/image";
 
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import bg from "@/Assets/Images/pageImages/w_m_2.jpg";
 // 
 import missionEllipse from "@/Assets/Images/pageImages/Ellipse _six.svg";
 
@@ -39,7 +38,7 @@ const About = () => {
       <section className="md:py-9 banner commonbanner md:px-4 xl:px-16">
         <div
           className="about_banner lg:bg-right"
-          style={{ backgroundImage: `url(${bg.src})` }}
+          style={{ backgroundImage: `url('/Assets/Images/pageImages/w_m_2.jpg')` }}
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="container mx-auto z-10">

@@ -2,7 +2,7 @@ import React from "react";
 import "@/styles/main.css";
 import Image from "next/image";
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import bg from "@/Assets/Images/pageImages/w_m_1.jpg";
+// import bg from "@/Assets/Images/pageImages/w_m_1.jpg";
 import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
 import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
 import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
@@ -40,7 +40,8 @@ const page = async () => {
       <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
         <div
           className="about_banner lg:bg-right"
-          style={{ backgroundImage: `url(${bg.src})`, backgroundPosition: 'top' }}
+          // style={{ backgroundImage: `url(${bg.src})`, backgroundPosition: 'top' }}
+          style={{ backgroundImage: `url('/Assets/Images/pageImages/w_m_1.jpg')`, backgroundPosition: 'top' }}
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="container mx-auto z-10">
