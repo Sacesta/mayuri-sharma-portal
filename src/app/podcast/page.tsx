@@ -3,8 +3,8 @@ import React from "react";
 import "@/styles/main.css";
 import Image from "next/image";
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import podcastBanner from "@/Assets/Images/DSC_0185.jpg";
-// DSC_0185
+import podcastBanner from "@/Assets/Images/pageImages/r_m_1.jpg";
+
 import Footer from "@/components/footer/Footer";
 import CategoryTabs from "@/components/CategoryTabs/CategoryTabs";
 import SpotifyCard from "@/components/CategoryTabs/SpotifyCard";

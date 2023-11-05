@@ -4,27 +4,16 @@ import Image from "next/image";
 import data from "../../Data/websiteData.json";
 
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-// import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.png";
-import profileImage from "@/Assets/Images/DSC_0186.jpg";
+import profileImage from "@/Assets/Images/pageImages/w_m_3.jpg";
 import masterclassimg from "@/Assets/Images/pageImages/masterclass_one.png";
 import supportive_banner from "@/Assets/Images/pageImages/Supportive_banner.png";
 
 import HeroTestimonial from "@/components/Carousel/HeroTestimonial";
-// import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
-// import Footer from "@/components/footer/Footer";
-import Transformations from "@/components/Carousel/Transformations";
-// import HomeProgramCards from "@/components/ProgramCards/HomeProgramCards";
-// import CategoriesHome from "../CategoryTabs/CategoriesHome";
 import Link from "next/link";
-// import MainNewsLetter from "../NewsLetters/MainNewsLetter";
 import dynamic from "next/dynamic";
 import HomeProgramCards from "../ProgramCards/HomeProgramCards";
 
-// const HomeProgramCards = dynamic(
-//   () => import("@/components/ProgramCards/HomeProgramCards")
-// );
 const CategoriesHome = dynamic(() => import("../CategoryTabs/CategoriesHome"));
-// const MainNewsLetter = dynamic(() => import("../NewsLetters/MainNewsLetter"));
 
 // Should be loaded at last
 const Footer = dynamic(() => import("@/components/footer/Footer"));
@@ -202,7 +191,6 @@ const Main = () => {
             </h2>
             <div className="home_story_section w-full">
               <CategoriesHome />
-              {/* <Transformations /> */}
             </div>
             <Link href="/podcast" className="tertiary_button">
               View full list of episodes
