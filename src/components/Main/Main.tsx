@@ -4,7 +4,7 @@ import Image from "next/image";
 import data from "../../Data/websiteData.json";
 
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import profileImage from "@/Assets/Images/pageImages/w_m_3.jpg";
+import profileImage from "@/Assets/Images/pageImages/profileImage.jpg";
 import masterclassimg from "@/Assets/Images/pageImages/masterclass_one.png";
 import supportive_banner from "@/Assets/Images/pageImages/Supportive_banner.png";
 
