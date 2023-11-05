@@ -19,6 +19,7 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
@@ -28,7 +29,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/About/Tab/Tab.js"
-, "src/components/AuthGuard/AuthGuard.tsx"  ],
+    "src/app/components/About/Tab/Tab.js",
+    "src/components/AuthGuard/AuthGuard.tsx"
+  ],
   "exclude": ["node_modules"]
 }
