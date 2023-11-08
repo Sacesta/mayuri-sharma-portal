@@ -86,7 +86,6 @@ const Main = () => {
                   fill="#EB334A"
                 />
               </svg>
-              <h3>Mayuri</h3>
               <h2>
                 {banner1.headline} <br />
               </h2>

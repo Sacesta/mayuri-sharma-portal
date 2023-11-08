@@ -6,7 +6,8 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* For fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 * {
   font-family: var(--font-kumbhSans), sans-serif;
 }
@@ -340,8 +341,10 @@ header {
 }
 
 .home_banner h2 {
-  font-family: 'Cedarville Cursive', 'cursive';
-  @apply text-white leading-[46px] xl:leading-[60px];
+  /* font-family: 'Cedarville Cursive', 'cursive'; */
+  font-family: Agbalumo;
+  /* @apply text-white leading-[46px] xl:leading-[60px]; */
+  @apply text-4xl xl:text-[50px] text-white leading-[46px] xl:leading-[60px] font-semibold;
 }
 .home_banner .swiper.swiper-initialized.swiper-horizontal.mySwiper {
   @apply md:absolute left-0 top-[59px] md:top-[95px] h-[522px];
