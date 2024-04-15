@@ -16,7 +16,7 @@
   @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative text-[#505050] font-bold;
 }
 .home_story_tab li.story_tab_active::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 5px;
@@ -37,7 +37,7 @@
 }
 
 .home_story_section li .home_story_img::after {
-  content: "";
+  content: '';
   background: linear-gradient(
     180deg,
     rgba(217, 217, 217, 0) 0%,
@@ -79,7 +79,7 @@
 }
 
 .about_banner::after {
-  content: "";
+  content: '';
   background: linear-gradient(
     180deg,
     rgba(89, 80, 125, 0) 0%,
@@ -104,7 +104,7 @@
 }
 
 .social_image::after {
-  content: "";
+  content: '';
   background: linear-gradient(
     180deg,
     rgba(217, 217, 217, 0) 0%,
@@ -131,7 +131,7 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 footer {
-  @apply bg-[#29214B] pt-20 pb-16 lg:pb-40 relative;
+  @apply bg-[#29214B] pt-20 pb-16 lg:pb-6 relative;
 }
 
 .footer_links li {

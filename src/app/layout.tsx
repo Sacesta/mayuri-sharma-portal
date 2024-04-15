@@ -7,7 +7,10 @@ import ToastContainerWrapper from "@/components/ToastContainer/ToastContainerWra
 import { Providers } from "../redux/provider";
 import AuthGuard from "@/components/AuthGuard/AuthGuard";
 import { Metadata } from "next";
-import WebIcon from "./favicon.ico";
+
+// css
+import "swiper/css";
+import "swiper/css/pagination";
 
 import {
   Inter,

@@ -1,11 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import menuIcon from "@/Assets/icons/menu.png";
-
 import Logo from "../../Assets/svg/mayuri.logo.svg";
 
 import "./NavBar.css";
@@ -62,9 +61,8 @@ const Links = ({ device, setIsOpen, isOpen }: any) => {
           <Link
             onClick={() => setIsOpen(!isOpen)}
             href={x?.href}
-            className={`${
-              router === x.href ? "active" : "inactivelink"
-            } mr-5 xl:mr-10 hover:text-[#eb334a]`}
+            className={`${router === x.href ? "active" : "inactivelink"
+              } mr-5 xl:mr-10 hover:text-[#eb334a]`}
           >
             {x?.title}
           </Link>
@@ -132,17 +130,15 @@ const NavBar = () => {
           <div className="flex lg:hidden">
             <Image
               onClick={handleToggle}
-              className={`${
-                isOpen === true ? "hidden" : "btn-animation"
-              } menu-icon`}
+              className={`${isOpen === true ? "hidden" : "btn-animation"
+                } menu-icon`}
               src={menuIcon}
               alt="Icon..."
             />
             <div
               onClick={handleToggle}
-              className={`menu-icon ${
-                isOpen === true ? "btn-animation" : "hidden"
-              } cursor-pointer`}
+              className={`menu-icon ${isOpen === true ? "btn-animation" : "hidden"
+                } cursor-pointer`}
             >
               <Image src="./svg/cancel.svg" width="28" height="28" alt="..." />
             </div>
