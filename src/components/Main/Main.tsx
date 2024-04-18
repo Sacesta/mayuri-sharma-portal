@@ -1,24 +1,25 @@
-import React from "react";
-import "@/styles/main.css";
-import Image from "next/image";
-import data from "../../Data/websiteData.json";
+import React from 'react';
+import '@/styles/main.css';
+import Image from 'next/image';
+import data from '../../Data/websiteData.json';
 
-import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import profileImage from "@/Assets/Images/pageImages/profileImage.jpg";
-import masterclassimg from "@/Assets/Images/pageImages/masterclass_one.png";
-import supportive_banner from "@/Assets/Images/pageImages/Supportive_banner.png";
+import rightCircle from '@/Assets/icons/Ellipse 24 (Stroke).png';
+import profileImage from '@/Assets/Images/pageImages/profileImage.jpg';
+import masterclassimg from '@/Assets/Images/pageImages/masterclass_one.png';
+import supportive_banner from '@/Assets/Images/pageImages/Supportive_banner.png';
+import flowerPetal from '@/Assets/svg/bannerFlower.svg';
 
-import HeroTestimonial from "@/components/Carousel/HeroTestimonial";
-import Link from "next/link";
-import dynamic from "next/dynamic";
-import HomeProgramCards from "../ProgramCards/HomeProgramCards";
+import HeroTestimonial from '@/components/Carousel/HeroTestimonial';
+import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import HomeProgramCards from '../ProgramCards/HomeProgramCards';
 
-const CategoriesHome = dynamic(() => import("../CategoryTabs/CategoriesHome"));
+const CategoriesHome = dynamic(() => import('../CategoryTabs/CategoriesHome'));
 
 // Should be loaded at last
-const Footer = dynamic(() => import("@/components/footer/Footer"));
+const Footer = dynamic(() => import('@/components/footer/Footer'));
 const TestimonialCarousel = dynamic(
-  () => import("@/components/Carousel/TestimonialCarousel")
+  () => import('@/components/Carousel/TestimonialCarousel')
 );
 
 const Main = () => {
@@ -38,7 +39,7 @@ const Main = () => {
           />
           <div className="home_banner_text container mx-auto relative h-full md:flex">
             <div className="relative">
-              <svg
+              {/* <svg
                 width="98"
                 height="88"
                 viewBox="0 0 98 88"
@@ -85,7 +86,13 @@ const Main = () => {
                   d="M92.7733 33.128C93.2484 33.608 93.8344 33.848 94.5313 33.848C95.2599 33.848 95.8459 33.608 96.2894 33.128C96.7645 32.648 97.0021 32.056 97.0021 31.352C97.0021 30.68 96.7645 30.12 96.2894 29.672C95.8142 29.224 95.2282 29 94.5313 29C93.8344 29 93.2484 29.24 92.7733 29.72C92.2981 30.168 92.0605 30.728 92.0605 31.4C92.0605 32.072 92.2981 32.648 92.7733 33.128Z"
                   fill="#EB334A"
                 />
-              </svg>
+              </svg> */}
+              <Image
+                src={flowerPetal}
+                alt="flower_petals"
+                className="w-[135.18] h-[80.91]"
+              />
+
               <h2>
                 {banner1.headline} <br />
               </h2>
@@ -111,7 +118,7 @@ const Main = () => {
           <div className="flex justify-center relative z-[2]">
             <Link href="/about">
               <button className="primary_button">{scroll.cta}</button>
-            </Link>{" "}
+            </Link>{' '}
           </div>
           <div className="intro_background_img">
             <svg

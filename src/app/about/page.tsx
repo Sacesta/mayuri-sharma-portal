@@ -1,35 +1,35 @@
-import React from "react";
-import "@/styles/main.css";
-import Image from "next/image";
+import React from 'react';
+import '@/styles/main.css';
+import Image from 'next/image';
 
-import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import flowerPetal from "@/Assets/svg/bannerFlower.svg";
-import bannerImage from "@/Assets/Images/pageImages/profileImage.jpg";
+import rightCircle from '@/Assets/icons/Ellipse 24 (Stroke).png';
+import flowerPetal from '@/Assets/svg/bannerFlower.svg';
+import bannerImage from '@/Assets/Images/pageImages/profileImage.jpg';
 //
-import missionEllipse from "@/Assets/Images/pageImages/Ellipse _six.svg";
+import missionEllipse from '@/Assets/Images/pageImages/Ellipse _six.svg';
 
-import ThisIsMe from "@/components/About/ThisIsMe";
-import Footer from "@/components/footer/Footer";
-import Principles from "@/components/About/Principles/Principles";
+import ThisIsMe from '@/components/About/ThisIsMe';
+import Footer from '@/components/footer/Footer';
+import Principles from '@/components/About/Principles/Principles';
 
-import websiteData from "../../Data/websiteData.json";
-import Link from "next/link";
-import { Metadata } from "next";
+import websiteData from '../../Data/websiteData.json';
+import Link from 'next/link';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About Me",
+  title: 'About Me',
   description:
-    "Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the human mind. This innate inquiry got some direction when I happened to attend a breathing and meditation program conducted by Art of Living, during my engineering days. Fast forward to 2008 - this was the year I started my practice as a meditation and breathwork teacher. And since then I have taught in various corporations, universities, and meditation centres. The rest as they say is history.",
+    'Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the human mind. This innate inquiry got some direction when I happened to attend a breathing and meditation program conducted by Art of Living, during my engineering days. Fast forward to 2008 - this was the year I started my practice as a meditation and breathwork teacher. And since then I have taught in various corporations, universities, and meditation centres. The rest as they say is history.',
   alternates: {
-    canonical: "https://mayuri-sharma-portal.vercel.app/about",
+    canonical: 'https://mayuri-sharma-portal.vercel.app/about',
   },
   openGraph: {
-    title: "About me",
+    title: 'About me',
     description:
-      "Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the human mind. This innate inquiry got some direction when I happened to attend a breathing and meditation program conducted by Art of Living, during my engineering days. Fast forward to 2008 - this was the year I started my practice as a meditation and breathwork teacher. And since then I have taught in various corporations, universities, and meditation centres. The rest as they say is history.",
+      'Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the human mind. This innate inquiry got some direction when I happened to attend a breathing and meditation program conducted by Art of Living, during my engineering days. Fast forward to 2008 - this was the year I started my practice as a meditation and breathwork teacher. And since then I have taught in various corporations, universities, and meditation centres. The rest as they say is history.',
     url: `https://mayuri-sharma-portal.vercel.app/about`,
-    siteName: "Mayuri-Sharma-Portal",
-    type: "website",
+    siteName: 'Mayuri-Sharma-Portal',
+    type: 'website',
   },
 };
 
@@ -58,7 +58,7 @@ const About = () => {
               Wisdom of sthe past, practice of the present
             </p>
           </div>
-          <div className="z-10  w-[454.93px] h-[800px] relative flex items-center justify-center">
+          <div className="z-10  w-[454.93px] h-full relative flex items-center justify-center">
             {/* <Image
               style={{ borderRadius: "33% 0% 0% 39% / 0% 10% 10% 51% " }}
               src={bannerImage}
@@ -69,9 +69,19 @@ const About = () => {
               sizes="100vw"
             /> */}
             <div
-              style={{ borderRadius: "33% 0% 0% 39% / 0% 10% 10% 51% " }}
-              className="w-[735.71px] h-[1103.43px] bg-red-400 z-1"
-            ></div>
+              style={{ borderRadius: '33% 0% 0% 39% / 0% 10% 10% 51% ' }}
+              className="w-[735.71px] h-full z-1"
+            >
+              <Image
+                style={{ borderRadius: '33% 0% 0% 39% / 0% 10% 10% 51% ' }}
+                src={bannerImage}
+                className="object-contain"
+                alt="banner_image"
+                width={0}
+                height={0}
+                sizes="100%"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -1,27 +1,29 @@
-import React from "react";
-import "@/styles/main.css";
-import Image from "next/image";
-import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
+import React from 'react';
+import '@/styles/main.css';
+import Image from 'next/image';
+import rightCircle from '@/Assets/icons/Ellipse 24 (Stroke).png';
+import bannerImage from '@/Assets/Images/pageImages/profileImage.jpg';
+import HeroTestimonial from '@/components/Carousel/HeroTestimonial';
 
-import Footer from "@/components/footer/Footer";
-import CategoryTabs from "@/components/CategoryTabs/CategoryTabs";
-import SpotifyCard from "@/components/CategoryTabs/SpotifyCard";
-import { Metadata } from "next";
+import Footer from '@/components/footer/Footer';
+import CategoryTabs from '@/components/CategoryTabs/CategoryTabs';
+import SpotifyCard from '@/components/CategoryTabs/SpotifyCard';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Podcasts",
+  title: 'Podcasts',
   description:
-    "Listen to the latest episode. In this podcast episode, Mayuri explores the topic of wellbeing, discussing various strategies and practices that can help individuals enhance their overall sense of mental, physical, and emotional health. Drawing on expert insights and personal experiences, the episode delves into topics such as mindfulness, self-care, exercise, and social connection, offering practical tips and advice for listeners looking to improve their wellbeing.",
+    'Listen to the latest episode. In this podcast episode, Mayuri explores the topic of wellbeing, discussing various strategies and practices that can help individuals enhance their overall sense of mental, physical, and emotional health. Drawing on expert insights and personal experiences, the episode delves into topics such as mindfulness, self-care, exercise, and social connection, offering practical tips and advice for listeners looking to improve their wellbeing.',
   alternates: {
-    canonical: "https://mayuri-sharma-portal.vercel.app/podcast",
+    canonical: 'https://mayuri-sharma-portal.vercel.app/podcast',
   },
   openGraph: {
-    title: "Podcasts",
+    title: 'Podcasts',
     description:
-      "Listen to the latest episode. In this podcast episode, Mayuri explores the topic of wellbeing, discussing various strategies and practices that can help individuals enhance their overall sense of mental, physical, and emotional health. Drawing on expert insights and personal experiences, the episode delves into topics such as mindfulness, self-care, exercise, and social connection, offering practical tips and advice for listeners looking to improve their wellbeing.",
+      'Listen to the latest episode. In this podcast episode, Mayuri explores the topic of wellbeing, discussing various strategies and practices that can help individuals enhance their overall sense of mental, physical, and emotional health. Drawing on expert insights and personal experiences, the episode delves into topics such as mindfulness, self-care, exercise, and social connection, offering practical tips and advice for listeners looking to improve their wellbeing.',
     url: `https://mayuri-sharma-portal.vercel.app/podcast`,
-    siteName: "Mayuri-Sharma-Portal",
-    type: "website",
+    siteName: 'Mayuri-Sharma-Portal',
+    type: 'website',
   },
 };
 
@@ -29,50 +31,21 @@ const page = () => {
   return (
     <>
       <div className="podcast_back">
-        <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
-          <div
-            className="about_banner bg-center mx-auto"
-            style={{
-              backgroundImage: `url('/Assets/Images/pageImages/r_m_1.jpg')`,
-            }}
-          >
-            <Image className="main-right-circle" src={rightCircle} alt=".." />
-            <div className="mx-auto z-10">
-              <div className="">
-                <div className="">
-                  {/* <svg
-                    className="h-[42px] w-[43px] lg:w-[73px] lg:h-[71px]"
-                    viewBox="0 0 73 71"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.21633 51.8597C1.71112 51.8597 0.462891 50.6115 0.462891 49.1062V21.5718C0.462891 20.0666 1.71112 18.8184 3.21633 18.8184C4.72155 18.8184 5.96978 20.0666 5.96978 21.5718V49.1062C5.96978 50.6115 4.72155 51.8597 3.21633 51.8597Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M19.7359 61.0373C18.2306 61.0373 16.9824 59.789 16.9824 58.2838V12.3931C16.9824 10.8879 18.2306 9.63965 19.7359 9.63965C21.2411 9.63965 22.4893 10.8879 22.4893 12.3931V58.2838C22.4893 59.789 21.2411 61.0373 19.7359 61.0373Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M36.2593 70.2158C34.7541 70.2158 33.5059 68.9676 33.5059 67.4624V3.21536C33.5059 1.71014 34.7541 0.461914 36.2593 0.461914C37.7645 0.461914 39.0127 1.71014 39.0127 3.21536V67.4624C39.0127 68.9676 37.7645 70.2158 36.2593 70.2158Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M52.7788 61.0373C51.2736 61.0373 50.0254 59.789 50.0254 58.2838V12.3931C50.0254 10.8879 51.2736 9.63965 52.7788 9.63965C54.284 9.63965 55.5323 10.8879 55.5323 12.3931V58.2838C55.5323 59.789 54.284 61.0373 52.7788 61.0373Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M69.3003 51.8597C67.7951 51.8597 66.5469 50.6115 66.5469 49.1062V21.5718C66.5469 20.0666 67.7951 18.8184 69.3003 18.8184C70.8055 18.8184 72.0538 20.0666 72.0538 21.5718V49.1062C72.0538 50.6115 70.8055 51.8597 69.3003 51.8597Z"
-                      fill="white"
-                    />
-                  </svg> */}
-                </div>
-              </div>
+        <section className="md:pt-9 md:pb-20  commonbanner banner md:px-4 xl:px-16">
+          <div className="about_banner bg-center mx-auto relative">
+            <div className="font-[400] text-white z-10 absolute bottom-10 left-10">
+              <p className="text-[80px] leading-none">In momentum</p>
+              <p className="text-[25px] ">With Mayuri</p>
             </div>
-            <div className="font-[400] text-white z-10">
-              <p className="text-[120px]">In momentum</p>
-              <p className="text-[30px] ">With Mayuri</p>
+            <div className=" absolute top-28 0 z-50 right-10">
+              <Image
+                src={bannerImage}
+                alt="banner_image"
+                width={0}
+                height={0}
+                sizes="100%"
+                className=" h-full w-full"
+              />
             </div>
           </div>
         </section>
