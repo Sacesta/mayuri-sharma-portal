@@ -3,7 +3,9 @@ import "@/styles/main.css";
 import Image from "next/image";
 
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-// 
+import flowerPetal from "@/Assets/svg/bannerFlower.svg";
+import bannerImage from "@/Assets/Images/pageImages/profileImage.jpg";
+//
 import missionEllipse from "@/Assets/Images/pageImages/Ellipse _six.svg";
 
 import ThisIsMe from "@/components/About/ThisIsMe";
@@ -35,14 +37,41 @@ const About = () => {
   const { scroll3, journey, cardBody } = websiteData.aboutPage;
   return (
     <>
-      <section className="md:py-9 banner commonbanner md:px-4 xl:px-16">
+      <section className="md:py-9 banner commonbanner md:px-4 flex justify-center">
         <div
-          className="about_banner lg:bg-right"
-          style={{ backgroundImage: `url('/Assets/Images/pageImages/mayuri_1.jpg')` }}
+          className="about_banner lg:bg-right w-full"
+          // style={{
+          //   backgroundImage: `url('/Assets/Images/pageImages/mayuri_1.jpg')`,
+          // }}
         >
+          <div className="flower_svg absolute z-10 ml-8 mt-8 top-0 left-0">
+            <Image
+              src={flowerPetal}
+              alt="flower_petals"
+              className="w-[135.18] h-[80.91]"
+            />
+          </div>
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <div className="container mx-auto z-10">
-            <p className="about_head w-full">About me</p>
+          <div className="text-white container ml-8 z-10 pb-4 lg:pb-8">
+            <p className="w-full text-[50px] mb-5">Mayuri Sharma</p>
+            <p className="text-[28px] font-semibold mb-8">
+              Wisdom of sthe past, practice of the present
+            </p>
+          </div>
+          <div className="z-10  w-[454.93px] h-[800px] relative flex items-center justify-center">
+            {/* <Image
+              style={{ borderRadius: "33% 0% 0% 39% / 0% 10% 10% 51% " }}
+              src={bannerImage}
+              className="object-contain"
+              alt="banner_image"
+              width={0}
+              height={0}
+              sizes="100vw"
+            /> */}
+            <div
+              style={{ borderRadius: "33% 0% 0% 39% / 0% 10% 10% 51% " }}
+              className="w-[735.71px] h-[1103.43px] bg-red-400 z-1"
+            ></div>
           </div>
         </div>
       </section>

@@ -41,10 +41,13 @@ const page = async () => {
         <div
           className="about_banner lg:bg-right"
           // style={{ backgroundImage: `url(${bg.src})`, backgroundPosition: 'top' }}
-          style={{ backgroundImage: `url('/Assets/Images/pageImages/w_m_1.jpg')`, backgroundPosition: 'top' }}
+          style={{
+            backgroundImage: `url('/Assets/Images/pageImages/w_m_1.jpg')`,
+            backgroundPosition: "top",
+          }}
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <div className="container mx-auto z-10">
+          <div className="container mx-auto z-10 ">
             <p className="about_head w-full">Programs</p>
           </div>
         </div>

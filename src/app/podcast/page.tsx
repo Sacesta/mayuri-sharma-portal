@@ -32,13 +32,15 @@ const page = () => {
         <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
           <div
             className="about_banner bg-center mx-auto"
-            style={{ backgroundImage: `url('/Assets/Images/pageImages/r_m_1.jpg')` }}
+            style={{
+              backgroundImage: `url('/Assets/Images/pageImages/r_m_1.jpg')`,
+            }}
           >
             <Image className="main-right-circle" src={rightCircle} alt=".." />
-            <div className="container mx-auto z-10">
-              <div className="lg:flex items-center pb-8 lg:pb-14 ">
-                <div className="h-20 w-20 lg:h-[132px] lg:w-[132px] bg-[#29214B] rounded-[50%] mb-4 lg:mb-0 flex items-center justify-center">
-                  <svg
+            <div className="mx-auto z-10">
+              <div className="">
+                <div className="">
+                  {/* <svg
                     className="h-[42px] w-[43px] lg:w-[73px] lg:h-[71px]"
                     viewBox="0 0 73 71"
                     fill="none"
@@ -64,10 +66,13 @@ const page = () => {
                       d="M69.3003 51.8597C67.7951 51.8597 66.5469 50.6115 66.5469 49.1062V21.5718C66.5469 20.0666 67.7951 18.8184 69.3003 18.8184C70.8055 18.8184 72.0538 20.0666 72.0538 21.5718V49.1062C72.0538 50.6115 70.8055 51.8597 69.3003 51.8597Z"
                       fill="white"
                     />
-                  </svg>
+                  </svg> */}
                 </div>
-                <p className="podcast_head">Stories of Transformations</p>
               </div>
+            </div>
+            <div className="font-[400] text-white z-10">
+              <p className="text-[120px]">In momentum</p>
+              <p className="text-[30px] ">With Mayuri</p>
             </div>
           </div>
         </section>
