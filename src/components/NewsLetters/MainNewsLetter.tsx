@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
 import {
   NewsLetterPayload,
   registerSubscriber,
-} from "@/services/newsLetter.services";
-import React, { useState } from "react";
-import { toast } from "react-toastify";
-import useNewsLetterSubmission from "./useNewsLetterSubmission";
+} from '@/services/newsLetter.services';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import useNewsLetterSubmission from './useNewsLetterSubmission';
 
 const MainNewsLetter = () => {
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
 
   const { handleSubmit, loading } = useNewsLetterSubmission();
 

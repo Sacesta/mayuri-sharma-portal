@@ -7,7 +7,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON_CSS_START ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* For fonts */
 /* @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:wght@100&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 * {
   font-family: var(--font-kumbhSans), sans-serif;
 }
@@ -246,7 +246,7 @@ header {
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -287,7 +287,7 @@ header {
   right: 45%;
   bottom: 0;
   top: auto;
-  background-image: url("/src/Assets/Images/pageImages/rightArrow.svg");
+  background-image: url('/src/Assets/Images/pageImages/rightArrow.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -414,7 +414,7 @@ header {
   @apply mx-3 lg:mx-7 pb-4 text-xs lg:text-sm tracking-widest uppercase relative text-[#505050] font-bold cursor-pointer;
 }
 .home_story_tab li.story_tab_active::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 5px;
@@ -449,7 +449,7 @@ header {
   @apply sm:px-5;
 }
 .home_story_section li .home_story_img::after {
-  content: "";
+  content: '';
   background: linear-gradient(
     180deg,
     rgba(217, 217, 217, 0) 0%,
@@ -629,7 +629,7 @@ header {
 }
 
 .about_banner::after {
-  content: "";
+  content: '';
   /* background: linear-gradient(
     180deg,
     rgba(89, 80, 125, 0) 0%,
@@ -675,7 +675,7 @@ header {
   @apply w-full h-auto rounded-[20px] overflow-hidden relative -mr-[5%] md:mr-0 rounded-e-none md:rounded-e-[20px];
 }
 .fun_profile_img:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 60%;
   width: 100%;
@@ -710,7 +710,7 @@ header {
   display: none;
 }
 .journey_details li .journey_points::after {
-  content: "";
+  content: '';
   height: calc(100% - 60px);
   @apply absolute w-[2px] bg-[#29214B] bottom-0 left-[50%] translate-x-[-50%];
 }
@@ -722,7 +722,7 @@ header {
   @apply relative pr-3;
 }
 .journey_time span::after {
-  content: "";
+  content: '';
   height: 3px;
   width: 3px;
   border-radius: 50%;
@@ -758,7 +758,7 @@ header {
   @apply pt-[100px] lg:pt-[200px] pb-[100px] lg:pb-80 relative;
 }
 .socialMedia_moments::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 70%;
@@ -779,7 +779,7 @@ header {
 }
 
 .social_image::after {
-  content: "";
+  content: '';
   background: linear-gradient(
     180deg,
     rgba(217, 217, 217, 0) 0%,
@@ -832,7 +832,7 @@ header {
   @apply border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4 h-[242px];
 }
 .programDetails_peopleReview::after {
-  content: "";
+  content: '';
   background-color: rgba(0 0 0 / 40%);
   @apply absolute top-0 left-0 w-full h-full;
 }

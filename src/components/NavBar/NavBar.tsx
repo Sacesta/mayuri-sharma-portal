@@ -1,29 +1,29 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import React, { useState } from "react";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-import menuIcon from "@/Assets/icons/menu.png";
-import Logo from "../../Assets/svg/mayuri.logo.svg";
-
-import "./NavBar.css";
-import LoginModal from "../Modal/LoginModal";
-import { useAppSelector } from "@/redux/hooks";
+import Link from 'next/link';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import menuIcon from '@/Assets/icons/menu.png';
+import Logo from '../../Assets/svg/mayuri.logo.svg';
+import flowerPetal from '../../Assets/svg/bannerFlower.svg';
+import './NavBar.css';
+import LoginModal from '../Modal/LoginModal';
+import { useAppSelector } from '@/redux/hooks';
 import {
   clearUser,
   getLoggedIn,
   getShowModal,
   getUser,
   setUser,
-} from "@/redux/features/userSlice";
-import { User } from "@/services/auth.services";
-import Dropdown from "./DropDown/Dropdown";
+} from '@/redux/features/userSlice';
+import { User } from '@/services/auth.services';
+import Dropdown from './DropDown/Dropdown';
 
 function DynamicTag({ device, children }: any) {
   const Device = device;
   return (
-    <li className={device === "mobile" ? "block" : "inline-block"}>
+    <li className={device === 'mobile' ? 'block' : 'inline-block'}>
       {children}
     </li>
   );
@@ -34,20 +34,21 @@ const Links = ({ device, setIsOpen, isOpen }: any) => {
 
   const links = [
     {
-      href: "/",
-      title: "Home",
+      href: '/',
+      title: 'Home',
     },
     {
-      href: "/about",
-      title: "About Me",
+      href: '/about',
+      title: 'About Me',
     },
     {
-      href: "/podcast",
-      title: "My Podcast",
+      href: '/podcast',
+      title: 'My Podcast',
+      disabled: true,
     },
     {
-      href: "/programs",
-      title: "Programs",
+      href: '/programs',
+      title: 'Programs',
     },
     // {
     //   href: "/masterclass",
@@ -61,8 +62,9 @@ const Links = ({ device, setIsOpen, isOpen }: any) => {
           <Link
             onClick={() => setIsOpen(!isOpen)}
             href={x?.href}
-            className={`${router === x.href ? "active" : "inactivelink"
-              } mr-5 xl:mr-10 hover:text-[#eb334a]`}
+            className={`${
+              router === x.href ? 'active' : 'inactivelink'
+            } mr-5 xl:mr-10 hover:text-[#eb334a]`}
           >
             {x?.title}
           </Link>
@@ -90,7 +92,13 @@ const NavBar = () => {
         <div className="flex gap-20">
           <div className="cursor-pointer">
             <Link href="/">
-              <Image width="86" height="25" src={Logo} alt="Logo..." />
+              <Image
+                width="86"
+                height="25"
+                src={flowerPetal}
+                alt="Logo..."
+                className=" max-h-8"
+              />
             </Link>
           </div>
           <div className="hidden lg:block nan-list">
@@ -130,24 +138,26 @@ const NavBar = () => {
           <div className="flex lg:hidden">
             <Image
               onClick={handleToggle}
-              className={`${isOpen === true ? "hidden" : "btn-animation"
-                } menu-icon`}
+              className={`${
+                isOpen === true ? 'hidden' : 'btn-animation'
+              } menu-icon`}
               src={menuIcon}
               alt="Icon..."
             />
             <div
               onClick={handleToggle}
-              className={`menu-icon ${isOpen === true ? "btn-animation" : "hidden"
-                } cursor-pointer`}
+              className={`menu-icon ${
+                isOpen === true ? 'btn-animation' : 'hidden'
+              } cursor-pointer`}
             >
               <Image src="./svg/cancel.svg" width="28" height="28" alt="..." />
             </div>
           </div>
         </div>
       </nav>
-      <div className={`navbar ${isOpen ? "open" : ""} mobile_menu lg:hidden `}>
+      <div className={`navbar ${isOpen ? 'open' : ''} mobile_menu lg:hidden `}>
         <ul className="mob_nav navbar-menu">
-          <Links device={"mobile"} setIsOpen={setIsOpen} isOpen={isOpen} />
+          <Links device={'mobile'} setIsOpen={setIsOpen} isOpen={isOpen} />
           <li>
             <Dropdown device="mobile" />
           </li>

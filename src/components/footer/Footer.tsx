@@ -1,9 +1,10 @@
-import React from "react";
-import "@/styles/footer.css";
-import Image from "next/image";
-import footerLogo from "@/Assets/Images/pageImages/footer_logo.png";
-import footerEllipse from "@/Assets/Images/pageImages/footer_ellipse.png";
-import FooterNewsLetter from "../NewsLetters/FooterNewsLetter";
+import React from 'react';
+import '@/styles/footer.css';
+import Image from 'next/image';
+import footerLogo from '@/Assets/Images/pageImages/footer_logo.png';
+import footerEllipse from '@/Assets/Images/pageImages/footer_ellipse.png';
+import FooterNewsLetter from '../NewsLetters/FooterNewsLetter';
+import flowerPetal from '@/Assets/svg/bannerFlower.svg';
 
 const Footer = () => {
   return (
@@ -14,9 +15,9 @@ const Footer = () => {
             <div>
               <div className="flex items-center mb-9">
                 <div className="footer-logo">
-                  <Image src={footerLogo} alt="..." />
+                  <Image src={flowerPetal} alt="..." className="  h-20 w-40" />
                 </div>
-                <span className="ml-4 text-white">
+                {/* <span className="ml-4 text-white">
                   <svg
                     width="86"
                     height="25"
@@ -53,7 +54,7 @@ const Footer = () => {
                       fill="#EB334A"
                     />
                   </svg>
-                </span>
+                </span> */}
               </div>
               <ul className="social_media_icon">
                 <li>
@@ -146,7 +147,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div>
+                {/* <div>
                   <p className="mb-9 font-semibold text-white text-[21px]">
                     Pages
                   </p>
@@ -167,13 +168,13 @@ const Footer = () => {
                       <a href="">Resources</a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <p className="text-base font-normal text-white mt-24 hidden lg:block copyright_text">
                 © 2023 All rights reserved Mayuri Sharma
               </p>
             </div>
-            <FooterNewsLetter />
+            {/* <FooterNewsLetter /> */}
           </div>
           <p className="text-base font-normal text-white mt-16 text-center block lg:hidden copyright_text">
             © 2023 All rights reserved Mayuri Sharma

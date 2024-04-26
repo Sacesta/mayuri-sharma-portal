@@ -2,7 +2,10 @@ import React from 'react';
 import '@/styles/main.css';
 import Image from 'next/image';
 import data from '../../Data/websiteData.json';
-
+import websiteData from '../../Data/websiteData.json';
+import MainNewsLetter from '@/components/NewsLetters/MainNewsLetter';
+import ellipseOne from '@/Assets/Images/pageImages/Ellipse_one.png';
+import ellipseTwo from '@/Assets/Images/pageImages/news_ellipse_two.png';
 import rightCircle from '@/Assets/icons/Ellipse 24 (Stroke).png';
 import profileImage from '@/Assets/Images/pageImages/profileImage.jpg';
 import masterclassimg from '@/Assets/Images/pageImages/masterclass_one.png';
@@ -24,6 +27,9 @@ const TestimonialCarousel = dynamic(
 
 const Main = () => {
   const { homepage } = data;
+  const { programsPage } = websiteData;
+
+  const { bodyCopy, scroll2, scroll3 } = programsPage;
 
   const { banner1, scroll, scroll4, scroll5, scroll6, scroll7 } = homepage;
 
@@ -93,7 +99,7 @@ const Main = () => {
                 className="w-[135.18] h-[80.91]"
               />
 
-              <h2>
+              <h2 className=" !font-sans mt-2">
                 {banner1.headline} <br />
               </h2>
             </div>
@@ -153,12 +159,28 @@ const Main = () => {
         </div>
       </section>
 
+      <section className="upcoming_program !pt-10">
+        <div className="container mx-auto ">
+          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
+            <h2 className="heading_style_two mb-8 lg:mb-0 text-[#090617] lg:max-w-[398px] text-start  lg:text-left">
+              {scroll4.headline1} <br /> {scroll4.headline2}
+            </h2>
+            <div className="flex justify-start lg:justify-end text-start">
+              <p className=" max-w-xl ">{scroll4.bodyCopy}</p>
+            </div>
+          </div>
+          <ul className="program_list">
+            <HomeProgramCards />
+          </ul>
+        </div>
+      </section>
+
       <section className="tranformation_section">
         <div className="container mx-auto">
           <div className="transformation">
             <div className="transformation_profile_img">
               <Image src={profileImage} alt="..." />
-              <div className="podcast_listen_icon bg-[#29214B] -right-6 -top-6">
+              <div className="podcast_listen_icon bg-[#29214B] -right-6 -top-6 -z-10">
                 <svg
                   width="36"
                   height="35"
@@ -192,49 +214,42 @@ const Main = () => {
             <p className="paragraph_one_style mb-2 text-[#39315C]">
               My podcast
             </p>
-            <h2 className="heading_style_two mb-10 md:mb-16 text-center text-[#090617]">
-              Stories of Transformations
+            <h2 className="heading_style_two  text-center text-[#090617]">
+              In momentum
             </h2>
-            <div className="home_story_section w-full">
+            <h2 className="heading_style_two  relative top-60  text-center text-[#090617]">
+              Coming Soon
+            </h2>
+            <div className="home_story_section w-full   opacity-30">
               <CategoriesHome />
             </div>
-            <Link href="/podcast" className="tertiary_button">
+            {/* <Link href="/podcast" className="tertiary_button">
               View full list of episodes
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
 
       {/* Upcoming programs section commented on client request */}
 
-      <section className="upcoming_program">
-        <div className="container mx-auto ">
-          <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
-            <h2 className="heading_style_two mb-8 lg:mb-0 text-[#090617] lg:max-w-[398px] text-start  lg:text-left">
-              {scroll4.headline1} <br /> {scroll4.headline2}
-            </h2>
-            <div className="flex justify-start lg:justify-end text-start">
-              <p className=" max-w-xl ">{scroll4.bodyCopy}</p>
-            </div>
-          </div>
-          <ul className="program_list">
-            <HomeProgramCards />
-          </ul>
-        </div>
-      </section>
-
       {/* Commented newsletter section on request of client */}
-      {/* <section className="news_letter_section md:px-4 xl:px-16">
+      <section className="news_letter_section md:px-4 xl:px-16 pt-40">
         <div className="news_letter">
           <div className="container mx-auto lg:flex justify-between">
             <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
-                <p className="news_letter_head pb-9">News letter</p>
-                <h2 className="news_letter_h2">{scroll5.headline}</h2>
+                <p className="news_letter_head pb-9">Community</p>
+                <h2 className="news_letter_h2">
+                  Weekly sessions every thursday
+                </h2>
                 <p className="text-white text-lg font-normal pb-9 leading-7">
-                  {scroll5.bodyCopy}
+                  Information about the community goes here. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
                 </p>
-                <button className="secondary_button">{scroll5.cta}</button>
+                <button className="secondary_button">Learn More</button>
               </div>
             </div>
             <MainNewsLetter />
@@ -250,9 +265,9 @@ const Main = () => {
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
-      <section className="Supportive_community_section relative">
+      {/* <section className="Supportive_community_section relative">
         <div className="container mx-auto">
           <p className="paragraph_one_style text-center mb-2 text-[#29214B]">
             {scroll6.headline}
@@ -306,7 +321,7 @@ const Main = () => {
                 <div className="p-8 bg-white">
                   <p className="heading_three_style">{scroll6.weeklyHeading}</p>
                   {/* <p className="masterclass_des">A bit of text about the program can go here. all the way until here, with a bit more here and here and there everywhere. oh and also here and here and ya you guessed it here.</p> */}
-                  <ul className="flex items-center mt-9 flex-wrap">
+      {/* <ul className="flex items-center mt-9 flex-wrap">
                     <li className="flex items-center  w-1/2 mb-6">
                       <div className="program_icon">
                         <svg
@@ -389,31 +404,49 @@ const Main = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
-              {/* <ul className="flex items-center mt-4">
-                  <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto">
-                    <div className="program_icon">
-                    <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.15375 2.28844V0H18.3075V2.28844H9.15375ZM12.5864 19.3373H14.8749V10.565H12.5864V19.3373ZM13.7306 32C11.849 32 10.0755 31.6377 8.41001 30.913C6.74454 30.1883 5.28884 29.203 4.04291 27.9571C2.79698 26.7112 1.81168 25.2555 1.08701 23.59C0.362336 21.9245 0 20.151 0 18.2694C0 16.3878 0.362336 14.6142 1.08701 12.9487C1.81168 11.2833 2.79698 9.82757 4.04291 8.58165C5.28884 7.33572 6.74454 6.35042 8.41001 5.62574C10.0755 4.90107 11.849 4.53874 13.7306 4.53874C15.4342 4.53874 17.0362 4.82479 18.5364 5.3969C20.0366 5.96901 21.3715 6.76361 22.5411 7.78069L24.4863 5.83552L26.0882 7.43743L24.143 9.3826C25.0584 10.3997 25.8403 11.6329 26.4887 13.0822C27.1371 14.5316 27.4613 16.2606 27.4613 18.2694C27.4613 20.151 27.0989 21.9245 26.3743 23.59C25.6496 25.2555 24.6643 26.7112 23.4184 27.9571C22.1724 29.203 20.7167 30.1883 19.0513 30.913C17.3858 31.6377 15.6122 32 13.7306 32ZM13.7306 29.7116C16.909 29.7116 19.6106 28.5991 21.8355 26.3743C24.0604 24.1494 25.1728 21.4478 25.1728 18.2694C25.1728 15.091 24.0604 12.3894 21.8355 10.1645C19.6106 7.93961 16.909 6.82717 13.7306 6.82717C10.5522 6.82717 7.85062 7.93961 5.62574 10.1645C3.40087 12.3894 2.28844 15.091 2.28844 18.2694C2.28844 21.4478 3.40087 24.1494 5.62574 26.3743C7.85062 28.5991 10.5522 29.7116 13.7306 29.7116Z" fill="#C50019"/>
+              </div> */}
+      {/* <ul className="flex items-center mt-4">
+                <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto">
+                  <div className="program_icon">
+                    <svg
+                      width="28"
+                      height="32"
+                      viewBox="0 0 28 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.15375 2.28844V0H18.3075V2.28844H9.15375ZM12.5864 19.3373H14.8749V10.565H12.5864V19.3373ZM13.7306 32C11.849 32 10.0755 31.6377 8.41001 30.913C6.74454 30.1883 5.28884 29.203 4.04291 27.9571C2.79698 26.7112 1.81168 25.2555 1.08701 23.59C0.362336 21.9245 0 20.151 0 18.2694C0 16.3878 0.362336 14.6142 1.08701 12.9487C1.81168 11.2833 2.79698 9.82757 4.04291 8.58165C5.28884 7.33572 6.74454 6.35042 8.41001 5.62574C10.0755 4.90107 11.849 4.53874 13.7306 4.53874C15.4342 4.53874 17.0362 4.82479 18.5364 5.3969C20.0366 5.96901 21.3715 6.76361 22.5411 7.78069L24.4863 5.83552L26.0882 7.43743L24.143 9.3826C25.0584 10.3997 25.8403 11.6329 26.4887 13.0822C27.1371 14.5316 27.4613 16.2606 27.4613 18.2694C27.4613 20.151 27.0989 21.9245 26.3743 23.59C25.6496 25.2555 24.6643 26.7112 23.4184 27.9571C22.1724 29.203 20.7167 30.1883 19.0513 30.913C17.3858 31.6377 15.6122 32 13.7306 32ZM13.7306 29.7116C16.909 29.7116 19.6106 28.5991 21.8355 26.3743C24.0604 24.1494 25.1728 21.4478 25.1728 18.2694C25.1728 15.091 24.0604 12.3894 21.8355 10.1645C19.6106 7.93961 16.909 6.82717 13.7306 6.82717C10.5522 6.82717 7.85062 7.93961 5.62574 10.1645C3.40087 12.3894 2.28844 15.091 2.28844 18.2694C2.28844 21.4478 3.40087 24.1494 5.62574 26.3743C7.85062 28.5991 10.5522 29.7116 13.7306 29.7116Z"
+                        fill="#C50019"
+                      />
                     </svg>
-                    </div>
-                    <div className="program_time">
-                      <p>Duration</p>
-                      <p>14 days</p>
-                    </div>
-                  </li>
-                  <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto">
-                    <div className="program_icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 32C13.76 32 11.6667 31.58 9.72 30.74C7.77333 29.9 6.08 28.76 4.64 27.32C3.2 25.88 2.06667 24.18 1.24 22.22C0.413334 20.26 0 18.16 0 15.92C0 13.68 0.413334 11.5933 1.24 9.66C2.06667 7.72667 3.2 6.04 4.64 4.6C6.08 3.16 7.77333 2.03333 9.72 1.22C11.6667 0.406667 13.76 0 16 0C18.24 0 20.3333 0.406667 22.28 1.22C24.2267 2.03333 25.92 3.16 27.36 4.6C28.8 6.04 29.9333 7.72667 30.76 9.66C31.5867 11.5933 32 13.68 32 15.92C32 18.16 31.5867 20.26 30.76 22.22C29.9333 24.18 28.8 25.88 27.36 27.32C25.92 28.76 24.2267 29.9 22.28 30.74C20.3333 31.58 18.24 32 16 32ZM16 29.68C16.9333 28.72 17.7133 27.62 18.34 26.38C18.9667 25.14 19.48 23.6667 19.88 21.96H12.16C12.5333 23.56 13.0333 25 13.66 26.28C14.2867 27.56 15.0667 28.6933 16 29.68ZM12.6 29.2C11.9333 28.1867 11.36 27.0933 10.88 25.92C10.4 24.7467 10 23.4267 9.68 21.96H3.68C4.69333 23.8533 5.86667 25.34 7.2 26.42C8.53333 27.5 10.3333 28.4267 12.6 29.2ZM19.44 29.16C21.36 28.5467 23.0867 27.6267 24.62 26.4C26.1533 25.1733 27.3867 23.6933 28.32 21.96H22.36C22.0133 23.4 21.6067 24.7067 21.14 25.88C20.6733 27.0533 20.1067 28.1467 19.44 29.16ZM2.88 19.56H9.24C9.16 18.84 9.11333 18.1933 9.1 17.62C9.08667 17.0467 9.08 16.48 9.08 15.92C9.08 15.2533 9.09333 14.66 9.12 14.14C9.14667 13.62 9.2 13.04 9.28 12.4H2.88C2.69333 13.04 2.56667 13.6133 2.5 14.12C2.43333 14.6267 2.4 15.2267 2.4 15.92C2.4 16.6133 2.43333 17.2333 2.5 17.78C2.56667 18.3267 2.69333 18.92 2.88 19.56ZM11.72 19.56H20.32C20.4267 18.7333 20.4933 18.06 20.52 17.54C20.5467 17.02 20.56 16.48 20.56 15.92C20.56 15.3867 20.5467 14.8733 20.52 14.38C20.4933 13.8867 20.4267 13.2267 20.32 12.4H11.72C11.6133 13.2267 11.5467 13.8867 11.52 14.38C11.4933 14.8733 11.48 15.3867 11.48 15.92C11.48 16.48 11.4933 17.02 11.52 17.54C11.5467 18.06 11.6133 18.7333 11.72 19.56ZM22.72 19.56H29.12C29.3067 18.92 29.4333 18.3267 29.5 17.78C29.5667 17.2333 29.6 16.6133 29.6 15.92C29.6 15.2267 29.5667 14.6267 29.5 14.12C29.4333 13.6133 29.3067 13.04 29.12 12.4H22.76C22.84 13.3333 22.8933 14.0467 22.92 14.54C22.9467 15.0333 22.96 15.4933 22.96 15.92C22.96 16.5067 22.94 17.06 22.9 17.58C22.86 18.1 22.8 18.76 22.72 19.56ZM22.32 10H28.32C27.44 8.16 26.2333 6.62667 24.7 5.4C23.1667 4.17333 21.4 3.30667 19.4 2.8C20.0667 3.78667 20.6333 4.85333 21.1 6C21.5667 7.14667 21.9733 8.48 22.32 10ZM12.16 10H19.92C19.6267 8.58667 19.1333 7.22 18.44 5.9C17.7467 4.58 16.9333 3.41333 16 2.4C15.1467 3.12 14.4267 4.06667 13.84 5.24C13.2533 6.41333 12.6933 8 12.16 10ZM3.68 10H9.72C10.0133 8.56 10.3867 7.27333 10.84 6.14C11.2933 5.00667 11.8667 3.90667 12.56 2.84C10.56 3.34667 8.81333 4.2 7.32 5.4C5.82667 6.6 4.61333 8.13333 3.68 10Z" fill="#C50019"/>
+                  </div>
+                  <div className="program_time">
+                    <p>Duration</p>
+                    <p>14 days</p>
+                  </div>
+                </li>
+                <li className="flex items-center md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto">
+                  <div className="program_icon">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 32C13.76 32 11.6667 31.58 9.72 30.74C7.77333 29.9 6.08 28.76 4.64 27.32C3.2 25.88 2.06667 24.18 1.24 22.22C0.413334 20.26 0 18.16 0 15.92C0 13.68 0.413334 11.5933 1.24 9.66C2.06667 7.72667 3.2 6.04 4.64 4.6C6.08 3.16 7.77333 2.03333 9.72 1.22C11.6667 0.406667 13.76 0 16 0C18.24 0 20.3333 0.406667 22.28 1.22C24.2267 2.03333 25.92 3.16 27.36 4.6C28.8 6.04 29.9333 7.72667 30.76 9.66C31.5867 11.5933 32 13.68 32 15.92C32 18.16 31.5867 20.26 30.76 22.22C29.9333 24.18 28.8 25.88 27.36 27.32C25.92 28.76 24.2267 29.9 22.28 30.74C20.3333 31.58 18.24 32 16 32ZM16 29.68C16.9333 28.72 17.7133 27.62 18.34 26.38C18.9667 25.14 19.48 23.6667 19.88 21.96H12.16C12.5333 23.56 13.0333 25 13.66 26.28C14.2867 27.56 15.0667 28.6933 16 29.68ZM12.6 29.2C11.9333 28.1867 11.36 27.0933 10.88 25.92C10.4 24.7467 10 23.4267 9.68 21.96H3.68C4.69333 23.8533 5.86667 25.34 7.2 26.42C8.53333 27.5 10.3333 28.4267 12.6 29.2ZM19.44 29.16C21.36 28.5467 23.0867 27.6267 24.62 26.4C26.1533 25.1733 27.3867 23.6933 28.32 21.96H22.36C22.0133 23.4 21.6067 24.7067 21.14 25.88C20.6733 27.0533 20.1067 28.1467 19.44 29.16ZM2.88 19.56H9.24C9.16 18.84 9.11333 18.1933 9.1 17.62C9.08667 17.0467 9.08 16.48 9.08 15.92C9.08 15.2533 9.09333 14.66 9.12 14.14C9.14667 13.62 9.2 13.04 9.28 12.4H2.88C2.69333 13.04 2.56667 13.6133 2.5 14.12C2.43333 14.6267 2.4 15.2267 2.4 15.92C2.4 16.6133 2.43333 17.2333 2.5 17.78C2.56667 18.3267 2.69333 18.92 2.88 19.56ZM11.72 19.56H20.32C20.4267 18.7333 20.4933 18.06 20.52 17.54C20.5467 17.02 20.56 16.48 20.56 15.92C20.56 15.3867 20.5467 14.8733 20.52 14.38C20.4933 13.8867 20.4267 13.2267 20.32 12.4H11.72C11.6133 13.2267 11.5467 13.8867 11.52 14.38C11.4933 14.8733 11.48 15.3867 11.48 15.92C11.48 16.48 11.4933 17.02 11.52 17.54C11.5467 18.06 11.6133 18.7333 11.72 19.56ZM22.72 19.56H29.12C29.3067 18.92 29.4333 18.3267 29.5 17.78C29.5667 17.2333 29.6 16.6133 29.6 15.92C29.6 15.2267 29.5667 14.6267 29.5 14.12C29.4333 13.6133 29.3067 13.04 29.12 12.4H22.76C22.84 13.3333 22.8933 14.0467 22.92 14.54C22.9467 15.0333 22.96 15.4933 22.96 15.92C22.96 16.5067 22.94 17.06 22.9 17.58C22.86 18.1 22.8 18.76 22.72 19.56ZM22.32 10H28.32C27.44 8.16 26.2333 6.62667 24.7 5.4C23.1667 4.17333 21.4 3.30667 19.4 2.8C20.0667 3.78667 20.6333 4.85333 21.1 6C21.5667 7.14667 21.9733 8.48 22.32 10ZM12.16 10H19.92C19.6267 8.58667 19.1333 7.22 18.44 5.9C17.7467 4.58 16.9333 3.41333 16 2.4C15.1467 3.12 14.4267 4.06667 13.84 5.24C13.2533 6.41333 12.6933 8 12.16 10ZM3.68 10H9.72C10.0133 8.56 10.3867 7.27333 10.84 6.14C11.2933 5.00667 11.8667 3.90667 12.56 2.84C10.56 3.34667 8.81333 4.2 7.32 5.4C5.82667 6.6 4.61333 8.13333 3.68 10Z"
+                        fill="#C50019"
+                      />
                     </svg>
-                    </div>
-                    <div className="program_time">
-                      <p>Language </p>
-                      <p>1English</p>
-                    </div>
-                  </li>
-                </ul> */}
+                  </div>
+                  <div className="program_time">
+                    <p>Language </p>
+                    <p>1English</p>
+                  </div>
+                </li>
+              </ul>
               <div className="flex justify-between pt-6 border-t border-[#E1E1E1] p-8 bg-white">
                 <p className="text-[#EB334A] text-[21px] font-bold">Free</p>
                 <a
@@ -481,15 +514,15 @@ const Main = () => {
         </div>
         <div className="absolute left-0 top-[26%] w-full -z-50 hidden lg:block">
           <Image className="w-full" src={supportive_banner} alt=".." />
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
-      <section className="testimonial_section">
+      {/* <section className="testimonial_section">
         <h2 className="heading_style_two text-center text-[#090617] mb-10 lg:mb-20 mt-[60px] lg:mt-28">
           {scroll7.headline}
         </h2>
         <TestimonialCarousel />
-      </section>
+      </section> */}
 
       <Footer />
     </>

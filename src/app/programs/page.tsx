@@ -1,32 +1,32 @@
-import React from "react";
-import "@/styles/main.css";
-import Image from "next/image";
-import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
+import React from 'react';
+import '@/styles/main.css';
+import Image from 'next/image';
+import rightCircle from '@/Assets/icons/Ellipse 24 (Stroke).png';
 // import bg from "@/Assets/Images/pageImages/w_m_1.jpg";
-import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
-import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
-import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
-import Footer from "@/components/footer/Footer";
-import ProgramCards from "@/components/ProgramCards/ProgramCards";
+import ellipseOne from '@/Assets/Images/pageImages/Ellipse_one.png';
+import ellipseTwo from '@/Assets/Images/pageImages/news_ellipse_two.png';
+import TestimonialCarousel from '@/components/Carousel/TestimonialCarousel';
+import Footer from '@/components/footer/Footer';
+import ProgramCards from '@/components/ProgramCards/ProgramCards';
 
-import websiteData from "../../Data/websiteData.json";
-import MainNewsLetter from "@/components/NewsLetters/MainNewsLetter";
-import { Metadata } from "next";
+import websiteData from '../../Data/websiteData.json';
+import MainNewsLetter from '@/components/NewsLetters/MainNewsLetter';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Programs",
+  title: 'Programs',
   description:
-    "An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom.",
+    'An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom.',
   alternates: {
-    canonical: "https://mayuri-sharma-portal.vercel.app/programs",
+    canonical: 'https://mayuri-sharma-portal.vercel.app/programs',
   },
   openGraph: {
-    title: "Programs",
+    title: 'Programs',
     description:
-      "An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom.",
+      'An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom.',
     url: `https://mayuri-sharma-portal.vercel.app/programs`,
-    siteName: "Mayuri-Sharma-Portal",
-    type: "website",
+    siteName: 'Mayuri-Sharma-Portal',
+    type: 'website',
   },
 };
 
@@ -43,7 +43,7 @@ const page = async () => {
           // style={{ backgroundImage: `url(${bg.src})`, backgroundPosition: 'top' }}
           style={{
             backgroundImage: `url('/Assets/Images/pageImages/w_m_1.jpg')`,
-            backgroundPosition: "top",
+            backgroundPosition: 'top',
           }}
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
