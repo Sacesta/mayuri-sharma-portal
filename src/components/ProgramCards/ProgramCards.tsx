@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import programeone from "@/Assets/Images/pageImages/program_img_1.png";
-import { Program, getPrograms } from "@/services/Program.services";
-import { format } from "date-fns";
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import programeone from '@/Assets/Images/pageImages/program_img_1.png';
+import { Program, getPrograms } from '@/services/Program.services';
+import { format } from 'date-fns';
 
 const ProgramCards = () => {
   const [programs, setPrograms] = useState<Program[]>([]);
@@ -16,7 +16,7 @@ const ProgramCards = () => {
         const res: any = await getPrograms();
         setPrograms(res?.data || []);
       } catch (error) {
-        console.log("Error fetching the programs");
+        console.log('Error fetching the programs');
       }
     };
     fetchProgramsData();
@@ -29,7 +29,7 @@ const ProgramCards = () => {
           <div className="program_img">
             <Image
               src={
-                program?.image.startsWith("https")
+                program?.image.startsWith('https')
                   ? program?.image
                   : programeone
               }
@@ -42,7 +42,7 @@ const ProgramCards = () => {
           <div className="program_details">
             <div className="flex justify-between items-center mb-2">
               <p className="heading_three_style">{program?.title}</p>
-              <p className="heading_three_style hidden lg:block">
+              <p className="heading_three_style  hidden lg:block  ">
                 € {program?.price}
               </p>
             </div>
@@ -65,7 +65,7 @@ const ProgramCards = () => {
                 </div>
                 <div className="program_time">
                   <p>Start date</p>
-                  <p>{format(new Date(program?.sdate), "do MMMM")}</p>
+                  <p>{format(new Date(program?.sdate), 'do MMMM')}</p>
                 </div>
               </li>
               <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">
@@ -85,7 +85,7 @@ const ProgramCards = () => {
                 </div>
                 <div className="program_time">
                   <p>End date</p>
-                  <p>{format(new Date(program?.edate), "do MMMM")}</p>
+                  <p>{format(new Date(program?.edate), 'do MMMM')}</p>
                 </div>
               </li>
               <li className="flex items-center mb-5 xl:mb-0 lg:mr-8 xxl:mr-11 w-1/2 lg:w-auto">

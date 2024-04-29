@@ -1,7 +1,7 @@
 {
   "homepage": {
     "banner1": {
-      "headline": "Crafting Blissful Minds, One Breath at a Time",
+      "headline": "Wisdom of the past practice for the present",
       "subheadline": "Healing | Community | Growth",
       "options": [
         {
@@ -19,13 +19,12 @@
       ]
     },
     "scroll": {
-      "headline": "Hello, I'm Mayuri,",
-      "subHeadline": "I am so glad you’re here",
-      "info": " Born and brought up in India, the land of Gods, I have always had a curiosity to understand spirituality, emotions, and the science of our mind. My quest has led me to travel extensively within India as well as Europe. During these travels, I attended many workshops to master the art of breathing and meditation. And in a way, every place has shaped me and my practice. The journey has been long and arduous, spanning almost two decades. But in many ways, it has just begun.",
-      "cta": "Tell me more"
+      "headline": "Hi, I'm Mayuri,",
+      "subHeadline": "Nice to meet you",
+      "info": "Growing up in India, a land steeped in spirituality, I’ve always been drawn to understanding the intricacies of the human mind and emotions. This fascination found focus when I encountered a transformative breathing and meditation program by Art of Living during my engineering days.",
+      "cta": "Learn more"
     },
     "scroll4": {
-      "headline1": "Fuel your spirit.",
       "headline2": "Join me in an upcoming program.",
       "bodyCopy": "An antidote to modern-day stressors, these programs invite you to centre yourself with holistic healing practices inspired from ancient Indian wisdom."
     },
@@ -76,8 +75,8 @@
       "4thTogggle": "Always planning a trip in my free time"
     },
     "cardBody": {
-      "line1": "My journey centers around a singular driving purpose: to make inner peace attainable amidst life's hustle.",
-      "line2": "Through the profound practices of meditation and breathwork, my aim is to empower individuals to embrace inner peace. Join me in this endeavor, Together, let's breathe, let's meditate, and create a world where inner peace is universal"
+      "line1": "Empowering individuals worldwide to embark on a journey of inner peace and self-discovery through the integration of ancient wisdom and modern science.",
+      "line2": "To create a harmonious world where every individual is equipped with the tools and knowledge to cultivate holistic well-being, rooted in the principles of curiosity, scientific inquiry, spiritual wisdom, and conscious living."
     },
     "journey": [
       {
@@ -112,23 +111,23 @@
       }
     ],
     "scroll2": {
-      "heading": "Here’s a little roadmap of things that has helped me find my true north",
-      "subHeading1": "Curiosity",
-      "subBody1": "This is how it all began. Learning to ask questions that go beyond the surface was my initiation into spiritual enquiry.",
-      "subHeading2": "Passion for Science",
-      "subBody2": "I followed my curiosity by researching extensively on the science of emotions and the human mind. Psychology became not just an interest but a soul-calling.",
-      "subHeading3": "Ayurveda",
-      "subBody3": "The wisdom in Ayurveda is the wisdom of not just plants and medicines, it’s the wisdom of life. Being an Ayurveda enthusiast, I have rooted myself in a plant-based lifestyle that nurtures my wellbeing holistically.",
-      "subHeading4": "Vedic Astrology",
-      "subBody4": "Vedic astrology is the ancient science of stars. And learning about it has helped me understand how the cosmic energy has a pull on us just like gravity.",
-      "subHeading5": "Breathing",
-      "subBody5": "This might seem simple, but the art of breathing has been one of my constant anchors in life. Allowing my breath to flow is how I align with the divine.",
-      "subHeading6": "Meditation",
-      "subBody6": "Devoting myself to meditation early in life pointed me towards my passion, my purpose. The lessons learned in these sessions have made me who I am today."
+      "heading": "Embarking on the journey of self-discovery, I've discovered guiding principles that serve as my compass, leading me toward my true north.",
+      "subHeading1": "Curiosity: The Catalyst",
+      "subBody1": "It all began with curiosity—an insatiable hunger to delve beneath the surface and explore the depths of spirituality.",
+      "subHeading2": "Passion for Science: Unveiling the Mind",
+      "subBody2": "Driven by a fervent passion for science, I immersed myself in the study of emotions and the human mind, transforming psychology from a mere interest into a profound soul-calling.",
+      "subHeading3": "Ayurveda: Wisdom of Life",
+      "subBody3": "Ayurveda isn't just about plants and medicines; it's the essence of life itself. As an Ayurveda enthusiast, I've embraced a plant-based lifestyle that nurtures holistic well-being.",
+      "subHeading4": "Vedic Astrology: Cosmic Insights",
+      "subBody4": "Delving into Vedic astrology has unveiled the ancient science of stars, revealing the profound influence of cosmic energy on our lives—a force akin to gravity.",
+      "subHeading5": "The Art of Breathing: Anchoring Presence",
+      "subBody5": "Simple yet profound, the practice of conscious breathing has been a steadfast anchor in my life, allowing me to align with the divine flow of existence.",
+      "subHeading6": "Meditation: Path to Purpose",
+      "subBody6": "Early dedication to meditation illuminated my path, guiding me toward my passion and purpose. Each session has sculpted the essence of who I am today."
     },
     "scroll3": {
-      "heading": "You can find me living my best life here ",
-      "subHeading": "Here’s a sneak peek into some of my favourite moments"
+      "heading": "Social media ",
+      "subHeading": "Some of my favourite moments "
     }
   },
   "programsPage": {

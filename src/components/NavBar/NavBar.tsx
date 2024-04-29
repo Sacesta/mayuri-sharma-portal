@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import menuIcon from '@/Assets/icons/menu.png';
@@ -32,6 +32,8 @@ function DynamicTag({ device, children }: any) {
 const Links = ({ device, setIsOpen, isOpen }: any) => {
   const router = usePathname();
 
+  const [showPodcastDropdown, setShowPodcastDropdown] = useState(false);
+
   const links = [
     {
       href: '/',
@@ -42,7 +44,7 @@ const Links = ({ device, setIsOpen, isOpen }: any) => {
       title: 'About Me',
     },
     {
-      href: '/podcast',
+      href: '',
       title: 'My Podcast',
       disabled: true,
     },
@@ -50,29 +52,57 @@ const Links = ({ device, setIsOpen, isOpen }: any) => {
       href: '/programs',
       title: 'Programs',
     },
-    // {
-    //   href: "/masterclass",
-    //   title: "Masterclass",
-    // },
+    {
+      href: '/community',
+      title: 'Community',
+    },
   ];
+
   return (
     <>
       {links?.map((x: any, index: number) => (
         <DynamicTag key={`navbar${index}`} device={device}>
-          <Link
-            onClick={() => setIsOpen(!isOpen)}
-            href={x?.href}
-            className={`${
-              router === x.href ? 'active' : 'inactivelink'
-            } mr-5 xl:mr-10 hover:text-[#eb334a]`}
-          >
-            {x?.title}
-          </Link>
+          {x.title === 'My Podcast' ? (
+            <div
+              className=""
+              onMouseEnter={() => setShowPodcastDropdown(true)}
+              onMouseLeave={() => setShowPodcastDropdown(false)}
+            >
+              <a
+                onClick={() => setIsOpen(!isOpen)}
+                className={` mr-5 xl:mr-10  !text-[#505050]  `}
+              >
+                {x?.title}
+              </a>
+              {showPodcastDropdown && (
+                <div className="podcast-dropdown relative">
+                  <ul className=" absolute top-1">
+                    <li>
+                      <button className=" bg-[#eb334a] text-white rounded-full user-btn p-2 text-xs !text-nowrap">
+                        Coming soon
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          ) : (
+            <Link
+              onClick={() => setIsOpen(!isOpen)}
+              href={x?.href}
+              className={`${
+                router === x.href ? 'active' : 'inactivelink'
+              } mr-5 xl:mr-10 hover:text-[#eb334a]`}
+            >
+              {x?.title}
+            </Link>
+          )}
         </DynamicTag>
       ))}
     </>
   );
 };
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -84,6 +114,7 @@ const NavBar = () => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
       <nav
@@ -107,34 +138,32 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
           <Dropdown device="desktop" />
-        </div>
+        </div> */}
         <div className="ml-auto">
           {isLoggedIn ? (
             <button className="hidden lg:flex user-btn items-center">
               Hello {user.fullName}
             </button>
           ) : (
-            <button
-              className="hidden lg:flex user-btn items-center"
-              onClick={() => setShowModal(true)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={23}
-                height={18}
-                viewBox="0 0 24 24"
-                fill="#fff"
+            <div className=" flex gap-2">
+              <button
+                className="hidden lg:flex user-btn items-center login-btn"
+                onClick={() => setShowModal(true)}
               >
-                <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" />
-              </svg>
-              <span>Login</span>
-            </button>
+                <span>Login</span>
+              </button>
+              <Link
+                href="/register"
+                className="hidden lg:flex user-btn items-center signup-btn "
+              >
+                <span>Signup</span>
+              </Link>
+            </div>
           )}
         </div>
         <div className="right-button">
-          {/* <button className="hidden lg:block nav-btn">Contact me</button> */}
           <div className="flex lg:hidden">
             <Image
               onClick={handleToggle}
@@ -158,22 +187,27 @@ const NavBar = () => {
       <div className={`navbar ${isOpen ? 'open' : ''} mobile_menu lg:hidden `}>
         <ul className="mob_nav navbar-menu">
           <Links device={'mobile'} setIsOpen={setIsOpen} isOpen={isOpen} />
-          <li>
+          {/* <li>
             <Dropdown device="mobile" />
-          </li>
+          </li> */}
           <li
             onClick={() => {
               setIsOpen(!isOpen);
               setShowModal(true);
             }}
+            className="hover:text-[#eb334a]"
           >
             Login
           </li>
+          <li>
+            <Link
+              href="/register"
+              className=" items-center  hover:text-[#eb334a] "
+            >
+              <span>Signup</span>
+            </Link>
+          </li>
         </ul>
-
-        {/* <a href="#" className="mob_nav_button">
-          Contact me
-        </a> */}
       </div>
       {showModal || isLoginModalOpen ? (
         <LoginModal setShowModal={setShowModal} />

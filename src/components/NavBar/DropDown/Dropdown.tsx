@@ -11,7 +11,7 @@ const Dropdown = ({ device }: any) => {
       {device === 'desktop' ? (
         <div className="dropdown group inline-block text-[#505050] relative transition delay-700 duration-300">
           <button className="outline-none focus:outline-none  px-3  bg-white rounded-sm flex items-center min-w-32">
-            <span className="pr-1  flex-1">Community</span>
+            {/* <span className="pr-1  flex-1">Community</span> */}
             {/* <span>
               <svg
                 className="fill-current h-4 w-4 transform group-hover:-rotate-180

@@ -98,6 +98,7 @@ const Main = () => {
                 alt="flower_petals"
                 className="w-[135.18] h-[80.91]"
               />
+              <p className="news_letter_head mt-10">Mayuri Sharma</p>
 
               <h2 className=" !font-sans mt-2">
                 {banner1.headline} <br />
@@ -118,7 +119,7 @@ const Main = () => {
           </h2>
 
           <p className="paragraph_two_style max-w-3xl text-center mx-auto mb-14">
-            {scroll.info.slice(0, 145)}...
+            {scroll.info}
           </p>
 
           <div className="flex justify-center relative z-[2]">
@@ -163,7 +164,7 @@ const Main = () => {
         <div className="container mx-auto ">
           <div className="lg:grid grid-cols-2 pb-8 lg:pb-20 xxl:px-20">
             <h2 className="heading_style_two mb-8 lg:mb-0 text-[#090617] lg:max-w-[398px] text-start  lg:text-left">
-              {scroll4.headline1} <br /> {scroll4.headline2}
+              {scroll4.headline2}
             </h2>
             <div className="flex justify-start lg:justify-end text-start">
               <p className=" max-w-xl ">{scroll4.bodyCopy}</p>
@@ -249,7 +250,9 @@ const Main = () => {
                   veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat.
                 </p>
-                <button className="secondary_button">Learn More</button>
+                <button className="secondary_button">
+                  <Link href="/community">Learn More</Link>
+                </button>
               </div>
             </div>
             <MainNewsLetter />

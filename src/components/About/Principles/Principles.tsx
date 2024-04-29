@@ -1,20 +1,22 @@
-import Image from "next/image";
-import React from "react";
-import principlesOne from "@/Assets/Images/pageImages/principles_one.svg";
-import websiteData from "../../../Data/websiteData.json";
+import Image from 'next/image';
+import React from 'react';
+import principlesOne from '@/Assets/Images/pageImages/principles_one.svg';
+import websiteData from '../../../Data/websiteData.json';
 
 const Principles = () => {
   const { aboutPage } = websiteData;
   const scroll2: Record<string, string> = aboutPage.scroll2;
 
-  const a = ["1", "2", "3", "4", "5", "6"];
+  const a = ['1', '2', '3', '4', '5', '6'];
   return (
     <div>
       <div className="container mx-auto">
         <div className="lg:grid grid-cols-2">
           <div>
-            <p className="paragraph_one_style mb-2">My Driving Purpose</p>
-            <h2 className="heading_style_two mb-6">Inner Peace for All</h2>
+            <p className="paragraph_one_style mb-2">My values</p>
+            <h2 className="heading_style_two mb-6">
+              Driving Purpose: Inner Peace for All
+            </h2>
             <p className="paragraph_two_style">{scroll2.heading}</p>
           </div>
         </div>

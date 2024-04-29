@@ -15,7 +15,7 @@ const Footer = () => {
             <div>
               <div className="flex items-center mb-9">
                 <div className="footer-logo">
-                  <Image src={flowerPetal} alt="..." className="  h-20 w-40" />
+                  <Image src={flowerPetal} alt="..." className="  h-16 w-40" />
                 </div>
                 {/* <span className="ml-4 text-white">
                   <svg

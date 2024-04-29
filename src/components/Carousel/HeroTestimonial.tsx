@@ -1,12 +1,12 @@
-"use client";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+'use client';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 
-import Img3 from "@/Assets/Images/pageImages/w_m_1.jpg";
-import Img4 from "@/Assets/Images/pageImages/r_m_1.jpg";
-import Imgg from "@/Assets/Images/pageImages/b_m_1.jpeg";
-import homebannerSlider from "@/Assets/Images/pageImages/fun_profile.png";
+import Img3 from '../../Assets/Images/home1.png';
+import Img4 from '../../Assets/Images/home2.png';
+import Imgg from '../../Assets/Images/home3.png';
+import homebannerSlider from '@/Assets/Images/pageImages/fun_profile.png';
 
 export default function HeroTestimonial() {
   return (
@@ -21,7 +21,7 @@ export default function HeroTestimonial() {
         <SwiperSlide>
           <div className="h-full w-full relative">
             <Image
-              src={homebannerSlider}
+              src={Img3}
               className="w-full object-cover h-[92%]"
               alt="..."
             />
@@ -34,20 +34,9 @@ export default function HeroTestimonial() {
               className="w-full object-cover h-[92%]"
               alt="..."
             />
-
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="h-full w-full relative">
-            <Image
-              src={Img3}
-              className="w-full object-cover h-[92%]"
-              alt="..."
-            />
-
-          </div>
-        </SwiperSlide>
         <SwiperSlide>
           <div className="h-full w-full relative">
             <Image
@@ -57,6 +46,15 @@ export default function HeroTestimonial() {
             />
           </div>
         </SwiperSlide>
+        {/* <SwiperSlide>
+          <div className="h-full w-full relative">
+            <Image
+              src={Imgg}
+              className="w-full object-cover h-[92%]"
+              alt="..."
+            />
+          </div>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

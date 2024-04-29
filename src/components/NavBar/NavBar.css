@@ -36,6 +36,28 @@ nav {
   font-size: 14px;
   border-radius: 8px;
 }
+.login-btn {
+  padding: 5px 16px;
+  background: transparent;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+  color: #090617;
+  letter-spacing: 2px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #505050;
+}
+.signup-btn {
+  padding: 5px 16px;
+  background: #39315c;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+  color: white;
+  letter-spacing: 2px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #39315c;
+}
 
 @media (min-width: 1024px) {
   .nav-height {

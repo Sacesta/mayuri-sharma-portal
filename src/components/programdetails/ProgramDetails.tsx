@@ -1,35 +1,35 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import "@/styles/main.css";
-import Image from "next/image";
-import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import programDetailsBanner from "@/Assets/Images/pageImages/programDetails_banner.png";
-import profileImage from "@/Assets/Images/pageImages/transformation_profile_img.png";
-import Footer from "../footer/Footer";
-import Accordion from "../Accordion/Accordion";
-import items from "@/Data/accordion.json";
+import React, { useEffect, useState } from 'react';
+import '@/styles/main.css';
+import Image from 'next/image';
+import rightCircle from '@/Assets/icons/Ellipse 24 (Stroke).png';
+import programDetailsBanner from '@/Assets/Images/pageImages/programDetails_banner.png';
+import profileImage from '@/Assets/Images/pageImages/transformation_profile_img.png';
+import Footer from '../footer/Footer';
+import Accordion from '../Accordion/Accordion';
+import items from '@/Data/accordion.json';
 import {
   AgendaItem,
   Program,
   ReviewItem,
   getProgram,
   registerProgram,
-} from "@/services/Program.services";
-import { format, parse } from "date-fns";
-import HostCarousel from "../Carousel/HostCarousel";
-import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+} from '@/services/Program.services';
+import { format, parse } from 'date-fns';
+import HostCarousel from '../Carousel/HostCarousel';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
   getUser,
   setLoginModal,
   setRegisterClicked,
-} from "@/redux/features/userSlice";
-import { User } from "@/services/auth.services";
-import { toast } from "react-toastify";
-import RegisterBtn from "./RegisterBtn";
-import { validUrl } from "../utils";
-import ReviewItemComponent from "./ReviewItemComponent";
-import websiteData from "../../Data/websiteData.json";
+} from '@/redux/features/userSlice';
+import { User } from '@/services/auth.services';
+import { toast } from 'react-toastify';
+import RegisterBtn from './RegisterBtn';
+import { validUrl } from '../utils';
+import ReviewItemComponent from './ReviewItemComponent';
+import websiteData from '../../Data/websiteData.json';
 
 const ProgramDetails = ({ programId }: any) => {
   const dispatch = useAppDispatch();
@@ -83,8 +83,8 @@ const ProgramDetails = ({ programId }: any) => {
   }, [programId]);
 
   const parseBatchTiming = (batchTiming: string) => {
-    const parsedTime = parse(batchTiming, "HH:mm", new Date());
-    const formattedTime = format(parsedTime, "h:mm a");
+    const parsedTime = parse(batchTiming, 'HH:mm', new Date());
+    const formattedTime = format(parsedTime, 'h:mm a');
     return formattedTime;
   };
 
@@ -119,7 +119,7 @@ const ProgramDetails = ({ programId }: any) => {
                         </div>
                         <div className="program_time">
                           <p>Start date</p>
-                          <p>{format(new Date(program?.sdate), "do MMMM")}</p>
+                          <p>{format(new Date(program?.sdate), 'do MMMM')}</p>
                         </div>
                       </li>
                       <li className="flex items-center min-w-[130px] md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
@@ -139,7 +139,7 @@ const ProgramDetails = ({ programId }: any) => {
                         </div>
                         <div className="program_time">
                           <p>End date</p>
-                          <p>{format(new Date(program?.edate), "do MMMM")}</p>
+                          <p>{format(new Date(program?.edate), 'do MMMM')}</p>
                         </div>
                       </li>
                       <li className="flex items-center min-w-[130px] md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
@@ -264,7 +264,7 @@ const ProgramDetails = ({ programId }: any) => {
                                     </div>
                                     <div className="mb-5">
                                       <h3 className="heading_three_style_black mb-[10px]">
-                                        {`${aganda?.title}`}{" "}
+                                        {`${aganda?.title}`}{' '}
                                       </h3>
                                       <p className="paragraph_two_style">
                                         {aganda?.description}
@@ -335,7 +335,7 @@ const ProgramDetails = ({ programId }: any) => {
                                     {reviewItem?.name}
                                   </h4>
                                   <p className="lg:w-2/3">
-                                    &quot;{reviewItem?.review}&quot; -{" "}
+                                    &quot;{reviewItem?.review}&quot; -{' '}
                                     {reviewItem?.name}
                                   </p>
                                   <div className="absolute right-0 top-0 h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center overflow-hidden">
@@ -432,7 +432,7 @@ const ProgramDetails = ({ programId }: any) => {
                         </div>
                         <div className="program_time">
                           <p>Start date</p>
-                          <p>{format(new Date(program?.sdate), "do MMMM")}</p>
+                          <p>{format(new Date(program?.sdate), 'do MMMM')}</p>
                         </div>
                       </li>
                       <li className="flex items-center w-1/2 mb-6">
@@ -452,7 +452,7 @@ const ProgramDetails = ({ programId }: any) => {
                         </div>
                         <div className="program_time">
                           <p>End date</p>
-                          <p>{format(new Date(program?.edate), "do MMMM")}</p>
+                          <p>{format(new Date(program?.edate), 'do MMMM')}</p>
                         </div>
                       </li>
                       <li className="flex items-center w-1/2 mb-6">
@@ -534,7 +534,7 @@ const ProgramDetails = ({ programId }: any) => {
                   Still have a question?
                 </h2>
                 <p className="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
                 </p>
                 <div className="mt-6 flex justify-center">
                   <button className="primary_button">Contact me</button>

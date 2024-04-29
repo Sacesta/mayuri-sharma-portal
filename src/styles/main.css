@@ -9,7 +9,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:wght@100&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 * {
-  font-family: var(--font-kumbhSans), sans-serif;
+  font-family: var(--font-kumbhSanstc), sans-serif;
 }
 body {
   font-family: var(--font-kumbhSans), sans-serif;
@@ -920,4 +920,7 @@ header {
   .testimonial_section .swiper .swiper-wrapper .swiper-slide {
     margin-right: 10px !important;
   }
+}
+.text-changes :nth-child(3) {
+  color: #505050 !important;
 }
