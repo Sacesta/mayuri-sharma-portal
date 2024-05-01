@@ -1,29 +1,29 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
-import menuIcon from '@/Assets/icons/menu.png';
-import Logo from '../../Assets/svg/mayuri.logo.svg';
-import flowerPetal from '../../Assets/svg/bannerFlower.svg';
-import './NavBar.css';
-import LoginModal from '../Modal/LoginModal';
-import { useAppSelector } from '@/redux/hooks';
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import menuIcon from "@/Assets/icons/menu.png";
+import Logo from "../../Assets/svg/mayuri.logo.svg";
+import flowerPetal from "../../Assets/svg/bannerFlower.svg";
+import "./NavBar.css";
+import LoginModal from "../Modal/LoginModal";
+import { useAppSelector } from "@/redux/hooks";
 import {
   clearUser,
   getLoggedIn,
   getShowModal,
   getUser,
   setUser,
-} from '@/redux/features/userSlice';
-import { User } from '@/services/auth.services';
-import Dropdown from './DropDown/Dropdown';
+} from "@/redux/features/userSlice";
+import { User } from "@/services/auth.services";
+import Dropdown from "./DropDown/Dropdown";
 
 function DynamicTag({ device, children }: any) {
   const Device = device;
   return (
-    <li className={device === 'mobile' ? 'block' : 'inline-block'}>
+    <li className={device === "mobile" ? "block" : "inline-block"}>
       {children}
     </li>
   );
@@ -36,69 +36,76 @@ const Links = ({ device, setIsOpen, isOpen }: any) => {
 
   const links = [
     {
-      href: '/',
-      title: 'Home',
+      href: "/",
+      title: "Home",
     },
     {
-      href: '/about',
-      title: 'About Me',
+      href: "/about",
+      title: "About Me",
     },
     {
-      href: '',
-      title: 'My Podcast',
+      href: "",
+      title: "My Podcast",
       disabled: true,
     },
     {
-      href: '/programs',
-      title: 'Programs',
+      href: "/programs",
+      title: "Programs",
     },
     {
-      href: '/community',
-      title: 'Community',
+      href: "/community",
+      title: "Community",
     },
   ];
 
   return (
     <>
-      {links?.map((x: any, index: number) => (
-        <DynamicTag key={`navbar${index}`} device={device}>
-          {x.title === 'My Podcast' ? (
-            <div
-              className=""
-              onMouseEnter={() => setShowPodcastDropdown(true)}
-              onMouseLeave={() => setShowPodcastDropdown(false)}
-            >
-              <a
+      {links?.map((x: any, index: number) => {
+        if (x.title === "My Podcast") {
+          return (
+            <DynamicTag key={`navbar${index}`} device={device}>
+              <div
+                key={index}
+                className=""
+                onMouseEnter={() => setShowPodcastDropdown(true)}
+                onMouseLeave={() => setShowPodcastDropdown(false)}
+              >
+                <p
+                  onClick={() => setIsOpen(!isOpen)}
+                  className={` mr-5 xl:mr-10  !text-[#505050]  `}
+                >
+                  {x?.title}
+                </p>
+                {showPodcastDropdown && (
+                  <div className="podcast-dropdown relative">
+                    <ul className=" absolute top-1">
+                      <li>
+                        <button className=" bg-[#eb334a] text-white rounded-full user-btn p-2 text-xs !text-nowrap">
+                          Coming soon
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </DynamicTag>
+          );
+        } else {
+          return (
+            <DynamicTag key={`navbar${index}`} device={device}>
+              <Link
                 onClick={() => setIsOpen(!isOpen)}
-                className={` mr-5 xl:mr-10  !text-[#505050]  `}
+                href={x?.href}
+                className={`${
+                  router === x.href ? "active" : "inactivelink"
+                } mr-5 xl:mr-10 hover:text-[#eb334a]`}
               >
                 {x?.title}
-              </a>
-              {showPodcastDropdown && (
-                <div className="podcast-dropdown relative">
-                  <ul className=" absolute top-1">
-                    <li>
-                      <button className=" bg-[#eb334a] text-white rounded-full user-btn p-2 text-xs !text-nowrap">
-                        Coming soon
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </div>
-          ) : (
-            <Link
-              onClick={() => setIsOpen(!isOpen)}
-              href={x?.href}
-              className={`${
-                router === x.href ? 'active' : 'inactivelink'
-              } mr-5 xl:mr-10 hover:text-[#eb334a]`}
-            >
-              {x?.title}
-            </Link>
-          )}
-        </DynamicTag>
-      ))}
+              </Link>
+            </DynamicTag>
+          );
+        }
+      })}
     </>
   );
 };
@@ -168,7 +175,7 @@ const NavBar = () => {
             <Image
               onClick={handleToggle}
               className={`${
-                isOpen === true ? 'hidden' : 'btn-animation'
+                isOpen === true ? "hidden" : "btn-animation"
               } menu-icon`}
               src={menuIcon}
               alt="Icon..."
@@ -176,7 +183,7 @@ const NavBar = () => {
             <div
               onClick={handleToggle}
               className={`menu-icon ${
-                isOpen === true ? 'btn-animation' : 'hidden'
+                isOpen === true ? "btn-animation" : "hidden"
               } cursor-pointer`}
             >
               <Image src="./svg/cancel.svg" width="28" height="28" alt="..." />
@@ -184,9 +191,9 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-      <div className={`navbar ${isOpen ? 'open' : ''} mobile_menu lg:hidden `}>
+      <div className={`navbar ${isOpen ? "open" : ""} mobile_menu lg:hidden `}>
         <ul className="mob_nav navbar-menu">
-          <Links device={'mobile'} setIsOpen={setIsOpen} isOpen={isOpen} />
+          <Links device={"mobile"} setIsOpen={setIsOpen} isOpen={isOpen} />
           {/* <li>
             <Dropdown device="mobile" />
           </li> */}

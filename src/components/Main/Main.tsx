@@ -1,28 +1,28 @@
-import React from 'react';
-import '@/styles/main.css';
-import Image from 'next/image';
-import data from '../../Data/websiteData.json';
-import websiteData from '../../Data/websiteData.json';
-import MainNewsLetter from '@/components/NewsLetters/MainNewsLetter';
-import ellipseOne from '@/Assets/Images/pageImages/Ellipse_one.png';
-import ellipseTwo from '@/Assets/Images/pageImages/news_ellipse_two.png';
-import rightCircle from '@/Assets/icons/Ellipse 24 (Stroke).png';
-import profileImage from '@/Assets/Images/pageImages/profileImage.jpg';
-import masterclassimg from '@/Assets/Images/pageImages/masterclass_one.png';
-import supportive_banner from '@/Assets/Images/pageImages/Supportive_banner.png';
-import flowerPetal from '@/Assets/svg/bannerFlower.svg';
+import React from "react";
+import "@/styles/main.css";
+import Image from "next/image";
+import data from "../../Data/websiteData.json";
+import websiteData from "../../Data/websiteData.json";
+import MainNewsLetter from "@/components/NewsLetters/MainNewsLetter";
+import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
+import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
+import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
+import profileImage from "@/Assets/Images/pageImages/profileImage.jpg";
+import masterclassimg from "@/Assets/Images/pageImages/masterclass_one.png";
+import supportive_banner from "@/Assets/Images/pageImages/Supportive_banner.png";
+import flowerPetal from "@/Assets/svg/bannerFlower.svg";
 
-import HeroTestimonial from '@/components/Carousel/HeroTestimonial';
-import Link from 'next/link';
-import dynamic from 'next/dynamic';
-import HomeProgramCards from '../ProgramCards/HomeProgramCards';
+import HeroTestimonial from "@/components/Carousel/HeroTestimonial";
+import Link from "next/link";
+import dynamic from "next/dynamic";
+import HomeProgramCards from "../ProgramCards/HomeProgramCards";
 
-const CategoriesHome = dynamic(() => import('../CategoryTabs/CategoriesHome'));
+const CategoriesHome = dynamic(() => import("../CategoryTabs/CategoriesHome"));
 
 // Should be loaded at last
-const Footer = dynamic(() => import('@/components/footer/Footer'));
+const Footer = dynamic(() => import("@/components/footer/Footer"));
 const TestimonialCarousel = dynamic(
-  () => import('@/components/Carousel/TestimonialCarousel')
+  () => import("@/components/Carousel/TestimonialCarousel")
 );
 
 const Main = () => {
@@ -125,7 +125,7 @@ const Main = () => {
           <div className="flex justify-center relative z-[2]">
             <Link href="/about">
               <button className="primary_button">{scroll.cta}</button>
-            </Link>{' '}
+            </Link>{" "}
           </div>
           <div className="intro_background_img">
             <svg

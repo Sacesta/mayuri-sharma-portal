@@ -7,7 +7,8 @@ nav {
 .inactivelink {
   color: #505050;
 }
-.nav-ul a {
+.nav-ul a,
+.nav-ul p {
   font-family: var(--font-montserrat);
   font-style: normal;
   font-weight: 600;
@@ -15,6 +16,12 @@ nav {
   line-height: 24px;
   letter-spacing: 0.08em;
   cursor: pointer;
+}
+
+.nav-ul p,
+.mob_nav p {
+  color: #505050 !important;
+  cursor: pointer !important;
 }
 
 .nav-btn {

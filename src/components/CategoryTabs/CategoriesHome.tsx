@@ -61,7 +61,10 @@ const CategoriesHome = () => {
 
         {categories?.map((category: Category, index) => {
           return (
-            <TabPanel key={category._id} style={{ minHeight: "464px" }}>
+            <TabPanel
+              key={category._id}
+              style={{ minHeight: "464px", pointerEvents: "none" }} //remove pointer events when coming soon is removed
+            >
               <Transformations grpPod={grpPod} category={category} />
             </TabPanel>
           );

@@ -11,12 +11,12 @@ export async function generateMetadata({
     const programId = params.id;
     const res: any = await getProgram(programId);
     const program = res.data;
-    if (!program)
+    if (!program) {
       return {
         title: "Not found",
         description: "The Program not found",
       };
-
+    }
     return {
       title: program.title,
       description: program.description,
@@ -27,7 +27,7 @@ export async function generateMetadata({
         title: program.title + " | Mayuri",
         description: program.description,
         url: `https://mayuri-sharma-portal.vercel.app/program/${programId}`,
-        images: [{ url: program.image, alt: "Program Image" }],
+        images: [{ url: program.image.toSting(), alt: "Program Image" }],
         siteName: "Mayuri-Sharma-Portal",
         type: "website",
       },
@@ -39,15 +39,17 @@ export async function generateMetadata({
         images: [program.image],
       },
     };
-  } catch (error) {}
-  return {
-    title: "Not found",
-    description: "The Program not found",
-  };
+  } catch (error) {
+    return {
+      title: "Not found",
+      description: "The Program not found",
+    };
+  }
 }
 
 const page = ({ params }: { params: { id: string } }) => {
   const programId = params.id;
+  console.log(programId);
   return (
     <>
       <ProgramDetails programId={programId} />
