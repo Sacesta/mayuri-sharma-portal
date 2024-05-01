@@ -52,7 +52,7 @@ const CategoriesHome = () => {
   const grpPod = groupPodcastsByCategory(podcasts);
   return (
     <>
-      <Tabs>
+      <Tabs style={{ pointerEvents: "none" }}>
         <TabList>
           {categories?.map((category: Category, index) => {
             return <Tab key={`${category.name}${index}`}>{category?.name}</Tab>;
