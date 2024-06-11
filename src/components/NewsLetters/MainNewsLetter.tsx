@@ -39,7 +39,7 @@ const MainNewsLetter = () => {
 
   return (
     <div className="news_letter_form lg:w-1/2 mt-[76px] lg:mt-28">
-      <p className="news_letter_form_head">Join news letter</p>
+      <p className="news_letter_form_head">Join the community</p>
       <div className="form_field">
         <label htmlFor="">Name</label>
         <input
@@ -56,6 +56,15 @@ const MainNewsLetter = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter email address"
+        />
+      </div>
+      <div className="form_field">
+        <label htmlFor="">Phone Number</label>
+        <input
+          type="number"
+          value=""
+         
+          placeholder="Phone Number"
         />
       </div>
       <svg className="checkbox-symbol">

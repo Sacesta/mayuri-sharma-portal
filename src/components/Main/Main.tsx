@@ -239,20 +239,22 @@ const Main = () => {
           <div className="container mx-auto lg:flex justify-between">
             <div className="lg:w-1/2 flex items-center z-[2]">
               <div>
-                <p className="news_letter_head pb-9">Community</p>
+                <p className="news_letter_head pb-9">Innercord Community</p>
                 <h2 className="news_letter_h2">
-                  Weekly sessions every thursday
+                  Beyond the Hustle: Find Your Calm
                 </h2>
                 <p className="text-white text-lg font-normal pb-9 leading-7">
-                  Information about the community goes here. Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat.
+                  Our Innercord community offers a supportive environment to
+                  explore your inner world. Join our community for weekly
+                  sessions filled with authentic conversations, relatable
+                  experiences, and inspiring stories from people just like you.
+                  Get ready for epic discussions on relatable topics that'll
+                  have you saying "been there, done that!” Take the first step
+                  and join our community today.
                 </p>
-                <button className="secondary_button">
+                {/* <button className="secondary_button">
                   <Link href="/community">Learn More</Link>
-                </button>
+                </button> */}
               </div>
             </div>
             <MainNewsLetter />

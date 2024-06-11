@@ -48,13 +48,17 @@ const Community = () => {
           <div className="grid lg:grid-cols-2 z-[2] gap-10">
             <div className="flex flex-col justify-center">
               <div className="lg:pt-[10%]">
-                <h1 className="heading_one_black">Welcome to the community</h1>
+                <h1 className="heading_one_black">Innercord Community</h1>
+                {/* <h1 className="heading_one_black">Beyond the Hustle: Find Your Calm</h1> */}
+
                 <p className="text-lg text-[#2B2B27] font-normal leading-7 mt-4 lg:mt-8">
-                  A bit of text about the community can go here. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat.
+                  Our Innercord community offers a supportive environment to
+                  explore your inner world. Join our community for weekly
+                  sessions filled with authentic conversations, relatable
+                  experiences, and inspiring stories from people just like you.
+                  Get ready for epic discussions on relatable topics that'll
+                  have you saying "been there, done that!” Take the first step
+                  and join our community today
                 </p>
                 <ul className="flex flex-wrap items-center mt-8">
                   <li className="flex items-center min-w-[130px] md:mr-11 lg:mr-3 xl:mr-8 w-1/2 md:w-auto mb-6">
@@ -146,10 +150,10 @@ const Community = () => {
               <div className="">
                 <div className="my-20 lg:my-[100px]">
                   <p className="paragraph_one_style   mb-2 text-[#2B2B27]">
-                    Lorem ipsum
+                    This program includes
                   </p>
                   <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[71px] text-[#2B2B27]">
-                    What to expect
+                    suggestion from our end
                   </h2>
 
                   <ul className="journey_details programDetails_journey bg-white border border-[#E1E1E1] rounded-[20px] px-9 py-8">
@@ -170,12 +174,12 @@ const Community = () => {
                       </div>
                       <div className="mb-5">
                         <h3 className="heading_three_style_black mb-[10px]">
-                          Day 1: Introduction
+                          Day 1: Expert Weekly Sessions
                         </h3>
                         <p className="paragraph_two_style">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse varius enim in eros elementum
-                          tristique.
+                          Join us every Thursday for a session featuring experts
+                          who explore personal journeys, healthy habits, healthy
+                          practices , and help you strike inner balance
                         </p>
                       </div>
                     </li>
@@ -196,12 +200,10 @@ const Community = () => {
                       </div>
                       <div className="mb-5">
                         <h3 className="heading_three_style_black mb-[10px]">
-                          Day 2-6: How to set new habits
+                          Day 2-6: Motivation Booster
                         </h3>
                         <p className="paragraph_two_style">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse varius enim in eros elementum
-                          tristique.
+                        Start your week with our sessions, where we fill your day with quotes, success stories, or practical tips to set the tone for a week filled with purpose and determination.
                         </p>
                       </div>
                     </li>
@@ -222,12 +224,10 @@ const Community = () => {
                       </div>
                       <div className="mb-5">
                         <h3 className="heading_three_style_black mb-[10px]">
-                          Day 7- 11: How to stay on
+                          Day 7- 11: Mindfulness Challenges
                         </h3>
                         <p className="paragraph_two_style">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse varius enim in eros elementum
-                          tristique.
+                        Explore our weekly challenges and engage in simple practices to connect with your inner self and the world around you. Through these challenges, discover inner peace alongside practical wisdom for life.
                         </p>
                       </div>
                     </li>
@@ -248,16 +248,14 @@ const Community = () => {
                       </div>
                       <div className="mb-5">
                         <h3 className="heading_three_style_black mb-[10px]">
-                          Day 12-13: How to set new habits
+                          Day 12-13: Real Life Connections
                         </h3>
                         <p className="paragraph_two_style">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Suspendisse varius enim in eros elementum
-                          tristique.
+                        Build meaningful connections with others who understand and appreciate the complexities of the human experience. Dive into discussions that resonate with your own life experiences.
                         </p>
                       </div>
                     </li>
-                    <li className="flex">
+                    {/* <li className="flex">
                       <div className="journey_points">
                         <svg
                           width="40"
@@ -282,7 +280,7 @@ const Community = () => {
                           tristique.
                         </p>
                       </div>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
 
@@ -313,19 +311,16 @@ const Community = () => {
             </div>
           </div>
           <h2 className="heading_style_two  max-w-[920px] mb-[60px] lg:mb-[41px] text-[#2B2B27]">
-            what to e
+          What Can You Expect- 
           </h2>
           <div className="lg:grid-cols-2   grid gap-10">
             <div className="mb-5 lg:mb-[20px] ">
               <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
                 <h4 className="heading_three_style_black mb-2">
-                  Accessibility
+                Understanding Diverse Perspectives
                 </h4>
                 <p className="lg:w-2/3 text-sm text-[#505050] font-medium">
-                  Easily accessible and convenient for participants. This
-                  includes offering a variety of resources and tools that can be
-                  accessed online, as well as providing support through mobile
-                  apps, virtual coaching sessions, and other digital platforms
+                Explore a variety of personal journeys and gain insights into different perspectives, enriching your own understanding of life.
                 </p>
                 <div className="absolute right-0 top-0 bg-[#EB334A] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <Image src={approach} alt="" />
@@ -335,13 +330,10 @@ const Community = () => {
             <div className="mb-5 lg:mb-[20px] ">
               <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
                 <h4 className="heading_three_style_black mb-2">
-                  Holistic Approach
+                Emotional Wellness
                 </h4>
                 <p className="lg:w-2/3 text-sm text-[#505050] font-medium">
-                  Personalized approach to each individual, taking into account
-                  their unique needs, goals, and preferences. This includes
-                  personalized assessments, recommendations, and support
-                  tailored to each person&apos;s specific situation.
+                Learn practical mindfulness techniques to enhance emotional well-being, reduce stress, and promote a greater sense of inner peace.
                 </p>
                 <div className="absolute right-0 top-0 bg-[#39315C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <svg
@@ -361,13 +353,10 @@ const Community = () => {
             <div className="mb-5 lg:mb-[20px] ">
               <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
                 <h4 className="heading_three_style_black mb-2">
-                  Personalized Approach
+                Balanced Mind and Body
                 </h4>
                 <p className="lg:w-2/3 text-sm text-[#505050] font-medium">
-                  Personalized approach to each individual, taking into account
-                  their unique needs, goals, and preferences. This includes
-                  personalized assessments, recommendations, and support
-                  tailored to each person&apos;s specific situation.
+                Discover practices that promote balance between your mind and body, promoting overall well-being and vitality.
                 </p>
                 <div className="absolute right-0 top-0 bg-[#39315C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <Image src={men} alt="..approach" />
@@ -377,13 +366,10 @@ const Community = () => {
             <div className="mb-5 lg:mb-[20px] ">
               <div className="p-8 border border-[#E1E1E1] rounded-[20px] bg-white relative overflow-hidden mb-4">
                 <h4 className="heading_three_style_black mb-2">
-                  Long term support
+                Tools and Techniques
                 </h4>
                 <p className="lg:w-2/3 text-sm text-[#505050] font-medium">
-                  Personalized approach to each individual, taking into account
-                  their unique needs, goals, and preferences. This includes
-                  personalized assessments, recommendations, and support
-                  tailored to each person&apos;s specific situation.
+                Discover effective strategies for setting and sticking to new habits. Through expert guidance and shared experiences, you'll gain valuable insights into breaking old patterns, establishing healthy routines thus enhancing motivation and determination. 
                 </p>
                 <div className="absolute right-0 top-0 bg-[#39315C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <Image src={termgirl} alt="..teamgirl" />

@@ -1,26 +1,23 @@
 [
   {
-    "question": "Question text goes here",
-    "answer": "Answer goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    "question": "What format are the sessions conducted in?",
+    "answer": "Our sessions are conducted online via Zoom, providing a convenient platform for participation from anywhere in the world."
   },
   {
-    "question": "Question text goes here",
-    "answer": "Answer goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    "question": "Are there any costs associated with these sessions?",
+    "answer": "No, all sessions offered by Innercord Community are completely free of charge."
   },
   {
-    "question": "Question text goes here",
-    "answer": "Answer goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    "question": "Can you explain what the Mindfulness Challenges entail?",
+    "answer": "Mindfulness Challenges consist of engaging activities such as puzzles, crosswords, and other exercises designed to keep you mentally stimulated and reduce stress. "
   },
   {
-    "question": "Question text goes here",
-    "answer": "Answer goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    "question": "Is there a specific schedule for the sessions?",
+    "answer": "Yes, our sessions are held weekly on Thursdays."
   },
   {
-    "question": "Question text goes here",
-    "answer": "Answer goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
-  },
-  {
-    "question": "Question text goes here",
-    "answer": "Answer goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+    "question": "How can I stay informed about upcoming sessions and events?",
+"answer":"To stay informed about upcoming sessions .You can check our community or follow us on social media platforms where we regularly post updates and announcements."
   }
+ 
 ]

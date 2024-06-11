@@ -42,30 +42,21 @@ const ThisIsMe = () => {
           <div className="mb-14 lg:mb-0">
             <p className="paragraph_one_style mb-2">This is Me:</p>
             <h2 className="heading_style_two mb-6">
-              A Journey of Curiosity and Growth
+              Exploring Life's Depths: A Journey of Curiosity
             </h2>
             <p className="paragraph_two_style">
-              Born and brought up in India, the land of Gods, I have always
-              had a curiosity to understand spirituality, emotions, and the
-              human mind. This innate inquiry got some direction when I
-              happened to attend a breathing and meditation program conducted
-              by Art of Living, during my engineering days. Fast forward to
-              2008 - this was the year I started my practice as a meditation
-              and breathwork teacher. And since then I have taught in various
-              corporations, universities, and meditation centres. The rest as
-              they say is history. Something that not many people know about
-              me is that I am also an Ayurveda enthusiast and have received
-              formal training in Vedic astrology. This training helped me find
-              answers to questions like why we behave in a specific pattern,
-              how our outlook towards life is influenced by our planetary
-              positions, and so on. It was an eye-opener to say the least and
-              it further propelled me in my journey. Another thing that’s
-              shaped my journey of self discovery is travelling. I am an avid
-              traveller and this is what I have learnt from my adventures so
-              far - it’s as enriching an experience to travel within yourself
-              as it is to travel outside of yourself. It was during my travels
-              that I realised that with every new road we take in our lives,
-              we are actually seeking a new way to come home to ourselves.
+              Growing up in India, I've always been curious about
+              spirituality,emotions and the human mind. After attending a
+              Breathing and Meditation program conducted by Art of Living during
+              my engineering days, I became a meditation and breathwork teacher
+              in 2008. Since then, I've taught in various corporations,
+              universities, and meditation centers. I am also an Ayurveda
+              enthusiast and have received formal training in Vedic astrology.
+              Traveling has been a significant part of my journey, teaching me
+              that self-discovery is as enriching as exploring the world. It was
+              during my travels that I realized that with every new road we take
+              in our lives, we are actually seeking a new way to come home to
+              ourselves.
             </p>
           </div>
           <div>
