@@ -56,8 +56,8 @@ const Community = () => {
                   explore your inner world. Join our community for weekly
                   sessions filled with authentic conversations, relatable
                   experiences, and inspiring stories from people just like you.
-                  Get ready for epic discussions on relatable topics that'll
-                  have you saying "been there, done that!” Take the first step
+                  Get ready for epic discussions on relatable topics that&apos;ll
+                  have you saying &apos;been there, done that!&apos; Take the first step
                   and join our community today
                 </p>
                 <ul className="flex flex-wrap items-center mt-8">
@@ -369,7 +369,7 @@ const Community = () => {
                 Tools and Techniques
                 </h4>
                 <p className="lg:w-2/3 text-sm text-[#505050] font-medium">
-                Discover effective strategies for setting and sticking to new habits. Through expert guidance and shared experiences, you'll gain valuable insights into breaking old patterns, establishing healthy routines thus enhancing motivation and determination. 
+                Discover effective strategies for setting and sticking to new habits. Through expert guidance and shared experiences, you&apos;ll gain valuable insights into breaking old patterns, establishing healthy routines thus enhancing motivation and determination. 
                 </p>
                 <div className="absolute right-0 top-0 bg-[#39315C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <Image src={termgirl} alt="..teamgirl" />

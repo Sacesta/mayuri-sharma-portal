@@ -248,8 +248,8 @@ const Main = () => {
                   explore your inner world. Join our community for weekly
                   sessions filled with authentic conversations, relatable
                   experiences, and inspiring stories from people just like you.
-                  Get ready for epic discussions on relatable topics that'll
-                  have you saying "been there, done that!” Take the first step
+                  Get ready for epic discussions on relatable topics that&apos;ll
+                  have you saying &apos;been there, done that!&apos; Take the first step
                   and join our community today.
                 </p>
                 {/* <button className="secondary_button">

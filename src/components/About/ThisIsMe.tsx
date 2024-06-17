@@ -42,14 +42,14 @@ const ThisIsMe = () => {
           <div className="mb-14 lg:mb-0">
             <p className="paragraph_one_style mb-2">This is Me:</p>
             <h2 className="heading_style_two mb-6">
-              Exploring Life's Depths: A Journey of Curiosity
+              Exploring Life&apos;s Depths: A Journey of Curiosity
             </h2>
             <p className="paragraph_two_style">
-              Growing up in India, I've always been curious about
+              Growing up in India, I&apos;ve always been curious about
               spirituality,emotions and the human mind. After attending a
               Breathing and Meditation program conducted by Art of Living during
               my engineering days, I became a meditation and breathwork teacher
-              in 2008. Since then, I've taught in various corporations,
+              in 2008. Since then, I&apos;ve taught in various corporations,
               universities, and meditation centers. I am also an Ayurveda
               enthusiast and have received formal training in Vedic astrology.
               Traveling has been a significant part of my journey, teaching me
