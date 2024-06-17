@@ -80,8 +80,8 @@ const Links = ({ device, setIsOpen, isOpen }: any) => {
                   <div className="podcast-dropdown relative">
                     <ul className=" absolute top-1">
                       <li>
-                        <button className=" bg-[#eb334a] text-white rounded-full user-btn p-2 text-xs !text-nowrap">
-                          Coming soon
+                        <button className=" bg-[#eb334a] text-white rounded-full user-btn py-2 px-3 text-xs !text-nowrap">
+                        Stay Tuned
                         </button>
                       </li>
                     </ul>
