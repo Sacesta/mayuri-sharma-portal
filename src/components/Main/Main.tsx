@@ -219,7 +219,7 @@ const Main = () => {
               In momentum
             </h2>
             <h2 className="heading_style_two  relative top-60  text-center text-[#090617]">
-              Coming Soon
+            Stay tuned
             </h2>
             <div className="home_story_section w-full   opacity-30">
               <CategoriesHome />

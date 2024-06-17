@@ -53,11 +53,11 @@ const CategoriesHome = () => {
   return (
     <>
       <Tabs style={{ pointerEvents: "none" }}>
-        <TabList>
+        {/* <TabList>
           {categories?.map((category: Category, index) => {
             return <Tab key={`${category.name}${index}`}>{category?.name}</Tab>;
           })}
-        </TabList>
+        </TabList> */}
 
         {categories?.map((category: Category, index) => {
           return (
