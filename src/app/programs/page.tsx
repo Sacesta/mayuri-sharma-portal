@@ -48,7 +48,7 @@ const page = async () => {
         >
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="container mx-auto z-10 ">
-            <p className="about_head w-full">Programs</p>
+            <p className="about_head w-full !leading-[60.95px]">Explore the secrets of your breath and experience deep meditation.</p>
           </div>
         </div>
       </section>

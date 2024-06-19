@@ -149,11 +149,11 @@ const Community = () => {
               </div>
               <div className="">
                 <div className="my-20 lg:my-[100px]">
-                  <p className="paragraph_one_style   mb-2 text-[#2B2B27]">
+                  {/* <p className="paragraph_one_style   mb-2 text-[#2B2B27]">
                     This program includes
-                  </p>
+                  </p> */}
                   <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[71px] text-[#2B2B27]">
-                    suggestion from our end
+                  This program includes
                   </h2>
 
                   <ul className="journey_details programDetails_journey bg-white border border-[#E1E1E1] rounded-[20px] px-9 py-8">
@@ -174,7 +174,7 @@ const Community = () => {
                       </div>
                       <div className="mb-5">
                         <h3 className="heading_three_style_black mb-[10px]">
-                          Day 1: Expert Weekly Sessions
+                          Expert Weekly Sessions
                         </h3>
                         <p className="paragraph_two_style">
                           Join us every Thursday for a session featuring experts
@@ -200,7 +200,7 @@ const Community = () => {
                       </div>
                       <div className="mb-5">
                         <h3 className="heading_three_style_black mb-[10px]">
-                          Day 2-6: Motivation Booster
+                          Motivation Booster
                         </h3>
                         <p className="paragraph_two_style">
                         Start your week with our sessions, where we fill your day with quotes, success stories, or practical tips to set the tone for a week filled with purpose and determination.
@@ -224,7 +224,7 @@ const Community = () => {
                       </div>
                       <div className="mb-5">
                         <h3 className="heading_three_style_black mb-[10px]">
-                          Day 7- 11: Mindfulness Challenges
+                          Mindfulness Challenges
                         </h3>
                         <p className="paragraph_two_style">
                         Explore our weekly challenges and engage in simple practices to connect with your inner self and the world around you. Through these challenges, discover inner peace alongside practical wisdom for life.
@@ -248,7 +248,7 @@ const Community = () => {
                       </div>
                       <div className="mb-5">
                         <h3 className="heading_three_style_black mb-[10px]">
-                          Day 12-13: Real Life Connections
+                        Real Life Connections
                         </h3>
                         <p className="paragraph_two_style">
                         Build meaningful connections with others who understand and appreciate the complexities of the human experience. Dive into discussions that resonate with your own life experiences.
@@ -383,10 +383,7 @@ const Community = () => {
         <div className="container mx-auto">
           <div className="faqs max-w-[728px] mx-auto">
             <h1 className="heading_one_black mb-6 text-center">FAQs</h1>
-            <p className="text-[#2B2B27] text-center mt-6 mb-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique.
-            </p>
+          
             {/*   accordion start  */}
             <div className="accordian">
               {items?.map((item: any, index: any) => (

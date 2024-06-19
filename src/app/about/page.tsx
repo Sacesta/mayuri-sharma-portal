@@ -59,11 +59,11 @@ const About = () => {
           </div>
           <Image className="main-right-circle" src={rightCircle} alt=".." />
           <div className="text-white container ml-8 z-10 pb-4 lg:pb-8">
-            <p className="w-full text-[50px] !leading-none mb-5">
+            {/* <p className="w-full text-[50px] !leading-none mb-5">
               Mayuri Sharma
-            </p>
-            <p className="text-[28px] font-semibold mb-8">
-              Wisdom of sthe past, practice of the present
+            </p> */}
+            <p className="text-[50px] font-semibold mb-8">
+              Master Your Mind and Emotions
             </p>
           </div>
           <div className="z-10  w-[454.93px] h-full relative flex items-center justify-center">

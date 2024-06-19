@@ -98,7 +98,7 @@ const Main = () => {
                 alt="flower_petals"
                 className="w-[135.18] h-[80.91]"
               />
-              <p className="news_letter_head mt-10">Mayuri Sharma</p>
+              {/* <p className="news_letter_head mt-10">Mayuri Sharma</p> */}
 
               <h2 className=" !font-sans mt-2">
                 {banner1.headline} <br />
@@ -181,7 +181,7 @@ const Main = () => {
           <div className="transformation">
             <div className="transformation_profile_img">
               <Image src={profileImage} alt="..." />
-              <div className="podcast_listen_icon bg-[#29214B] -right-6 -top-6 -z-10">
+              <div className="podcast_listen_icon bg-[#29214B] -right-6 -top-6 z-10">
                 <svg
                   width="36"
                   height="35"
