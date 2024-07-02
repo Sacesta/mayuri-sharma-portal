@@ -179,15 +179,15 @@ const Main = () => {
       <section className="tranformation_section">
         <div className="container mx-auto">
           <div className="transformation">
-            <div className="transformation_profile_img">
-             <div className="bg-custom-gradient rounded-2xl relative w-[230px] ">
+            <div className="transformation_profile_img !w-[230px]">
+             <div className="bg-custom-gradient rounded-2xl relative  ">
              <Image src={profileImage} alt="..." className="h-full !w-[200px] mr-14 mx-auto" />
               
              <h2 className="font-[500] !text-[36px] absolute bottom-[10px] left-0 right-0 momentum-text   text-center text-white">
               In momentum
             </h2>
              </div>
-              <div className="podcast_listen_icon bg-[#29214B] -right-10 -top-6 z-10">
+              <div className="podcast_listen_icon bg-[#29214B] -right-6 -top-6 z-10">
                 <svg
                   width="36"
                   height="35"
@@ -218,7 +218,7 @@ const Main = () => {
                 </svg>
               </div>
             </div>
-            <p className="paragraph_one_style  mt-8 text-[#39315C]">
+            <p className="paragraph_one_style  mt-8 max-sm:mt-14 text-[#39315C]">
               My podcast
             </p>
           
