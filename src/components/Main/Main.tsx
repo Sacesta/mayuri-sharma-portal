@@ -180,7 +180,7 @@ const Main = () => {
         <div className="container mx-auto">
           <div className="transformation">
             <div className="transformation_profile_img">
-             <div className="bg-custom-gradient rounded-xl relative w-[230px] ">
+             <div className="bg-custom-gradient rounded-2xl relative w-[230px] ">
              <Image src={profileImage} alt="..." className="h-full !w-[200px] mr-14 mx-auto" />
               
              <h2 className="font-[500] !text-[36px] absolute bottom-[10px] left-0 right-0 momentum-text   text-center text-white">
