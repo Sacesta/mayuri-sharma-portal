@@ -7,7 +7,7 @@ import MainNewsLetter from "@/components/NewsLetters/MainNewsLetter";
 import ellipseOne from "@/Assets/Images/pageImages/Ellipse_one.png";
 import ellipseTwo from "@/Assets/Images/pageImages/news_ellipse_two.png";
 import rightCircle from "@/Assets/icons/Ellipse 24 (Stroke).png";
-import profileImage from "@/Assets/Images/pageImages/profileImage.jpg";
+import profileImage from "@/Assets/Images/momentum.png";
 import masterclassimg from "@/Assets/Images/pageImages/masterclass_one.png";
 import supportive_banner from "@/Assets/Images/pageImages/Supportive_banner.png";
 import flowerPetal from "@/Assets/svg/bannerFlower.svg";
@@ -180,8 +180,14 @@ const Main = () => {
         <div className="container mx-auto">
           <div className="transformation">
             <div className="transformation_profile_img">
-              <Image src={profileImage} alt="..." />
-              <div className="podcast_listen_icon bg-[#29214B] -right-6 -top-6 z-10">
+             <div className="bg-custom-gradient rounded-xl relative w-[230px] ">
+             <Image src={profileImage} alt="..." className="h-full !w-[200px] mr-14 mx-auto" />
+              
+             <h2 className="font-[500] !text-[36px] absolute bottom-[10px] left-0 right-0 momentum-text   text-center text-white">
+              In momentum
+            </h2>
+             </div>
+              <div className="podcast_listen_icon bg-[#29214B] -right-10 -top-6 z-10">
                 <svg
                   width="36"
                   height="35"
@@ -212,12 +218,10 @@ const Main = () => {
                 </svg>
               </div>
             </div>
-            <p className="paragraph_one_style mb-2 text-[#39315C]">
+            <p className="paragraph_one_style  mt-8 text-[#39315C]">
               My podcast
             </p>
-            <h2 className="heading_style_two  text-center text-[#090617]">
-              In momentum
-            </h2>
+          
             <h2 className="heading_style_two  relative top-60  text-center text-[#090617]">
             Stay tuned
             </h2>

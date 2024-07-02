@@ -5,7 +5,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 import Img3 from '../../Assets/Images/home1.png';
 import Img4 from '../../Assets/Images/home2.png';
-import Imgg from '../../Assets/Images/home3.png';
+import Imgg from '../../Assets/Images/mayurinewimg.jpg';
 import homebannerSlider from '@/Assets/Images/pageImages/fun_profile.png';
 
 export default function HeroTestimonial() {

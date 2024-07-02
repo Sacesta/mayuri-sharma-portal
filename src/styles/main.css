@@ -19,7 +19,9 @@ body {
 /* .container{
   @apply sm:max-w-[100%] md:max-w-[700px] lg:max-w-[980px] xl:max-w-[1112px] px-[4%] md:px-0
 } */
-
+.momentum-text{
+  font-family: serif;
+}
 .container {
   @apply max-w-[1112px] px-[24px] xl:px-0;
 }
@@ -625,7 +627,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 95%;
-  @apply h-[350px] md:h-[500px] md:rounded-[20px] flex items-end justify-center relative overflow-hidden;
+  @apply h-[700px] md:h-[500px] md:rounded-[20px] flex items-end justify-center relative overflow-hidden;
 }
 
 .about_banner::after {
@@ -636,6 +638,18 @@ header {
     rgba(89, 80, 125, 0.5) 100%
   ); */
   background-color: #29214b;
+  @apply absolute h-full w-full left-0 top-0;
+}
+.program_banner{
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  @apply h-[350px] md:h-[500px] md:rounded-[20px] flex items-end justify-center relative overflow-hidden;
+
+}
+.program_banner::after {
+  content: '';
+ 
   @apply absolute h-full w-full left-0 top-0;
 }
 

@@ -11,6 +11,7 @@ import missionEllipse from '@/Assets/Images/pageImages/Ellipse _six.svg';
 import ThisIsMe from '@/components/About/ThisIsMe';
 import Footer from '@/components/footer/Footer';
 import Principles from '@/components/About/Principles/Principles';
+import aboutbanner from "../../../public/Images/about/aboutbanner1.png"
 
 import websiteData from '../../Data/websiteData.json';
 import Link from 'next/link';
@@ -45,26 +46,21 @@ const About = () => {
     <>
       <section className="md:py-9 banner commonbanner md:px-4 flex justify-center">
         <div
-          className="about_banner lg:bg-right w-full"
+          className="about_banner lg:bg-right w-full max-md:flex-col"
           // style={{
           //   backgroundImage: `url('/Assets/Images/pageImages/mayuri_1.jpg')`,
           // }}
         >
-          <div className="flower_svg absolute z-10 ml-8 mt-8 top-0 left-0">
-            <Image
-              src={flowerPetal}
-              alt="flower_petals"
-              className="w-[135.18] h-[80.91]"
-            />
-          </div>
+         
           <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <div className="text-white container ml-8 z-10 pb-4 lg:pb-8">
+          <div className="text-white container my-auto  z-10  ">
             {/* <p className="w-full text-[50px] !leading-none mb-5">
               Mayuri Sharma
             </p> */}
-            <p className="text-[50px] font-semibold mb-8">
-              Master Your Mind and Emotions
+            <p className="xl:text-[50px] max-md:py-5 lg:text-[40px] !mb-0 md:pr-10 font-[600] lg:ml-[40px] md:text-[30px] xl:ml-[122.8px] leading-[1.6] max-w-[677.71px] md:mb-8 md:leading-[60.95px]">
+            Master your Mind with evidence backed breathing techniques.
             </p>
+            
           </div>
           <div className="z-10  w-[454.93px] h-full relative flex items-center justify-center">
             {/* <Image
@@ -77,13 +73,13 @@ const About = () => {
               sizes="100vw"
             /> */}
             <div
-              style={{ borderRadius: '33% 0% 0% 39% / 0% 10% 10% 51% ' }}
+              style={{ borderRadius: '' }}
               className="w-[735.71px] h-full z-1"
             >
               <Image
-                style={{ borderRadius: '33% 0% 0% 39% / 0% 10% 10% 51% ' }}
-                src={bannerImage}
-                className="object-contain"
+                style={{ borderRadius: '' }}
+                src={aboutbanner}
+                className=" h-full"
                 alt="banner_image"
                 width={0}
                 height={0}

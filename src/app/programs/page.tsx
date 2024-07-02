@@ -8,6 +8,9 @@ import ellipseTwo from '@/Assets/Images/pageImages/news_ellipse_two.png';
 import TestimonialCarousel from '@/components/Carousel/TestimonialCarousel';
 import Footer from '@/components/footer/Footer';
 import ProgramCards from '@/components/ProgramCards/ProgramCards';
+import flowerPetal from "@/Assets/svg/doubleflowepetal.svg";
+import threeflower from "@/Assets/svg/threewhiteflower.svg"
+
 
 import websiteData from '../../Data/websiteData.json';
 import MainNewsLetter from '@/components/NewsLetters/MainNewsLetter';
@@ -39,17 +42,24 @@ const page = async () => {
     <>
       <section className="md:pt-9 md:pb-20 commonbanner banner md:px-4 xl:px-16">
         <div
-          className="about_banner lg:bg-right"
-          // style={{ backgroundImage: `url(${bg.src})`, backgroundPosition: 'top' }}
-          style={{
-            backgroundImage: `url('/Assets/Images/pageImages/w_m_1.jpg')`,
-            backgroundPosition: 'top',
-          }}
+          className="program_banner relative !bg-custom-gradient lg:bg-right flex !items-center !justify-center"
+        
         >
-          <Image className="main-right-circle" src={rightCircle} alt=".." />
-          <div className="container mx-auto z-10 ">
-            <p className="about_head w-full !leading-[60.95px]">Explore the secrets of your breath and experience deep meditation.</p>
+          {/* <Image className="main-right-circle" src={rightCircle} alt=".." /> */}
+        
+          <div className="container  z-10  max-w-[896px] mx-auto  ">
+          <Image
+                src={flowerPetal}
+                alt="flower_petals"
+                className="w-[135.18] h-[20px]   !text-white"
+              />
+            <p className="about_head !pb-0 ml-8 max-sm:!text-lg !leading-[60.95px]">Explore the secrets of your breath and experience deep meditation.</p>
           </div>
+          <Image
+                src={threeflower}
+                alt="flower_petals"
+                className="w-[66.18] h-[40.04px] absolute right-[29.74px] bottom-[27.94px]  !text-white"
+              />
         </div>
       </section>
 
@@ -117,13 +127,13 @@ const page = async () => {
           </div>
         </div>
       </section>
-
+{/* 
       <section className="testimonial_section">
         <h2 className="heading_style_two text-center text-[#29214B] mb-20">
           {scroll3.headline}
         </h2>
         <TestimonialCarousel />
-      </section>
+      </section> */}
 
       <Footer />
     </>

@@ -369,7 +369,7 @@ const Community = () => {
                 Tools and Techniques
                 </h4>
                 <p className="lg:w-2/3 text-sm text-[#505050] font-medium">
-                Discover effective strategies for setting and sticking to new habits. Through expert guidance and shared experiences, you&apos;ll gain valuable insights into breaking old patterns, establishing healthy routines thus enhancing motivation and determination. 
+                 Through expert guidance and shared experiences, you&apos;ll gain valuable insights into breaking old patterns.
                 </p>
                 <div className="absolute right-0 top-0 bg-[#39315C] h-16 w-16 lg:h-[120px] lg:w-[120px] rounded-s-full rounded-br-full flex items-center justify-center">
                   <Image src={termgirl} alt="..teamgirl" />
@@ -448,9 +448,9 @@ const Community = () => {
             <h2 className="heading_style_two text-center text-[#2B2B27] mb-4">
               Still have a question?
             </h2>
-            <p className="text-center">
+            {/* <p className="text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-            </p>
+            </p> */}
             <div className="mt-6 flex justify-center">
               <button className="primary_button">Contact me</button>
             </div>
