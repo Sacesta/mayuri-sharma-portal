@@ -319,10 +319,10 @@ const ProgramDetails = ({ programId }: any) => {
                       ) : null}
                     </div>
                     <div>
-                      <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[41px] text-[#2B2B27]">
+                      {/* <h2 className="heading_style_two  max-w-[920px] mx-auto mb-[60px] lg:mb-[41px] text-[#2B2B27]">
                         {scroll4.heading}
-                      </h2>
-                      {program?.reviews?.length ? (
+                      </h2> */}
+                      {/* {program?.reviews?.length ? (
                         <>
                           {program.reviews.map(
                             (reviewItem: ReviewItem, i: number) => {
@@ -372,9 +372,9 @@ const ProgramDetails = ({ programId }: any) => {
                             }
                           )}
                         </>
-                      ) : null}
+                      ) : null} */}
 
-                      {program?.reviews?.length ? (
+                      {/* {program?.reviews?.length ? (
                         <>
                           {program.reviews.map(
                             (reviewItem: ReviewItem, i: number) => {
@@ -387,7 +387,7 @@ const ProgramDetails = ({ programId }: any) => {
                             }
                           )}
                         </>
-                      ) : null}
+                      ) : null} */}
                     </div>
                   </div>
                 </div>
@@ -520,7 +520,7 @@ const ProgramDetails = ({ programId }: any) => {
 
           <section className="bg-white pt-12 lg:pt-[100px] pb-[119px]">
             <div className="container mx-auto">
-              <div className="faqs max-w-[728px] mx-auto">
+              {/* <div className="faqs max-w-[728px] mx-auto">
                 <h1 className="heading_one_black mb-6 text-center">
                   {scroll5.heading}
                 </h1>
@@ -528,7 +528,7 @@ const ProgramDetails = ({ programId }: any) => {
                   {scroll5.subHeading}
                 </p>
                 <Accordion items={program?.qa} />
-              </div>
+              </div> */}
               <div className="mt-[132px] lg:mt-[59px]">
                 <h2 className="heading_style_two text-center text-[#2B2B27] mb-4">
                   Still have a question?
